@@ -1,0 +1,6 @@
+block,finite,rows,columns,centered_rank,candidate_components,rank_sufficient,svd_tolerance,minimum_singular_value,dimension_basis
+E1_topographic_spectral_70,True,96,70,70,15,True,2.1366906481476395e-13,0.06272810451423058,raw participant-level feature matrix
+E1_temporal_iqr_15,True,96,15,15,5,True,3.05181338024451e-14,0.14483512476939728,raw participant-level feature matrix
+E2_theta_identity_log_lower_triangle_91,True,96,91,91,4,True,1.8464348156610558e-13,0.023221725791397054,fixed identity-origin technical SPD coordinate check; not a cohort tangent reference or analysis score
+E2_alpha_identity_log_lower_triangle_91,True,96,91,91,4,True,1.8599918279617767e-13,0.01054448950838004,fixed identity-origin technical SPD coordinate check; not a cohort tangent reference or analysis score
+E2_beta_identity_log_lower_triangle_91,True,96,91,91,4,True,2.1725354878400586e-13,0.012617358573524895,fixed identity-origin technical SPD coordinate check; not a cohort tangent reference or analysis score

@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-09-20T21:11:50.792122+00:00",
+  "n": 96,
+  "outer_fits": 50,
+  "inner_partitions": 250,
+  "chosen_C_counts": {
+    "0.1": 42,
+    "1.0": 5,
+    "0.01": 3
+  },
+  "failure_events": 0,
+  "positive_repeats": 2,
+  "range_delta_ll": [
+    -0.06025558512719842,
+    0.07279283226027522
+  ],
+  "input_preservation": true,
+  "metrics": {
+    "m2_logloss": 0.6243793041890193,
+    "m2_auroc": 0.7139246119733924,
+    "m2_brier": 0.21574105978749064,
+    "eeg_logloss": 0.6336906127934594,
+    "eeg_auroc": 0.6883370288248337,
+    "eeg_brier": 0.2208397122170104,
+    "delta_ll": -0.009311308604440117,
+    "delta_auroc": -0.025587583148558756,
+    "delta_brier": -0.005098652429519723
+  }
+}

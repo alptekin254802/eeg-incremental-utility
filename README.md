@@ -1,0 +1,65 @@
+# Incremental Predictive Utility of EEG Representations Beyond Behavioral and Object-Gaze Measures in Pediatric ADHD
+
+Does EEG improve prediction beyond demographics, task behavior and object-gaze measures? This repository contains the analysis code and derived results for our study of 96 BALLADEER participants using repeated nested cross-validation.
+
+The preregistered EEG procedure provided no average improvement over the non-EEG baseline. Post-hoc analyses examined additional EEG representations and the sensitivity of their results to acquisition conditions and signal controls. These exploratory findings require independent validation.
+
+## Getting started
+
+Use Python 3.14.3 and the pinned dependencies:
+
+```text
+python -m venv .venv
+```
+
+Activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell or `source .venv/bin/activate` in a POSIX shell, then run:
+
+```text
+python -m pip install -r requirements.txt
+python -B reproduce.py check --output ../reproduction
+```
+
+The check verifies the distributed files, measurement inputs and 96-participant feature matrix. To regenerate the article's figures and numerical tables from the supplied results:
+
+```text
+python -B reproduce.py figures --output ../reproduction
+python -B reproduce.py tables --output ../reproduction
+```
+
+These commands use saved results and do not fit models. See the [reproduction guide](docs/REPRODUCIBILITY.md) for individual analyses, expected outputs and comparison tolerances.
+
+## Reproduce from raw recordings
+
+Download BALLADEER from its [Figshare record](https://doi.org/10.6084/m9.figshare.28676042) and arrange it as described in the [data guide](docs/DATA_LAYOUT.md). Replace the example path with your dataset directory:
+
+```text
+python -B reproduce.py raw-pipeline --dataset "../BALLADEER/dataset" --output ../fresh-reproduction --jobs 2
+```
+
+This route extracts new features and fits the models using those features. Outputs must be outside the repository and raw-data directory. The [raw-data guide](docs/FRESH_RAW_REPLAY.md) explains checkpoints and input verification; [reproduction limits](docs/REPRODUCTION_LIMITS.md) describes known numerical differences.
+
+## Repository contents
+
+| Path | Contents |
+|---|---|
+| `reproduce.py` and `reproduce/` | Commands for extraction, model fitting, figures, tables and validation |
+| `audit/` | Estimator modules, measurement inputs, primary results and exploratory connectivity/entropy results |
+| `results/e5/` | Post-hoc spectral-state predictors, held-out predictions, tuning records and results |
+| `expected/posthoc/` | Explanatory comparisons and Fourier-phase controls |
+| `RELEASE_MANIFEST.json` | SHA-256 identities of the distributed files |
+
+The main article and supplement describe the methods and interpretation. The preregistered procedure and the subsequent exploratory analyses are distinguished throughout the documentation.
+
+## Registration and citation
+
+The primary analysis was registered at [OSF 9jp2h](https://osf.io/9jp2h/). The additional EEG representations and explanatory analyses are post hoc.
+
+Use [CITATION.cff](CITATION.cff) or [CITATION.md](CITATION.md) to cite this computational companion (version **2026.10.04**) and cite BALLADEER using its provider record. Analysis code is available under the [MIT License](LICENSE); [DATA_LICENSE.md](DATA_LICENSE.md) describes the source-data licence and attribution.
+
+## Validation
+
+```text
+python -B -m unittest discover -s reproduce -p test_fresh_contract.py -v
+```
+
+These tests check separation of saved reference results from fresh model fitting and rejection of altered inputs or incompatible checkpoints. They do not rerun the complete study.

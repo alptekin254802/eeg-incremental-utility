@@ -1,0 +1,27 @@
+{
+  "audit_script_sha256": "1f3b91aff2fa8eed2a679d543a6aee44d6562d9f0745df27c87934a137b80fca",
+  "audit_timestamp_utc": "2026-08-24T07:48:59.212158+00:00",
+  "git_commit": null,
+  "input_contract": "Stage-1 frozen implementation plus label-free Stage-1 primary matrix/QC; no users_demographics.json opened",
+  "label_fields_accessed": [],
+  "numpy_version": "2.3.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python_version": "3.14.3",
+  "reconstruct_metadata": {
+    "all_required_source_files_exist": true,
+    "duplicate_participant_session_records": 0,
+    "measurement_eeg_duration_rule_seconds": 240.0,
+    "measurement_eeg_nonfinite_rule": 0.05,
+    "measurement_eeg_timestamp_gap_rule_seconds": 2.0,
+    "measurement_eye_duration_rule_seconds": 240.0,
+    "measurement_eye_longest_gap_rule_applied": false,
+    "measurement_eye_valid_coverage_rule": 0.8,
+    "measurement_selected_n": 98,
+    "unique_participants": 98
+  },
+  "reconstructed_stage1_source_sessions": 98,
+  "scipy_version": "1.16.3",
+  "stage1_primary_matrix_sha256": "6a7d363574e1274fff1850e6a925fe375a9f64316759befbaa6c26e946f40dc9",
+  "stage1_qc_sha256": "b9772d630f622ad90879ee7bae4918da8ca0308bd332f82d64324ce3183dc5a8",
+  "stage1_script_sha256": "85280df2ed87000c501a8a62467b5756569a4535086991ccdbc6138af4d0a47a"
+}

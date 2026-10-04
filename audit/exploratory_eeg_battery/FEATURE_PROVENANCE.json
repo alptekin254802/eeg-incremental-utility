@@ -1,0 +1,44 @@
+{
+  "deterministic_duplicate_extraction": true,
+  "duplicate_max_absolute_difference": {
+    "E3": 0.0,
+    "E4": 0.0,
+    "E5": 0.0
+  },
+  "feasibility": {
+    "E3": {
+      "all_96_finite": true,
+      "rank_feasible": true,
+      "raw_dimension": 273,
+      "status": "PASS"
+    },
+    "E4": {
+      "all_96_finite": true,
+      "rank_feasible": true,
+      "raw_dimension": 9,
+      "status": "PASS"
+    },
+    "E5": {
+      "all_96_finite": true,
+      "rank_feasible": true,
+      "raw_dimension": 27,
+      "status": "PASS"
+    }
+  },
+  "implementation_sha256": "9572c1ebc68015f24c76c97f9dbe87fcb1b6ab601a61e72bddce1da405c02051",
+  "outcome_fields_opened": [],
+  "participant_removal": 0,
+  "phase": "A_outcome_blind",
+  "raw_dimensions": {
+    "E3": 273,
+    "E4": 9,
+    "E5": 27
+  },
+  "roster_n": 96,
+  "roster_order_sha256": "97bafcb5156926190e2684b66023c20fcc29c903c4aa82ca4f7a2c4e1516e732",
+  "source_hashes": {
+    "audit\\stage1_blind_feature_extraction\\BLIND_PRIMARY_FEATURE_MATRIX.csv": "6a7d363574e1274fff1850e6a925fe375a9f64316759befbaa6c26e946f40dc9",
+    "audit\\stage1_blind_feature_extraction\\EEG_PREPROCESSING_QC.csv": "b9772d630f622ad90879ee7bae4918da8ca0308bd332f82d64324ce3183dc5a8",
+    "audit\\stage1_blind_feature_extraction\\run_stage1_extraction.py": "85280df2ed87000c501a8a62467b5756569a4535086991ccdbc6138af4d0a47a"
+  }
+}

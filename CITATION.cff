@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this computational companion and the source datasets when using the code or data."
+type: software
+title: "Incremental Predictive Utility of EEG Representations Beyond Behavioral and Object-Gaze Measures in Pediatric ADHD"
+version: "2026.10.04"
+authors:
+  - family-names: Cinbat
+    given-names: Alptekin
+  - family-names: Şentürk
+    given-names: Ümit
+  - family-names: Yücedağ
+    given-names: İbrahim
+license: MIT

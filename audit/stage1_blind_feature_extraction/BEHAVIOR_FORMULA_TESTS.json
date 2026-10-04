@@ -1,0 +1,9 @@
+[
+  {
+    "fixture": "dataset/UB0004/AttentionRobotsDesktop/1686235332/UB0004_GAME_DATA_2023_06_08T16.36.48+02.00.csv",
+    "mean_work_speed": 22.833334999999998,
+    "status": "PASS",
+    "total_commissions": 1.0,
+    "total_omissions": 9.0
+  }
+]

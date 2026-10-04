@@ -1,0 +1,38 @@
+# Raw or locally linked data
+/dataset/
+
+# Local environments and caches
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Private and manuscript working directories
+/private_work/
+/makale/
+/manuscript*/
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Temporary files
+*.tmp
+*.bak
+~$*

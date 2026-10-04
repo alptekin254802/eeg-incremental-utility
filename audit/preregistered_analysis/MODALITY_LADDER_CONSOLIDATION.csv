@@ -1,0 +1,6 @@
+row_type,comparison,from_model,to_model,N,logloss,brier,auroc,delta_logloss_favoring_next,delta_brier_favoring_next,delta_auroc_favoring_next
+absolute,M0,,M0,96,0.64611021292,0.226376604888,0.669201773836,,,
+absolute,M1,,M1,96,0.62556454416,0.214561323062,0.716053215078,,,
+absolute,M2,,M2,96,0.624379304189,0.215741059787,0.713924611973,,,
+increment,M0 -> M1,M0,M1,96,,,,0.0205456687598,0.0118152818263,0.0468514412417
+increment,M1 -> M2,M1,M2,96,,,,0.00118523997085,-0.00117973672578,-0.00212860310421

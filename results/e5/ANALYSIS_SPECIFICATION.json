@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-09-20T21:10:36.027998+00:00",
+  "status": "Post-hoc exploratory analysis",
+  "n": 96,
+  "positive": 41,
+  "outer_fits": 50,
+  "inner_partitions": 250,
+  "inner_membership_checks": 500,
+  "bands": [
+    {
+      "band": "theta",
+      "columns": [
+        "frontal_theta_occupancy",
+        "frontal_theta_median_high_state_duration_seconds",
+        "frontal_theta_switching_rate_per_minute",
+        "temporal_theta_occupancy",
+        "temporal_theta_median_high_state_duration_seconds",
+        "temporal_theta_switching_rate_per_minute",
+        "posterior_theta_occupancy",
+        "posterior_theta_median_high_state_duration_seconds",
+        "posterior_theta_switching_rate_per_minute"
+      ]
+    },
+    {
+      "band": "alpha",
+      "columns": [
+        "frontal_alpha_occupancy",
+        "frontal_alpha_median_high_state_duration_seconds",
+        "frontal_alpha_switching_rate_per_minute",
+        "temporal_alpha_occupancy",
+        "temporal_alpha_median_high_state_duration_seconds",
+        "temporal_alpha_switching_rate_per_minute",
+        "posterior_alpha_occupancy",
+        "posterior_alpha_median_high_state_duration_seconds",
+        "posterior_alpha_switching_rate_per_minute"
+      ]
+    },
+    {
+      "band": "beta",
+      "columns": [
+        "frontal_beta_occupancy",
+        "frontal_beta_median_high_state_duration_seconds",
+        "frontal_beta_switching_rate_per_minute",
+        "temporal_beta_occupancy",
+        "temporal_beta_median_high_state_duration_seconds",
+        "temporal_beta_switching_rate_per_minute",
+        "posterior_beta_occupancy",
+        "posterior_beta_median_high_state_duration_seconds",
+        "posterior_beta_switching_rate_per_minute"
+      ]
+    }
+  ],
+  "C_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "pc_per_band": 3,
+  "raw_sha256": "c3a3738140e0891596406d2be09187bf5c63d60e974d4406505df0d185f1e966",
+  "specification": "Supplementary Section S5.3: post-hoc E5 band grouping",
+  "method": "Group 27 predictors by frequency band; standardize and fit three principal components per band within training partitions.",
+  "estimator_code_sha256": "9572c1ebc68015f24c76c97f9dbe87fcb1b6ab601a61e72bddce1da405c02051"
+}

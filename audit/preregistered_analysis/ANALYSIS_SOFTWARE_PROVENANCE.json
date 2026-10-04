@@ -1,0 +1,52 @@
+{
+  "analysis_script_sha256": "e4f2d557ee42a13e2fa73bf7cd7a612d6de6b7ce6e01e0730f1cca7fd9d362cc",
+  "audit_timestamp_utc": "2026-08-24T22:53:44.205962+00:00",
+  "diagnosis_sensitivity": "diagnosed: exact yes/no only; undetermined/invalid excluded",
+  "failure_event_count": 10,
+  "linkage_summary": {
+    "diagnosed_no": 30,
+    "diagnosed_other_or_missing": 0,
+    "diagnosed_undetermined": 12,
+    "diagnosed_yes": 54,
+    "extra_nonroster_metadata_ids": 62,
+    "matched_rows": 96,
+    "metadata_rows": 158,
+    "metadata_unique_ids": 158,
+    "primary_group_counts": {
+      "0": 55,
+      "1": 41
+    },
+    "roster_rows": 96
+  },
+  "measurement_hashes": {
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\E0_VERIFICATION.csv": "5554db83b6574d19b3ef26ed0cc74e34a5b966622b5dd8f5c0097c5b7ce9fa7b",
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\E1_REGIONAL_ENTROPY.csv": "66405052f0fe6329dbd72b98819c8fc8a9f3400e7303bf420b01a270e3431286",
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\E1_TEMPORAL_IQR_RAW.csv": "cf2dc4d00ade9faa9b536ce847190a4e2b89931694e31cbd7d46124fb2c648b9",
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\E1_TOPOGRAPHIC_SPECTRAL_RAW.csv": "59ab48ea4cbb78ff1dd7af45c5cc1a9ff2aaa797a1607a15ede055549ce1383c",
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\E2_COVARIANCE_QC.csv": "bb2b8aa23a6742f13c2f80e6148f548a56f7ab3905cca821ac6d011a9933af04",
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\E2_PARTICIPANT_COVARIANCES.npz": "48fedf64428886af195402da756ae6a39cfe53e10215de7b1205c424806feb0e",
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\E2_PARTICIPANT_COVARIANCE_INDEX.csv": "7affd62a7ecce1a01f446b863f36a49e0687f19eea037b2ac8368a7042002b43",
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\EEG_REPRESENTATION_RANK_QC.csv": "5365b166c8dcef879c1d41ad1202f93bfc2a0d358cc83cea8e534c0c2756bd84",
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\STAGE1_5_REPRODUCIBILITY.json": "6628990d628c81757c10ecbc77125c790fe0fc216d51d0e592d3fd524b4ac3fe",
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\STAGE1_5_SOFTWARE_PROVENANCE.json": "b4abbae2bdd4537276cabfe1e8fef78753b655684e2c98f0f63d0f04038ee76b",
+    "${REPOSITORY_ROOT}/audit\\stage1_5_enriched_eeg_feasibility\\run_stage1_5_audit.py": "1f3b91aff2fa8eed2a679d543a6aee44d6562d9f0745df27c87934a137b80fca",
+    "${REPOSITORY_ROOT}/audit\\stage1_blind_feature_extraction\\BLIND_PRIMARY_FEATURE_MATRIX.csv": "6a7d363574e1274fff1850e6a925fe375a9f64316759befbaa6c26e946f40dc9",
+    "${REPOSITORY_ROOT}/audit\\stage1_blind_feature_extraction\\EEG_PREPROCESSING_QC.csv": "b9772d630f622ad90879ee7bae4918da8ca0308bd332f82d64324ce3183dc5a8",
+    "${REPOSITORY_ROOT}/audit\\stage1_blind_feature_extraction\\run_stage1_extraction.py": "85280df2ed87000c501a8a62467b5756569a4535086991ccdbc6138af4d0a47a"
+  },
+  "numpy_version": "2.3.4",
+  "outcome_fields_accessed": [
+    "group",
+    "diagnosed"
+  ],
+  "outcome_metadata_sha256": "ea10dc10990d9260d0d81a3b8544cc03c1b0bc8ee7edc1d4eae477597eeb4319",
+  "pandas_version": "2.3.3",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "primary_outcome": "group: Experimental/1 -> Y=1, Control/2 -> Y=0",
+  "python_version": "3.14.3",
+  "registration_title": "Evaluating the Incremental Predictive Utility of EEG Beyond Behavioral and Object-Gaze Measures for ADHD Classification Using Machine Learning",
+  "registration_url": "https://osf.io/9jp2h/",
+  "root_seed": 20260824125,
+  "scipy_version": "1.16.3",
+  "sklearn_version": "1.8.0"
+}

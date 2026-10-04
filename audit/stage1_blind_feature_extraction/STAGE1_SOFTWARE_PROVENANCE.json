@@ -1,0 +1,22 @@
+{
+  "absolute_artifact_threshold_uv": 500.0,
+  "exact_script": "audit\\stage1_blind_feature_extraction\\run_stage1_extraction.py",
+  "execution_timestamp_utc": "2026-08-23T23:14:21.637697+00:00",
+  "filter_implementation": "scipy.signal.butter(order=4, fs=128, SOS) + scipy.signal.sosfiltfilt",
+  "git_commit": "unavailable",
+  "ica": "not_used",
+  "machine": "AMD64",
+  "mne": "not_used",
+  "numpy": "2.3.4",
+  "operating_system": "Windows-10-10.0.19045-SP0",
+  "output_directory": "audit\\stage1_blind_feature_extraction",
+  "pandas": "2.3.3",
+  "primary_notch": "none",
+  "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "resampling_implementation": "scipy.signal.resample_poly(up=1, down=2, window=('kaiser',5.0), padtype='constant')",
+  "robust_artifact_threshold": ">8*1.4826*MAD of participant channel-window peak-to-peak values",
+  "scipy": "1.16.3",
+  "script_sha256": "85280df2ed87000c501a8a62467b5756569a4535086991ccdbc6138af4d0a47a",
+  "sklearn": "not_used",
+  "welch_implementation": "scipy.signal.welch(fs=128, window='hann', nperseg=256, noverlap=0, detrend='constant', scaling='density', average='mean')"
+}

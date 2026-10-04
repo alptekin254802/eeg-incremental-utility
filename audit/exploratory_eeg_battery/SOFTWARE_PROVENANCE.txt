@@ -1,0 +1,11 @@
+Outcome-blind feature/QC provenance
+Execution UTC: 2026-08-25T09:41:06.568416+00:00
+Python: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+Platform: Windows-10-10.0.19045-SP0
+NumPy: 2.3.4
+SciPy: 1.16.3
+Pandas: 2.3.3
+Scikit-learn: not used in Phase A
+Stage-1 code SHA-256: 85280df2ed87000c501a8a62467b5756569a4535086991ccdbc6138af4d0a47a
+This implementation SHA-256: 9572c1ebc68015f24c76c97f9dbe87fcb1b6ab601a61e72bddce1da405c02051
+Outcome fields opened in Phase A: none
