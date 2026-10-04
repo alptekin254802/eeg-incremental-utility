@@ -60,5 +60,5 @@ def main():
                 shutil.copy2(p,figures/(mapping.get(p.stem,p.stem)+p.suffix))
         elif stage=='tables':expected_posthoc();run('tables.py');run('latex_tables.py')
     assert verify()==before
-    (out/('COMPLETED_'+args.stage+'.json')).write_text(json.dumps({'stage':args.stage,'version':before['version'],'source_manifest_unchanged':True,'dataset':str(data) if data else None,'python':sys.version},indent=2)+'\n',encoding='utf-8')
+    (out/('COMPLETED_'+args.stage+'.json')).write_text(json.dumps({'stage':args.stage,'source_manifest_sha256':hashlib.sha256((ROOT/'RELEASE_MANIFEST.json').read_bytes()).hexdigest(),'source_manifest_unchanged':True,'dataset':str(data) if data else None,'python':sys.version},indent=2)+'\n',encoding='utf-8')
 if __name__=='__main__':main()

@@ -54,7 +54,7 @@ The main article and supplement describe the methods and interpretation. The pre
 
 The primary analysis was registered at [OSF 9jp2h](https://osf.io/9jp2h/). The additional EEG representations and explanatory analyses are post hoc.
 
-Use [CITATION.cff](CITATION.cff) or [CITATION.md](CITATION.md) to cite this computational companion (version **2026.10.04**) and cite BALLADEER using its provider record. Analysis code is available under the [MIT License](LICENSE); [DATA_LICENSE.md](DATA_LICENSE.md) describes the source-data licence and attribution.
+For software citation, see [CITATION.cff](CITATION.cff) or [CITATION.md](CITATION.md). Please also cite the [BALLADEER dataset](https://doi.org/10.6084/m9.figshare.28676042) when using its data. Analysis code is available under the [MIT License](LICENSE); [DATA_LICENSE.md](DATA_LICENSE.md) describes the source-data licence and attribution.
 
 ## Validation
 
