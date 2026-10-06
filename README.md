@@ -55,7 +55,7 @@ The full article and supplement are not distributed in this code repository. The
 
 ## Registration and citation
 
-Current release: [v1.1.0](https://github.com/alptekin254802/eeg-incremental-utility/releases/tag/v1.1.0).
+Current release: [v1.1.0](https://github.com/alptekin254802/eeg-incremental-utility/releases/tag/v1.1.0), archived at [10.5281/zenodo.23199244](https://doi.org/10.5281/zenodo.23199244).
 
 The primary analysis was registered at [OSF 9jp2h](https://osf.io/9jp2h/). The additional EEG representations and explanatory analyses are post hoc.
 

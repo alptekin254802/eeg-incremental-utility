@@ -3,7 +3,11 @@ message: "Please cite this software and the source datasets when using the code 
 type: software
 version: "1.1.0"
 date-released: 2026-10-07
-doi: "10.5281/zenodo.23146468"
+doi: "10.5281/zenodo.23199244"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23146468"
+    description: "All versions"
 title: "Incremental Predictive Utility of EEG Representations Beyond Behavioral and Object-Gaze Measures in Pediatric ADHD"
 repository-code: "https://github.com/alptekin254802/eeg-incremental-utility"
 authors:

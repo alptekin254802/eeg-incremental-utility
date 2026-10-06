@@ -16,5 +16,7 @@ and original result tables are unchanged. Supplementary Sections S1–S3 describ
 
 ## Citation
 
+Version 1.1.0 is archived at [10.5281/zenodo.23199244](https://doi.org/10.5281/zenodo.23199244).
+
 Use the Zenodo concept DOI [10.5281/zenodo.23146468](https://doi.org/10.5281/zenodo.23146468)
 to cite the software across all published versions.
