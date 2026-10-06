@@ -18,22 +18,22 @@ Replace the example dataset/output paths with your local paths. Python 3.14.3 an
 | Phase controls | `signal-controls --dataset ../BALLADEER/dataset --output ../reproduction` | Requires posthoc first; `posthoc/signal_controls/`: raw reconstruction, 20 phase-control feature sets, 1,000 outer fits and 40 contrasts |
 | Diagnostic summaries | `summarize --output ../reproduction` | Participant/logit/device-quality summaries and signal checks |
 | Calibration | `calibration --output ../reproduction` | Scalar calibration and four-bin reliability from saved primary outer predictions; failure flags are retained |
-| Figures | `figures --output ../reproduction` | `figures/`: Figures 1–6 and S1–S5; PDF/SVG or PDF/PNG |
-| Tables | `tables --output ../reproduction` | `tables/`: numerical source tables, Table 2 and S7/S8 LaTeX |
-| Saved-input reproduction sequence | `all --dataset ../BALLADEER/dataset --output ../reproduction --jobs 2` | All the above in dependency order; fits consume saved features |
+| Figures | `figures --output ../reproduction` | `display_assets/figures/`: main Figures 1–3 and supplementary Figures S1–S3, PDF/SVG, with checks of displayed values |
+| Tables | `tables --output ../reproduction` | `display_assets/tables/`: main Tables 1–3 and supplementary Tables S1–S8; generated numerical tables and supplied descriptive tables |
+| Saved-input reproduction sequence | `all --dataset ../BALLADEER/dataset --output ../reproduction --jobs 2` | Raw-data checks, models, controls, summaries, figures and tables in dependency order; models use saved features; run calibration and resampling follow-ups separately |
 | Fresh raw-to-model pipeline | `raw-pipeline --dataset ../BALLADEER/dataset --output ../fresh-reproduction --jobs 2` | New screen, features, folds, primary/diagnosis/E3–E5/post-hoc/control fits; input manifests and access records |
 
-Start a new output directory for each full reproduction. E5 refuses to overwrite a completed run. Other stage commands only write inside the chosen output tree. `summarize`, `figures` and `tables` can work directly from the released reference outputs; they record this starting point if no regenerated posthoc results exist. These commands alone do not refit any model.
+Use a new output directory for each full reproduction. E5 stops if that directory already contains a completed E5 run; other stages write only within the chosen output directory. `summarize` can use the supplied reference results and records when it does so. `figures` and `tables` always read the saved results in `audit/`, `expected/posthoc/` and `results/`, then write to `<output>/display_assets/`. They do not use or overwrite results from a new analysis run. Summary, figure and table commands do not fit models.
 
-## What is and is not regenerated
+## How the commands use data
 
-The raw screen reads the dataset and verifies the exact 126→98 roster. The feature command independently re-extracts the EEG and non-EEG predictors and checks them against saved artifacts; it starts at the archived 98-person roster, which the screen command verifies. Model commands deliberately consume the immutable feature checkpoints protected by input identity checks. Thus `all` validates the raw-to-checkpoint link and refits from the checkpoints; it is not a single pipeline passing newly serialized feature files directly into the learner. Input identity checks and numerical agreement checks are separate.
+The raw screen reads all 126 complete sessions and checks that it recovers the original 98-person roster. Starting from that roster, the feature command re-extracts the EEG and non-EEG predictors and compares them with the saved features. Model commands then fit from the saved features, whose hashes are checked before use. Thus, `all` checks the features against raw data and refits the models from the saved files. To fit models directly from newly extracted features, use `raw-pipeline`. File-integrity checks and numerical comparisons are reported separately.
 
-Figure and table commands consume released numerical summaries (including E5), or the newly computed posthoc summaries where present. Table S1 describes cohort accounting; Tables S2 and S3 use the primary model tables; the complete full-precision source tables remain in `audit/preregistered_analysis`. Exact manuscript text and LaTeX layout are maintained separately from this computational companion.
+The figure and table code is in `display_assets/`; the [result-file guide](RESULT_FILES.md) lists its inputs. The code combines representation results and ranks participants in memory, without copying the input files. It checks input hashes, plotted values, table cells, labels and figure/table numbering against `display_assets/figure_source/ASSET_VALUES.json`. The `figures` and `tables` commands use this builder; the original generation scripts remain as a record of earlier versions.
 
 ## Numerical comparisons
 
-Source and result identities are recorded in `RELEASE_MANIFEST.json`. Numerical reproduction is assessed separately using the tolerances above; a different PDF hash can reflect metadata or font serialization. Compare plotted values, labels and axes when checking regenerated figures. See [known reproduction limits](REPRODUCTION_LIMITS.md) before interpreting an intermediate-score or calibration mismatch.
+`RELEASE_MANIFEST.json` records checksums for the source and result files. Numerical reproduction is assessed separately using the tolerances above; a different PDF hash can reflect metadata or font serialization. Compare plotted values, labels and axes when checking regenerated figures. See [known reproduction limits](REPRODUCTION_LIMITS.md) before interpreting an intermediate-score or calibration mismatch.
 
 ## Recalculate reference summary tables
 
@@ -44,4 +44,20 @@ python -B audit/preregistered_analysis/consolidate_results.py --output ../reprod
 python -B audit/exploratory_eeg_battery/create_master_table.py --output ../reproduction/reference_tables
 ```
 
-Hashes embedded in result-provenance records identify the calculation that produced those results. `RELEASE_MANIFEST.json` identifies the distributed files.
+Hashes in the result records identify the inputs and code used for each calculation. `RELEASE_MANIFEST.json` lists checksums for the files distributed here.
+
+
+## Numerical follow-ups
+
+```text
+python -B reproduce.py calibration-numerical --output ../reproduction
+python -B reproduce.py descriptive-resampling --output ../reproduction
+```
+
+Both commands use saved participant-level results without refitting predictive classifiers. The `calibration` command still reproduces the original calibration method. Supplementary Sections S5 and S8 describe the follow-up methods and their limitations.
+
+For model checks, add `--strict-intermediates` to `models` or `all` to stop whenever an intermediate score exceeds the comparison tolerance. By default, the command may finish with a warning when differences are limited to the documented unselected `C=100` scores. In that case, `passed` remains `false` in the JSON report because the full numerical check has not passed.
+
+## Figure and table files
+
+See [display_assets/README.md](../display_assets/README.md) for file locations and article numbering. These commands generate figures and tables; the full article and supplement are maintained separately.

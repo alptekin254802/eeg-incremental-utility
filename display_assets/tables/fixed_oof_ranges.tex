@@ -1,0 +1,14 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Conditional descriptive fixed-OOF resampling ranges.}
+\label{tab:fixed-oof}
+\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.14}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrr@{}}
+\toprule
+Model & Mean $\Delta_{\mathrm{LL}}$ & Lower & Upper\\\midrule
+Primary EEG procedure & $-0.0288$ & $-0.0897$ & $+0.0340$\\
+Entropy and Hjorth & $+0.0267$ & $-0.0280$ & $+0.0808$\\
+\bottomrule\end{tabularx}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize Post-hoc descriptive resampling of 96 paired participant mean losses, using 5,000 draws and the 2.5th and 97.5th percentiles. Fits, partitions, selections, and predictions remain fixed. These are not confidence intervals for the learning procedure; no $p$ values are calculated.\end{minipage}
+\end{table}
+

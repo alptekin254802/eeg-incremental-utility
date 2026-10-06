@@ -1,0 +1,63 @@
+\begingroup\small
+\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.06}
+\begin{longtable}{@{}p{0.47\textwidth}rrrr@{}}
+\caption{All post-hoc explanatory comparisons and reference results.}\label{tab:comparisons}\\
+\toprule Evaluated model or addition & $\Delta_{\mathrm{LL}}$ & $\Delta_{\mathrm{AUROC}}$ & $\Delta_{\mathrm{Brier}}$ & $R_+$\\\midrule
+\endfirsthead
+\multicolumn{5}{l}{Table \thetable\ (continued)}\\
+\toprule Evaluated model or addition & $\Delta_{\mathrm{LL}}$ & $\Delta_{\mathrm{AUROC}}$ & $\Delta_{\mathrm{Brier}}$ & $R_+$\\\midrule
+\endhead
+\midrule\multicolumn{5}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+\multicolumn{5}{@{}l}{\textit{Reference comparisons: non-EEG baseline}}\\*
+Primary EEG-augmented procedure & $-0.0288$ & $-0.0478$ & $-0.0131$ & 1\\*
+Regional spectral features & $+0.0045$ & $-0.0113$ & $-0.0009$ & 6\\*
+Expanded spectral features & $-0.0122$ & $-0.0272$ & $-0.0079$ & 2\\*
+Expanded spectral and covariance features & $-0.0154$ & $-0.0248$ & $-0.0070$ & 5\\*
+Permutation entropy and Hjorth features & $+0.0267$ & $+0.0152$ & $+0.0077$ & 10\\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{Adding acquisition covariates to the non-EEG baseline}}\\*
+Add device indicator & $+0.0150$ & $+0.0230$ & $+0.0072$ & 9\\*
+Add device and EEG-quality measures & $+0.0064$ & $+0.0088$ & $+0.0038$ & 7\\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{Device-adjusted baseline and EEG model}}\\*
+Regional spectral features & $-0.0027$ & $-0.0260$ & $-0.0047$ & 3\\*
+Expanded spectral features & $-0.0235$ & $-0.0416$ & $-0.0129$ & 1\\*
+Expanded spectral and covariance features & $-0.0210$ & $-0.0396$ & $-0.0121$ & 1\\*
+Permutation entropy and Hjorth features & $+0.0204$ & $+0.0050$ & $+0.0043$ & 9\\*
+Primary EEG-augmented procedure & $-0.0208$ & $-0.0453$ & $-0.0123$ & 1\\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{Device-plus-quality-adjusted baseline and EEG model}}\\*
+Regional spectral features & $-0.0127$ & $-0.0353$ & $-0.0088$ & 2\\*
+Expanded spectral features & $-0.0155$ & $-0.0321$ & $-0.0100$ & 1\\*
+Expanded spectral and covariance features & $-0.0142$ & $-0.0314$ & $-0.0093$ & 2\\*
+Permutation entropy and Hjorth features & $+0.0071$ & $-0.0078$ & $-0.0011$ & 6\\*
+Primary EEG-augmented procedure & $-0.0258$ & $-0.0507$ & $-0.0145$ & 1\\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{Components and spectral controls: non-EEG baseline}}\\*
+Permutation entropy only & $+0.0301$ & $+0.0269$ & $+0.0113$ & 10\\*
+Hjorth mobility only & $+0.0176$ & $+0.0080$ & $+0.0060$ & 8\\*
+Hjorth complexity only & $+0.0108$ & $-0.0067$ & $+0.0020$ & 8\\*
+Without permutation entropy & $+0.0180$ & $+0.0026$ & $+0.0046$ & 9\\*
+Without Hjorth mobility & $+0.0291$ & $+0.0209$ & $+0.0092$ & 10\\*
+Without Hjorth complexity & $+0.0294$ & $+0.0223$ & $+0.0097$ & 10\\*
+Regional relative power (nine features) & $+0.0043$ & $-0.0008$ & $+0.0002$ & 6\\*
+Regional spectral PCA (nine components) & $+0.0052$ & $-0.0155$ & $-0.0017$ & 7\\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{Direct contrasts: full entropy and Hjorth model as baseline}}\\*
+Permutation entropy only & $+0.0034$ & $+0.0117$ & $+0.0035$ & 6\\*
+Hjorth mobility only & $-0.0091$ & $-0.0072$ & $-0.0018$ & 3\\*
+Hjorth complexity only & $-0.0159$ & $-0.0219$ & $-0.0057$ & 3\\*
+Without permutation entropy & $-0.0086$ & $-0.0126$ & $-0.0031$ & 2\\*
+Without Hjorth mobility & $+0.0024$ & $+0.0057$ & $+0.0014$ & 5\\*
+Without Hjorth complexity & $+0.0027$ & $+0.0071$ & $+0.0020$ & 8\\*
+Regional relative power (nine features) & $-0.0224$ & $-0.0160$ & $-0.0075$ & 3\\*
+Regional spectral PCA (nine components) & $-0.0215$ & $-0.0307$ & $-0.0095$ & 1\\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{Selection including the option to omit EEG}}\\*
+EEG-optional selector vs non-EEG baseline & $-0.0442$ & $-0.0522$ & $-0.0175$ & 1\\*
+EEG-optional selector vs primary procedure & $-0.0153$ & $-0.0045$ & $-0.0044$ & 1\\
+\addlinespace
+\end{longtable}
+\begin{minipage}{\textwidth}\footnotesize Positive differences favor the evaluated model relative to the baseline named in each block. $R_+$ counts favorable log-loss differences among ten dependent repeats. The first block repeats existing results as references for the later comparisons. Device/quality covariates enter both paired models. Direct contrasts against the full entropy and Hjorth model compare separately refitted models. Absolute losses and repeat-level estimates are supplied in the accompanying data.\end{minipage}
+\endgroup

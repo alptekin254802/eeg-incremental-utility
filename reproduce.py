@@ -1,10 +1,10 @@
-"""Portable, isolated reproduction commands for the manuscript companion."""
+"""Run the study's reproduction commands and write results to a separate directory."""
 from pathlib import Path
 import argparse, hashlib, json, os, shutil, subprocess, sys
 
 ROOT=Path(__file__).resolve().parent
 SAVED_INPUT_STAGES=('raw-screen','raw-features','models','exploratory','e5','posthoc','signal-controls','summarize','figures','tables')
-STAGES=('check','calibration',*SAVED_INPUT_STAGES,'raw-pipeline','all')
+STAGES=('check','calibration','calibration-numerical','descriptive-resampling',*SAVED_INPUT_STAGES,'raw-pipeline','all')
 def verify():
     m=json.loads((ROOT/'RELEASE_MANIFEST.json').read_text(encoding='utf-8'))
     for name,digest in m['sha256'].items():
@@ -16,6 +16,7 @@ def main():
     parser.add_argument('--output',type=Path,required=True,help='Output directory outside the release and dataset')
     parser.add_argument('--dataset',type=Path,help='Directory containing users_demographics.json and UB participant folders')
     parser.add_argument('--jobs',type=int,default=2)
+    parser.add_argument('--strict-intermediates',action='store_true',help='Fail models/all on any intermediate-score difference exceeding 1e-7, including documented unselected C=100 differences')
     args=parser.parse_args();assert args.jobs>0
     out=args.output.resolve();assert not out.is_relative_to(ROOT), 'Output must be outside the immutable release'
     data=args.dataset.resolve() if args.dataset else None
@@ -24,6 +25,7 @@ def main():
     env=os.environ.copy();env.pop('PYTHONPATH',None)
     env.update(EEG_RELEASE_ROOT=str(ROOT),EEG_RUN_ROOT=str(out),EEG_JOBS=str(args.jobs),PYTHONDONTWRITEBYTECODE='1',PYTHONNOUSERSITE='1',OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1',MPLBACKEND='Agg')
     if data:env['EEG_DATASET_ROOT']=str(data)
+    env['EEG_STRICT_INTERMEDIATES']='1' if args.strict_intermediates else '0'
     stages=list(SAVED_INPUT_STAGES) if args.stage=='all' else [args.stage]
     if any(s in stages for s in ('raw-screen','raw-features','models','signal-controls','raw-pipeline')):
         parser.error('--dataset is required for the requested stage') if data is None else None
@@ -39,26 +41,26 @@ def main():
             subprocess.run([sys.executable,'-c',
                 'import importlib.util,os; from pathlib import Path; p=Path(os.environ["EEG_RELEASE_ROOT"])/"audit/preregistered_analysis/run_preregistered_analysis.py"; s=importlib.util.spec_from_file_location("p",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); b,d=m.load_measurements(); assert len(b)==96; print("PASS: release manifest and 14 released measurement/estimator hashes; 96 participants")'],env=env,check=True)
         elif stage=='calibration':run('calibration.py')
+        elif stage=='calibration-numerical':run('calibration_numerical.py')
+        elif stage=='descriptive-resampling':run('descriptive_resampling.py')
         elif stage=='raw-screen':run('raw_screen.py')
         elif stage=='raw-features':run('verify_raw_features.py')
         elif stage=='raw-pipeline':run('raw_pipeline.py','--jobs',str(args.jobs))
         elif stage=='models':run('verify_models.py')
         elif stage=='exploratory':run('exploratory.py')
-        elif stage=='e5':run('e5.py')
-        elif stage=='posthoc':run('run_posthoc.py','--jobs',str(args.jobs))
+        elif stage=='e5':
+            run('e5.py');run('compare_outputs.py','e5')
+        elif stage=='posthoc':
+            run('run_posthoc.py','--jobs',str(args.jobs));run('compare_outputs.py','posthoc')
         elif stage=='signal-controls':
             assert (out/'posthoc/results/RUN_COMPLETE.json').exists(),'Run posthoc first'
             run('run_signal_controls.py','--jobs',str(args.jobs))
         elif stage=='summarize':expected_posthoc();run('summarize_posthoc.py')
-        elif stage=='figures':
-            expected_posthoc();run('posthoc_figures.py')
-            figures=out/'figures';figures.mkdir(exist_ok=True)
-            for script in sorted((ROOT/'reproduce').glob('generate_figure*.py')):
-                run(script.name,'--output',str(figures/script.stem.replace('generate_','')))
-            mapping={'PH1_components_and_dimension':'Figure_S2_Components','PH2_device_quality_and_policy':'Figure_S3_Acquisition','PH3_participant_gains_losses':'Figure_S4_Participants','PH4_coefficient_stability':'Figure_S5_Coefficients','PH5_spectrum_preserving_controls':'Figure_6_Phase_Controls'}
-            for p in (out/'posthoc/figures').glob('*'):
-                shutil.copy2(p,figures/(mapping.get(p.stem,p.stem)+p.suffix))
-        elif stage=='tables':expected_posthoc();run('tables.py');run('latex_tables.py')
+        elif stage=='figures':run('display_assets.py')
+        elif stage=='tables':run('display_assets.py','--tables-only')
     assert verify()==before
-    (out/('COMPLETED_'+args.stage+'.json')).write_text(json.dumps({'stage':args.stage,'source_manifest_sha256':hashlib.sha256((ROOT/'RELEASE_MANIFEST.json').read_bytes()).hexdigest(),'source_manifest_unchanged':True,'dataset':str(data) if data else None,'python':sys.version},indent=2)+'\n',encoding='utf-8')
+    completion={'stage':args.stage,'source_manifest_sha256':hashlib.sha256((ROOT/'RELEASE_MANIFEST.json').read_bytes()).hexdigest(),'source_manifest_unchanged':True,'dataset':str(data) if data else None,'python':sys.version}
+    if args.stage in ('models','all'):
+        completion['model_verification']=json.loads((out/'models/REPLAY_CHECKS.json').read_text())
+    (out/('COMPLETED_'+args.stage+'.json')).write_text(json.dumps(completion,indent=2)+'\n',encoding='utf-8')
 if __name__=='__main__':main()

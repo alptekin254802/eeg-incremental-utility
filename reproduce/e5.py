@@ -73,7 +73,7 @@ def main():
        method='Group 27 predictors by frequency band; standardize and fit three principal components per band within training partitions.',
        n=96,positive=41,outer_fits=50,inner_partitions=250,inner_membership_checks=membership_checks,
        bands=blocks,C_grid=battery.C_GRID,pc_per_band=3,raw_sha256=sha(PUBLIC/'audit/exploratory_eeg_battery/E5_RAW_FEATURES.csv'),
-       estimator_code_sha256=sha(PUBLIC/'audit/exploratory_eeg_battery/exploratory_eeg_battery.py'),specification='Supplementary Section S5.3: post-hoc E5 band grouping',inputs=inputs)
+       estimator_code_sha256=sha(PUBLIC/'audit/exploratory_eeg_battery/exploratory_eeg_battery.py'),specification='Supplementary Section S3: post-hoc spectral-state band grouping',inputs=inputs)
     if not (OUT/'ANALYSIS_SPECIFICATION.json').exists(): write_json(OUT/'ANALYSIS_SPECIFICATION.json',contract)
     else:
         existing=json.loads((OUT/'ANALYSIS_SPECIFICATION.json').read_text(encoding='utf-8'))

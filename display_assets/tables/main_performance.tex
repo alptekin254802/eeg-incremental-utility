@@ -1,0 +1,26 @@
+\begin{table*}[!htbp]
+\centering\small
+\caption{Participant-level prediction with and without EEG.}
+\label{tab:performance}
+\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.14}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrrr@{}}
+\toprule
+Model & Log loss & $\Delta_{\mathrm{LL}}$ & AUROC & Brier\\\midrule
+\multicolumn{5}{l}{\textit{Descriptive non-EEG models}}\\
+Demographics & 0.6461 & --- & 0.6692 & 0.2264\\
+Demographics and task behavior & 0.6256 & --- & 0.7161 & 0.2146\\
+Non-EEG baseline & 0.6244 & --- & 0.7139 & 0.2157\\
+\midrule\multicolumn{5}{l}{\textit{Preregistered primary comparison}}\\
+Primary EEG-augmented procedure & 0.6532 & $-0.0288$ & 0.6662 & 0.2289\\
+\midrule\multicolumn{5}{l}{\textit{Prespecified sensitivity and secondary representations}}\\
+Regional spectral features & 0.6199 & $+0.0045$ & 0.7026 & 0.2167\\
+Expanded spectral features & 0.6366 & $-0.0122$ & 0.6867 & 0.2237\\
+Expanded spectral and covariance features & 0.6398 & $-0.0154$ & 0.6891 & 0.2228\\
+\midrule\multicolumn{5}{l}{\textit{Post-hoc representations}}\\
+Phase-lag connectivity & 0.6117 & $+0.0127$ & 0.7170 & 0.2122\\
+Permutation entropy and Hjorth features & 0.5977 & $+0.0267$ & 0.7291 & 0.2080\\
+Spectral-state features & 0.6337 & $-0.0093$ & 0.6883 & 0.2208\\
+\bottomrule\end{tabularx}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize The non-EEG models successively add task behavior and object gaze to demographics; no differences are displayed for these descriptive rows. All EEG models retain the full non-EEG baseline predictors, including object gaze. Values average ten dependent repeats in the same 96 participants. Lower log loss and Brier score and higher AUROC indicate better performance. $\Delta_{\mathrm{LL}}$ is full non-EEG baseline minus EEG-augmented loss; positive values favor EEG. Differences are calculated before display rounding. The primary procedure selects within the initial library; regional spectral features provide its required fixed-representation sensitivity, and later families are evaluated separately.\end{minipage}
+\end{table*}
+

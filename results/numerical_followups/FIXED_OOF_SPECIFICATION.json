@@ -1,0 +1,16 @@
+{
+  "analysis_status": "post hoc",
+  "label": "conditional descriptive fixed-OOF resampling range",
+  "resamples": 5000,
+  "percentile_method": "linear",
+  "quantiles": [
+    0.025,
+    0.975
+  ],
+  "root_seed": 20260824125,
+  "child_seed": "first four SHA-256 bytes of root|group|fixed_oof|b, little endian",
+  "participant_order": "primary prediction participant_index, repeat 0",
+  "source_sha256": "731cf638a48b3007163b0f73e5c2a9d9b53e0f1ef098f9cd21e9482f8942e983",
+  "inferential_claims": false,
+  "predictive_models_refitted": false
+}

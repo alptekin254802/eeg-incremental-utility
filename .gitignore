@@ -20,6 +20,10 @@ Thumbs.db
 /private_work/
 /makale/
 /manuscript*/
+main.tex
+main.pdf
+supplementary.tex
+supplementary.pdf
 
 # LaTeX build products
 *.aux
