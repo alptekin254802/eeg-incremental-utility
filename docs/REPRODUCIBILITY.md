@@ -19,17 +19,17 @@ Replace the example dataset/output paths with your local paths. Python 3.14.3 an
 | Diagnostic summaries | `summarize --output ../reproduction` | Participant/logit/device-quality summaries and signal checks |
 | Calibration | `calibration --output ../reproduction` | Scalar calibration and four-bin reliability from saved primary outer predictions; failure flags are retained |
 | Figures | `figures --output ../reproduction` | `display_assets/figures/`: main Figures 1–3 and supplementary Figures S1–S3, PDF/SVG, with checks of displayed values |
-| Tables | `tables --output ../reproduction` | `display_assets/tables/`: main Tables 1–3 and supplementary Tables S1–S8; generated numerical tables and supplied descriptive tables |
+| Tables | `tables --output ../reproduction` | `display_assets/tables/`: main Tables 1–3 and supplementary Tables S1–S8; all computed from saved records and method definitions |
 | Saved-input reproduction sequence | `all --dataset ../BALLADEER/dataset --output ../reproduction --jobs 2` | Raw-data checks, models, controls, summaries, figures and tables in dependency order; models use saved features; run calibration and resampling follow-ups separately |
 | Fresh raw-to-model pipeline | `raw-pipeline --dataset ../BALLADEER/dataset --output ../fresh-reproduction --jobs 2` | New screen, features, folds, primary/diagnosis/E3–E5/post-hoc/control fits; input manifests and access records |
 
-Use a new output directory for each full reproduction. E5 stops if that directory already contains a completed E5 run; other stages write only within the chosen output directory. `summarize` can use the supplied reference results and records when it does so. `figures` and `tables` always read the saved results in `audit/`, `expected/posthoc/` and `results/`, then write to `<output>/display_assets/`. They do not use or overwrite results from a new analysis run. Summary, figure and table commands do not fit models.
+Use a new output directory for each full reproduction. E5 stops if that directory already contains a completed E5 run; other stages write only within the chosen output directory. If the output directory has no completed post-hoc run, `summarize` starts from `expected/posthoc/` and writes `STARTED_FROM_EXPECTED_RESULTS.json`; otherwise it summarizes the existing results. `figures` and `tables` always read the saved results in `audit/`, `expected/posthoc/` and `results/`, then write to `<output>/display_assets/`. They do not use or overwrite results from a new analysis run. Summary, figure and table commands do not fit models.
 
 ## How the commands use data
 
 The raw screen reads all 126 complete sessions and checks that it recovers the original 98-person roster. Starting from that roster, the feature command re-extracts the EEG and non-EEG predictors and compares them with the saved features. Model commands then fit from the saved features, whose hashes are checked before use. Thus, `all` checks the features against raw data and refits the models from the saved files. To fit models directly from newly extracted features, use `raw-pipeline`. File-integrity checks and numerical comparisons are reported separately.
 
-The figure and table code is in `display_assets/`; the [result-file guide](RESULT_FILES.md) lists its inputs. The code combines representation results and ranks participants in memory, without copying the input files. It checks input hashes, plotted values, table cells, labels and figure/table numbering against `display_assets/figure_source/ASSET_VALUES.json`. The `figures` and `tables` commands use this builder; the original generation scripts remain as a record of earlier versions.
+The figure and table code is in `display_assets/`; the [result-file guide](RESULT_FILES.md) lists its inputs. The code combines representation results and ranks participants in memory, without copying the input files. It checks input hashes, plotted values, table cells, labels and figure/table numbering against `display_assets/figure_source/ASSET_VALUES.json`. The `figures` and `tables` commands use this builder.
 
 ## Numerical comparisons
 

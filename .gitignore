@@ -25,6 +25,10 @@ main.pdf
 supplementary.tex
 supplementary.pdf
 
+# Generated article displays
+/display_assets/tables/
+/display_assets/figures/
+
 # LaTeX build products
 *.aux
 *.bbl

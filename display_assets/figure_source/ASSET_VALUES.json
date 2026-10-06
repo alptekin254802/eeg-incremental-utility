@@ -1,5 +1,9 @@
 {
   "source_sha256": {
+    "audit/cohort_screen/robots_final_feasibility.csv": "fd7451a3b5d3e990d912efc02bebf68bc21dfbfeb11c929af068c59e77f916d0",
+    "audit/stage1_blind_feature_extraction/BLIND_COHORT_MANIFEST.csv": "7a3d2200444e50d1f2bb4c2401f2b70e1b41b4af8d0ccbb938230681b4e9fdc8",
+    "audit/stage1_blind_feature_extraction/EEG_PREPROCESSING_QC.csv": "b9772d630f622ad90879ee7bae4918da8ca0308bd332f82d64324ce3183dc5a8",
+    "audit/preregistered_analysis/OUTCOME_LINKAGE_MANIFEST.csv": "fd5077b83c7a8679534455635e57447d548042eb4c3fa95427bc3799cf4509bb",
     "audit/preregistered_analysis/PRIMARY_REPEAT_SUMMARY.csv": "1232fde04246fea35a32d8e231a11a3d6dc07b3484e398488d048236a7f15411",
     "audit/preregistered_analysis/PREREGISTERED_RESULTS_MASTER_TABLE.csv": "78b327f7e6f78968b4859b0931938e418c191da9135238e140ac263bedd2fa15",
     "audit/exploratory_eeg_battery/REPEAT_LEVEL_RESULTS.csv": "52b93c7e029b3fb1a3bd4c258bc1b5fd4bf64dc1f963d2f223d700954ce14771",
@@ -4935,9 +4939,153 @@
     "participant_changes": "Supplementary Figure S2",
     "coefficients": "Supplementary Figure S3"
   },
-  "static_table_sha256": {
-    "main_cohort.tex": "2ed42ddeb6837ac8615e3f6938f7f2d1e1d1bc6f17d0fd8b97c6dd002c8ad3dc",
-    "cohort.tex": "6c9479e62ecdcd380d1df4ec27338332498aca6937d918fa87951b0e67c919a8"
+  "descriptive_tables": {
+    "main_cohort": [
+      [
+        "Participants",
+        "41",
+        "55"
+      ],
+      [
+        "Age, mean (SD), years",
+        "11.51 (3.03)",
+        "12.71 (3.88)"
+      ],
+      [
+        "Age range, years",
+        "7--18",
+        "6--18"
+      ],
+      [
+        "Male",
+        "33",
+        "27"
+      ],
+      [
+        "Female",
+        "8",
+        "28"
+      ],
+      [
+        "\\texttt{diagnosed=yes}",
+        "41",
+        "13"
+      ],
+      [
+        "\\texttt{diagnosed=no}",
+        "0",
+        "30"
+      ],
+      [
+        "\\texttt{diagnosed=undetermined}",
+        "0",
+        "12"
+      ],
+      [
+        "Epoc X",
+        "16",
+        "38"
+      ],
+      [
+        "Epoc+",
+        "25",
+        "17"
+      ]
+    ],
+    "cohort": [
+      [
+        "Readable EEG, object-gaze, and game-summary files",
+        126,
+        "\\NA"
+      ],
+      [
+        "Outcome-independent measurement eligibility",
+        98,
+        28
+      ],
+      [
+        "EEG preprocessing: maximum two unusable channels",
+        97,
+        1
+      ],
+      [
+        "EEG preprocessing: minimum clean duration",
+        96,
+        1
+      ],
+      [
+        "Primary study-group cohort",
+        96,
+        0
+      ],
+      [
+        "Diagnosis-status sensitivity cohort",
+        84,
+        12
+      ]
+    ],
+    "identifier_crosswalk": [
+      [
+        "M0",
+        "Demographics",
+        0,
+        2
+      ],
+      [
+        "M1",
+        "Demographics and task behavior",
+        0,
+        5
+      ],
+      [
+        "M2",
+        "Non-EEG baseline: M1 plus object gaze",
+        0,
+        7
+      ],
+      [
+        "adaptive M3",
+        "Primary EEG-augmented procedure; selects E0, E1, or E2",
+        "varies",
+        "varies"
+      ],
+      [
+        "E0",
+        "Regional spectral features, added to M2",
+        12,
+        19
+      ],
+      [
+        "E1",
+        "Expanded spectral features: E0 plus topography, variability, spectral entropy",
+        35,
+        42
+      ],
+      [
+        "E2",
+        "Expanded spectral and covariance features: E1 plus covariance components",
+        47,
+        54
+      ],
+      [
+        "E3",
+        "Phase-lag connectivity, added to M2",
+        9,
+        16
+      ],
+      [
+        "E4",
+        "Permutation entropy and Hjorth features, added to M2",
+        9,
+        16
+      ],
+      [
+        "E5",
+        "Spectral-state features, added to M2",
+        9,
+        16
+      ]
+    ]
   },
   "presentation": {
     "repeat_increments": {

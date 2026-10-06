@@ -1,8 +1,7 @@
 # Updates to the computational companion
 
 The `figures` and `tables` commands now reproduce the figures and tables in the
-current article from the saved results. The code and output files are in
-`display_assets/`; the full article and supplement are maintained separately.
+current article from the saved results. The code is in `display_assets/`, and generated files are written outside the repository; the full article and supplement are maintained separately.
 
 ## What changed
 
@@ -13,9 +12,7 @@ current article from the saved results. The code and output files are in
 - **Descriptive resampling.** `descriptive-resampling` resamples paired participant mean losses while keeping all model fits and out-of-fold predictions fixed. The resulting post-hoc ranges describe variation conditional on those fits; they do not measure uncertainty from repeating the complete fitting procedure or provide significance tests.
 
 The raw measurements, features, folds, predictive estimators, archived predictions
-and original result tables are unchanged. The documentation also clarifies the
-existing gender coding, signal segmentation, aggregation order and feature
-variance conventions.
+and original result tables are unchanged. Supplementary Sections S1–S3 describe the existing gender coding, signal segmentation, aggregation order and feature variance conventions.
 
 ## Citation
 

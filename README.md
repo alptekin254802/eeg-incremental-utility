@@ -19,14 +19,14 @@ python -m pip install -r requirements.txt
 python -B reproduce.py check --output ../reproduction
 ```
 
-The check verifies the distributed files, measurement inputs and 96-participant feature matrix. To regenerate the article's figures and numerical tables from the supplied results:
+The check verifies the distributed files, measurement inputs and 96-participant feature matrix. To regenerate the article's figures and tables from the supplied results:
 
 ```text
 python -B reproduce.py figures --output ../reproduction
 python -B reproduce.py tables --output ../reproduction
 ```
 
-These commands generate main Figures 1–3, supplementary Figures S1–S3 and the numerical tables from the supplied results, without fitting models. Files are written to `<output>/display_assets/`. See the [reproduction guide](docs/REPRODUCIBILITY.md) for individual analyses, expected outputs and comparison tolerances.
+These commands generate main Figures 1–3, supplementary Figures S1–S3 and all eleven tables from the supplied records, without fitting models. Files are written to `<output>/display_assets/`. See the [reproduction guide](docs/REPRODUCIBILITY.md) for individual analyses, expected outputs and comparison tolerances.
 
 ## Reproduce from raw recordings
 
@@ -46,7 +46,7 @@ This route extracts new features and fits the models using those features. Outpu
 | `audit/` | Estimator modules, measurement inputs, primary results and exploratory connectivity/entropy results |
 | `results/e5/` | Post-hoc spectral-state predictors, held-out predictions, tuning records and results |
 | `expected/posthoc/` | Explanatory comparisons and Fourier-phase controls |
-| `display_assets/` | Figures, tables and code to regenerate them from saved results |
+| `display_assets/` | Code to generate figures and tables from saved records |
 | `docs/RESULT_FILES.md` | Guide to the result files and their columns |
 | `results/numerical_followups/` | Calibration checks and resampling results with predictions held fixed |
 | `RELEASE_MANIFEST.json` | SHA-256 checksums for the files in this repository |
@@ -62,7 +62,7 @@ To cite the software across all published versions, use the Zenodo concept DOI [
 ## Validation
 
 ```text
-python -B -m unittest discover -s reproduce -p test_fresh_contract.py -v
+python -B -m unittest discover -s reproduce -p "test_*.py" -v
 ```
 
 These tests check separation of saved reference results from fresh model fitting and rejection of altered inputs or incompatible checkpoints. They do not rerun the complete study.

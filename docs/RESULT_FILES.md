@@ -2,9 +2,13 @@
 
 All paths below are relative to the repository root. Figure and table commands read these result files directly.
 
-`display_assets/tables/identifier_crosswalk.tex` (Supplementary Table S2) maps computational identifiers to method names. The result files keep their original column names and formats.
+The generated `<output>/display_assets/tables/identifier_crosswalk.tex` (Supplementary Table S2) maps computational identifiers to method names. The result files keep their original column names and formats.
 
 The main article presents the cohort/device description in Table 1, the non-EEG and EEG performance comparisons in Table 2, and six matched acquisition-adjustment contrasts in Table 3. Supplementary Tables S3 and S6 give the full performance results and contrasts. The component comparisons are shown in Main Figure 3; calibration, participant-level loss changes, and coefficients are Supplementary Figures S1–S3. Supplementary Table S1 retains the participant flow.
+
+## Cohort records
+
+The cohort tables use `audit/preregistered_analysis/OUTCOME_LINKAGE_MANIFEST.csv`, the participant roster and preprocessing QC in `audit/stage1_blind_feature_extraction/`, and `audit/cohort_screen/robots_final_feasibility.csv`. They summarize the recorded groups, demographics, devices and eligibility decisions without fitting models.
 
 ## Primary and representation results
 
@@ -70,7 +74,7 @@ diagnosis-status field. Surrogate dataset indices run from 0 through 19.
 - `results/e5/REPEAT_RESULTS.csv`: performance estimates and paired differences for each repeat.
 - `results/e5/RESULTS.json`: mean performance, selected regularization values, and computational fit counts.
 
-This representation was evaluated post hoc using band-specific PCA fitted within training data. Repeat indices are zero-based in the files and one-based in figures and tables. Computational identifiers are mapped in `display_assets/tables/identifier_crosswalk.tex` (Supplementary Table S2).
+This representation was evaluated post hoc using band-specific PCA fitted within training data. Repeat indices are zero-based in the files and one-based in figures and tables. Computational identifiers are mapped in the generated `<output>/display_assets/tables/identifier_crosswalk.tex` (Supplementary Table S2).
 
 ## Numerical follow-up
 

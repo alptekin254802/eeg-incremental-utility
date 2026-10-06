@@ -7,7 +7,6 @@ from pathlib import Path
 import hashlib
 import json
 import argparse
-import shutil
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -21,8 +20,8 @@ PLOTS = {}
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--release-root', type=Path, default=SOURCE_ASSETS.parent, help='Repository containing the saved result files.')
 parser.add_argument('--output', type=Path, required=True, help='Display output directory outside the repository.')
-parser.add_argument('--tables-only', action='store_true', help='Regenerate tables and value records while preserving existing PDF/SVG figure assets.')
-parser.add_argument('--figure', choices=['repeat_increments','acquisition_phase_controls','component_increments','calibration','participant_changes','coefficients'], help='Regenerate only the named figure, preserving the other figure files.')
+parser.add_argument('--tables-only', action='store_true', help='Generate all tables and value records without writing figures.')
+parser.add_argument('--figure', choices=['repeat_increments','acquisition_phase_controls','component_increments','calibration','participant_changes','coefficients'], help='Generate all tables and only the named figure.')
 ARGS = parser.parse_args()
 if ARGS.tables_only and ARGS.figure:
     parser.error('--tables-only and --figure cannot be combined')
@@ -34,12 +33,6 @@ TABLES = ROOT / 'tables'
 FIGURES = ROOT / 'figures'
 for directory in [TABLES, FIGURES, ROOT / 'figure_source']:
     directory.mkdir(parents=True, exist_ok=True)
-for name in ['main_cohort.tex', 'cohort.tex', 'identifier_crosswalk.tex']:
-    shutil.copy2(SOURCE_ASSETS / 'tables' / name, TABLES / name)
-if ARGS.tables_only or ARGS.figure:
-    for source in (SOURCE_ASSETS / 'figures').iterdir():
-        if source.suffix in {'.pdf', '.svg'} and not (FIGURES / source.name).exists():
-            shutil.copy2(source, FIGURES / source.name)
 
 
 def read(name):
@@ -62,6 +55,112 @@ def start_table(caption, label, cols, head, wide=False):
 
 def end_table(note='', wide=False):
     return r'\bottomrule\end{tabularx}'+'\n'+(r'\par\smallskip\begin{minipage}{\textwidth}\footnotesize '+note+r'\end{minipage}'+'\n' if note else '')+'\\end{'+('table*' if wide else 'table')+'}\n'
+
+
+# Cohort summaries use the saved eligibility, outcome-linkage and QC records.
+screen = read('audit/cohort_screen/robots_final_feasibility.csv')
+roster = read('audit/stage1_blind_feature_extraction/BLIND_COHORT_MANIFEST.csv')
+qc = read('audit/stage1_blind_feature_extraction/EEG_PREPROCESSING_QC.csv')
+linkage = read('audit/preregistered_analysis/OUTCOME_LINKAGE_MANIFEST.csv')
+assert set(roster.participant_id) == set(qc.participant_id)
+assert set(linkage.participant_id) == set(qc.loc[qc.preprocessing_status == 'PASS', 'participant_id'])
+cohort = linkage.merge(qc[['participant_id', 'device']], on='participant_id', validate='one_to_one')
+assert cohort[['group_y', 'age', 'gender', 'diagnosed_raw', 'device']].notna().all().all()
+assert set(cohort.group_y) == {0, 1} and set(cohort.gender) == {1, 2}
+assert set(cohort.device) == {'Epoc X', 'Epoc+'}
+assert set(cohort.diagnosed_raw) == {'yes', 'no', 'undetermined'}
+cohort_rows = []
+for label, summarize in [
+    ('Participants', lambda d: str(len(d))),
+    ('Age, mean (SD), years', lambda d: f'{d.age.mean():.2f} ({d.age.std(ddof=1):.2f})'),
+    ('Age range, years', lambda d: f'{int(d.age.min())}--{int(d.age.max())}'),
+    ('Male', lambda d: str((d.gender == 1).sum())),
+    ('Female', lambda d: str((d.gender == 2).sum())),
+    (r'\texttt{diagnosed=yes}', lambda d: str((d.diagnosed_raw == 'yes').sum())),
+    (r'\texttt{diagnosed=no}', lambda d: str((d.diagnosed_raw == 'no').sum())),
+    (r'\texttt{diagnosed=undetermined}', lambda d: str((d.diagnosed_raw == 'undetermined').sum())),
+    ('Epoc X', lambda d: str((d.device == 'Epoc X').sum())),
+    ('Epoc+', lambda d: str((d.device == 'Epoc+').sum())),
+]:
+    cohort_rows.append([label] + [summarize(cohort[cohort.group_y == group]) for group in [1, 0]])
+t = start_table('Participant characteristics and recording devices.', 'tab:participants', 'rr',
+                'Characteristic & ADHD study group & Control study group', True)
+t = t.replace(r'\tabcolsep}{4pt}', r'\tabcolsep}{5pt}')
+for row in cohort_rows:
+    if row[0] == 'Epoc X': t += r'\midrule' + '\n'
+    t += ' & '.join(row) + r'\\' + '\n'
+t += end_table(r'SD describes variation within group; the dataset README defines its gender codes as 1 = male and 2 = female. The available records do not explain the control-group entries with \texttt{diagnosed=yes}; neither field was recoded or treated as an independently re-adjudicated diagnosis.', True)
+tex('main_cohort.tex', t)
+
+eligible = screen.loc[screen.scope == 'primary_candidate'].iloc[0]
+readable, screened = int(eligible.denominator), int(eligible.total_participants)
+assert screened == len(roster) == len(qc)
+assert set(qc.preprocessing_status) <= {'PASS', 'FAIL_TOO_MANY_BAD_CHANNELS', 'FAIL_CLEAN_DURATION'}
+bad_channels = int((qc.preprocessing_status == 'FAIL_TOO_MANY_BAD_CHANNELS').sum())
+short_duration = int((qc.preprocessing_status == 'FAIL_CLEAN_DURATION').sum())
+assert screened - bad_channels - short_duration == len(cohort)
+diagnosed_count = int(cohort.diagnosed_raw.isin(['yes', 'no']).sum())
+flow_rows = [
+    ['Readable EEG, object-gaze, and game-summary files', readable, r'\NA'],
+    ['Outcome-independent measurement eligibility', screened, readable - screened],
+    ['EEG preprocessing: maximum two unusable channels', screened - bad_channels, bad_channels],
+    ['EEG preprocessing: minimum clean duration', len(cohort), short_duration],
+    ['Primary study-group cohort', len(cohort), 0],
+    ['Diagnosis-status sensitivity cohort', diagnosed_count, len(cohort) - diagnosed_count],
+]
+t = r'''\begin{table}[!htbp]
+\centering\small
+\caption{Participant flow and the separate diagnosis-status sensitivity subset.}
+\label{tab:cohort}
+\begin{tabular}{p{0.55\textwidth}rr}
+\toprule
+Stage & Retained & Excluded at stage \\
+\midrule
+'''
+for row in flow_rows:
+    if row[0] == 'Diagnosis-status sensitivity cohort': t += r'\midrule' + '\n'
+    t += ' & '.join(map(str, row)) + r' \\' + '\n'
+t += r'''\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{0.93\textwidth}
+\footnotesize The final row restricts the target to exact diagnosis-status yes/no values; it is not an additional EEG-quality exclusion. The descriptor describes clinical ascertainment of the study groups, but the available records leave disagreement with the separate diagnosis field unresolved.
+\end{minipage}
+\end{table}'''
+tex('cohort.tex', t)
+
+# These are method definitions, not estimated results; dimensions are after reduction.
+method_rows = [
+    ['M0', 'Demographics', 0, 2],
+    ['M1', 'Demographics and task behavior', 0, 5],
+    ['M2', 'Non-EEG baseline: M1 plus object gaze', 0, 7],
+    ['adaptive M3', 'Primary EEG-augmented procedure; selects E0, E1, or E2', 'varies', 'varies'],
+]
+for code, description, dimensions in [
+    ('E0', 'Regional spectral features, added to M2', 12),
+    ('E1', 'Expanded spectral features: E0 plus topography, variability, spectral entropy', 35),
+    ('E2', 'Expanded spectral and covariance features: E1 plus covariance components', 47),
+    ('E3', 'Phase-lag connectivity, added to M2', 9),
+    ('E4', 'Permutation entropy and Hjorth features, added to M2', 9),
+    ('E5', 'Spectral-state features, added to M2', 9),
+]:
+    method_rows.append([code, description, dimensions, 7 + dimensions])
+t = r'''\begin{table}[!htbp]
+\centering\small
+\caption{Method names, computational identifiers, and predictor dimensions.}
+\label{tab:crosswalk}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}Xrr@{}}
+\toprule
+Identifier & Method name and composition & EEG & Total\\
+\midrule
+'''
+for row in method_rows:
+    t += ' & '.join(map(str, row)) + r'\\' + '\n'
+t += r'''\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize EEG counts are final dimensions after any training-only reduction. E0--E2 form the preregistered library; E3--E5 are separate post-hoc families. Raw dimensions and transformations are specified below.
+\end{table}'''
+tex('identifier_crosswalk.tex', t)
 
 primary = read('audit/preregistered_analysis/PRIMARY_REPEAT_SUMMARY.csv')
 master = read('audit/preregistered_analysis/PREREGISTERED_RESULTS_MASTER_TABLE.csv')
@@ -220,7 +319,7 @@ for heading,keys in groups:
         t+=label+' & '+' & '.join(value(r[m],'posthoc',key+'/'+m,True) for m in ['delta_ll','delta_auroc','delta_brier'])+' & '+str(int(r.positive_repeats))+(r'\\*' if key != keys[-1] else r'\\')+'\n'
     t+=r'\addlinespace'+'\n'
 t+=r'''\end{longtable}
-\begin{minipage}{\textwidth}\footnotesize Positive differences favor the evaluated model relative to the baseline named in each block. $R_+$ counts favorable log-loss differences among ten dependent repeats. The first block repeats existing results as references for the later comparisons. Device/quality covariates enter both paired models. Direct contrasts against the full entropy and Hjorth model compare separately refitted models. Absolute losses and repeat-level estimates are supplied in the accompanying data.\end{minipage}
+\begin{minipage}{\textwidth}\footnotesize Positive differences favor the evaluated model relative to the baseline named in each block. $R_+$ counts favorable log-loss differences among ten dependent repeats. The first block repeats existing results as references for the later comparisons. Device/quality covariates enter both paired models. Direct contrasts against the full entropy and Hjorth model compare separately refitted models. Absolute losses and repeat-level estimates are in the computational package (Section~S9).\end{minipage}
 \endgroup'''
 tex('all_comparisons.tex',t)
 
@@ -258,10 +357,6 @@ def save(fig,name,records):
     if not ARGS.tables_only and (ARGS.figure is None or ARGS.figure == name):
         fig.savefig(FIGURES/(name+'.pdf'),bbox_inches='tight')
         fig.savefig(FIGURES/(name+'.svg'),bbox_inches='tight')
-    else:
-        for suffix in ['.pdf','.svg']:
-            if not (FIGURES/(name+suffix)).is_file():
-                raise FileNotFoundError(FIGURES/(name+suffix))
     plt.close(fig)
     PLOTS[name]=records
 def clean(ax):
@@ -362,7 +457,7 @@ locations = {
     'component_increments':'Main Figure 3', 'calibration':'Supplementary Figure S1',
     'participant_changes':'Supplementary Figure S2', 'coefficients':'Supplementary Figure S3'
 }
-static_hashes={name:hashlib.sha256((TABLES/name).read_bytes()).hexdigest() for name in ['main_cohort.tex','cohort.tex']}
+descriptive_tables={'main_cohort':cohort_rows,'cohort':flow_rows,'identifier_crosswalk':method_rows}
 presentation={'repeat_increments':{'panel_titles':repeat_panel_titles,'status_explanation':'Main Figure 1 caption'}}
-(ROOT/'figure_source/ASSET_VALUES.json').write_text(json.dumps(dict(source_sha256=SOURCES,table_cells=CELLS,plots=PLOTS,display_locations=locations,static_table_sha256=static_hashes,presentation=presentation),indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-print(json.dumps({'generated_tables':8,'figure_assets_preserved':ARGS.tables_only,'selected_figure':ARGS.figure,'figures':6,'source_files':len(SOURCES),'numeric_table_cells':len(CELLS)}))
+(ROOT/'figure_source/ASSET_VALUES.json').write_text(json.dumps(dict(source_sha256=SOURCES,table_cells=CELLS,plots=PLOTS,display_locations=locations,descriptive_tables=descriptive_tables,presentation=presentation),indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+print(json.dumps({'generated_tables':11,'selected_figure':ARGS.figure,'generated_figures':0 if ARGS.tables_only else (1 if ARGS.figure else 6),'source_files':len(SOURCES),'numeric_table_cells':len(CELLS)}))
