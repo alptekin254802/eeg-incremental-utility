@@ -1,4 +1,4 @@
-# Updates to the computational companion
+# Version 1.1.0
 
 The `figures` and `tables` commands now reproduce the figures and tables in the
 current article from the saved results. The code is in `display_assets/`, and generated files are written outside the repository; the full article and supplement are maintained separately.

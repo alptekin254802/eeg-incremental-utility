@@ -55,6 +55,8 @@ The full article and supplement are not distributed in this code repository. The
 
 ## Registration and citation
 
+Current release: [v1.1.0](https://github.com/alptekin254802/eeg-incremental-utility/releases/tag/v1.1.0).
+
 The primary analysis was registered at [OSF 9jp2h](https://osf.io/9jp2h/). The additional EEG representations and explanatory analyses are post hoc.
 
 To cite the software across all published versions, use the Zenodo concept DOI [10.5281/zenodo.23146468](https://doi.org/10.5281/zenodo.23146468). For citation metadata, see [CITATION.cff](CITATION.cff) or [CITATION.md](CITATION.md). Please also cite the [BALLADEER dataset](https://doi.org/10.6084/m9.figshare.28676042) when using its data. Analysis code is available under the [MIT License](LICENSE); [DATA_LICENSE.md](DATA_LICENSE.md) describes the source-data licence and attribution.
