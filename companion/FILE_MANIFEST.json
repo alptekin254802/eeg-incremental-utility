@@ -49,7 +49,7 @@
   "article_assets/tables/simulation_extension.tex": "a82fdeb93394959b5c2954e22b812b94d80c125a91dbc461fe4f635501972229",
   "article_assets/tables/supp_transfer.tex": "db2479cd4dfa9e69abb819e5d1c94da9fe4fee16c1c845993ecf3adc351d2df0",
   "article_assets/tables/transfer_probability.tex": "243be3085a94f00db1511e5613d9c194710ef9b3fa0f758fd00e75de62344f75",
-  "CITATION.cff": "3910bbf2ffcbb03de63f3e06768fa7d7e959b9e17758d7b621ab6d4a39156975",
+  "CITATION.cff": "6805faed1d51cd7c401139c6fb4b205fa76db5a3e88d3577cc71fa15322f1505",
   "docs/ANALYSIS_STATUS.md": "b3297978d345a679b7b7f65415f6ad6dc014b520c355c990ca3d6c19b9275bb5",
   "docs/CLEAN_DURATION_PLAN.txt": "aaa0bc3826c96dc0e761143b56f8b6ccc88f5a48f6c0c0375e61d24a0508a114",
   "docs/COMMANDS.md": "ef3ae2d740ed8305f10724d697ac828b996df1d339f0acfec4fc4649b7cab97d",
@@ -6780,8 +6780,9 @@
   "reproduce.py": "3d3f65f2ca6e5458b03f5d49d3623321017e8f6155d589474706acd4a02e7c02",
   "requirements.txt": "d0d6104b4db668a972ab6daf4c8c63d0f35d8c6979b014054f9cd8f705bfa0b6",
   "tests/test_portable_pipeline.py": "7018eb0b7d746b84a04bd66f01cae9588c1efc37e4c79416f7aba3baf90ab6f8",
+  "tests/test_release_metadata.py": "0cccad2e852edb3c5e176d6d5d61b3463472cc65d8ec877d6e71a8bcce8621a0",
   "tools/build_reporting_assets.py": "777bba54018c77a6c116c45936b2bb9f1224a844a7209ab11350cee95c6472ec",
   "tools/clean_duration_summary.py": "ec1f6a4f94ed57fe901c5e1f8222352b91c094776a49f5c35e4e10f631de2ad9",
   "tools/portable_pipeline.py": "330712ac7f4003c46395892a38ec241008572d4b9d897e7df73b19e011eb74a0",
-  "VERSION.json": "6a08b012f4952eebffddcea73a2dd8d6d0594753a0c7848629147c20aabe8d9a"
+  "VERSION.json": "7422813421b4e6031f6f2f027ee3d5fca15547bfdcb7260ad24ff1aa1fa47db4"
 }

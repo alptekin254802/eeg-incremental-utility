@@ -3,7 +3,7 @@
 For the current computational companion and exploratory extensions, cite:
 
 Cinbat, A., Şentürk, Ü., & Yücedağ, İ. *EEG incremental predictive utility:
-computational companion and exploratory extensions* (Version 1.2.0)
+computational companion and exploratory extensions* (Version 1.2.1)
 [Software]. https://github.com/alptekin254802/eeg-incremental-utility
 
 Include the commit used when citing a checkout. Machine-readable metadata is in

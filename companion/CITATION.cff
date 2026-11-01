@@ -3,7 +3,7 @@ message: "Please cite this software version and the source datasets when using t
 type: software
 repository-code: "https://github.com/alptekin254802/eeg-incremental-utility"
 title: "EEG incremental predictive utility: computational companion and exploratory extensions"
-version: "1.2.0"
+version: "1.2.1"
 authors:
   - family-names: Cinbat
     given-names: Alptekin
@@ -14,6 +14,10 @@ authors:
   - family-names: Yücedağ
     given-names: İbrahim
     orcid: "https://orcid.org/0000-0003-2975-7392"
-license:
-  - MIT
-  - CC-BY-4.0
+license: "MIT"
+abstract: >-
+  Computational companion for the matched evaluation of EEG representations beyond
+  behavioral and object-gaze predictors, including the original analysis and later
+  exploratory comparisons. Original software and tests are MIT licensed. Original
+  documentation, figures, tables, and derived content are CC BY 4.0; third-party
+  material retains its own terms. License notices specify the file-level scope.
