@@ -1,0 +1,49 @@
+[
+  {
+    "module": "screening",
+    "common_assignments": 10,
+    "changed": {
+      "OUT": {
+        "historical": "ROOT / 'audit' / 'stage0_5_robots_quality'",
+        "public": "ROOT / 'audit' / 'cohort_screen'"
+      }
+    },
+    "removed": [],
+    "added": []
+  },
+  {
+    "module": "stage1",
+    "common_assignments": 21,
+    "changed": {},
+    "removed": [],
+    "added": []
+  },
+  {
+    "module": "stage1_5",
+    "common_assignments": 16,
+    "changed": {},
+    "removed": [
+      "STAGE1_FREEZE"
+    ],
+    "added": []
+  },
+  {
+    "module": "primary",
+    "common_assignments": 19,
+    "changed": {},
+    "removed": [
+      "SPEC_PATH",
+      "STAGE1_FREEZE_PATH"
+    ],
+    "added": []
+  },
+  {
+    "module": "exploratory",
+    "common_assignments": 20,
+    "changed": {},
+    "removed": [
+      "PLAN"
+    ],
+    "added": []
+  }
+]

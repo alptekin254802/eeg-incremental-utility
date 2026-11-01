@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://api.osf.io/v2/nodes/ewkgv/",
+    "status": 200,
+    "content_type": "application/vnd.api+json; charset=utf-8",
+    "saved": "node_metadata.json"
+  },
+  {
+    "url": "https://api.osf.io/v2/nodes/ewkgv/files/osfstorage/",
+    "status": 200,
+    "content_type": "application/vnd.api+json; charset=utf-8",
+    "saved": "files_metadata.json"
+  }
+]

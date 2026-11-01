@@ -1,0 +1,29 @@
+{
+  "scope": "Three original local path labels normalized for public distribution; original record hashes retained. No scientific values, plan hashes, timestamps, code or inputs changed.",
+  "changes": [
+    {
+      "file": "extensions/utility/audit/INPUT_MANIFEST.json",
+      "field": "release_root",
+      "original_sha256": "5e5bf639476ee2697314af3c10f16c01dfa8c8f06c928d9d38c3343543fad33f",
+      "distributed_sha256": "951fe339a492d659159efe29995c4ac72ac89c3233f6c5b5f5a365cbfad1e085",
+      "replacement": "../../reference_release",
+      "interpretation": "Distribution-only path label relative to its addendum root; other fields preserved. This file is a documented derivative, not an unchanged original execution record."
+    },
+    {
+      "file": "extensions/device_transfer/analysis/results/INPUT_MANIFEST.json",
+      "field": "repository",
+      "original_sha256": "7d573a09ca5b2e8cbad512fce07fa745e57e00a239d2239788cd7d9b3a1e2a0b",
+      "distributed_sha256": "d48bc9907575f30b18b6212a66838d0649de85d1e0ac3e5d161c1092b246f66b",
+      "replacement": "../../reference_release",
+      "interpretation": "Distribution-only path label relative to its addendum root; other fields preserved. This file is a documented derivative, not an unchanged original execution record."
+    },
+    {
+      "file": "extensions/device_transfer/audit/PLAN_LOCK.json",
+      "field": "plan",
+      "original_sha256": "12959d3387a1bd9d9462e1a0985db7e5dce405237b162803b579b8a2ef6cf17a",
+      "distributed_sha256": "38695354a42bec410610b2080be47c136924bfea392835f6b9fc1bc3a4f7ebf8",
+      "replacement": "ANALYSIS_PLAN.txt",
+      "interpretation": "Distribution-only path label relative to its addendum root; other fields preserved. This file is a documented derivative, not an unchanged original execution record."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "encoders": 300,
+  "epochs_per_encoder": 50,
+  "paired_predictions": 960,
+  "inner_candidates": 500,
+  "maximum_inner_score_error": 4.440892098500626e-16,
+  "maximum_head_probability_error": 2.220446049250313e-16,
+  "maximum_frozen_baseline_prediction_error": 1.9626966718533367e-11,
+  "fold_membership_checked": true,
+  "scope": "Saved-result arithmetic, all 2600 logistic-head predictions, and membership verification; encoder replay is separately recorded"
+}

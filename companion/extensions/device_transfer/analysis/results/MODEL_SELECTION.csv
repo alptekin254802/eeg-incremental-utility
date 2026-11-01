@@ -1,0 +1,13 @@
+direction,model,C,inner_logloss,source_n,target_n,selected_representation
+X_to_Plus,baseline,0.10000000000000001,0.55017289957904325,54,42,baseline
+X_to_Plus,regional_spectral,0.10000000000000001,0.54046952879966048,54,42,regional_spectral
+X_to_Plus,expanded_spectral,0.01,0.56135795027952406,54,42,expanded_spectral
+X_to_Plus,covariance,0.01,0.55944565420823167,54,42,covariance
+X_to_Plus,entropy_hjorth,0.10000000000000001,0.52812407498953839,54,42,entropy_hjorth
+X_to_Plus,spectral_covariance_selector,0.10000000000000001,0.54046952879966048,54,42,regional_spectral
+Plus_to_X,baseline,0.10000000000000001,0.64359347342640361,42,54,baseline
+Plus_to_X,regional_spectral,0.01,0.68163680772722135,42,54,regional_spectral
+Plus_to_X,expanded_spectral,0.01,0.68951600358157972,42,54,expanded_spectral
+Plus_to_X,covariance,0.01,0.69475667196369295,42,54,covariance
+Plus_to_X,entropy_hjorth,0.10000000000000001,0.66489193565035265,42,54,entropy_hjorth
+Plus_to_X,spectral_covariance_selector,0.01,0.68163680772722135,42,54,regional_spectral

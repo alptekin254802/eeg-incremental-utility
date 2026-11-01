@@ -1,0 +1,65 @@
+Post-hoc saved-prediction diagnostics and selected bootstrap replay
+Plan date: 1 November 2026
+
+Status and prior knowledge
+This is a post-hoc, non-blind descriptive follow-up. The original predictive
+results, device-transfer class contrasts, and the following transfer mean
+probabilities are already known before this plan: entropy/Hjorth Plus-to-X
+baseline 0.6038, augmented 0.5508, observed ADHD-group fraction 0.2963; X-to-Plus
+baseline 0.3638, augmented 0.4055, observed fraction 0.5952. These diagnostics
+cannot retrospectively constitute independent tests of a mechanism.
+
+Protected inputs and output boundary
+Read the original computational release, device-transfer addendum and
+exploratory-extension addendum from explicit command-line paths. Do not modify
+those sources, refit a predictive model, alter participants, re-extract raw
+measurements, select a learner, recalibrate predictions, or change thresholds
+after inspecting the new summaries. Write into a new directory outside all
+input roots. Preserve hashes and use source-relative input names in outputs.
+
+Fixed pediatric comparisons
+Use the saved M2 versus E4, M2_D versus E4_D, and M2_DQ versus E4_DQ predictions,
+all 96 participants in each of the ten original repeats. Report observed class
+fraction, mean probability, minimum/maximum and 1/5/10/25/50/75/90/95/99 percentiles,
+mean log loss, Brier score and AUROC. Score within repeats before averaging
+metrics. Also provide descriptive pooled participant-repeat probability
+quantiles and tail occurrence counts; 960 rows are not 960 independent people.
+
+Fixed tail definition
+A high-confidence incorrect probability is p < 0.1 when y = 1 or p > 0.9 when
+y = 0, with strict inequalities. This is a descriptive probability-tail rule,
+not a diagnostic decision threshold. Count both classes separately for each
+model. For each paired comparison, partition rows into baseline-only tail,
+augmented-only tail, both tails and neither tail. Report each partition's
+contribution to the overall paired log-loss difference, defined as its summed
+paired loss difference divided by the full assessment denominator. Components
+must add exactly to the overall difference. Also report the union-tail total.
+
+Device transfer
+For the spectral/covariance selector and entropy/Hjorth model in both source-
+target directions, report source/target composition, mean baseline/augmented
+probabilities, paired overall/class/equal-class loss changes and descriptive
+tail summaries. No target-label recalibration or causal device interpretation.
+
+Selected bootstrap replay
+Independently reconstruct the original sampling indices, preserving exact
+seeds, participant order, sequential direction order and shared stratified
+sampling scheme. Compare only draws 0,1,17,999,4999 for transfer and
+0,1,17,999,9999 for adult comparisons against saved draws. Generate the original
+index matrix as needed to preserve the random-number sequence, but calculate
+metrics only for these selected draws. Verify log-loss, Brier, AUROC and, for
+transfer, equal-class log-loss increments with an independently implemented
+rank-pair AUROC. No full bootstrap metric replay or fixed-OOF endpoint replay
+is part of this follow-up.
+
+Validation and reporting
+Verify exact paired identities, cohort/count/label consistency, finite inputs,
+probability bounds and source hashes. Recompute the pediatric comparison rows
+against the original saved repeat metrics. Save all planned outputs regardless
+of direction. Run the portable command into fresh output directories and
+compare deterministic CSV/JSON outputs. Do not reopen earlier scalar
+calibration fitting; probability-location and tail summaries suffice here.
+Provide a concise suggested LaTeX section/table, keeping repeat dependence,
+fixed predictions and EEG-derived quality covariates explicit. No clinical
+fairness claim, calibrated-model claim, significance test or new physiological
+mechanism is inferred.

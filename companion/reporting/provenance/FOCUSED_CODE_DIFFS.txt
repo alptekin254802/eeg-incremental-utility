@@ -1,0 +1,84 @@
+Focused textual diffs for retained functions with changed ASTs.
+Removed orchestration/report generators are listed in AST_COMPARISON.json.
+Historical files are not replaced by these excerpts.
+
+--- historical/stage1/reconstruct_cohort
++++ public/stage1/reconstruct_cohort
+@@ -1,5 +1,5 @@
+ def reconstruct_cohort(root: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+-    audit_dir = root / "audit" / "stage0_5_robots_quality"
++    audit_dir = root / "audit" / "cohort_screen"
+     eeg = read_audit(audit_dir / "robots_eeg_quality.csv", SAFE_EEG_AUDIT_COLS)
+     eye = read_audit(audit_dir / "robots_eye_quality.csv", SAFE_EYE_AUDIT_COLS)
+     behavior = read_audit(audit_dir / "robots_behavior_quality.csv", SAFE_BEHAVIOR_AUDIT_COLS)
+@@ -53,10 +53,10 @@
+         and bool(behavior_ok.iloc[behavior.index[behavior["participant_id"].eq(key[0]) & behavior["session_id"].eq(key[1])][0]])
+     ]
+     if len(selected_keys) != 98:
+-        raise RuntimeError(f"Frozen Stage-0.5 cohort reconstruction returned {len(selected_keys)}, expected 98")
++        raise RuntimeError(f"Frozen Measurement screening cohort reconstruction returned {len(selected_keys)}, expected 98")
+     participants = [key[0] for key in selected_keys]
+     if len(set(participants)) != len(participants):
+-        raise RuntimeError("Selected Stage-0.5 cohort contains duplicate participant sessions")
++        raise RuntimeError("Selected Measurement screening cohort contains duplicate participant sessions")
+ 
+     # Verify raw source existence and record only measurement metadata.
+     rows: list[dict[str, Any]] = []
+@@ -74,15 +74,15 @@
+             "behavior_source_file": brow["source_file"],
+         })
+     summary = {
+-        "stage0_5_selected_n": len(rows),
++        "measurement_selected_n": len(rows),
+         "unique_participants": len(set(participants)),
+         "duplicate_participant_session_records": len(selected_keys) - len(set(selected_keys)),
+         "all_required_source_files_exist": True,
+-        "stage0_5_eeg_duration_rule_seconds": 240.0,
+-        "stage0_5_eeg_nonfinite_rule": 0.05,
+-        "stage0_5_eeg_timestamp_gap_rule_seconds": 2.0,
+-        "stage0_5_eye_duration_rule_seconds": 240.0,
+-        "stage0_5_eye_valid_coverage_rule": 0.80,
+-        "stage0_5_eye_longest_gap_rule_applied": False,
++        "measurement_eeg_duration_rule_seconds": 240.0,
++        "measurement_eeg_nonfinite_rule": 0.05,
++        "measurement_eeg_timestamp_gap_rule_seconds": 2.0,
++        "measurement_eye_duration_rule_seconds": 240.0,
++        "measurement_eye_valid_coverage_rule": 0.80,
++        "measurement_eye_longest_gap_rule_applied": False,
+     }
+     return rows, summary
+
+--- historical/primary/expected_artifact_hashes
++++ public/primary/expected_artifact_hashes
+@@ -2,8 +2,7 @@
+     return {
+         PRIMARY_MATRIX_PATH: "6a7d363574e1274fff1850e6a925fe375a9f64316759befbaa6c26e946f40dc9",
+         STAGE1_QC_PATH: "b9772d630f622ad90879ee7bae4918da8ca0308bd332f82d64324ce3183dc5a8",
+-        STAGE1_FREEZE_PATH: "943ac865de0d54dd69c937d16d99857ceb04d27327135be6ab7655e27ad779c9",
+-        STAGE1_CODE_PATH: "85280df2ed87000c501a8a62467b5756569a4535086991ccdbc6138af4d0a47a",
++        STAGE1_CODE_PATH: "3bcb4f06216a68ab80fafa14363a6abf2ea1c627b96c08df387dc8c711740ae7",
+         E1_TOPO_PATH: "59ab48ea4cbb78ff1dd7af45c5cc1a9ff2aaa797a1607a15ede055549ce1383c",
+         E1_TEMP_PATH: "cf2dc4d00ade9faa9b536ce847190a4e2b89931694e31cbd7d46124fb2c648b9",
+         E1_ENTROPY_PATH: "66405052f0fe6329dbd72b98819c8fc8a9f3400e7303bf420b01a270e3431286",
+@@ -11,10 +10,8 @@
+         ROOT / "audit" / "stage1_5_enriched_eeg_feasibility" / "E2_COVARIANCE_QC.csv": "bb2b8aa23a6742f13c2f80e6148f548a56f7ab3905cca821ac6d011a9933af04",
+         ROOT / "audit" / "stage1_5_enriched_eeg_feasibility" / "EEG_REPRESENTATION_RANK_QC.csv": "5365b166c8dcef879c1d41ad1202f93bfc2a0d358cc83cea8e534c0c2756bd84",
+         ROOT / "audit" / "stage1_5_enriched_eeg_feasibility" / "STAGE1_5_REPRODUCIBILITY.json": "6628990d628c81757c10ecbc77125c790fe0fc216d51d0e592d3fd524b4ac3fe",
+-        ROOT / "audit" / "stage1_5_enriched_eeg_feasibility" / "STAGE1_5_SOFTWARE_PROVENANCE.json": "b4abbae2bdd4537276cabfe1e8fef78753b655684e2c98f0f63d0f04038ee76b",
+-        ROOT / "audit" / "stage1_5_enriched_eeg_feasibility" / "STAGE1_5_IMPLEMENTATION_SPEC.md": "36cb79705c69832034784ea404b1d6aad56cce0541556e6d5ddfa9e08c236eb6",
+-        ROOT / "audit" / "stage1_5_enriched_eeg_feasibility" / "STAGE1_5_ENRICHED_EEG_FEASIBILITY_REPORT.md": "104332b6d8b42b34975a57e5de420ee31cceedc43be9f9e495c0c06646bc1216",
++        ROOT / "audit" / "stage1_5_enriched_eeg_feasibility" / "STAGE1_5_SOFTWARE_PROVENANCE.json": "cf89cce29b9cac0b7be175c6aaaf624f940292ea4d97672ffbbf3e84c5b815e6",
+         E2_NPZ_PATH: "48fedf64428886af195402da756ae6a39cfe53e10215de7b1205c424806feb0e",
+         E2_INDEX_PATH: "7affd62a7ecce1a01f446b863f36a49e0687f19eea037b2ac8368a7042002b43",
+-        STAGE1_5_CODE_PATH: "1f3b91aff2fa8eed2a679d543a6aee44d6562d9f0745df27c87934a137b80fca",
++        STAGE1_5_CODE_PATH: "d645ea4739f8054db12a556334f063236e27c77bb462c22dec515f6ff504a15b",
+     }
+
+--- historical/primary/write_folds
++++ public/primary/write_folds
+@@ -41,5 +41,4 @@
+         "primary_roster_sha256": sha256(PRIMARY_MATRIX_PATH),
+         "measurement_hashes": hashes,
+         "software": {"python": platform.python_version(), "numpy": np.__version__, "pandas": pd.__version__, "scipy": scipy.__version__, "sklearn": __import__("sklearn").__version__},
+-        "fixed_oof_resampling": "NOT RUN: explicitly excluded by archived OSF instruction",
+     })

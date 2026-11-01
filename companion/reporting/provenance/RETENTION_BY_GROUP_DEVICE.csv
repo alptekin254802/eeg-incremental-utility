@@ -1,0 +1,9 @@
+retained,group,device_model,n
+False,Control,Epoc X,8
+False,Control,Epoc+,12
+False,Experimental,Epoc X,5
+False,Experimental,Epoc+,5
+True,Control,Epoc X,38
+True,Control,Epoc+,17
+True,Experimental,Epoc X,16
+True,Experimental,Epoc+,25

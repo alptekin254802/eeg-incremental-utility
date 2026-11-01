@@ -1,0 +1,30 @@
+{
+  "analysis_kind": "non-blind retrospective descriptive provenance follow-up",
+  "readable_sessions": 126,
+  "readable_unique_participants": 126,
+  "measurement_retained": 98,
+  "measurement_excluded": 28,
+  "preprocessing_retained": 96,
+  "preprocessing_excluded": 2,
+  "measurement_roster_exact": true,
+  "final_roster_exact": true,
+  "retained_metadata_matches_public_linkage": true,
+  "complete_metadata_for_readable_cohort": [
+    "group",
+    "diagnosed",
+    "age",
+    "sex",
+    "device_model"
+  ],
+  "quality_table_rows": {
+    "candidate_manifest": 126,
+    "eeg_quality": 132,
+    "eye_quality": 145,
+    "behavior_quality": 150
+  },
+  "raw_signals_opened": false,
+  "models_refitted": false,
+  "raw_dataset_immutable_version_verified": false,
+  "historical_code_digests_match_all_five": true,
+  "limitation": "Available audit records and code hashes do not independently authenticate raw-data release version, clinical label validity or historical execution."
+}

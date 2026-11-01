@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "analysis_status": "post hoc; non-blind; fixed saved predictions",
+  "predictive_model_fits": 0,
+  "calibration_model_fits": 0,
+  "raw_measurement_extractions": 0,
+  "pediatric_pairs": 3,
+  "pediatric_pair_repeat_rows": 30,
+  "pediatric_model_repeat_rows": 60,
+  "pediatric_max_metric_abs_error": 3.469446951953614e-16,
+  "transfer_selected_draws": [
+    0,
+    1,
+    17,
+    999,
+    4999
+  ],
+  "transfer_comparison_draw_rows": 20,
+  "transfer_max_abs_error": 1.9081958235744878e-16,
+  "adult_selected_draws": [
+    0,
+    1,
+    17,
+    999,
+    9999
+  ],
+  "adult_comparison_draw_rows": 30,
+  "adult_max_abs_error": 1.454999315475547e-16,
+  "full_bootstrap_metric_replay": false,
+  "fixed_oof_endpoint_replay": false,
+  "tail_thresholds": {
+    "positive_class_incorrect_p_lt": 0.1,
+    "negative_class_incorrect_p_gt": 0.9
+  },
+  "note": "Index matrices reconstructed for exact random streams; metrics compared only for selected draws. Saved draw files store metrics, not sampling indices.",
+  "input_hashes_unchanged": true
+}

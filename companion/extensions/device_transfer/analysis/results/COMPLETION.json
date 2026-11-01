@@ -1,0 +1,20 @@
+{
+  "plan_sha256": "70e2c12540aa174fa34e351030ac2aa71a812aaa0af200d771161a9449594001",
+  "analysis_code_sha256": "9231a6f4d670bbfee871298b7445833d6101c3d0f177c4bce511ca7ba483b4fa",
+  "software": {
+    "python": "3.14.3",
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.8.0"
+  },
+  "inner_fits": 250,
+  "final_fits": 10,
+  "convergence_retries": 0,
+  "source_files_unchanged": 145,
+  "source_target_disjoint": true,
+  "training_transforms_invariant_to_assessment_perturbation": true,
+  "conditional_bootstrap_draws_per_contrast": 5000,
+  "status": "exploratory; no target adaptation; conditional ranges omit source-training uncertainty",
+  "all_principal_contrasts_preserved": 4
+}

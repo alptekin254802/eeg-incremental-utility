@@ -1,0 +1,15 @@
+{
+  "comparison": "Saved raw feature columns versus saved band-ordered features; no model fit",
+  "n": 96,
+  "p": 27,
+  "participant_order_equal": true,
+  "feature_set_equal": true,
+  "maximum_absolute_feature_difference_after_reordering": 7.105427357601002e-15,
+  "current_band_membership_matches_saved_specification": true,
+  "current_manuscript_specifies_band_specific_PCA": true,
+  "saved_logloss": 0.6336906127934594,
+  "saved_delta_logloss": -0.009311308604440117,
+  "rounded_saved_values_match_manuscript_table": true,
+  "classification": "Previously incorporated scientific correction to E5 PCA input grouping; not a newly found current defect",
+  "limit": "No E5 refit or independent recreation of predictions was performed."
+}

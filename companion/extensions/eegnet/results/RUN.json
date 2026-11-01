@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-11-01T17:05:36.347283+00:00",
+  "plan_lock_sha256": "9ea857f1c7dd9b45dbc780038d431c1898204562a90cb26284a17b25c281b37a",
+  "window_manifest_sha256": "7920a06408ec1b1891f9e53abfab206a6ef29445a325918752ed279a12be2a40",
+  "python": "3.12.14",
+  "numpy": "1.26.4",
+  "torch": "2.5.1+cu118",
+  "sklearn": "1.8.0",
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce GTX 1060 6GB",
+  "scope": "50 outer partitions",
+  "selected_fold": null
+}

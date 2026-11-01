@@ -1,0 +1,27 @@
+{
+  "deterministic": true,
+  "eligibility_identical": true,
+  "features_identical_within_atol_1e-10": true,
+  "maximum_absolute_difference_by_feature": {
+    "age": 0.0,
+    "frontal_log_broadband": 0.0,
+    "frontal_rel_alpha": 0.0,
+    "frontal_rel_beta": 0.0,
+    "frontal_rel_theta": 0.0,
+    "gaze_location_entropy": 0.0,
+    "gaze_spatial_dispersion": 0.0,
+    "gender": 0.0,
+    "mean_work_speed": 0.0,
+    "posterior_log_broadband": 0.0,
+    "posterior_rel_alpha": 0.0,
+    "posterior_rel_beta": 0.0,
+    "posterior_rel_theta": 0.0,
+    "temporal_log_broadband": 0.0,
+    "temporal_rel_alpha": 0.0,
+    "temporal_rel_beta": 0.0,
+    "temporal_rel_theta": 0.0,
+    "total_commissions": 0.0,
+    "total_omissions": 0.0
+  },
+  "parser_and_window_input_decisions_identical": true
+}

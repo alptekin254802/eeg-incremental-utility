@@ -1,0 +1,146 @@
+[
+  {
+    "baseline": "task_eye",
+    "model": "baseline",
+    "partition": 0,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "baseline",
+    "partition": 1,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "baseline",
+    "partition": 2,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "baseline",
+    "partition": 3,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "baseline",
+    "partition": 4,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "baseline",
+    "partition": "final",
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "eeg_augmented",
+    "partition": 0,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "eeg_augmented",
+    "partition": 1,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "eeg_augmented",
+    "partition": 2,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "eeg_augmented",
+    "partition": 3,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "eeg_augmented",
+    "partition": 4,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "task_eye",
+    "model": "eeg_augmented",
+    "partition": "final",
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "baseline",
+    "partition": 0,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "baseline",
+    "partition": 1,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "baseline",
+    "partition": 2,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "baseline",
+    "partition": 3,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "baseline",
+    "partition": 4,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "baseline",
+    "partition": "final",
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "eeg_augmented",
+    "partition": 0,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "eeg_augmented",
+    "partition": 1,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "eeg_augmented",
+    "partition": 2,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "eeg_augmented",
+    "partition": 3,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "eeg_augmented",
+    "partition": 4,
+    "dropped_columns": []
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "eeg_augmented",
+    "partition": "final",
+    "dropped_columns": []
+  }
+]

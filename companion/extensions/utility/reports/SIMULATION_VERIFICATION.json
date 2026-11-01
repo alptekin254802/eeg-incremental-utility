@@ -1,0 +1,6 @@
+{
+  "jobs": 240,
+  "independent_replicates_per_scenario": 20,
+  "fit_calls": 27360,
+  "saved_probability_metrics_independently_verified": true
+}

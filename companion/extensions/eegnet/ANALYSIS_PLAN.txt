@@ -1,0 +1,102 @@
+EEGNet-like learned-representation comparison
+Status: exploratory follow-up, specified after all earlier manuscript results were known,
+before generating any EEGNet clinical fits or predictions. Not part of the original
+OSF preregistration. Date: 2026-11-01.
+
+Question and estimand
+Does a compact supervised representation learned from EEG windows improve participant-
+level group-label prediction beyond the same seven behavioral/object-gaze/demographic
+predictors? This is one fixed representation pipeline, not a search for a new best
+classifier, an EEG information bound, or a state-of-the-art claim.
+
+Sample and signal inputs
+Use exactly the frozen 96 primary participants (41 source GROUP ADHD, 55 controls),
+the original labels, and the original 10 x 5 outer and five inner participant folds.
+No new exclusions. Reconstruct the frozen accepted 2-s, 14-channel, 128-Hz windows
+using the original preprocessing. Check original QC counts and 12 spectral features
+to tolerance 1e-8 before training. Failure stops the affected extraction, rather than
+substituting windows or participants. All windows from a participant remain together.
+Original raw files, code, models, and result directories remain unchanged.
+
+One architecture and training rule
+Independently implemented EEGNet-8,2-style encoder: 8 temporal filters, kernel 64;
+depth multiplier 2 across 14 channels; 16 separable filters with temporal kernel 16;
+batch normalization, ELU, average pooling by 4 then 8, ordinary dropout 0.5.
+Same temporal padding; no convolution biases. The resulting 128-dimensional window
+embedding is averaged within participant. A single-logit training head predicts GROUP.
+Spatial filter norms are capped at 1 and training-head weight norm at 0.25.
+The single-logit head and participant-bag training are explicit adaptations of EEGNet.
+Channel centering/scaling is learned from training participants only, giving each
+participant equal weight in the channel first and second moments (SD floor 1e-6).
+Every epoch presents every training participant once in shuffled order. Each contributes
+eight uniformly sampled accepted windows without replacement, or with replacement only
+if fewer than eight exist. Batch size is eight participants. Average embeddings within
+each bag before binary cross entropy, so each participant has equal loss weight.
+Adam, learning rate 0.001, betas (0.9,0.999), epsilon 1e-8, weight decay 1e-4;
+50 epochs, no early stopping, augmentation, class weighting, schedule, or architecture
+search. Use final-epoch weights. No performance-dependent extension of this budget.
+Training uses float32; final participant embedding is the mean over every accepted
+window in evaluation mode. Batch-normalization state is never updated on held-out data.
+Seed = 20261101 + 10000*repeat + 100*outer_fold + (inner_fold+1), with final outer
+encoder offset 0. Seed both NumPy and PyTorch. Use deterministic algorithms. Execution
+device/thread count may be selected by synthetic-only runtime checks and is recorded;
+no clinical outcome is used to make that choice. One initialization per partition.
+
+Nested evaluation and comparison
+Train the encoder from scratch separately in each of the 250 inner-training partitions
+and each of the 50 final outer-training partitions: 300 encoders total. For each inner
+partition, extract participant embeddings for its training and validation participants.
+Concatenate the 128 embeddings with the seven baseline predictors; fit training-only
+StandardScaler and L2 logistic regression (lbfgs, tolerance 1e-6, up to 1000 iterations,
+retry up to 10000 only for convergence). Select C from 0.01,0.1,1,10,100 using pooled
+inner participant log loss, with ties rounded to 12 decimals resolved by grid order.
+Refit the head on the final outer-training embeddings and score only the outer test set.
+The encoder is EEG-only supervised feature learning, followed by a multimodal head;
+this does not claim an optimal end-to-end fusion architecture.
+Independently reproduce the seven-predictor L2 baseline in the same nested folds and
+grid; compare its probabilities with the frozen baseline to tolerance 1e-7. Save all
+inner candidate scores, training losses, final heads/encoders, embeddings, and 960 paired
+outer predictions. An EEG-only training-head score is not an additional outcome family.
+
+Measures and uncertainty
+Primary descriptive increment: log loss(baseline) minus log loss(augmented), computed
+per repeat then averaged; positive favors EEG. Clip probabilities at 1e-8 consistently
+with the original implementation. Report absolute log loss, AUROC, Brier score and
+their paired differences, all ten repeat values, median, IQR, range, positive count.
+For log loss and Brier increments only, provide a 10000-draw stratified participant
+bootstrap of participant-mean paired losses across repeats, seed 20261102, percentile
+2.5/97.5 limits. Retain all predictions for each sampled participant across repeats.
+These intervals condition on the fitted predictions; they do NOT cover full training,
+initialization, or model-selection uncertainty. Repeat spread is descriptive, not a CI.
+No hypothesis-test success threshold, new confirmatory bootstrap, subgroup fishing,
+model ranking, or post-result architecture/hyperparameter changes.
+
+Diagnostics, stopping, and reporting
+Record dimensions, parameter count, all 300 training curves, finite-output checks,
+fold membership and absence of held-out participants from learned transformations.
+Run synthetic leakage/isolation checks before clinical fits and a same-seed selected
+fit replay after completion. Synthetic smoke tests may use fewer epochs only to test
+execution, and must not be represented as study fits. If numerical/infrastructure
+failure occurs, retain its log and document a technical correction before rerunning;
+do not tune around an unfavorable held-out score. If the fixed configuration is not
+learnable, report that limitation rather than add new configurations automatically.
+Report this comparison in the supplement with a concise main-text summary and an
+added model-summary row if space permits. Placement does not depend on the sign.
+Interpretation is bounded to this architecture, training budget, cohort, and matched
+question. It neither removes the single-cohort limitation nor demonstrates clinical
+utility, absence of EEG information, or equivalence to larger pretrained models.
+
+Reference
+Lawhern VJ, Solon AJ, Waytowich NR, Gordon SM, Hung CP, Lance BJ. EEGNet: a compact
+convolutional neural network for EEG-based brain-computer interfaces. J Neural Eng.
+2018;15:056013. doi:10.1088/1741-2552/aace8c.
+Architecture inspected against the authors' arl-eegmodels/EEGModels.py implementation.
+The new code is an independent PyTorch implementation; the original repository is
+not copied or represented as an ADHD benchmark or a 2026 state-of-the-art method.
+
+Implementation specification recorded before clinical fitting
+Batch-normalization epsilon 0.001 and update momentum 0.01; PyTorch default layer
+initialization, determined by the stated seed. Incomplete participant mini-batches
+scale their mean loss by batch size / 8 before backpropagation. All 1,457 trainable
+parameters, including the training-only single-logit head, are retained in checkpoints.
+The 128-dimensional embeddings are not tuned by PCA or selected using outer results.

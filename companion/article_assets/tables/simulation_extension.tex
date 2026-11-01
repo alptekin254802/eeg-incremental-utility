@@ -1,0 +1,36 @@
+\begin{longtable}{llrrrr}
+\caption{All controlled-simulation log-loss increments. MCSE is the Monte Carlo standard error across 20 independent replicates. Positive counts are descriptive and do not estimate test power. The independent test size is 4,096 for every replicate.}\label{tab:simulation-extension}\\
+\toprule Scenario/assessment & Learner & Training $n$ & Mean $\Delta$LL & MCSE & Positive/20\\\midrule\endfirsthead
+\toprule Scenario/assessment & Learner & Training $n$ & Mean $\Delta$LL & MCSE & Positive/20\\\midrule\endhead
+\bottomrule\endfoot
+Redundant & Logistic & 96 & $-0.0101$ & $0.0024$ & 3\\
+Redundant & Logistic & 192 & $-0.0138$ & $0.0025$ & 2\\
+Redundant & Logistic & 384 & $-0.0062$ & $0.0010$ & 1\\
+Redundant & SVM & 96 & $-0.0085$ & $0.0056$ & 6\\
+Redundant & SVM & 192 & $-0.0177$ & $0.0039$ & 0\\
+Redundant & SVM & 384 & $-0.0103$ & $0.0016$ & 1\\
+Linear complement & Logistic & 96 & $+0.0396$ & $0.0038$ & 19\\
+Linear complement & Logistic & 192 & $+0.0446$ & $0.0019$ & 20\\
+Linear complement & Logistic & 384 & $+0.0492$ & $0.0014$ & 20\\
+Linear complement & SVM & 96 & $+0.0405$ & $0.0052$ & 20\\
+Linear complement & SVM & 192 & $+0.0382$ & $0.0023$ & 20\\
+Linear complement & SVM & 384 & $+0.0455$ & $0.0019$ & 20\\
+Nonlinear complement & Logistic & 96 & $-0.0142$ & $0.0055$ & 6\\
+Nonlinear complement & Logistic & 192 & $-0.0157$ & $0.0022$ & 0\\
+Nonlinear complement & Logistic & 384 & $-0.0099$ & $0.0009$ & 0\\
+Nonlinear complement & SVM & 96 & $-0.0030$ & $0.0042$ & 7\\
+Nonlinear complement & SVM & 192 & $-0.0040$ & $0.0032$ & 7\\
+Nonlinear complement & SVM & 384 & $-0.0066$ & $0.0011$ & 1\\
+Acquisition / same & Logistic & 96 & $+0.1136$ & $0.0083$ & 20\\
+Acquisition / same & Logistic & 192 & $+0.1005$ & $0.0050$ & 20\\
+Acquisition / same & Logistic & 384 & $+0.1097$ & $0.0022$ & 20\\
+Acquisition / same & SVM & 96 & $+0.1185$ & $0.0090$ & 20\\
+Acquisition / same & SVM & 192 & $+0.1104$ & $0.0035$ & 20\\
+Acquisition / same & SVM & 384 & $+0.1120$ & $0.0027$ & 20\\
+Acquisition / shifted & Logistic & 96 & $-0.0809$ & $0.0234$ & 0\\
+Acquisition / shifted & Logistic & 192 & $-0.1277$ & $0.0139$ & 0\\
+Acquisition / shifted & Logistic & 384 & $-0.1285$ & $0.0075$ & 0\\
+Acquisition / shifted & SVM & 96 & $-0.0860$ & $0.0169$ & 0\\
+Acquisition / shifted & SVM & 192 & $-0.1373$ & $0.0122$ & 0\\
+Acquisition / shifted & SVM & 384 & $-0.1559$ & $0.0110$ & 0\\
+\end{longtable}

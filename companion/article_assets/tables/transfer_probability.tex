@@ -1,0 +1,17 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Probability location in the device-transfer comparisons.}
+\label{tab:transfer-probability-location}
+\begin{tabular}{llrrr}
+\toprule
+Train $\to$ assess & Procedure & Target fraction & Mean $p_B$ & Mean $p_E$\\
+\midrule
+X $\to$ Plus & Selector & 0.5952 & 0.3638 & 0.4005\\
+X $\to$ Plus & Entropy/Hjorth & 0.5952 & 0.3638 & 0.4055\\
+Plus $\to$ X & Selector & 0.2963 & 0.6038 & 0.5941\\
+Plus $\to$ X & Entropy/Hjorth & 0.2963 & 0.6038 & 0.5508\\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize B and E denote the source-fitted baseline and EEG-augmented models. Target fraction is the observed ADHD study-group proportion. Mean probability alone does not establish calibration. Paired losses and equal-class summaries are in Table~\ref{tab:transfer}; no target-label recalibration was applied.
+\end{minipage}
+\end{table}

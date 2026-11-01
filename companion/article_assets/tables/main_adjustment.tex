@@ -1,0 +1,23 @@
+\begin{table*}[!htbp]
+\centering\small
+\caption{EEG increments under matched device and signal-quality adjustment.}
+\label{tab:adjustment}
+\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.14}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrr@{}}
+\toprule
+EEG procedure or representation & $\Delta_{\mathrm{LL}}$ & $\Delta_{\mathrm{AUROC}}$ & $\Delta_{\mathrm{Brier}}$\\\midrule
+\multicolumn{4}{l}{\textit{No adjustment}}\\
+Primary EEG procedure & $-0.0288$ & $-0.0478$ & $-0.0131$\\
+Full entropy and Hjorth model & $+0.0267$ & $+0.0152$ & $+0.0077$\\
+\midrule
+\multicolumn{4}{l}{\textit{Device adjustment}}\\
+Primary EEG procedure & $-0.0208$ & $-0.0453$ & $-0.0123$\\
+Full entropy and Hjorth model & $+0.0204$ & $+0.0050$ & $+0.0043$\\
+\midrule
+\multicolumn{4}{l}{\textit{Device and EEG-quality adjustment}}\\
+Primary EEG procedure & $-0.0258$ & $-0.0507$ & $-0.0145$\\
+Full entropy and Hjorth model & $+0.0071$ & $-0.0078$ & $-0.0011$\\
+\bottomrule\end{tabularx}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize Positive differences favor EEG augmentation: baseline minus augmented log loss or Brier score, and augmented minus baseline AUROC. Each comparison adds the named covariates to both the baseline and EEG-augmented model. EEG-quality covariates are clean-window fraction and interpolated-channel count; this adjusted baseline requires EEG acquisition. The unadjusted primary comparison is preregistered; the entropy and Hjorth and all adjusted comparisons are post hoc. Values average the same ten dependent repeats.\end{minipage}
+\end{table*}
+

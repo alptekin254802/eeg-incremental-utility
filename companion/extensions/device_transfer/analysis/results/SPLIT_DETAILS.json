@@ -1,0 +1,22 @@
+[
+  {
+    "direction": "X_to_Plus",
+    "source_device": "Epoc X",
+    "target_device": "Epoc+",
+    "source_n": 54,
+    "target_n": 42,
+    "source_adhd": 16,
+    "target_adhd": 25,
+    "inner_seed": 20261101
+  },
+  {
+    "direction": "Plus_to_X",
+    "source_device": "Epoc+",
+    "target_device": "Epoc X",
+    "source_n": 42,
+    "target_n": 54,
+    "source_adhd": 25,
+    "target_adhd": 16,
+    "inner_seed": 20261102
+  }
+]

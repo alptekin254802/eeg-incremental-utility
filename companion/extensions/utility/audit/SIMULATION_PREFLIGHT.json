@@ -1,0 +1,32 @@
+[
+  {
+    "scenario": "redundant",
+    "shifted": false,
+    "quadrature_max_abs_80_vs_160": 0.0,
+    "information": 0.0
+  },
+  {
+    "scenario": "complementary_linear",
+    "shifted": false,
+    "quadrature_max_abs_80_vs_160": 2.220446049250313e-16,
+    "information": 0.05482376117647257
+  },
+  {
+    "scenario": "complementary_nonlinear",
+    "shifted": false,
+    "quadrature_max_abs_80_vs_160": 1.0287942366071778e-08,
+    "information": 0.05136307363045889
+  },
+  {
+    "scenario": "acquisition_association",
+    "shifted": false,
+    "quadrature_max_abs_80_vs_160": 0.0,
+    "information": 0.13484929647617508
+  },
+  {
+    "scenario": "acquisition_association",
+    "shifted": true,
+    "quadrature_max_abs_80_vs_160": 0.0,
+    "information": 0.0
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "replay_csv_byte_identical": {
+    "ABSOLUTE_METRICS.csv": true,
+    "COEFFICIENTS.csv": true,
+    "CONDITIONAL_DRAWS.csv": true,
+    "CONTRASTS_ALL.csv": true,
+    "FOLD_MANIFEST.csv": true,
+    "GROUP_CONTRASTS.csv": true,
+    "INNER_SCORES.csv": true,
+    "MODEL_SELECTION.csv": true,
+    "PREDICTIONS.csv": true,
+    "PRINCIPAL_CONTRASTS.csv": true
+  },
+  "original_results_code_sha256": "9231a6f4d670bbfee871298b7445833d6101c3d0f177c4bce511ca7ba483b4fa",
+  "portable_code_sha256": "8a247971416a00c0eed90c5833a86ba80ae1ce7d847ff43f1d869b2a356f4332",
+  "portable_change": "Only CLI paths replaced project-derived release/output paths; statistical body unchanged. Original code preserved.",
+  "plan_sha256": "70e2c12540aa174fa34e351030ac2aa71a812aaa0af200d771161a9449594001",
+  "independent_metric_max_error": 1.1102230246251565e-16,
+  "independent_AUROC_method": "all positive-negative score pairs including half credit for ties",
+  "all_10_fixed_and_selected_contrasts_checked": true,
+  "class_weight_identity_checked": true,
+  "all_conditional_quantiles_checked": true,
+  "original_release_files_unchanged": 145,
+  "new_analysis_fits": 260,
+  "deterministic_replay_fits": 260,
+  "new_representations_or_exclusions": 0,
+  "no_full_training_uncertainty_estimated": true
+}

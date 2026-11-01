@@ -1,0 +1,6 @@
+subset,n,age_mean,age_sd_sample,age_min,age_max,age_median,group__Control,group__Experimental,diagnosed__no,diagnosed__undetermined,diagnosed__yes,source_sex__Female,source_sex__Male,device_model__Epoc X,device_model__Epoc+
+readable_126,126,12.45238095,3.663019831,6,18,12,75,51,38,16,72,51,75,67,59
+retained_96,96,12.19791667,3.576589942,6,18,12,55,41,30,12,54,36,60,54,42
+excluded_30,30,13.26666667,3.876839571,6,18,13,20,10,8,4,18,15,15,13,17
+measurement_excluded_28,28,13.35714286,3.99271824,6,18,13,18,10,7,4,17,14,14,13,15
+preprocessing_excluded_2,2,12,1.414213562,11,13,12,2,0,1,0,1,1,1,0,2

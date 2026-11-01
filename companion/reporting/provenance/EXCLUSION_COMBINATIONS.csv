@@ -1,0 +1,6 @@
+exclusion_stage,failed_measurement_rules,eeg_preprocessing_status,n
+EEG_preprocessing,,FAIL_CLEAN_DURATION,1
+EEG_preprocessing,,FAIL_TOO_MANY_BAD_CHANNELS,1
+measurement_screen,eeg_longest_gap_le_2s,NOT_ELIGIBLE_FOR_PREPROCESSING,7
+measurement_screen,eeg_longest_gap_le_2s;gaze_duration_ge_240s,NOT_ELIGIBLE_FOR_PREPROCESSING,2
+measurement_screen,gaze_duration_ge_240s,NOT_ELIGIBLE_FOR_PREPROCESSING,19

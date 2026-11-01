@@ -1,0 +1,71 @@
+{
+  "plan_sha256": "e4aaaf57076498aa7e0e243625e18897483679c9db1d43db680259a595e4edad",
+  "code_sha256": "48fbbd61638e39dd882f932c5f0c8a3150b66e4fe4107f7f6c7b27c62a1db450",
+  "software": {
+    "python": "3.14.3",
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.8.0"
+  },
+  "workers": 3,
+  "grids": {
+    "logistic": [
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 100.0
+      }
+    ],
+    "rbf_svm": [
+      {
+        "C": 0.1,
+        "gamma_factor": 0.1
+      },
+      {
+        "C": 0.1,
+        "gamma_factor": 1.0
+      },
+      {
+        "C": 1.0,
+        "gamma_factor": 0.1
+      },
+      {
+        "C": 1.0,
+        "gamma_factor": 1.0
+      },
+      {
+        "C": 10.0,
+        "gamma_factor": 0.1
+      },
+      {
+        "C": 10.0,
+        "gamma_factor": 1.0
+      }
+    ],
+    "forest": [
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 5
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 10
+      }
+    ]
+  }
+}

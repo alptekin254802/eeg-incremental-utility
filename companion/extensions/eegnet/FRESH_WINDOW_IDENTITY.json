@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "participants": 96,
+  "raw_inputs_and_cached_arrays_match": true,
+  "data_fingerprint": "9112a7b48efd8688eea072fc0a1e8696bf746cc99b829be17dd948d3312d38ab",
+  "environment": "Original preprocessing environment: Python 3.14.3, NumPy 2.3.4, SciPy 1.16.3"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "MLBIAS_VariableCodingList_050324.pdf",
+    "url": "https://osf.io/download/bwrx4/",
+    "bytes": 52968,
+    "sha256": "6dacfb68ad7852ab6100f4c525ced2245d068bac764f458843d00a344b0f8bb1"
+  },
+  {
+    "name": "MLBIAS_trainingSet_open.csv",
+    "url": "https://osf.io/download/fsbcr/",
+    "bytes": 43964,
+    "sha256": "b327364be4ae99a1f4fdd8379f9944f24a4e1e9b0ca653a497d8c76ccb4cc47a"
+  },
+  {
+    "name": "MLBIAS_testSet_open.csv",
+    "url": "https://osf.io/download/rmb9u/",
+    "bytes": 30619,
+    "sha256": "011fcec9abc1f578febf7590588101ae1872ff2d902e126f74872c8a03b217c2"
+  },
+  {
+    "name": "training_Accuracies_open.py",
+    "url": "https://osf.io/download/ap5vh/",
+    "bytes": 4967,
+    "sha256": "0ed9cc13c21c186b601b1afdb337e9c2757df29f4ba0f17c93d1d67500a1a78e"
+  },
+  {
+    "name": "functions_open.py",
+    "url": "https://osf.io/download/jenmv/",
+    "bytes": 4886,
+    "sha256": "8a0515b7c5fc8536adf82576ec7a669d70adfaf0b22914c78d75df72a23b1aea"
+  },
+  {
+    "name": "test_Accuracies_open.py",
+    "url": "https://osf.io/download/usm5k/",
+    "bytes": 9772,
+    "sha256": "1afc3f1eabc16e00e561880c69f748868447015a00c15a3849a1d4b08dd20e7c"
+  }
+]

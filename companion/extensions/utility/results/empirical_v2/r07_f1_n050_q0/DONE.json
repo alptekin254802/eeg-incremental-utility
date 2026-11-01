@@ -1,0 +1,13 @@
+{
+  "job": "r07_f1_n050_q0",
+  "repeat": 7,
+  "outer_fold": 1,
+  "fraction": 0.5,
+  "adjustment": 0,
+  "train_n": 38,
+  "test_n": 19,
+  "fit_calls": 285,
+  "convergence_retries": 0,
+  "heldout_perturbation_invariance": true,
+  "seconds": 1.2289599000359885
+}

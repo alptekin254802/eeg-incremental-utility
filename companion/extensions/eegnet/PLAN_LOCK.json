@@ -1,0 +1,13 @@
+{
+  "locked_utc": "2026-11-01T17:01:51.659654+00:00",
+  "status": "Before clinical EEGNet fitting; prior manuscript outcomes already known",
+  "scientific_files": {
+    "ANALYSIS_PLAN.txt": "613591b4961ae0d2ccb38516445d8c8e8bd0b1c2dce99b266636a9ed1b95e2c4",
+    "code/eegnet_model.py": "305f171f8a95d761d2478ed1d7e1ea56e0c9e1cf7084376eb46bb61399e43eb2",
+    "code/run_nested.py": "51a9367b93694161b784fdde4dde3e8db7372e81744d625f46d07c3185578ecd",
+    "code/prepare_windows.py": "dfced93a8cd1b91aa09c41450f43eb28321a13afc841af200013635d018c4b12",
+    "code/test_isolation.py": "30e672a3a6e0371f62c410a213a1e13a2cbc9d555bfcf4f84c032e9991bbd75b"
+  },
+  "window_manifest_sha256": "7920a06408ec1b1891f9e53abfab206a6ef29445a325918752ed279a12be2a40",
+  "window_data_fingerprint": "9112a7b48efd8688eea072fc0a1e8696bf746cc99b829be17dd948d3312d38ab"
+}

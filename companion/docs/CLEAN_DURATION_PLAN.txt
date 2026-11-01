@@ -1,0 +1,16 @@
+Supplementary descriptive acquisition summary — recorded before computation.
+Question: how much non-overlapping accepted EEG is available per retained
+participant, and how does its distribution differ by recorded group and device?
+Inputs: immutable version 1.1.0 screening/QC records and retained participant
+labels; exactly the existing 96-person analysis cohort, no new exclusions.
+Quantity: union duration of accepted windows, converted from seconds to minutes;
+do not multiply overlapping window count by two. Also report clean-window fraction.
+Groups: all participants, each group, each device, and all group-by-device cells.
+Summaries: n, median, type-7 quartiles, minimum and maximum; complete participant
+records retained in a derived output. No hypothesis test, CI, model refit or selection.
+Verification: unique IDs, exact cohort equality, recorded window fraction and
+duration eligibility, source hashes, recompute aggregate summaries from saved inputs.
+Scope: post-hoc reporting addition prompted by review, not original preregistration.
+These are retained signal durations after the stated screening, not proof of
+artifact-free physiological signal. Distribution differences cannot establish
+causal acquisition effects or replace existing matched device/quality sensitivity.

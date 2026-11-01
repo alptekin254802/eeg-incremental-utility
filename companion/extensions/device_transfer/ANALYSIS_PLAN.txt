@@ -1,0 +1,83 @@
+Analysis plan recorded before any new model fitting or new result inspection
+Client date: 2026-11-01; recorded after clock observation 2026-11-01 12:39:41 UTC.
+Study status: post-hoc exploratory extension prompted by a focused literature
+review after the original results were known. This is NOT an original
+preregistered analysis, a new independent validation cohort, or a clinical test.
+
+QUESTION
+Does the EEG increment retain its direction when all training participants were
+recorded with one device and all assessment participants with the other?
+Existing device covariate adjustment and device-by-group loss summaries use
+mixed-device training. They do not answer this train/test separation question.
+
+COHORT AND EXCLUSIONS
+Use the same 96 retained participants and GROUP-derived binary outcome. No new
+exclusions or relabeling. Two exhaustive directions: EPOC X training (54; 16 ADHD,
+38 control) -> EPOC+ assessment (42; 25 ADHD,17 control), and reverse. These counts
+are already public in the current manuscript; no new outcome results were used.
+Use frozen participant features, covariance matrices, QC device labels and
+outcome linkage. Do not re-extract raw EEG or download any dataset.
+
+MODELS AND COMPARISONS
+Three procedures in each direction: seven-variable non-EEG baseline; original
+spectral/covariance selector (regional spectral, expanded spectral, covariance);
+fixed nine-feature permutation-entropy/Hjorth augmentation. Comparisons are each
+EEG procedure minus the same baseline under the original oriented differences.
+Keep all five fixed representation fits (baseline, three selector candidates,
+entropy/Hjorth), all tuning scores and predictions. No new representation search.
+L2 logistic regression, C={0.01,0.1,1,10,100}, no class weights, original solver,
+tolerance and convergence retry. Five stratified inner folds within the source
+device only; shuffle seed 20261101 for X source, 20261102 for Plus source.
+Pooled inner participant log loss selects C; ties rounded to 12 decimals favor
+smaller C. The spectral/covariance selector also favors regional, expanded,
+covariance in that order for tied scores. All scaling, PCA and covariance
+references fit on each training subset; final fit uses all source-device rows.
+No assessment-device feature adaptation, target intercept recalibration, or use
+of assessment labels in selection. A device indicator is constant in training
+and is not included. Do not fit additional subgroups or tune to these results.
+
+METRICS AND UNCERTAINTY
+Primary descriptive metric: delta LL=baseline LL - augmented LL; positive favors
+augmentation. Also retain AUROC difference (augmented-baseline), Brier difference
+(baseline-augmented), absolute metrics, target group-specific mean loss changes,
+and the equal-class average of the two group mean loss changes. The last is a
+fixed-prediction prevalence-weighting diagnostic, not target recalibration.
+For the four principal direction/procedure contrasts, use 5000 paired target-row
+bootstrap draws, stratified by GROUP, seed 20261103. Save all draws. Report 2.5th
+and 97.5th percentiles (linear interpolation) as descriptive conditional ranges,
+holding source fitting, tuning and target class counts fixed. They do NOT cover
+source-training/model-selection uncertainty or device-to-device variability; no
+hypothesis tests, p values or confirmatory coverage claims. Do not average the
+two directions into a putative independent-device estimate.
+
+PREDEFINED AUDIT AND STOPPING
+Expect 250 inner fits (2 directions x 5 models x 5 C x 5 folds), plus 10 final
+fixed-model fits. Preserve every candidate result, including poor outcomes.
+Check disjoint source/assessment IDs, inner nesting, class availability, finite
+inputs, convergence, prediction range, metric/sign identities and source hashes.
+Before fitting, hash this plan and all input/code dependencies. Afterward verify
+original hashes unchanged. If a candidate fails, record the exact failure and
+stop for a documented technical correction; do not silently discard candidates.
+One deterministic replay of the new small analysis is allowed only as a
+reproducibility check, not selection of seeds. No expanded experiment campaign.
+
+INTERPRETATION AND INTEGRATION RULE (BEFORE RESULTS)
+This is a stress test of transfer between two observed device-associated groups.
+Device, participant composition/prevalence and reduced training sample size
+change together. Poor transfer does not establish a device-caused artifact;
+good transfer does not establish independent-cohort or unseen-device validity.
+Primary manuscript result is unchanged whatever this experiment finds.
+Keep the complete family in the supplement with one compact table or figure.
+Add a short main-text finding and limitation if the experiment is valid. Do not
+promote it to a separate primary discovery or add it to the abstract merely for
+favorable results. Match interpretation to both directions and all metrics.
+
+OTHER CANDIDATES CONSIDERED
+Participant heterogeneity, leverage of extreme losses, conditional resampling,
+quality/device covariates, EEG block ablations, matched-dimensional spectral
+controls and no-EEG selection already exist. Do not rerun as new requirements.
+Full training bootstrap would address another uncertainty component, but is not
+necessary for this bounded transfer question and is not undertaken here.
+No raw temporal behavior/EEG mechanism reconstruction, new neural architecture,
+clinical decision threshold/net benefit, or diagnostic relabeling: unsupported
+by the current measurement/label scope or not needed for the central question.

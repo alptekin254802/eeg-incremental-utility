@@ -1,0 +1,12 @@
+Post-hoc saved-prediction findings
+
+All rows and thresholds were retained as planned. No predictive or calibration model was fitted. Counts below are occurrences among 960 dependent participant-repeat predictions per pediatric model.
+
+Unadjusted: mean probabilities B/E 0.426512/0.424383; delta LL +0.026678, Brier +0.007734, AUROC +0.015211; incorrect tails B/E 6/0; union-tail contribution +0.006835, remaining-row contribution +0.019843.
+Device: mean probabilities B/E 0.425603/0.424546; delta LL +0.020360, Brier +0.004256, AUROC +0.004967; incorrect tails B/E 10/0; union-tail contribution +0.009934, remaining-row contribution +0.010425.
+Device + quality: mean probabilities B/E 0.425750/0.424151; delta LL +0.007096, Brier -0.001132, AUROC -0.007805; incorrect tails B/E 4/1; union-tail contribution +0.008676, remaining-row contribution -0.001580.
+
+Probability summaries are descriptive; closeness of mean probability to prevalence is not sufficient for calibration. The tail partition is an exact accounting of fixed loss changes, not a biological or causal explanation.
+
+Verification: 30 pediatric pair-repeat rows agree with saved metrics (maximum error 3.47e-16); 20 transfer comparison/draw rows agree (maximum error 1.91e-16); 30 adult comparison/draw rows agree (maximum error 1.45e-16).
+Full bootstrap distributions and original fixed-OOF endpoints were not replayed in this follow-up. No raw signals, new labels, or independently collected participants were analyzed.

@@ -1,0 +1,14 @@
+{
+  "title": "Wiebe et al. (2024), Translational Psychiatry, adult ADHD virtual-reality classification study",
+  "doi": "10.1038/s41398-024-03217-y",
+  "url": "https://www.nature.com/articles/s41398-024-03217-y",
+  "input_sha256": "e5cb160e6aba68fa6f35871cea980a6f03b9f4a7bb42192edbbe25003d5b1021",
+  "access": "Full text available; targeted Methods passages inspected in this follow-up",
+  "supported_points": [
+    "Training ADHD participants were not currently under medication; test ADHD participants discontinued medication for 48 hours.",
+    "The task used three 18-minute CPT blocks.",
+    "Training EEG powers were averaged across all three blocks.",
+    "Only the single no-feedback block from the test-set feedback experiment was used."
+  ],
+  "limit": "The source primary study was read; this follow-up did not inspect its raw adult data or rerun its models."
+}

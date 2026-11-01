@@ -1,0 +1,5 @@
+scenario,replicate,train_n,assessment,learner,model,test_n,logloss,auroc,brier
+complementary_linear,10,96,iid,logistic,baseline,4096,0.64643018954105258,0.66060789764738792,0.22761700695451781
+complementary_linear,10,96,iid,rbf_svm,baseline,4096,0.6742092876951562,0.61215814647485556,0.24021908051651791
+complementary_linear,10,96,iid,logistic,eeg_augmented,4096,0.65280963336086095,0.70040287503858445,0.23011241564139076
+complementary_linear,10,96,iid,rbf_svm,eeg_augmented,4096,0.65756260611671169,0.6696661754303801,0.23242350016405822

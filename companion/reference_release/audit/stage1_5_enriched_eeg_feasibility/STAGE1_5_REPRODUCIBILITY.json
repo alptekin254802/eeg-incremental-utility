@@ -1,0 +1,13 @@
+{
+  "all_arrays_exactly_equal": true,
+  "maximum_absolute_difference": {
+    "e0": 0.0,
+    "e1_entropy": 0.0,
+    "e1_temporal": 0.0,
+    "e1_topographic": 0.0,
+    "e2_covariances": 0.0
+  },
+  "runs": 2,
+  "same_accepted_window_counts": true,
+  "same_participant_order": true
+}

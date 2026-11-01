@@ -1,0 +1,6 @@
+{
+  "saved_probability_metrics_independently_verified": true,
+  "test_participants": 36,
+  "paired_comparisons": 6,
+  "resampling_scope": "conditional on fitted models and observed test class counts"
+}

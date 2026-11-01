@@ -1,0 +1,11 @@
+{
+  "n_surrogate_datasets": 20,
+  "mean_delta_ll": 0.02710627357796359,
+  "min_delta_ll": 0.0239042947158229,
+  "max_delta_ll": 0.0297962924821977,
+  "observed_delta_ll": 0.0266782405629125,
+  "observed_minus_surrogate_mean": -0.0004280330150510901,
+  "surrogates_above_observed": 13,
+  "mean_delta_auroc": 0.01447228381374718,
+  "mean_delta_brier": 0.0077033649988755394
+}

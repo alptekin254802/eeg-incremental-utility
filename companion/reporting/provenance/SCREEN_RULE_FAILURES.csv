@@ -1,0 +1,14 @@
+rule,failed_n_of_126,counts_overlap
+eeg_structurally_usable,0,True
+eeg_duration_ge_240s,0,True
+eeg_nonfinite_le_0_05,0,True
+eeg_longest_gap_le_2s,9,True
+eeg_no_duplicate_timestamps,0,True
+eeg_no_nonmonotonic_timestamps,0,True
+eeg_no_flat_channels,0,True
+gaze_structurally_usable,0,True
+gaze_duration_ge_240s,21,True
+gaze_valid_row_fraction_ge_0_80,0,True
+gaze_no_duplicate_timestamps,0,True
+gaze_no_nonmonotonic_timestamps,0,True
+behavior_structurally_usable,0,True

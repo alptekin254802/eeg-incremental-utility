@@ -1,0 +1,5162 @@
+[
+  {
+    "path": "results/simulation/acquisition_association_r00_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "04d9dde903f214bbf933e896e4cbe38f0c002f65fdd24551afdaf5a891fe6f7f"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r00_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1bfc389fbd83cd6c62502746e863e21af9a2563a401a556ab9f7df0edeceeed9"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r00_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "4066791b7cbcfdfd5314a9e565468937f99ec5d0da717500cf32084ffc7d9672"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r01_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e298a3bcba350f522635797a31de2241480c8cda55359070f29fe77e13bc9e46"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r01_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "c66e9d51f914c1843b9bbf506183660f4c20c5a08c6a63202cd5c80c77a412f9"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r01_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "39bafaef424535e399d518456d61dade201e279198e179b3572c0917c3c13a78"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r02_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "216609badaa65164737507cb5ed6af6ae56b847011925c915f9e4915bcf8227f"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r02_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "63a53a0e4084c1c2f8d6e24212320ac0e81e9f9c7585bcad0150dc5921dcf266"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r02_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "117948f2e3854f1bd5b5f83787058605ac4e0410dca84ae09f7b0d8a14d954f4"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r03_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "2a794b485d57fe615464a7f19b92ac4eab71d9e5f104eba62ef807680cf4bb12"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r03_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "63e3b21d000edf95d1caa0b6b0a4029523ec3c272a48c92a096267d665a919b1"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r03_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "acd43ef6dca477f17bdffacc962283e9a4ec9f07c7ff7d99d9d848987ecd31bf"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r04_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "56150f92d7d2ff66abb1cfdce3b4ae7a43d0c629101be62ca04e4f26c1878254"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r04_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b6e47090d01349e893558ef00c7bd9b69eb0f510c9bd47c85e288fc6bc69a449"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r04_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "3e4011f51709108014ad1e8cc5718fe425eb5e7c86f8edfdf381a6970dbe0b0b"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r05_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "6a9178fde8530d195cdbd1ac20e6581b53186ee94378d231f474aa8b41e9186b"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r05_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "c603069310cdc538a2a58aeb2acbe50c2ed037b5f22d8aa81b0023ef80c4c5b0"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r05_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "5b73c6b5dba391368a533900c708c157c75649baf1fac3354b88212f28c16ba6"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r06_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b559dbc1af0389c6d23b33391a83f39a51e5e507d7061cd509d39f7ca6738760"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r06_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "2c233ce344196f19e7d7c2e95adf34c5bf6462a601cd870c490eb1efdd90a396"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r06_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b03e3b82495166bb2763ebca1c663261dc2c6689792770ec37ccb08bfbb580c4"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r07_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "ffbd65a0bd79ae75cb4c7950bd0a9af7fa717fa03dd0054da42d2c86800b7f8a"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r07_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "8d8d6ebe4bbdd6f63d0c6a4d7696b5ee7a204e1aa152cb94cc0ea1ab0914f7f2"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r07_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1f2e225a0432c69d98fba87a5ae41e0e53540b27bd0b7241f2e2708c4ae2bbf7"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r08_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f6f61baa0b3422b5e4b8ad136a79f61e8f0a7d2276d53fae782abbd4881cae1d"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r08_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "4623d7df4ede0bf1f2edb88c7d3b65f01e461800ef89037b475ba90d58049a88"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r08_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f99710a6911f77f9f316a2bf416e893bc636b0e8002752674b3717845d22a2d2"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r09_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "0df1db3e47b93be6293c75337c7909c5f3bb92de2e47a3d79d02221b09e6430e"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r09_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "4a94a4b51a6d028af79ad680ba37bfa23dfde61beabe3accbf0c6d6ca4648273"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r09_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "0204d3571d0f5e10ca87749533a2e40ea1c85a9051bed5fccfccb34b9074932e"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r10_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "72c7cc5523fe4c128759adc2315ba166460034bc0b08a5d8ed9b26b6b5b11214"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r10_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "992b6e6e2d23f308d1fe74af057551f42ecef28a96658c5baa954668b0912e09"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r10_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b6a93686217bd5004008d0ba6ee1853f92ff619ce337308888c12fa4e63df265"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r11_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "fda43ac6baafa49d3be836b65f2e71bba3a7021175f2c73d3095916563479155"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r11_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "32313ec4bc4245b3d183e272cd3184defca69dc5cca20fbf7c7fa304bd59ea03"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r11_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "97de70f79d70ab01edc985be9a22fcd3162a6289a63398d3f16099f3fe1466d0"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r12_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "505b9bc2f528a55cc775ca95ec7e9064cda8499909a99dc61d54fefa4648c61c"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r12_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e7c381f209fa73eae5f06dc4b376f2a8dbcea7425251f868029ee67f583e229b"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r12_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "3670897e6a7c556def95daecd4578a027dbbaced3be7f49ce7bb7db57355de99"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r13_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "935115b13cce6845459461852dde6b59d8be92869b0d82718083a39a4f5cea9f"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r13_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "570e78898fee40b21253c6240b071c62873fe09ae8493bff09918432625ee4d1"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r13_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "926b16edb472a036a5266ab631286a159d8167246cb8c9c2ae7b594e1111b648"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r14_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "3d5b28b5487b8ea6b03ec89ff8f23c7c62d91f645eee9fdc76914db3f15496ee"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r14_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "83f338154fe7aaeb84065847d94919d094d98341ec787d69f07eb29ffa99ff7f"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r14_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "7b4bb72ea5ecaedf859f90f6ff2f45d75aa96c5d33d08d72b8d5ed5be3219b6b"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r15_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1c04ead7bb7d11303d6722ca818a460c599fcd555b5720f60af0a9b4060a193a"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r15_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1d97a68e266ac2820e634a0f4349a11cb9ca04bbf2a69cf85ce3836274ef5d43"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r15_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a20852c2720f6aeaaa0faf531a62276e8dc680cd34ee659b6b3e4e0e57d6a4f5"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r16_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f0a39c6382c3c72f1a5fb18fff97b4addda9f493d98b7e719793d44eaed83fb1"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r16_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "2bea67620bc3637f08afd2cc50297a2c8d7947256773da87b11d8d21a70773aa"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r16_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "6e76176c2cfc4ea902eeab3cb17e16e1414e3041b33dcc0894f7518f34732482"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r17_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "9981ee62ef7e9d9a4b3de0af1d7f418a9faebd4e259d9c197f2e4475734bc563"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r17_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a6753d61a4a50b6dd3a61cabef06362e041bb28816369093cc1bed2ad93bf434"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r17_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1f4fb45eb079ee6541539f494606813be02c37f4a3a177ffdd0635875414075f"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r18_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e0619fa651730f64f715864ab0729a1ec30f4b4dac684e30f1ebb6737a5281a7"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r18_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f4d6bfb308f830216a8a13085ec1fc0f59538f90921dff4f7fcd414e6d4a545c"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r18_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "c823d775d57836e0aa5915375b3914583386003ee26bd520f8b64b228ec7b3bd"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r19_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "2b02cf10800db881545547e014ffea1b21c34068f741437e4dc13399fcbb9112"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r19_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "fb85ec85c42435fa0524ce2f7154a9847cf0f10075903f4c9d0a3fc70975c6c2"
+  },
+  {
+    "path": "results/simulation/acquisition_association_r19_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "shifted__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "shifted__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "shifted__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "shifted__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "shifted__oracle_baseline",
+      "shifted__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "5d5ecd062b06411f30be2822442cac41dc297771120e19b61829b363910791e3"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r00_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "84159d017e0bf52b1987ef7fdefc2ae0253eec2a2e6e25b39f8b7b316b3866b7"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r00_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "80e637a929702cb227a7d71840badfeffe46afec84fa2a0dfdfbf63124c31518"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r00_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "523841b90131d837100b7cf0fd36f80a1b0159e787d71b5930e584940f04a7fe"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r01_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f3daad3b3cd6c0a20e89b05525fb429d99ce7d233049cb32fba238bd2085f4ae"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r01_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "579a530a9bb0eb9a100b6bdbb9316021982028150841bf51365cebac11d16bbf"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r01_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "fc4c0b11ccb06b47f648556bf3516da757dae8535f38faf028462d7274c2185a"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r02_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "27836d035af37520d2f5bc2ae13cd55fd07d69e59740fdaeec82ca07824a1b97"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r02_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "71c44b752712ee9080f0959bcb3189dd6d4ef0e846c674c5d10497dd8f6d641c"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r02_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "5730cf9ab022ca7bbf2a45250cd5aaa1137a59827d5a067e2dcda6e1a8f371b8"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r03_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a72cc4e126ca5b1d07c204f54fee8af95c8f568f0ab009e7bf8e198a02e4f25c"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r03_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e557bfee71bacbb70a454de215cef5b784c013375cd0d122c7c39a4d666d9337"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r03_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "57ed428b811c6209c49ea8b498486047b166c7bb9583c350549b6255f5138df8"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r04_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "bba02ac672e442477ba03304ba29fa10ddbba2aa9949036fe00ae403c8e5844b"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r04_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "feba17522dfb8b2afa6d188efddba64b4fcc81482685dcc34214614f1ff05616"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r04_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "dd51e1034cc6e67433f28fb1a75f9369a0f865617db0a38b01dcca16a1a7c8dd"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r05_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f2049ae035bd90d7d9e3cb8d898b2ce18b3417dec79c81ee862fffbd14ef62c6"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r05_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "3bd7ce811f68a4dbaae24e34dc139cb901a38b3f7b08b86f3e427ad0e248abbb"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r05_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b2f8ec36532dcac1e2ad4aad42c860e53f8e22edf474995b2df6d88c87301b4b"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r06_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "62bd6147306cd63e5599b8b9e80ffdf9d7b6b6bfd00bf3d73247e2d47197948e"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r06_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "09b68c04031ed18a652469ef4e1f497f7e48ad006f659e5d027ea79441daf7b6"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r06_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "144212e404bc4a7f7aba543480e92717b921be8a2cad8d46734ee9b57793d358"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r07_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "d537ebf41ee05e3c4f89e28383d5fd8cf2b2f8636f60ae0e70bf2fdb9e8d36a9"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r07_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "3c726471bf528847dae89e4eb783ee0405cce62228d0ea0e718c2db12c9fb1e2"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r07_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "8038d87b8e3ed7aeaafef19153ec85bacddc3968ef21b386a312b86543b2a98c"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r08_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f0a04df999f44a1321619f73aef4e096422f1611df450319c4c637936cba7261"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r08_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "64cad8a45ec5e3d2c0bf7bb87edca5c4771679153045d19664640a9558c7007b"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r08_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "55bc080216315a925bf5a69285738dd3c78f8fd08810eb1d7df4dc36fee6d426"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r09_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "60711bdea6c98c6dc277435f9dae460441899a829e942baf3f9ea7097ce9e6c5"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r09_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a2d94179d09e8eaa8d60bb51b1b5abc2085d997c77ca2374edc1b5ee58878948"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r09_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "d943d6a9b928e063f9e8a1bb3524817b17e26d9c2f53e1cf48b55c7c0cdc59e1"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r10_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e1153ae93158fea03cdcc4ac51f3b32d6ac0caac6daec6c52a2e28e4569f7fba"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r10_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "713dcdf10e30337ac959d3374aa52e6d9a0609cdced5a2a3dc7e8fed4058a73d"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r10_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "3c1889363fd60588ab8a10be0510405bfae51765a0a6e43d3a11c34842bc1192"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r11_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "57676bc755efd709e774d84fdbc53059967737d5102e1ee34e01ad6ec7b025d6"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r11_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "38d1cca4405ce8b198f99cedb206370fc2ef49ad70caae8e0f296ad052c6fc56"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r11_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b5ada8852ddde81c52f3fae91262d2fb4d3777dca393691c4da79d2da469de2d"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r12_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "2fe13ed44a0723b93dc39df9af80f7d042fd1021ed08ecf97a3e455ffe602d47"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r12_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "bdf70218db13f2275472bf0d86414a75ed684d05fdcf36aff74dd84f89bf6765"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r12_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "92801364c05a4f0be62b5abbd46d2fa9733ea3259d17704c24e9e62c98ecd65d"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r13_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "cb6ec51d906d25d2aae8d2e41d95d309260a2fbda395b34d903fa312d281a934"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r13_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a777931f813304cf300cbb573cc82b1eb169b62561e8d3d1b4996e87090e13c3"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r13_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "5f3e9e0e3d85319b104f5cd2c3075bc1a0ee5abad1200bad8c012417e2b75e8d"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r14_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "4b14994bc1cee6cccdda195d81726a9c8ced8295d394735a2906b51a490ae133"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r14_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f6e1e9f636e0e531298c09a4db5b09ccc2bf783357b12dcd44e72d384c9ce986"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r14_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "59b275428db5f2992f9147b006c4b5be596768db72037b983d4ec4e43a931351"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r15_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b5ec7e26da3349b5bff55b7a4e556c26372997646c1853ec24bb6b1ab5a02373"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r15_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "8d6fd78684212b1a866909ca456bd01c84e3801774a54d2a0ae285d93b1133a7"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r15_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "59de964f7bd6b5a77e426c601b68ca30b4427680cd292158ef8bb1be58e3f6a6"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r16_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "7ddda732fa3224df1c3d0f1a0da4ac145255aab316e077c5472b63cd470e8c6f"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r16_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "13b11c14b795fa658a0d92d95261aa8c11617aef1e01021fc3444cf9279581d8"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r16_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "ea826d7ba42a4265e59b19211814908e01aa5e57e9ff8cb384cae1b70b015ba0"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r17_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a3f2a86a5c08543c51d8e5c1279e09e583a5e98e03fa163a0570d8a45d414b43"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r17_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "9c230ad36e0bff75eaeb8743c5b19f89925ce8a329a540d3f75909c7b667c80c"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r17_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1c81049d4b891dcfe0e6cbe41dd863d89cc68b257055d73557f489fe683b7d4c"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r18_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "eb32f6afe3a205c882555e8a3814a0e9e07c37fd8fa1a27ae89164967028f3b5"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r18_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1f69f383554d1881e0559ea0eb9ca774ffa69740117f10f06d27f15722341b7c"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r18_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "dee1c1552a9598bda62942a6fa152e3ac61c0962aca7e8135bb8399d5e048cee"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r19_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "d680882526f721872c37869b3a456b6dc1ce40abfc4c1f2b2bc0130ff57c8188"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r19_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "5fb66aeab8e0cfc7d22fb1aaf4a8478fb77a89e83017638f1422d4886738ea80"
+  },
+  {
+    "path": "results/simulation/complementary_linear_r19_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "61fbb702a59c45d28ff433e4cf0e4df797f485234c84222be7d85296c63ff9a6"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r00_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "9ba1c6164b9c51f9f9ce45c1f2ad68d0e89fd2b0d991ef5e2475d318a0fa5a8f"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r00_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f94966290907348773bb3097fb9c4e19eff307b1125750a68ade403575bf0a10"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r00_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "55090e62c5c68eff042b961473150698acbc5bee6b3967a97e6837d40a839b0a"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r01_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e68769df5a922cad422000172d8e560e98a53dbc66292a53dda8e98d161b7ad4"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r01_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "8d956e9676ce5f168509340d241cb3342c2b2203dbebd53a02fd3c0ebaed5769"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r01_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a57bbc1f0b1603b032b7680a925ed5b9f8f614e45248b8a1ef0f6837265c8568"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r02_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "512e639462ffe847a0d8f83d77e845ef9bfe66316ad5a36778787942a01e725b"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r02_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "51e17f9694da19f775fb1a00fc81d60536bef4f519b9f0067a6f17f909e6811e"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r02_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "6860d1688d2d9f07c34936b2223817e5ae017162d779cc9401e7d74e6688a6ed"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r03_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "46fa129a219e3df1cedce21c0284bc5cc67e1fface009a2c010333d30e56f54a"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r03_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "4ad50510dccf53add5cb71d0670686cda18b5b81b10643cbfbb192e5e641f952"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r03_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a362663e79f161e1fabe49bfd867feba6ecf70ab1a2989818c5be67d497da28a"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r04_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "428444c49707976056ab0dcd15a18d89407dee36fbed7180ffcb598da97c9ef2"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r04_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "80a593cf8b06905b3995c6493a0f74a68cca0a46342a1c350d025bac4ba609ab"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r04_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "15f8fcae6fc345314757f2132bdd757d9e1aab18ba21fb6ac9a9f72644433a5b"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r05_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "42dadc39aa2304b58fb01e6e5431290bb29dd258ed80000582e4a091f05ad940"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r05_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a5ad1a8fc019654c515117d8486cb32a84214195c310d3b6fb423cb746a7a3d9"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r05_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "c60fddfad58b7359f99596dc39167f8c481da24f516016414668ad80eb53adde"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r06_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "889f9d44401490e95165c2184881de296b669587438a89657bb7ac6361cc2f34"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r06_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "954205a8478fa1549b2d20cf05438978c1ff7ec5f117c33b66bcc6d9a6505cd9"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r06_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "39f2b61112786b53364612e522e009e5ac99e8d169ffe69b52b399ab8d998be7"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r07_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e522cea4915c1b9a7d5e2d360e27d642100c54b85b1de252780aa1da3c626924"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r07_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "ea02f844a9183b945fc941c8305a80e7faa5c36e065c7b5b52f9bfef9b6944c9"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r07_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1bb29cb176089afd34d0a2cf06cf0e14188cb79a5667dda54d0307a6c6629a24"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r08_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "4338d0c9205366b0227a728992b992d863258d0fb17173ee94d2066209c40cac"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r08_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "5e9ea00eba4d7624876c8dd37e1ddb299d6ea38d161b958aed547db15ea3ddb4"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r08_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e4424d033c79f245922e6d025d2c839957b7bd4a91de306c3fb53023223d379e"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r09_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "36edfebbd3d766923799def18850f98206eee12e9d0533e84be891ad1a2cccca"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r09_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "0116470e7e03bc27c3cee3057db00d1caafa83a7fccbbf9454e6b2a6f032af1f"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r09_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e942ebdc89de4e1b08793e9468eac540865ea790bbe5c34b89385655a7f4a11d"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r10_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "9599dbb322e9ef7c81af5eeeb150aa4b5c1c5bb9f45c2640ef04e2df2c330f67"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r10_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "986e108c7e36c5d725132a9e540665fdcad06fca798dfa983a1669fc23258381"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r10_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b86cebe4e91f03d47747bcece960f19e587f8643653106a09cc600b4a340b170"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r11_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "d14299c2de791b2b093b8bc7f80ec0f232eeebb590ad3f01eec57a2c2019e9ce"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r11_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e6dd06fa26535e387659dbe073428b6fb9f0ba29db8df1713fd9c43e10bd81fe"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r11_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "22ee54e928c8e170388f7cde5d806622951f5c6edcecfd3fb4ca555fd302640a"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r12_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "d9cd2ac7d0e17647e50cb2baf2f6e3ad988770c7b3fa087ab99feb6f6a268209"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r12_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b06beaff9f609b27fe92d7d21e978d932dde34799f9f817eedc3114c15ca967c"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r12_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b3ec88655d040c043a6e8e38847832849fd4ffa608c70e390782a00717af3f22"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r13_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "8c01da0a3cd6042a99d1ce8077f3a062550e6b69f023dd77442af604e5f81e5a"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r13_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "4ad066ec5989adb536c90e0d716c13a90b0bb86483d768caae5d401371a7df1f"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r13_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "62f8d0ef5f58cd28a57ecd36e84d6bc2ea3598d8ba2a5ce4012407abe8529a84"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r14_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "10f6b984f7339945cd4f2dca8b93cf205cb23bf8c9a98c2fc785cd2fa2402bf1"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r14_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f29b5353e120e92c98338cf7c481d6cf7c89dde6ed9c2ac44e6e587759502258"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r14_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "d5be2615d440d2a3aa7f2f9d1ead384d133a55ea082a46cf3acfe5bcfb155adb"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r15_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "726d4237be2a1214e27d1aeeb436c51e097f271ea4eac5b6beda27c6a78faa80"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r15_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "0131f4bf8f1113f12f45fe7f2feaeb9ddb9f9237962620f584b4447e3861f387"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r15_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f70fa52496996e2e5f9abe71ba0272001c926acecc885b6591e8bf4a1c137fed"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r16_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "ab3c86fdf76caa0c4528e86ac19ead7d727913d2de1da0f054e3ac59659af28d"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r16_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "eee9af3af681b6e628aa1720f4b12ca3cc36c4ec40dfa0151bd059e96df24b20"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r16_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "5f2e5a072f2f76d7a6c7b5df3c9c925aacd3fe23bd0c9feaaad847cd13a126fe"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r17_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "66640fb2143197b97a848f1e8cd75fdca97a7922878074598d5079346226a369"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r17_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "25ca91afc37244b6744d1348bb4a83b23cf871981d5047f693f0e0e0a352f0e4"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r17_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "2b416e119b633e74890a448d469fd01700502cbe6632fd56566cbaa0750694a3"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r18_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "0d4f47853f2457ea3cb828d4f925900e858308290c8e25ae33fdcde1f5c1e06b"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r18_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "0a90bc9238817a508f2281234f96cda87c67cd71340835142fa363d85d46bd29"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r18_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b22e33fa15304fa55966d9ba84e350575242d25f31260540d18fa02bea91d599"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r19_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f737242e8fcc3d94c40d7a71970106b93db8e4d6fcbcf360e63383ea3981c98d"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r19_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a5ad01882ff2389e7ac23fb482ceaf54268335c59c0b9d85fc7c242af548b1c5"
+  },
+  {
+    "path": "results/simulation/complementary_nonlinear_r19_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e6be9041318d60582ac82c23882c1892054a7a4d18a17a49562ca7778b334e1a"
+  },
+  {
+    "path": "results/simulation/redundant_r00_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "9220f29be0364d69046dfe6b98c2de3e17c62ca35797798659847c75a39528bf"
+  },
+  {
+    "path": "results/simulation/redundant_r00_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f91c5b089b0746da569e69c52b0243e1d49a364fcb664184c0c6ebaeccedc107"
+  },
+  {
+    "path": "results/simulation/redundant_r00_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "210d04d6ab667f33ea9b238d8ca7f44f7122bdfe7372e1b814f3bb5a554b09e9"
+  },
+  {
+    "path": "results/simulation/redundant_r01_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b375c7c5dad9d3a766be0f83855f8e6080993c4d21684d748546229afe79e06e"
+  },
+  {
+    "path": "results/simulation/redundant_r01_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "341b6b7869a3cce8cddf6b398bf22e37766a8979d846c9afb8c6fd1141adccba"
+  },
+  {
+    "path": "results/simulation/redundant_r01_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "df046575206425fa36304268f229757db0600fc187094c21ec40f9ae1f5ba8b8"
+  },
+  {
+    "path": "results/simulation/redundant_r02_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1c7f9497c429abeacd01ff6ab572d90bba2da16c35e2ca6a0615595060c5c96e"
+  },
+  {
+    "path": "results/simulation/redundant_r02_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "ae09b9df4da898419b3337b6ef759e2c242aff5c73642a6c2ca2c3b3b653e3bc"
+  },
+  {
+    "path": "results/simulation/redundant_r02_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b57bd0d8be48b3d51a2befff73345c7217c93fb882617603263e750f08f3bb26"
+  },
+  {
+    "path": "results/simulation/redundant_r03_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "9495027edadbbd5acd32872ccfcf904c39bd7d30482edca9bc23b8675f0ea7b2"
+  },
+  {
+    "path": "results/simulation/redundant_r03_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "5b346c8407019b751dbfc25983ccabe6b64270fdcadc6a4ab39819d54594b0c5"
+  },
+  {
+    "path": "results/simulation/redundant_r03_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "3fadc1fa0f7339bacce6a930269eeb1e77ecd55ab7558dccac570f09c1998a8c"
+  },
+  {
+    "path": "results/simulation/redundant_r04_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "be3a74642166c67717d59a7e0dcee0cae5d3ffebb2a48e667a9139d939dbccff"
+  },
+  {
+    "path": "results/simulation/redundant_r04_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "aa03bc6615afd5ef6db19d8798ec558ee6d5e0e339a01402d53f9e6f51dbcb00"
+  },
+  {
+    "path": "results/simulation/redundant_r04_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "77e889fb08d934a20905297278a4496886e846588d1c775151992610a9817485"
+  },
+  {
+    "path": "results/simulation/redundant_r05_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "3959c9733b886b2f90adbd8c7899aafc58c312b3c8cd39c95545e6a648bc1221"
+  },
+  {
+    "path": "results/simulation/redundant_r05_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "0b8de488f0a83d912743af0f803672dcbc731e207b8ec3d16f659cbe747eb3dd"
+  },
+  {
+    "path": "results/simulation/redundant_r05_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "9eb85dca37cf838009a39bcc16e3a491f688eb663f5db124fa67bb6e7ca3efb2"
+  },
+  {
+    "path": "results/simulation/redundant_r06_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "027071c2ad83a1bba3b703a4db6f526f526f6ef3d8e1c1519164888cc6b55f1c"
+  },
+  {
+    "path": "results/simulation/redundant_r06_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "51618234a78e34bf5185072e3106836f0ca9d21792015d5d0f465156cfae868f"
+  },
+  {
+    "path": "results/simulation/redundant_r06_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "57f1be12fc36e6b5843aa4c5880aa8a51e911ccad9954adff6077a0f4bf926b4"
+  },
+  {
+    "path": "results/simulation/redundant_r07_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "bd25ea06074b7394acfff4f1075ed996e7c0bb2edf933eb268ef5368ddfa79d5"
+  },
+  {
+    "path": "results/simulation/redundant_r07_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "8fb2f8ab8052220e09d15f8c4fef3ce1338beabdf536e626464892ea5584ff35"
+  },
+  {
+    "path": "results/simulation/redundant_r07_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "6d179fbff0f6fe38969a86c10d79f127ca94ac956020be7620f018cd1ac805aa"
+  },
+  {
+    "path": "results/simulation/redundant_r08_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "e34fea9a0586ad2aee4b0845bae14dd4d071ea243ba126fd49be305d79ada04f"
+  },
+  {
+    "path": "results/simulation/redundant_r08_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "2ab79f07a20c34b750fbe7ad742ee49d1fb5a4403f599c8e3c7ec710864455e1"
+  },
+  {
+    "path": "results/simulation/redundant_r08_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b9ed546bf391294113449b878e0d3069c33481a76e7ef21986a658f361b8022d"
+  },
+  {
+    "path": "results/simulation/redundant_r09_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f01b4e5841f86ad12857f11d7b10c0ebdf83b5f187a5400f52a4002bc43eb0bc"
+  },
+  {
+    "path": "results/simulation/redundant_r09_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "7860647cc7a77862f6b1631b33ad3179e9795fb6523f0fc155a1c2b7ce177878"
+  },
+  {
+    "path": "results/simulation/redundant_r09_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f722b6c710399d846fb20f3f51fa4a9c7b474ad75812b89952113d6b0f9b45ca"
+  },
+  {
+    "path": "results/simulation/redundant_r10_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "3fd95e0ce428e1a5b8659b2cb35c945454e5bf1c05bec2f64fd4d833df81bcc4"
+  },
+  {
+    "path": "results/simulation/redundant_r10_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "4898cc33917e072a3ccb81bc0467383d65cb4b135ce7895e68cbec63ddd0fd40"
+  },
+  {
+    "path": "results/simulation/redundant_r10_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a7083d4b6236377495571946b06caf77bbb04cb920b0000869645d14d005cdf9"
+  },
+  {
+    "path": "results/simulation/redundant_r11_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "37625c49f06bc9887d758fa536cc67c28ae1214041bc78446a95f64a411b8def"
+  },
+  {
+    "path": "results/simulation/redundant_r11_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "3e5e526b277e36e4a9275cad13194f00fc666e432946b203e8b875837549444c"
+  },
+  {
+    "path": "results/simulation/redundant_r11_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "f03e00bbac392aa85305d70af4c7544aa22de0534930ad291ca78ffdd40e68e2"
+  },
+  {
+    "path": "results/simulation/redundant_r12_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1a085ded8173c9bdbbed3207864b8c7cb96ed0101f8247afcc6a9e5322ff688c"
+  },
+  {
+    "path": "results/simulation/redundant_r12_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "937745d86040ffa9a3723aafb50b1229dcaa3143ddac88dd7a5f723928d97005"
+  },
+  {
+    "path": "results/simulation/redundant_r12_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "aebd3756c8905cedd0d578d811ec2e276155067d00b8992ec2ee3c3dc8a7c62e"
+  },
+  {
+    "path": "results/simulation/redundant_r13_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "90c0ab463c510fc1a6b0b62759465e6623dce48c3d4d9b3d6771530703e290d4"
+  },
+  {
+    "path": "results/simulation/redundant_r13_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "cd7240c36aaa175e53ca20e6a3ebd38d4189ad230f67034df005bb21e7169560"
+  },
+  {
+    "path": "results/simulation/redundant_r13_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "5086063a8b936ddcd1884d84d20549d45b4bc68de5640fec84c7ebf1b5ee990f"
+  },
+  {
+    "path": "results/simulation/redundant_r14_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "2dc0c9660392c004f5e74d9a4636015027627cfc3220b593b55393a457cd9a1f"
+  },
+  {
+    "path": "results/simulation/redundant_r14_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "7da40749613a4f4a50f8ef431ee9532881dd5c1aa2f48f0b82a0083c7ef51162"
+  },
+  {
+    "path": "results/simulation/redundant_r14_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "7d72a2bbe4ae4faf9438a938b056de85b480633e1607cb90c5c802ac765ffb89"
+  },
+  {
+    "path": "results/simulation/redundant_r15_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "19777d1f31c87a166c4af2a5aeb8b7acf4c02f30f4384d256f5104418311f5d0"
+  },
+  {
+    "path": "results/simulation/redundant_r15_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "36dc00c6c9e4295875f6ff82113ac766b2b717e3da4b33c205d41772b58e4ce8"
+  },
+  {
+    "path": "results/simulation/redundant_r15_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "d8cd1774d4d95ee677055c8502bb88b8b7d3950efd8a01a97b241510a113c7f4"
+  },
+  {
+    "path": "results/simulation/redundant_r16_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "1a7c9c289754bbb307ecfffc84012def82af4b6b42e6a465d58ed5acead9a2a7"
+  },
+  {
+    "path": "results/simulation/redundant_r16_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "b9c49ff0fca1bd9b223c782393fea7244bdf52a50239e6dd075974a7593e0b19"
+  },
+  {
+    "path": "results/simulation/redundant_r16_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "ba55ce73600c3240bb099ec1bcc614e863efff99233d30e80077dfddecbe16e9"
+  },
+  {
+    "path": "results/simulation/redundant_r17_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "ef6a5e2ec214a3e9281b3265e8a64c8b88ab1d96142f3caf817ce9febe60bd76"
+  },
+  {
+    "path": "results/simulation/redundant_r17_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "485de513958b238bd88a6a957288f02308af86955b2ee3eb5365a7a875f50a98"
+  },
+  {
+    "path": "results/simulation/redundant_r17_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "5ac1a5564e086bd79b6210d3b567bd16f3aed3a85f792ce50df335f3c3e5d235"
+  },
+  {
+    "path": "results/simulation/redundant_r18_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "623b6666dc1d23393c5653a1821c6fff4ee37b06bedf4afcd0ac3a00c9d8ec0d"
+  },
+  {
+    "path": "results/simulation/redundant_r18_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "a825f5b2bc12cb327520662590304a745665234baa04307aede501af41a8b9d6"
+  },
+  {
+    "path": "results/simulation/redundant_r18_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "856c7e5b19a35500e78d39ea500f8f15b1b54523209cbc836bef438e0f0f459b"
+  },
+  {
+    "path": "results/simulation/redundant_r19_n192/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "68d72d8b25aa41fd4d0f92369cb5b046f4441bba33dccd0c74f45dd56ba6fa8b"
+  },
+  {
+    "path": "results/simulation/redundant_r19_n384/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "756f083a1ff887555358e3b55d325dd12e081232b4cc73df576a7960f7b24442"
+  },
+  {
+    "path": "results/simulation/redundant_r19_n96/PREDICTIONS.npz",
+    "removed_only": [
+      "test_B",
+      "test_E",
+      "test_D",
+      "test_shiftD"
+    ],
+    "retained_arrays": [
+      "iid__logistic__baseline",
+      "iid__rbf_svm__baseline",
+      "iid__logistic__eeg_augmented",
+      "iid__rbf_svm__eeg_augmented",
+      "iid__oracle_baseline",
+      "iid__oracle_augmented",
+      "test_y",
+      "train_y"
+    ],
+    "source_sha256": "240748ab8101a6cad1fd83116559b6b805419512526b915188013d1425204467"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "INNER_FOLD_SCORES.csv": true,
+    "METRICS.csv": true,
+    "ORACLE.csv": true,
+    "TUNING.csv": true,
+    "all_npz_arrays": true
+  },
+  "fit_calls": 114,
+  "source_results_unchanged": true
+}

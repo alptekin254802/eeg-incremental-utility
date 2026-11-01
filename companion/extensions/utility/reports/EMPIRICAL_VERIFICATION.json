@@ -1,0 +1,9 @@
+{
+  "jobs": 200,
+  "prediction_rows": 51840,
+  "paired_repeat_comparisons": 450,
+  "fit_calls": 58500,
+  "independent_metric_check": true,
+  "nested_subsamples_same_test_check": true,
+  "original_logistic_reference_check": "passed within each full-size unadjusted job"
+}

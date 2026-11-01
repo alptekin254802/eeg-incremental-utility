@@ -1,0 +1,28 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Complete mean performance and supporting non-EEG comparisons.}
+\label{tab:full-performance}
+\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.14}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrrrrr@{}}
+\toprule
+Model & LL & $\Delta_{\mathrm{LL}}$ & AUROC & $\Delta_{\mathrm{AUROC}}$ & Brier & $\Delta_{\mathrm{Brier}}$\\\midrule
+Demographics & 0.6461 & --- & 0.6692 & --- & 0.2264 & ---\\
+Demographics and task behavior & 0.6256 & --- & 0.7161 & --- & 0.2146 & ---\\
+Non-EEG baseline & 0.6244 & --- & 0.7139 & --- & 0.2157 & ---\\
+\midrule\multicolumn{7}{l}{\textit{Preregistered primary}}\\
+Primary EEG-augmented procedure & 0.6532 & $-0.0288$ & 0.6662 & $-0.0478$ & 0.2289 & $-0.0131$\\
+\midrule\multicolumn{7}{l}{\textit{Prespecified sensitivity and secondary}}\\
+Regional spectral features & 0.6199 & $+0.0045$ & 0.7026 & $-0.0113$ & 0.2167 & $-0.0009$\\
+Expanded spectral features & 0.6366 & $-0.0122$ & 0.6867 & $-0.0272$ & 0.2237 & $-0.0079$\\
+Expanded spectral and covariance features & 0.6398 & $-0.0154$ & 0.6891 & $-0.0248$ & 0.2228 & $-0.0070$\\
+\midrule\multicolumn{7}{l}{\textit{Post hoc}}\\
+Phase-lag connectivity & 0.6117 & $+0.0127$ & 0.7170 & $+0.0031$ & 0.2122 & $+0.0035$\\
+Permutation entropy and Hjorth features & 0.5977 & $+0.0267$ & 0.7291 & $+0.0152$ & 0.2080 & $+0.0077$\\
+Spectral-state features & 0.6337 & $-0.0093$ & 0.6883 & $-0.0256$ & 0.2208 & $-0.0051$\\
+\midrule\multicolumn{7}{l}{\textit{Descriptive non-EEG additions; differences favor the later model}}\\
+Add task behavior & --- & $+0.0205$ & --- & $+0.0469$ & --- & $+0.0118$\\
+Add object gaze & --- & $+0.0012$ & --- & $-0.0021$ & --- & $-0.0012$\\
+\bottomrule\end{tabularx}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize LL: log loss. EEG differences use the non-EEG baseline. Positive differences favor the evaluated addition; repeat estimates are descriptive. Expanded spectral models include the preceding EEG representation. Full precision and repeat-specific estimates are supplied as CSV files.\end{minipage}
+\end{table}
+

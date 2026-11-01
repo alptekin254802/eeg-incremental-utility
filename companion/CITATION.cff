@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this software version and the source datasets when using the code or results."
+type: software
+repository-code: "https://github.com/alptekin254802/eeg-incremental-utility"
+title: "EEG incremental predictive utility: computational companion and exploratory extensions"
+version: "1.2.0-rc.3"
+authors:
+  - family-names: Cinbat
+    given-names: Alptekin
+    orcid: "https://orcid.org/0009-0007-1423-7403"
+  - family-names: Şentürk
+    given-names: Ümit
+    orcid: "https://orcid.org/0000-0001-9610-9550"
+  - family-names: Yücedağ
+    given-names: İbrahim
+    orcid: "https://orcid.org/0000-0003-2975-7392"
+license:
+  - MIT
+  - CC-BY-4.0

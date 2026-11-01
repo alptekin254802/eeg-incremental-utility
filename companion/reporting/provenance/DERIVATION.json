@@ -1,0 +1,8 @@
+{
+  "status": "Current descriptive provenance extract, not an original registration document",
+  "original_local_plan_sha256": "40107e90752d7267f24024086e2c3f22256faf691278235e033850f95a623d9a",
+  "row_ledger": "Eligibility-only projection of recorded audit reconstruction; demographic columns omitted",
+  "full_reconstruction_sha256": "b1c8313c6a14e8e684db7f772189227fad514684b09798d9335b4ac747780e79",
+  "raw_files_rehashed": false,
+  "new_model_fits": 0
+}

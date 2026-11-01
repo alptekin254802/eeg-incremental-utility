@@ -1,0 +1,10 @@
+{
+  "scope": "Saved-record descriptive recomputation; no raw EEG processing or model fitting",
+  "participants": 96,
+  "source_sha256": {
+    "audit/stage1_blind_feature_extraction/EEG_PREPROCESSING_QC.csv": "b9772d630f622ad90879ee7bae4918da8ca0308bd332f82d64324ce3183dc5a8",
+    "audit/preregistered_analysis/OUTCOME_LINKAGE_MANIFEST.csv": "fd5077b83c7a8679534455635e57447d548042eb4c3fa95427bc3799cf4509bb"
+  },
+  "quartiles": "numpy quantile method=linear, type 7",
+  "cohort_and_fraction_checks": true
+}

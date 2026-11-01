@@ -1,0 +1,74 @@
+[
+  {
+    "baseline": "task_eye",
+    "model": "baseline",
+    "learner": "logistic",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "task_eye",
+    "model": "baseline",
+    "learner": "rbf_svm",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "task_eye",
+    "model": "baseline",
+    "learner": "forest",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "task_eye",
+    "model": "eeg_augmented",
+    "learner": "logistic",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "task_eye",
+    "model": "eeg_augmented",
+    "learner": "rbf_svm",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "task_eye",
+    "model": "eeg_augmented",
+    "learner": "forest",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "baseline",
+    "learner": "logistic",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "baseline",
+    "learner": "rbf_svm",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "baseline",
+    "learner": "forest",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "eeg_augmented",
+    "learner": "logistic",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "eeg_augmented",
+    "learner": "rbf_svm",
+    "max_abs_difference": 0.0
+  },
+  {
+    "baseline": "all_non_eeg",
+    "model": "eeg_augmented",
+    "learner": "forest",
+    "max_abs_difference": 0.0
+  }
+]

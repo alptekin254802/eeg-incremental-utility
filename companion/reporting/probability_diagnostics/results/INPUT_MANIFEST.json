@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "release_root/expected/posthoc/results/outer_predictions.csv": "9a540c031e4c4cc2354b2c8e7d36efd9be8d03d8eec69742d9c40120bf077ebd",
+    "release_root/expected/posthoc/results/repeat_results.csv": "90b4d97300085149e445db56a3a4449ea60d2f1bac24128f5801e871e8dd3da4",
+    "transfer_root/analysis/results/PREDICTIONS.csv": "078e6bd60760f968e6d3e158c2c80fc96d8748683fa20b49e0e99118f2007642",
+    "transfer_root/analysis/results/CONDITIONAL_DRAWS.csv": "52fd9745b29ad8d660333e8a3a8d4359385f9a04437aee16ddce5bba68ee216a",
+    "extension_root/results/external/PREDICTIONS.csv": "5f65a2ff590afb7f21b2203ab2de04b6c9159baefdc1ca23ae92bbfb9a8b0a3c",
+    "extension_root/results/external/CONDITIONAL_RESAMPLES.csv": "b42a26d91f790ff08d84034a9d357dd672a5b1c1c522ae3ef41414cfddf65d4a"
+  },
+  "code_sha256": "07f76c641444ad2149994c3a4d750418bb20874bff31ae6494d4815ffe1d5aa9",
+  "analysis_plan_sha256": "e7822959f2b5605b69f425bb8b35beed171390aa82fc57b7db927f9778507211",
+  "software": {
+    "python": "3.14.3",
+    "numpy": "2.3.4",
+    "pandas": "2.3.3"
+  }
+}

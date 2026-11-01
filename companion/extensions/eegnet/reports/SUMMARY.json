@@ -1,0 +1,41 @@
+{
+  "baseline_logloss": 0.6243793041890202,
+  "baseline_auroc": 0.7139246119733924,
+  "baseline_brier": 0.2157410597875044,
+  "eegnet_logloss": 0.7249941653580431,
+  "eegnet_auroc": 0.6643015521064302,
+  "eegnet_brier": 0.2444201909048361,
+  "delta_logloss": -0.10061486116902274,
+  "delta_brier": -0.028679131117331686,
+  "delta_auroc": -0.049623059866962305,
+  "repeat_logloss": {
+    "median": -0.0926668917888942,
+    "q25": -0.1492876688684917,
+    "q75": -0.06155243982729949,
+    "min": -0.1742531338847414,
+    "max": -0.0036680911527304794,
+    "positive": 0,
+    "n": 10
+  },
+  "conditional_intervals": {
+    "delta_logloss": [
+      -0.23684645436368795,
+      0.02671322458497734
+    ],
+    "delta_brier": [
+      -0.07445618820917879,
+      0.016783162869788384
+    ]
+  },
+  "interval_scope": "Stratified participant resampling conditional on fixed fitted predictions; excludes training and selection uncertainty",
+  "training_loss": {
+    "inner": {
+      "median_first": 0.6943423633282932,
+      "median_last": 0.526833396836414
+    },
+    "outer": {
+      "median_first": 0.693117254740232,
+      "median_last": 0.5127799009021959
+    }
+  }
+}

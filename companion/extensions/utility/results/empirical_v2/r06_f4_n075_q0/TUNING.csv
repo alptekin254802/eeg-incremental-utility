@@ -1,0 +1,56 @@
+repeat,outer_fold,fraction,adjustment,train_n,test_n,learner,model,candidate,parameters,inner_logloss,selected
+6,4,0.75,0,57,19,logistic,baseline,0,"{""C"": 0.01}",0.66573827784648809,False
+6,4,0.75,0,57,19,logistic,baseline,1,"{""C"": 0.1}",0.62797507058077795,False
+6,4,0.75,0,57,19,logistic,baseline,2,"{""C"": 1.0}",0.61161673731808375,True
+6,4,0.75,0,57,19,logistic,baseline,3,"{""C"": 10.0}",0.67091759385208982,False
+6,4,0.75,0,57,19,logistic,baseline,4,"{""C"": 100.0}",0.73024978620194414,False
+6,4,0.75,0,57,19,rbf_svm,baseline,0,"{""C"": 0.1, ""gamma_factor"": 0.1}",0.67310571455056156,False
+6,4,0.75,0,57,19,rbf_svm,baseline,1,"{""C"": 0.1, ""gamma_factor"": 1.0}",0.65251879218169218,False
+6,4,0.75,0,57,19,rbf_svm,baseline,2,"{""C"": 1.0, ""gamma_factor"": 0.1}",0.67243505381581059,False
+6,4,0.75,0,57,19,rbf_svm,baseline,3,"{""C"": 1.0, ""gamma_factor"": 1.0}",0.62220610412414157,True
+6,4,0.75,0,57,19,rbf_svm,baseline,4,"{""C"": 10.0, ""gamma_factor"": 0.1}",0.6565104930784994,False
+6,4,0.75,0,57,19,rbf_svm,baseline,5,"{""C"": 10.0, ""gamma_factor"": 1.0}",0.64195028129497067,False
+6,4,0.75,0,57,19,logistic,regional_spectral,0,"{""C"": 0.01}",0.64943681564262634,False
+6,4,0.75,0,57,19,logistic,regional_spectral,1,"{""C"": 0.1}",0.62999440449982635,True
+6,4,0.75,0,57,19,logistic,regional_spectral,2,"{""C"": 1.0}",0.7620914339625251,False
+6,4,0.75,0,57,19,logistic,regional_spectral,3,"{""C"": 10.0}",1.366412163668874,False
+6,4,0.75,0,57,19,logistic,regional_spectral,4,"{""C"": 100.0}",2.8811369961587205,False
+6,4,0.75,0,57,19,rbf_svm,regional_spectral,0,"{""C"": 0.1, ""gamma_factor"": 0.1}",0.6796653429468098,False
+6,4,0.75,0,57,19,rbf_svm,regional_spectral,1,"{""C"": 0.1, ""gamma_factor"": 1.0}",0.70799142084685729,False
+6,4,0.75,0,57,19,rbf_svm,regional_spectral,2,"{""C"": 1.0, ""gamma_factor"": 0.1}",0.67972493696764069,False
+6,4,0.75,0,57,19,rbf_svm,regional_spectral,3,"{""C"": 1.0, ""gamma_factor"": 1.0}",0.70059848944614345,False
+6,4,0.75,0,57,19,rbf_svm,regional_spectral,4,"{""C"": 10.0, ""gamma_factor"": 0.1}",0.67364841822464328,True
+6,4,0.75,0,57,19,rbf_svm,regional_spectral,5,"{""C"": 10.0, ""gamma_factor"": 1.0}",0.68317844785480764,False
+6,4,0.75,0,57,19,logistic,expanded_spectral,0,"{""C"": 0.01}",0.65595218694787127,True
+6,4,0.75,0,57,19,logistic,expanded_spectral,1,"{""C"": 0.1}",0.70498622714764159,False
+6,4,0.75,0,57,19,logistic,expanded_spectral,2,"{""C"": 1.0}",0.97608885498205333,False
+6,4,0.75,0,57,19,logistic,expanded_spectral,3,"{""C"": 10.0}",1.7005105893625045,False
+6,4,0.75,0,57,19,logistic,expanded_spectral,4,"{""C"": 100.0}",2.6115082066312638,False
+6,4,0.75,0,57,19,rbf_svm,expanded_spectral,0,"{""C"": 0.1, ""gamma_factor"": 0.1}",0.73132417132753791,False
+6,4,0.75,0,57,19,rbf_svm,expanded_spectral,1,"{""C"": 0.1, ""gamma_factor"": 1.0}",0.76121553470394454,False
+6,4,0.75,0,57,19,rbf_svm,expanded_spectral,2,"{""C"": 1.0, ""gamma_factor"": 0.1}",0.73131664119715256,True
+6,4,0.75,0,57,19,rbf_svm,expanded_spectral,3,"{""C"": 1.0, ""gamma_factor"": 1.0}",0.77243566857671708,False
+6,4,0.75,0,57,19,rbf_svm,expanded_spectral,4,"{""C"": 10.0, ""gamma_factor"": 0.1}",0.78041696319732412,False
+6,4,0.75,0,57,19,rbf_svm,expanded_spectral,5,"{""C"": 10.0, ""gamma_factor"": 1.0}",0.74940493321928803,False
+6,4,0.75,0,57,19,logistic,covariance,0,"{""C"": 0.01}",0.65972121597695832,True
+6,4,0.75,0,57,19,logistic,covariance,1,"{""C"": 0.1}",0.7156495047430167,False
+6,4,0.75,0,57,19,logistic,covariance,2,"{""C"": 1.0}",1.0181892101976517,False
+6,4,0.75,0,57,19,logistic,covariance,3,"{""C"": 10.0}",1.798523704071441,False
+6,4,0.75,0,57,19,logistic,covariance,4,"{""C"": 100.0}",2.799004088029847,False
+6,4,0.75,0,57,19,rbf_svm,covariance,0,"{""C"": 0.1, ""gamma_factor"": 0.1}",0.72818789848134324,True
+6,4,0.75,0,57,19,rbf_svm,covariance,1,"{""C"": 0.1, ""gamma_factor"": 1.0}",0.74766421893942969,False
+6,4,0.75,0,57,19,rbf_svm,covariance,2,"{""C"": 1.0, ""gamma_factor"": 0.1}",0.72835163759557375,False
+6,4,0.75,0,57,19,rbf_svm,covariance,3,"{""C"": 1.0, ""gamma_factor"": 1.0}",0.75356597856419338,False
+6,4,0.75,0,57,19,rbf_svm,covariance,4,"{""C"": 10.0, ""gamma_factor"": 0.1}",0.75029741523614635,False
+6,4,0.75,0,57,19,rbf_svm,covariance,5,"{""C"": 10.0, ""gamma_factor"": 1.0}",0.76703802646484309,False
+6,4,0.75,0,57,19,logistic,entropy_hjorth,0,"{""C"": 0.01}",0.65335720591669122,False
+6,4,0.75,0,57,19,logistic,entropy_hjorth,1,"{""C"": 0.1}",0.62392804847190531,True
+6,4,0.75,0,57,19,logistic,entropy_hjorth,2,"{""C"": 1.0}",0.7430203622695486,False
+6,4,0.75,0,57,19,logistic,entropy_hjorth,3,"{""C"": 10.0}",1.1268473966099692,False
+6,4,0.75,0,57,19,logistic,entropy_hjorth,4,"{""C"": 100.0}",1.7222349635472018,False
+6,4,0.75,0,57,19,rbf_svm,entropy_hjorth,0,"{""C"": 0.1, ""gamma_factor"": 0.1}",0.66313432596439759,False
+6,4,0.75,0,57,19,rbf_svm,entropy_hjorth,1,"{""C"": 0.1, ""gamma_factor"": 1.0}",0.67716115407647703,False
+6,4,0.75,0,57,19,rbf_svm,entropy_hjorth,2,"{""C"": 1.0, ""gamma_factor"": 0.1}",0.66297951470594563,False
+6,4,0.75,0,57,19,rbf_svm,entropy_hjorth,3,"{""C"": 1.0, ""gamma_factor"": 1.0}",0.67275409647296736,False
+6,4,0.75,0,57,19,rbf_svm,entropy_hjorth,4,"{""C"": 10.0, ""gamma_factor"": 0.1}",0.6613278061525435,True
+6,4,0.75,0,57,19,rbf_svm,entropy_hjorth,5,"{""C"": 10.0, ""gamma_factor"": 1.0}",0.66489700254770312,False

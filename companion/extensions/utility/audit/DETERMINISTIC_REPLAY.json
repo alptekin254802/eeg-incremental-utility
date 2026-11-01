@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "empirical_v2/INNER_FOLD_SCORES.csv": true,
+    "empirical_v2/PREDICTIONS.csv": true,
+    "empirical_v2/SELECTOR_CHOICES.csv": true,
+    "empirical_v2/TUNING.csv": true,
+    "simulation/INNER_FOLD_SCORES.csv": true,
+    "simulation/METRICS.csv": true,
+    "simulation/ORACLE.csv": true,
+    "simulation/TUNING.csv": true,
+    "simulation_arrays": true
+  },
+  "empirical_fit_calls": 365,
+  "simulation_fit_calls": 114,
+  "scope": "one fixed empirical task and one nonlinear complementary simulation task; adult final fits separately replayed"
+}

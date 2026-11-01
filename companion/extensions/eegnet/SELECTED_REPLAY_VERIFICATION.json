@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "Selected repeat 0 / outer fold 0: six encoder refits and 52 logistic heads, using independently reconstructed windows",
+  "encoder_count": 6,
+  "head_count": 52,
+  "tensor_arrays_identical": 126,
+  "embedding_and_normalization_arrays_identical": 24,
+  "checkpoint_file_hashes_identical": 6,
+  "csv_maximum_errors": {
+    "OUTER_PREDICTIONS.csv": 0.0,
+    "INNER_CANDIDATES.csv": 0.0
+  },
+  "all_epochs_and_memberships_identical": true,
+  "not_a_full_300_encoder_second_run": true
+}

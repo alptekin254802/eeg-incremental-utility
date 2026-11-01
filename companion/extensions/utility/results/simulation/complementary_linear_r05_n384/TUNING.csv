@@ -1,0 +1,23 @@
+learner,model,candidate,parameters,inner_logloss,selected
+logistic,baseline,0,"{""C"": 0.01}",0.63505041790676275,False
+logistic,baseline,1,"{""C"": 0.1}",0.62030563921314297,True
+logistic,baseline,2,"{""C"": 1.0}",0.62354980663564019,False
+logistic,baseline,3,"{""C"": 10.0}",0.62422458134942771,False
+logistic,baseline,4,"{""C"": 100.0}",0.62429738316975214,False
+rbf_svm,baseline,0,"{""C"": 0.1, ""gamma_factor"": 0.1}",0.61861984956250471,False
+rbf_svm,baseline,1,"{""C"": 0.1, ""gamma_factor"": 1.0}",0.62120515143216004,False
+rbf_svm,baseline,2,"{""C"": 1.0, ""gamma_factor"": 0.1}",0.61824867789121585,True
+rbf_svm,baseline,3,"{""C"": 1.0, ""gamma_factor"": 1.0}",0.62126622345289595,False
+rbf_svm,baseline,4,"{""C"": 10.0, ""gamma_factor"": 0.1}",0.61873511404616066,False
+rbf_svm,baseline,5,"{""C"": 10.0, ""gamma_factor"": 1.0}",0.65045844242916584,False
+logistic,eeg_augmented,0,"{""C"": 0.01}",0.59807622740260535,False
+logistic,eeg_augmented,1,"{""C"": 0.1}",0.57879909449609468,True
+logistic,eeg_augmented,2,"{""C"": 1.0}",0.586775944188896,False
+logistic,eeg_augmented,3,"{""C"": 10.0}",0.5893447549993559,False
+logistic,eeg_augmented,4,"{""C"": 100.0}",0.58964749655903448,False
+rbf_svm,eeg_augmented,0,"{""C"": 0.1, ""gamma_factor"": 0.1}",0.58688657510559672,False
+rbf_svm,eeg_augmented,1,"{""C"": 0.1, ""gamma_factor"": 1.0}",0.59656173688944436,False
+rbf_svm,eeg_augmented,2,"{""C"": 1.0, ""gamma_factor"": 0.1}",0.58121652528591661,True
+rbf_svm,eeg_augmented,3,"{""C"": 1.0, ""gamma_factor"": 1.0}",0.59634833728889269,False
+rbf_svm,eeg_augmented,4,"{""C"": 10.0, ""gamma_factor"": 0.1}",0.58759130415597405,False
+rbf_svm,eeg_augmented,5,"{""C"": 10.0, ""gamma_factor"": 1.0}",0.63653306898040618,False

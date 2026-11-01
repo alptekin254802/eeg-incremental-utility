@@ -1,0 +1,9 @@
+{
+  "planned_fit_calls": 292,
+  "verification_fit_calls": 12,
+  "expected_planned_fit_calls": 292,
+  "heldout_transform_invariance": true,
+  "inputs_unchanged": true,
+  "plan_sha256": "98b373c7c0b32fc9383f5c54e54fd6d073462916061c65a1c3d9c8272a3d20fe",
+  "code_sha256": "6da2c5967a9455473910c7d57759eb56a16084d37e7a270a7caa2112291f4166"
+}

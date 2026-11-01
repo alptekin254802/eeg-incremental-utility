@@ -1,0 +1,11 @@
+outcome,model_family,repeat,outer_fold,inner_fold,representation,C,stage,error_code,message
+group,M2,0,,,,,calibration,CALIBRATION_FAILURE,RuntimeError('CALIBRATION_JOINT_FAILURE:Desired error not necessarily achieved due to precision loss.')
+group,M2,1,,,,,calibration,CALIBRATION_FAILURE,RuntimeError('CALIBRATION_JOINT_FAILURE:Desired error not necessarily achieved due to precision loss.')
+group,M2,2,,,,,calibration,CALIBRATION_FAILURE,RuntimeError('CALIBRATION_JOINT_FAILURE:Desired error not necessarily achieved due to precision loss.')
+group,M2,4,,,,,calibration,CALIBRATION_FAILURE,RuntimeError('CALIBRATION_JOINT_FAILURE:Desired error not necessarily achieved due to precision loss.')
+group,M2,9,,,,,calibration,CALIBRATION_FAILURE,RuntimeError('CALIBRATION_JOINT_FAILURE:Desired error not necessarily achieved due to precision loss.')
+group,adaptive_M3,0,,,,,calibration,CALIBRATION_FAILURE,RuntimeError('CALIBRATION_JOINT_FAILURE:Desired error not necessarily achieved due to precision loss.')
+group,adaptive_M3,1,,,,,calibration,CALIBRATION_FAILURE,RuntimeError('CALIBRATION_JOINT_FAILURE:Desired error not necessarily achieved due to precision loss.')
+group,adaptive_M3,4,,,,,calibration,CALIBRATION_FAILURE,RuntimeError('CALIBRATION_JOINT_FAILURE:Desired error not necessarily achieved due to precision loss.')
+group,adaptive_M3,6,,,,,calibration,CALIBRATION_FAILURE,RuntimeError('CALIBRATION_JOINT_FAILURE:Desired error not necessarily achieved due to precision loss.')
+group,adaptive_M3,7,,,,,calibration,CALIBRATION_FAILURE,RuntimeError('CALIBRATION_JOINT_FAILURE:Desired error not necessarily achieved due to precision loss.')

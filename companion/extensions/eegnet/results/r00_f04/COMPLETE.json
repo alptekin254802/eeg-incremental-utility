@@ -1,0 +1,8 @@
+{
+  "baseline_max_abs_error": 6.661338147750939e-16,
+  "selected": {
+    "baseline": 1.0,
+    "eegnet": 0.01
+  },
+  "encoders": 6
+}

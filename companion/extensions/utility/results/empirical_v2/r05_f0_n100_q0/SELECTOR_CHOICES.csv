@@ -1,0 +1,4 @@
+repeat,outer_fold,fraction,adjustment,train_n,test_n,learner,selected_representation,candidate
+5,0,1,0,76,20,logistic,covariance,0
+5,0,1,0,76,20,rbf_svm,covariance,4
+5,0,1,0,76,20,forest,covariance,2

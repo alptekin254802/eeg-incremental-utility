@@ -1,72 +1,93 @@
-# Incremental Predictive Utility of EEG Representations Beyond Behavioral and Object-Gaze Measures in Pediatric ADHD
+# Incremental predictive utility of EEG representations
 
-Does EEG improve prediction beyond demographics, task behavior and object-gaze measures? This repository contains the analysis code and derived results for our study of 96 BALLADEER participants using repeated nested cross-validation.
+Computational companion for *Incremental Predictive Utility of EEG Representations
+Beyond Behavioral and Object-Gaze Measures in Pediatric ADHD*, by Alptekin Cinbat,
+Ümit Şentürk, and İbrahim Yücedağ.
 
-The preregistered EEG procedure provided no average improvement over the non-EEG baseline. Post-hoc analyses examined additional EEG representations and the sensitivity of their results to acquisition conditions and signal controls. These exploratory findings require independent validation.
+Does EEG improve prediction beyond demographics, task behavior, and object-gaze
+measures? The study compares matched learning procedures in 96 BALLADEER
+participants using repeated participant-level nested cross-validation. The target
+is recorded study-group membership, rather than independently verified diagnosis.
+
+## Findings
+
+The prespecified EEG procedure worsened held-out log loss: **ΔLL = −0.0288**,
+defined as baseline minus EEG-augmented loss. Positive values favor EEG.
+The exploratory permutation-entropy/Hjorth result was favorable (**+0.0267**),
+but weakened with acquisition adjustment and was similar in Fourier-phase controls
+(**+0.0271**). It does not establish a specific physiological mechanism.
+
+Further analyses examined nonlinear learners, device transfer, training size,
+controlled simulations, and an independent adult-data conceptual comparison.
+One fixed-budget EEGNet-like learned representation also worsened log loss
+(**ΔLL = −0.1006**). Its conditional participant-resampling range
+**[−0.2368, +0.0267]** includes zero and omits training and selection uncertainty.
+These results do not establish an upper bound on EEG utility or validate a clinical
+diagnostic system.
+
+## Current code and results
+
+The complete companion is in **[`companion/`](companion/README.md)**. It includes
+the preserved v1.1.0 analysis, subsequent exploratory extensions, all outcomes,
+and the current article's 12 figures and 22 table sources.
+
+| Path | Contents |
+| --- | --- |
+| [`companion/reference_release/`](companion/reference_release/) | Preserved v1.1.0 code, inputs, results, and notices |
+| [`companion/extensions/`](companion/extensions/) | Device-transfer, learner, simulation, adult-data, and EEGNet-like analyses |
+| [`companion/article_assets/`](companion/article_assets/) | Current figures and tables |
+| [`companion/docs/`](companion/docs/) | Reproduction, data provenance, analysis status, and verification scope |
+| [`companion/FILE_MANIFEST.json`](companion/FILE_MANIFEST.json) | File identities for the complete companion |
+
+The original files at the repository root remain available for compatibility.
+Use the companion directory for the current documented workflow. The exact archived
+layout remains available at the [v1.1.0 tag](https://github.com/alptekin254802/eeg-incremental-utility/tree/v1.1.0).
 
 ## Getting started
 
-Use Python 3.14.3 and the pinned dependencies:
+Use Python 3.14.3 and the pinned dependencies. From a clone of this repository:
 
 ```text
-python -m venv .venv
+cd companion
+python -m venv ../../eeg-env
 ```
 
-Activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell or `source .venv/bin/activate` in a POSIX shell, then run:
+Activate `../../eeg-env/Scripts/Activate.ps1` in PowerShell or
+`source ../../eeg-env/bin/activate` in a POSIX shell, then run:
 
 ```text
 python -m pip install -r requirements.txt
-python -B reproduce.py check --output ../reproduction
+python -B reproduce.py check --output ../../eeg-check
+python -B reproduce.py verify-results --output ../../eeg-result-check
+python -B reproduce.py assets --output ../../eeg-assets
+python -B -m unittest discover -s tests -v
 ```
 
-The check verifies the distributed files, measurement inputs and 96-participant feature matrix. To regenerate the article's figures and tables from the supplied results:
+Use a new output directory for each command. These checks and display generation
+use distributed derived inputs and results; they do not train the complete study.
+The [command guide](companion/docs/COMMANDS.md) distinguishes saved-result checks,
+selected refits, and raw-data reproduction. The [EEGNet guide](companion/docs/EEGNET.md)
+describes its separate PyTorch environment, raw-window preparation, and training.
+The [verification record](companion/docs/VERIFICATION.md) states what was executed
+and what remains outside the checks.
 
-```text
-python -B reproduce.py figures --output ../reproduction
-python -B reproduce.py tables --output ../reproduction
-```
+## Data and citation
 
-These commands generate main Figures 1–3, supplementary Figures S1–S3 and all eleven tables from the supplied records, without fitting models. Files are written to `<output>/display_assets/`. See the [reproduction guide](docs/REPRODUCIBILITY.md) for individual analyses, expected outputs and comparison tolerances.
+This repository extends the archived [v1.1.0 release](https://doi.org/10.5281/zenodo.23199244)
+with the additional analyses reported in the manuscript. The archive DOI identifies
+v1.1.0; the later analyses are available here on GitHub. Cite the current software
+using [CITATION.cff](CITATION.cff), with the version or commit used. See
+[CITATION.md](CITATION.md) for the distinction between the current software and the
+archived release.
 
-## Reproduce from raw recordings
+Source data are available from [BALLADEER on Figshare](https://doi.org/10.6084/m9.figshare.28676042)
+and [the adult study on OSF](https://doi.org/10.17605/OSF.IO/EWKGV).
+Please cite the relevant source studies when using their data. The primary analysis
+was registered at [OSF 9jp2h](https://osf.io/9jp2h/), currently embargoed; later
+extensions are exploratory. See [data and provenance](companion/docs/DATA_AND_PROVENANCE.md)
+and [analysis status](companion/docs/ANALYSIS_STATUS.md).
 
-Download BALLADEER from its [Figshare record](https://doi.org/10.6084/m9.figshare.28676042) and arrange it as described in the [data guide](docs/DATA_LAYOUT.md). Replace the example path with your dataset directory:
-
-```text
-python -B reproduce.py raw-pipeline --dataset "../BALLADEER/dataset" --output ../fresh-reproduction --jobs 2
-```
-
-This route extracts new features and fits the models using those features. Outputs must be outside the repository and raw-data directory. The [raw-data guide](docs/FRESH_RAW_REPLAY.md) explains checkpoints and input verification; [reproduction limits](docs/REPRODUCTION_LIMITS.md) describes known numerical differences.
-
-## Repository contents
-
-| Path | Contents |
-|---|---|
-| `reproduce.py` and `reproduce/` | Commands for extraction, model fitting, figures, tables and validation |
-| `audit/` | Estimator modules, measurement inputs, primary results and exploratory connectivity/entropy results |
-| `results/e5/` | Post-hoc spectral-state predictors, held-out predictions, tuning records and results |
-| `expected/posthoc/` | Explanatory comparisons and Fourier-phase controls |
-| `display_assets/` | Code to generate figures and tables from saved records |
-| `docs/RESULT_FILES.md` | Guide to the result files and their columns |
-| `results/numerical_followups/` | Calibration checks and resampling results with predictions held fixed |
-| `RELEASE_MANIFEST.json` | SHA-256 checksums for the files in this repository |
-
-The full article and supplement are not distributed in this code repository. The preregistered procedure and the subsequent exploratory analyses are distinguished throughout the documentation.
-
-## Registration and citation
-
-Current release: [v1.1.0](https://github.com/alptekin254802/eeg-incremental-utility/releases/tag/v1.1.0), archived at [10.5281/zenodo.23199244](https://doi.org/10.5281/zenodo.23199244).
-
-The primary analysis was registered at [OSF 9jp2h](https://osf.io/9jp2h/). The additional EEG representations and explanatory analyses are post hoc.
-
-To cite the software across all published versions, use the Zenodo concept DOI [10.5281/zenodo.23146468](https://doi.org/10.5281/zenodo.23146468). For citation metadata, see [CITATION.cff](CITATION.cff) or [CITATION.md](CITATION.md). Please also cite the [BALLADEER dataset](https://doi.org/10.6084/m9.figshare.28676042) when using its data. Analysis code is available under the [MIT License](LICENSE); [DATA_LICENSE.md](DATA_LICENSE.md) describes the source-data licence and attribution.
-
-## Validation
-
-```text
-python -B -m unittest discover -s reproduce -p "test_*.py" -v
-```
-
-These tests check separation of saved reference results from fresh model fitting and rejection of altered inputs or incompatible checkpoints. They do not rerun the complete study.
-
-See the [update notes](docs/RELEASE_CANDIDATE.md) for changes to result checks, calibration and resampling.
+Original code and tests are MIT licensed; original companion documentation,
+figures, tables, and derived content are CC BY 4.0. Third-party material retains
+its own terms in the [license notices](companion/NOTICE.md). Manuscripts and
+journal declarations are distributed separately from this software repository.

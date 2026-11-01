@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "device": "cuda",
+  "torch": "2.5.1+cu118",
+  "parameters": 1457,
+  "seconds": 2.569456299999729,
+  "checks": [
+    "held-out signal perturbation leaves fitted states and training moments identical",
+    "assessment leaves model and batch-normalization state unchanged",
+    "participant assessment order invariance",
+    "participant-equal normalization",
+    "finite embeddings",
+    "optimization updates model"
+  ],
+  "scope": "Synthetic data only; two-epoch execution check, not a study fit"
+}

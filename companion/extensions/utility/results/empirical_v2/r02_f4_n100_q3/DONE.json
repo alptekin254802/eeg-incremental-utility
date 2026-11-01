@@ -1,0 +1,13 @@
+{
+  "job": "r02_f4_n100_q3",
+  "repeat": 2,
+  "outer_fold": 4,
+  "fraction": 1.0,
+  "adjustment": 3,
+  "train_n": 77,
+  "test_n": 19,
+  "fit_calls": 235,
+  "convergence_retries": 0,
+  "heldout_perturbation_invariance": true,
+  "seconds": 20.9472188000218
+}

@@ -1,0 +1,3 @@
+scenario,replicate,train_n,assessment,conditional_information_benchmark
+acquisition_association,13,384,iid,0.13515089698341753
+acquisition_association,13,384,shifted,0

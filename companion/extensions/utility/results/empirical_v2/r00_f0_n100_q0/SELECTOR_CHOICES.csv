@@ -1,0 +1,4 @@
+repeat,outer_fold,fraction,adjustment,train_n,test_n,learner,selected_representation,candidate
+0,0,1,0,76,20,logistic,regional_spectral,1
+0,0,1,0,76,20,rbf_svm,regional_spectral,2
+0,0,1,0,76,20,forest,regional_spectral,1

@@ -1,0 +1,9 @@
+[
+  {
+    "correction": "Use actual frozen prediction column p_adaptive_m3 in reference validation instead of nonexistent p_m3. No analysis method or grid changed. Failed first-job output retained in results/empirical; no new performance was saved or viewed. New empirical outputs use results/empirical_v2.",
+    "code_sha256": "48fbbd61638e39dd882f932c5f0c8a3150b66e4fe4107f7f6c7b27c62a1db450"
+  },
+  {
+    "correction": "Summary-only correction: use explicit Series repeat column indexing because .repeat resolves to a pandas method. No model fits or saved predictions changed. Failed summarization occurred before output tables."
+  }
+]
