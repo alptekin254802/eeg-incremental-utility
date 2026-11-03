@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+\centering
+\caption{Exploratory device-separated transfer: log-loss changes and secondary metrics.}
+\label{tab:transfer}
+\begin{tabular}{lrr}
+\toprule
+Procedure & $\Delta$LL & Conditional 95\% range\\
+\midrule
+\multicolumn{3}{l}{Train EPOC X ($n=54$); assess EPOC+ ($n=42$)}\\
+Spectral/covariance selector & +0.0204 & [-0.0484, +0.0907] \\
+\quad Equal-class mean & +0.0054 & [-0.0600, +0.0706] \\
+Entropy/Hjorth & +0.0153 & [-0.0752, +0.1049] \\
+\quad Equal-class mean & +0.0001 & [-0.0845, +0.0837] \\
+\midrule
+\multicolumn{3}{l}{Train EPOC+ ($n=42$); assess EPOC X ($n=54$)}\\
+Spectral/covariance selector & +0.0158 & [-0.0344, +0.0673] \\
+\quad Equal-class mean & +0.0012 & [-0.0440, +0.0457] \\
+Entropy/Hjorth & +0.0796 & [+0.0218, +0.1366] \\
+\quad Equal-class mean & +0.0379 & [-0.0264, +0.0966] \\
+\bottomrule
+\end{tabular}
+
+\vspace{6pt}
+\begin{tabular}{llrr}
+\toprule
+Train $\rightarrow$ assess & Procedure & $\Delta$AUROC & $\Delta$Brier\\
+\midrule
+X $\rightarrow$ Plus & Spectral/covariance selector & -0.0188 & +0.0087 \\
+X $\rightarrow$ Plus & Entropy/Hjorth & +0.0024 & +0.0094 \\
+Plus $\rightarrow$ X & Spectral/covariance selector & +0.0625 & +0.0047 \\
+Plus $\rightarrow$ X & Entropy/Hjorth & +0.0855 & +0.0376 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\textwidth}\small
+Positive differences favor EEG. Overall log-loss means use the observed target composition; equal-class means weight ADHD and controls equally. Ranges resample target participants within groups with fixed source fits and class counts (5,000 draws); they omit source-training and selection uncertainty. The selector chose regional spectral features in both directions. The addendum retains absolute metrics, all fixed candidates, and conditional draws for all four principal comparisons.
+\end{minipage}
+\end{table}

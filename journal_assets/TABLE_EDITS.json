@@ -1,0 +1,119 @@
+{
+  "adult_extension.tex": [],
+  "clean_duration.tex": [
+    [
+      "Epoc X & 54 & 4.45 [4.25, 4.65] & 3.43--5.75 & 0.856 [0.800, 0.911]\\\\\nEpoc+ & 42 & 4.12 [4.01, 4.43] & 3.23--4.72 & 0.902 [0.855, 0.933]\\\\\nEpoc X / ADHD group & 16 & 4.47 [4.14, 4.69] & 3.43--4.98 & 0.859 [0.804, 0.935]\\\\\nEpoc X / Control & 38 & 4.45 [4.28, 4.63] & 3.50--5.75 & 0.849 [0.800, 0.910]\\\\\nEpoc+ / ADHD group & 25 & 4.12 [4.03, 4.50] & 3.23--4.72 & 0.911 [0.856, 0.929]\\\\\nEpoc+ / Control & 17 & 4.10 [4.00, 4.38] & 3.80--4.68 & 0.900 [0.855, 0.935]\\\\\n",
+      "EPOC X & 54 & 4.45 [4.25, 4.65] & 3.43--5.75 & 0.856 [0.800, 0.911]\\\\\nEPOC+ & 42 & 4.12 [4.01, 4.43] & 3.23--4.72 & 0.902 [0.855, 0.933]\\\\\nEPOC X / ADHD group & 16 & 4.47 [4.14, 4.69] & 3.43--4.98 & 0.859 [0.804, 0.935]\\\\\nEPOC X / Control & 38 & 4.45 [4.28, 4.63] & 3.50--5.75 & 0.849 [0.800, 0.910]\\\\\nEPOC+ / ADHD group & 25 & 4.12 [4.03, 4.50] & 3.23--4.72 & 0.911 [0.856, 0.929]\\\\\nEPOC+ / Control & 17 & 4.10 [4.00, 4.38] & 3.80--4.68 & 0.900 [0.855, 0.935]\\\\\n"
+    ]
+  ],
+  "cohort.tex": [],
+  "diagnosis.tex": [
+    [
+      "Primary EEG procedure & 0.6125 & 0.6877 & 0.2051\\\\\n",
+      "Primary procedure & 0.6125 & 0.6877 & 0.2051\\\\\n"
+    ]
+  ],
+  "eegnet_summary.tex": [],
+  "fixed_oof_ranges.tex": [
+    [
+      "Primary EEG procedure & $-0.0288$ & $-0.0897$ & $+0.0340$\\\\\nEntropy and Hjorth & $+0.0267$ & $-0.0280$ & $+0.0808$\\\\\n",
+      "Primary procedure & $-0.0288$ & $-0.0897$ & $+0.0340$\\\\\nEntropy/Hjorth features & $+0.0267$ & $-0.0280$ & $+0.0808$\\\\\n"
+    ]
+  ],
+  "main_adjustment.tex": [
+    [
+      "Primary EEG procedure & $-0.0288$ & $-0.0478$ & $-0.0131$\\\\\nFull entropy and Hjorth model & $+0.0267$ & $+0.0152$ & $+0.0077$\\\\\n",
+      "Primary procedure & $-0.0288$ & $-0.0478$ & $-0.0131$\\\\\nEntropy/Hjorth features & $+0.0267$ & $+0.0152$ & $+0.0077$\\\\\n"
+    ],
+    [
+      "Primary EEG procedure & $-0.0208$ & $-0.0453$ & $-0.0123$\\\\\nFull entropy and Hjorth model & $+0.0204$ & $+0.0050$ & $+0.0043$\\\\\n",
+      "Spectral/covariance selector & $-0.0208$ & $-0.0453$ & $-0.0123$\\\\\nEntropy/Hjorth features & $+0.0204$ & $+0.0050$ & $+0.0043$\\\\\n"
+    ],
+    [
+      "Primary EEG procedure & $-0.0258$ & $-0.0507$ & $-0.0145$\\\\\nFull entropy and Hjorth model & $+0.0071$ & $-0.0078$ & $-0.0011$\\\\\n",
+      "Spectral/covariance selector & $-0.0258$ & $-0.0507$ & $-0.0145$\\\\\nEntropy/Hjorth features & $+0.0071$ & $-0.0078$ & $-0.0011$\\\\\n"
+    ],
+    [
+      "\\par\\smallskip\\begin{minipage}{\\textwidth}\\footnotesize Positive differences favor EEG augmentation: baseline minus augmented log loss or Brier score, and augmented minus baseline AUROC. Each comparison adds the named covariates to both the baseline and EEG-augmented model. EEG-quality covariates are clean-window fraction and interpolated-channel count; this adjusted baseline requires EEG acquisition. The unadjusted primary comparison is preregistered; the entropy and Hjorth and all adjusted comparisons are post hoc. Values average the same ten dependent repeats.\\end{minipage}\n",
+      "\\par\\smallskip\\begin{minipage}{\\textwidth}\\footnotesize Positive differences favor EEG augmentation: baseline minus augmented log loss or Brier score, and augmented minus baseline AUROC. Each comparison adds the named covariates to both the baseline and EEG-augmented model. EEG-quality covariates are clean-window fraction and interpolated-channel count; this adjusted baseline requires EEG acquisition. The unadjusted primary comparison is preregistered; the entropy/Hjorth and all adjusted comparisons are post hoc. Values average the same ten dependent repeats.\\end{minipage}\n"
+    ]
+  ],
+  "main_cohort.tex": [
+    [
+      "Epoc X & 16 & 38\\\\\nEpoc+ & 25 & 17\\\\\n",
+      "EPOC X & 16 & 38\\\\\nEPOC+ & 25 & 17\\\\\n"
+    ]
+  ],
+  "main_learner.tex": [
+    [
+      "\\begin{tabular}{llrrrr}\n",
+      "\\setlength{\\tabcolsep}{4pt}\n\\begin{tabularx}{\\textwidth}{@{}>{\\raggedright\\arraybackslash}p{2.8cm}>{\\raggedright\\arraybackslash}Xrrrr@{}}\n"
+    ],
+    [
+      "Learner & EEG procedure & Baseline LL & $\\Delta$LL & $\\Delta$AUROC & $\\Delta$Brier\\\\\n",
+      "Learner & EEG procedure & \\shortstack{Baseline\\\\LL} & $\\Delta$LL & $\\Delta$AUROC & $\\Delta$Brier\\\\\n"
+    ],
+    [
+      "Logistic regression & Library selector & $0.6244$ & $-0.0288$ & $-0.0478$ & $-0.0131$\\\\\nLogistic regression & Entropy + Hjorth & $0.6244$ & $+0.0267$ & $+0.0152$ & $+0.0077$\\\\\nRBF SVM & Library selector & $0.6560$ & $-0.0143$ & $-0.0389$ & $-0.0093$\\\\\nRBF SVM & Entropy + Hjorth & $0.6560$ & $+0.0139$ & $-0.0043$ & $+0.0022$\\\\\nRandom forest & Library selector & $0.6561$ & $-0.0294$ & $-0.0640$ & $-0.0166$\\\\\nRandom forest & Entropy + Hjorth & $0.6561$ & $+0.0093$ & $-0.0121$ & $+0.0010$\\\\\n",
+      "Logistic regression & Primary procedure & $0.6244$ & $-0.0288$ & $-0.0478$ & $-0.0131$\\\\\nLogistic regression & Entropy/Hjorth & $0.6244$ & $+0.0267$ & $+0.0152$ & $+0.0077$\\\\\nRBF SVM & Spectral/covariance selector & $0.6560$ & $-0.0143$ & $-0.0389$ & $-0.0093$\\\\\nRBF SVM & Entropy/Hjorth & $0.6560$ & $+0.0139$ & $-0.0043$ & $+0.0022$\\\\\nRandom forest & Spectral/covariance selector & $0.6561$ & $-0.0294$ & $-0.0640$ & $-0.0166$\\\\\nRandom forest & Entropy/Hjorth & $0.6561$ & $+0.0093$ & $-0.0121$ & $+0.0010$\\\\\n"
+    ],
+    [
+      "\\bottomrule\\end{tabular}\n",
+      "\\bottomrule\\end{tabularx}\n"
+    ]
+  ],
+  "main_performance.tex": [
+    [
+      "Primary EEG-augmented procedure & 0.6532 & $-0.0288$ & 0.6662 & 0.2289\\\\\n",
+      "Primary procedure & 0.6532 & $-0.0288$ & 0.6662 & 0.2289\\\\\n"
+    ]
+  ],
+  "probability_tails.tex": [],
+  "retention_profile.tex": [],
+  "supp_offset.tex": [
+    [
+      "\\begin{tabular}{@{}llrrrr@{}}\n",
+      "\\begin{tabularx}{\\textwidth}{@{}l>{\\raggedright\\arraybackslash}Xrrrr@{}}\n"
+    ],
+    [
+      "EPOC+ $\\to$ X & Selector & $+0.0158$ & $-0.0040$ & $+0.0012$ & $-0.0252$ \\\\\n",
+      "EPOC+ $\\to$ X & Spectral/covariance selector & $+0.0158$ & $-0.0040$ & $+0.0012$ & $-0.0252$ \\\\\n"
+    ],
+    [
+      "EPOC X $\\to$ + & Selector & $+0.0204$ & $-0.0210$ & $+0.0054$ & $-0.0354$ \\\\\n",
+      "EPOC X $\\to$ + & Spectral/covariance selector & $+0.0204$ & $-0.0210$ & $+0.0054$ & $-0.0354$ \\\\\n"
+    ],
+    [
+      "\\end{tabular}\n",
+      "\\end{tabularx}\n"
+    ]
+  ],
+  "supp_targeted.tex": [
+    [
+      "Age spline: primary selector & $-0.0288$ & $-0.0257$ & $[-0.0852,\\,+0.0333]$ & 1 \\\\\n",
+      "Age spline: spectral/covariance & $-0.0288$ & $-0.0257$ & $[-0.0852,\\,+0.0333]$ & 1 \\\\\n"
+    ],
+    [
+      "\\begin{tabular}{@{}p{4.8cm}rrlr@{}}",
+      "\\begin{tabular}{@{}>{\\raggedright\\arraybackslash}p{4.8cm}rrlr@{}}"
+    ]
+  ],
+  "supp_transfer.tex": [
+    [
+      "Entropy and Hjorth & +0.0153 & [-0.0752, +0.1049] \\\\\n",
+      "Entropy/Hjorth & +0.0153 & [-0.0752, +0.1049] \\\\\n"
+    ],
+    [
+      "Entropy and Hjorth & +0.0796 & [+0.0218, +0.1366] \\\\\n",
+      "Entropy/Hjorth & +0.0796 & [+0.0218, +0.1366] \\\\\n"
+    ],
+    [
+      "X $\\rightarrow$ Plus & Entropy and Hjorth & +0.0024 & +0.0094 \\\\\n",
+      "X $\\rightarrow$ Plus & Entropy/Hjorth & +0.0024 & +0.0094 \\\\\n"
+    ],
+    [
+      "Plus $\\rightarrow$ X & Entropy and Hjorth & +0.0855 & +0.0376 \\\\\n",
+      "Plus $\\rightarrow$ X & Entropy/Hjorth & +0.0855 & +0.0376 \\\\\n"
+    ]
+  ]
+}

@@ -54,12 +54,24 @@ addendum without alteration. Unadjusted entropy/Hjorth gains remained positive
 under the age and bandwidth sensitivities, but were smaller with device/quality
 adjustment. Common prior correction reversed three of four transfer increments.
 These exploratory controls do not identify a physiological mechanism.
-This addition is prepared for version 1.2.3; the v1.2.2 archive remains unchanged.
+These computations are archived in [version 1.2.3](https://doi.org/10.5281/zenodo.23930239); earlier archives remain unchanged.
 
 The original files at the repository root remain available for compatibility.
 Use the companion directory for the earlier analyses and the targeted-control
 guide below for the later controls. The exact archived
 layout remains available at the [v1.1.0 tag](https://github.com/alptekin254802/eeg-incremental-utility/tree/v1.1.0).
+
+## Current journal displays
+
+[`journal_assets/`](journal_assets/README.md) reproduces the current 15 tables
+and 8 figures, including the compact device-transfer plot. It checks frozen input
+identities and preserves all numerical table cells while updating presentation.
+These changes postdate v1.2.3; cite the exact repository commit for this display
+layer. The archived scientific computations and technical note remain unchanged.
+
+```text
+python -B journal_assets/build.py --output ../eeg-journal-assets
+```
 
 ## Getting started
 
@@ -106,15 +118,12 @@ current article.
 
 ## Data and citation
 
-The latest archived release is [version 1.2.2](https://doi.org/10.5281/zenodo.23929744),
-including the technical note and the preserved original and earlier exploratory
-computations. The separate [original version 1.1.0](https://doi.org/10.5281/zenodo.23199244)
-also remains available. The later targeted computational addendum is included in
-this checkout after v1.2.2; it must not be attributed to that older DOI.
+The latest archived release is [version 1.2.3](https://doi.org/10.5281/zenodo.23930239),
+including the original computations, earlier extensions, technical note, and
+complete later targeted controls. The separately archived
+[original version 1.1.0](https://doi.org/10.5281/zenodo.23199244) remains available.
 Cite the software version or commit actually used; [CITATION.md](CITATION.md)
-distinguishes the archived release from subsequent additions. Root package metadata
-in [CITATION.cff](CITATION.cff) prepares version 1.2.3 without assigning a new DOI
-or release date.
+distinguishes the archived computations from later display updates.
 
 Source data are available from [BALLADEER on Figshare](https://doi.org/10.6084/m9.figshare.28676042)
 and [the adult study on OSF](https://doi.org/10.17605/OSF.IO/EWKGV).

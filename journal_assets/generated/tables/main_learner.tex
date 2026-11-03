@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Paired EEG increments in the pediatric cohort, averaged over ten dependent repeats. Positive values favor EEG. Each procedure uses its learner's matched baseline. EEGNet-like denotes averaged learned embeddings with a logistic head; additional learner and representation comparisons are exploratory.}
+\label{tab:learner}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.8cm}>{\raggedright\arraybackslash}Xrrrr@{}}
+\toprule
+Learner & EEG procedure & \shortstack{Baseline\\LL} & $\Delta$LL & $\Delta$AUROC & $\Delta$Brier\\
+\midrule
+Logistic regression & Primary procedure & $0.6244$ & $-0.0288$ & $-0.0478$ & $-0.0131$\\
+Logistic regression & Entropy/Hjorth & $0.6244$ & $+0.0267$ & $+0.0152$ & $+0.0077$\\
+RBF SVM & Spectral/covariance selector & $0.6560$ & $-0.0143$ & $-0.0389$ & $-0.0093$\\
+RBF SVM & Entropy/Hjorth & $0.6560$ & $+0.0139$ & $-0.0043$ & $+0.0022$\\
+Random forest & Spectral/covariance selector & $0.6561$ & $-0.0294$ & $-0.0640$ & $-0.0166$\\
+Random forest & Entropy/Hjorth & $0.6561$ & $+0.0093$ & $-0.0121$ & $+0.0010$\\
+Logistic regression & EEGNet-like & $0.6244$ & $-0.1006$ & $-0.0496$ & $-0.0287$\\
+\bottomrule\end{tabularx}
+\end{table*}

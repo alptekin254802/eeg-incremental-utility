@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Saved-probability error contributions for entropy/Hjorth augmentation.}
+\label{tab:probability-tail-diagnostics}
+\begin{tabular}{lrrrr}
+\toprule
+Design & Tails B/E & Total $\Delta$LL & Tail contribution & Other contribution\\
+\midrule
+Unadjusted & 6/0 & +0.0267 & +0.0068 & +0.0198\\
+Device & 10/0 & +0.0204 & +0.0099 & +0.0104\\
+Device + quality & 4/1 & +0.0071 & +0.0087 & -0.0016\\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize B and E denote matched baseline and augmented models. Counts are occurrences among 960 dependent participant--repeat predictions per model, not independent participants. Tail contributions sum paired loss changes for rows meeting the incorrect-tail rule in either model, divided by all 960 rows; the other contribution uses remaining rows with the same denominator. Before rounding, the components sum to total $\Delta$LL. Positive values favor EEG; no rows were excluded or models recalibrated.
+\end{minipage}
+\end{table}

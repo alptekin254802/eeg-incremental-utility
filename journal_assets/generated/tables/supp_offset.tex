@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{Oracle prior-odds sensitivity of the saved device-transfer comparisons.}
+\label{tab:offset}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}Xrrrr@{}}
+\toprule
+& & \multicolumn{2}{c}{Observed composition} & \multicolumn{2}{c}{Equal-class mean} \\
+\cmidrule(lr){3-4}\cmidrule(l){5-6}
+Direction & EEG procedure & Original & Offset & Original & Offset \\
+\midrule
+EPOC+ $\to$ X & Spectral/covariance selector & $+0.0158$ & $-0.0040$ & $+0.0012$ & $-0.0252$ \\
+EPOC+ $\to$ X & Entropy/Hjorth & $+0.0796$ & $+0.0210$ & $+0.0379$ & $-0.0097$ \\
+EPOC X $\to$ + & Spectral/covariance selector & $+0.0204$ & $-0.0210$ & $+0.0054$ & $-0.0354$ \\
+EPOC X $\to$ + & Entropy/Hjorth & $+0.0153$ & $-0.0270$ & $+0.0001$ & $-0.0406$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\begin{minipage}{\textwidth}
+Entries are baseline-minus-augmented log-loss differences. Offset adds the same source-to-target prior-log-odds change to both models. It uses target study-group labels and is an oracle diagnostic, not a deployable predictor. All offset conditional ranges, both observed-composition and equal-class, include zero. Complete probabilities, absolute losses, secondary metrics, group-specific differences, and conditional draws accompany the table.
+\end{minipage}
+\end{table}

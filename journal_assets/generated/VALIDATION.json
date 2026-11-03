@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "scope": "File identities, numerical-cell preservation, and figure generation from saved results",
+  "input_count": 25,
+  "tables": {
+    "adult_extension.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 54
+    },
+    "clean_duration.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 81
+    },
+    "cohort.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 11
+    },
+    "diagnosis.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 9
+    },
+    "eegnet_summary.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 13
+    },
+    "fixed_oof_ranges.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 6
+    },
+    "main_adjustment.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 18
+    },
+    "main_cohort.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 24
+    },
+    "main_learner.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 28
+    },
+    "main_performance.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 37
+    },
+    "probability_tails.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 15
+    },
+    "retention_profile.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 27
+    },
+    "supp_offset.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 18
+    },
+    "supp_targeted.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 26
+    },
+    "supp_transfer.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 33
+    }
+  },
+  "figure4": {
+    "points": [
+      {
+        "direction": "X_to_Plus",
+        "model": "spectral_covariance_selector",
+        "control": -0.07300864362942512,
+        "adhd": 0.08387316934488599,
+        "observed_mean": 0.020373387902902912,
+        "equal_class_mean": 0.0054322628577304355
+      },
+      {
+        "direction": "X_to_Plus",
+        "model": "entropy_hjorth",
+        "control": -0.07970148627855328,
+        "adhd": 0.07996092238979707,
+        "observed_mean": 0.01533566173832193,
+        "equal_class_mean": 0.00012971805562189687
+      },
+      {
+        "direction": "Plus_to_X",
+        "model": "spectral_covariance_selector",
+        "control": 0.037054449075913924,
+        "adhd": -0.03474474940026553,
+        "observed_mean": 0.01578061249037927,
+        "equal_class_mean": 0.0011548498378241984
+      },
+      {
+        "direction": "Plus_to_X",
+        "model": "entropy_hjorth",
+        "control": 0.14016123711001782,
+        "adhd": -0.0643053387938599,
+        "observed_mean": 0.0795785479533133,
+        "equal_class_mean": 0.03792794915807896
+      }
+    ],
+    "source": "Saved device-transfer results; no fitting or resampling",
+    "group_and_aggregate_identities_verified": true,
+    "size_inches": [
+      7.2,
+      2.55
+    ]
+  },
+  "figure_numbering": {
+    "Figure 1": "repeat_increments.pdf",
+    "Figure 2": "acquisition_phase_controls.pdf",
+    "Figure 3": "component_increments.pdf",
+    "Figure 4": "device_transfer.pdf",
+    "Figure 5": "independent_adult_increment.pdf",
+    "Figure S1": "participant_changes.pdf",
+    "Figure S2": "learning_curves.pdf",
+    "Figure S3": "controlled_simulations.pdf"
+  },
+  "new_fits": 0,
+  "resampling_runs": 0
+}
