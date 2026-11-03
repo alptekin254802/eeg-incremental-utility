@@ -1,0 +1,17 @@
+\begin{table}[htbp]\centering
+\caption{Training-size summaries for the two focal EEG procedures. The full-size endpoint reuses the unadjusted model-family analysis. B and E denote baseline and augmented log loss. Complete results for all five procedures appear in the accompanying CSVs.}\label{tab:learning-extension}
+\begin{tabular}{llrrrrr}\toprule
+Learner & Procedure & Training $n$ & B LL & E LL & $\Delta$LL & Positive/10\\\midrule
+Logistic & Library selector & 38 & $0.6582$ & $0.7189$ & $-0.0607$ & 4\\
+Logistic & Library selector & 57 & $0.6434$ & $0.6406$ & $+0.0028$ & 4\\
+Logistic & Library selector & 76--77 & $0.6244$ & $0.6532$ & $-0.0288$ & 1\\
+Logistic & Entropy/Hjorth & 38 & $0.6582$ & $0.7032$ & $-0.0450$ & 6\\
+Logistic & Entropy/Hjorth & 57 & $0.6434$ & $0.6239$ & $+0.0195$ & 6\\
+Logistic & Entropy/Hjorth & 76--77 & $0.6244$ & $0.5977$ & $+0.0267$ & 10\\
+SVM & Library selector & 38 & $0.6921$ & $0.6955$ & $-0.0034$ & 5\\
+SVM & Library selector & 57 & $0.6534$ & $0.6721$ & $-0.0186$ & 2\\
+SVM & Library selector & 76--77 & $0.6560$ & $0.6703$ & $-0.0143$ & 1\\
+SVM & Entropy/Hjorth & 38 & $0.6921$ & $0.6926$ & $-0.0005$ & 5\\
+SVM & Entropy/Hjorth & 57 & $0.6534$ & $0.6515$ & $+0.0019$ & 5\\
+SVM & Entropy/Hjorth & 76--77 & $0.6560$ & $0.6422$ & $+0.0139$ & 5\\
+\bottomrule\end{tabular}\end{table}

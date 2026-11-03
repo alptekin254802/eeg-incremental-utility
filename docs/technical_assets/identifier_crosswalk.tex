@@ -1,0 +1,22 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Method names, computational identifiers, and predictor dimensions.}
+\label{tab:crosswalk}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}Xrr@{}}
+\toprule
+Identifier & Method name and composition & EEG & Total\\
+\midrule
+M0 & Demographics & 0 & 2\\
+M1 & Demographics and task behavior & 0 & 5\\
+M2 & Non-EEG baseline: M1 plus object gaze & 0 & 7\\
+adaptive M3 & Primary EEG-augmented procedure; selects E0, E1, or E2 & varies & varies\\
+E0 & Regional spectral features, added to M2 & 12 & 19\\
+E1 & Expanded spectral features: E0 plus topography, variability, spectral entropy & 35 & 42\\
+E2 & Expanded spectral and covariance features: E1 plus covariance components & 47 & 54\\
+E3 & Phase-lag connectivity, added to M2 & 9 & 16\\
+E4 & Permutation entropy and Hjorth features, added to M2 & 9 & 16\\
+E5 & Spectral-state features, added to M2 & 9 & 16\\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize EEG counts are final dimensions after any training-only reduction. E0--E2 form the preregistered library; E3--E5 are separate post-hoc families. Raw dimensions and transformations are specified below.
+\end{table}

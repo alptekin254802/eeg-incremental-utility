@@ -1,0 +1,31 @@
+\begin{longtable}{llrrrrr}
+\caption{Complete model-family comparisons. B and E denote baseline and EEG-augmented log loss. Positive increments favor EEG. U: unadjusted; DQ: device and EEG quality added to both models. All values average ten dependent repeats; supplementary machine-readable files retain their full distributions.}\label{tab:model-extension}\\
+\toprule Learner/design & EEG procedure & B LL & E LL & $\Delta$LL & $\Delta$AUC & $\Delta$Brier\\\midrule\endfirsthead
+\toprule Learner/design & EEG procedure & B LL & E LL & $\Delta$LL & $\Delta$AUC & $\Delta$Brier\\\midrule\endhead
+\bottomrule\endfoot
+Logistic/U & Regional spectral & $0.6244$ & $0.6199$ & $+0.0045$ & $-0.0113$ & $-0.0009$\\
+Logistic/U & Expanded spectral & $0.6244$ & $0.6366$ & $-0.0122$ & $-0.0272$ & $-0.0079$\\
+Logistic/U & Covariance library & $0.6244$ & $0.6398$ & $-0.0154$ & $-0.0248$ & $-0.0070$\\
+Logistic/U & Entropy/Hjorth & $0.6244$ & $0.5977$ & $+0.0267$ & $+0.0152$ & $+0.0077$\\
+Logistic/U & Library selector & $0.6244$ & $0.6532$ & $-0.0288$ & $-0.0478$ & $-0.0131$\\
+SVM/U & Regional spectral & $0.6560$ & $0.6626$ & $-0.0066$ & $-0.0298$ & $-0.0063$\\
+SVM/U & Expanded spectral & $0.6560$ & $0.6711$ & $-0.0151$ & $-0.0456$ & $-0.0102$\\
+SVM/U & Covariance library & $0.6560$ & $0.6716$ & $-0.0155$ & $-0.0465$ & $-0.0103$\\
+SVM/U & Entropy/Hjorth & $0.6560$ & $0.6422$ & $+0.0139$ & $-0.0043$ & $+0.0022$\\
+SVM/U & Library selector & $0.6560$ & $0.6703$ & $-0.0143$ & $-0.0389$ & $-0.0093$\\
+Forest/U & Regional spectral & $0.6561$ & $0.6622$ & $-0.0061$ & $-0.0290$ & $-0.0063$\\
+Forest/U & Expanded spectral & $0.6561$ & $0.6806$ & $-0.0245$ & $-0.0643$ & $-0.0139$\\
+Forest/U & Covariance library & $0.6561$ & $0.6888$ & $-0.0327$ & $-0.0803$ & $-0.0179$\\
+Forest/U & Entropy/Hjorth & $0.6561$ & $0.6468$ & $+0.0093$ & $-0.0121$ & $+0.0010$\\
+Forest/U & Library selector & $0.6561$ & $0.6856$ & $-0.0294$ & $-0.0640$ & $-0.0166$\\
+SVM/DQ & Regional spectral & $0.6268$ & $0.6600$ & $-0.0332$ & $-0.0662$ & $-0.0166$\\
+SVM/DQ & Expanded spectral & $0.6268$ & $0.6640$ & $-0.0372$ & $-0.0731$ & $-0.0187$\\
+SVM/DQ & Covariance library & $0.6268$ & $0.6653$ & $-0.0385$ & $-0.0721$ & $-0.0188$\\
+SVM/DQ & Entropy/Hjorth & $0.6268$ & $0.6336$ & $-0.0068$ & $-0.0186$ & $-0.0049$\\
+SVM/DQ & Library selector & $0.6268$ & $0.6628$ & $-0.0360$ & $-0.0586$ & $-0.0174$\\
+Forest/DQ & Regional spectral & $0.6533$ & $0.6629$ & $-0.0096$ & $-0.0277$ & $-0.0065$\\
+Forest/DQ & Expanded spectral & $0.6533$ & $0.6770$ & $-0.0237$ & $-0.0607$ & $-0.0123$\\
+Forest/DQ & Covariance library & $0.6533$ & $0.6818$ & $-0.0284$ & $-0.0662$ & $-0.0144$\\
+Forest/DQ & Entropy/Hjorth & $0.6533$ & $0.6460$ & $+0.0073$ & $-0.0078$ & $+0.0005$\\
+Forest/DQ & Library selector & $0.6533$ & $0.6811$ & $-0.0278$ & $-0.0544$ & $-0.0145$\\
+\end{longtable}

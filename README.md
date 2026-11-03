@@ -29,15 +29,26 @@ diagnostic system.
 
 The complete companion is in **[`companion/`](companion/README.md)**. It includes
 the preserved v1.1.0 analysis, subsequent exploratory extensions, all outcomes,
-and the current article's 12 figures and 22 table sources.
+and the display set archived with version 1.2.1 (12 figures and 22 table sources).
 
 | Path | Contents |
 | --- | --- |
 | [`companion/reference_release/`](companion/reference_release/) | Preserved v1.1.0 code, inputs, results, and notices |
 | [`companion/extensions/`](companion/extensions/) | Device-transfer, learner, simulation, adult-data, and EEGNet-like analyses |
-| [`companion/article_assets/`](companion/article_assets/) | Current figures and tables |
+| [`companion/article_assets/`](companion/article_assets/) | Figures and tables archived with version 1.2.1 |
 | [`companion/docs/`](companion/docs/) | Reproduction, data provenance, analysis status, and verification scope |
 | [`companion/FILE_MANIFEST.json`](companion/FILE_MANIFEST.json) | File identities for the complete companion |
+
+The [technical methods and complete numerical results](docs/TECHNICAL_METHODS.md)
+collect implementation details, all comparison families, and additional diagnostic
+figures relocated from the journal supplement. Its [file manifest](docs/TECHNICAL_METHODS_MANIFEST.json)
+identifies the note and display sources. This documentation was added after the
+[version 1.2.1 archive](https://doi.org/10.5281/zenodo.23864656); it does not change
+that archive or the underlying analysis results. Current journal numbering differs
+from the historical display set. The later age, bandwidth, and prior-odds controls
+are described in the note and supplied in a separate manuscript addendum; their
+computational files are not included in the version 1.2.1 archive or this
+documentation-only update.
 
 The original files at the repository root remain available for compatibility.
 Use the companion directory for the current documented workflow. The exact archived
@@ -73,12 +84,13 @@ and what remains outside the checks.
 
 ## Data and citation
 
-This repository extends the archived [v1.1.0 release](https://doi.org/10.5281/zenodo.23199244)
-with the additional analyses reported in the manuscript. The archive DOI identifies
-v1.1.0; the later analyses are available here on GitHub. Cite the current software
-using [CITATION.cff](CITATION.cff), with the version or commit used. See
-[CITATION.md](CITATION.md) for the distinction between the current software and the
-archived release.
+The computational companion is archived as [version 1.2.1](https://doi.org/10.5281/zenodo.23864656).
+It preserves the [original version 1.1.0](https://doi.org/10.5281/zenodo.23199244)
+and includes the earlier exploratory extensions. The later technical note is
+available in this GitHub checkout but is outside that archived snapshot. Cite the
+software version or commit actually used; [CITATION.md](CITATION.md) distinguishes
+archived releases from subsequent documentation updates. Machine-readable software
+metadata is in [CITATION.cff](CITATION.cff).
 
 Source data are available from [BALLADEER on Figshare](https://doi.org/10.6084/m9.figshare.28676042)
 and [the adult study on OSF](https://doi.org/10.17605/OSF.IO/EWKGV).

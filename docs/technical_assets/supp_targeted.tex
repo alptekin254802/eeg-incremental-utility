@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{Targeted age and bandwidth sensitivities. Positive log-loss differences favor EEG augmentation.}
+\label{tab:targeted}
+\begin{tabular}{@{}p{4.8cm}rrlr@{}}
+\toprule
+Comparison & Original & Sensitivity & Conditional range & $+$/10 \\
+\midrule
+Age spline: primary selector & $-0.0288$ & $-0.0257$ & $[-0.0852,\,+0.0333]$ & 1 \\
+Age spline: entropy/Hjorth & $+0.0267$ & $+0.0159$ & $[-0.0359,\,+0.0675]$ & 10 \\
+Age spline: entropy/Hjorth + DQ & $+0.0071$ & $+0.0015$ & $[-0.0424,\,+0.0436]$ & 5 \\
+Low-pass: entropy/Hjorth & $+0.0267$ & $+0.0185$ & $[-0.0357,\,+0.0716]$ & 9 \\
+Low-pass: entropy/Hjorth + DQ & $+0.0071$ & $+0.0051$ & $[-0.0390,\,+0.0483]$ & 4 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}
+Original: corresponding linear-age, 1--40~Hz analysis. DQ: device, clean-window fraction, and interpolated-channel count in both models. The age and low-pass changes were evaluated separately. Low-pass refers to an additional zero-phase 30~Hz filter applied to the original preprocessed segments. Ranges are participant-resampling percentiles conditional on fixed predictions; they omit training and selection uncertainty. $+$/10 counts repeats with positive increments, not independent replications.
+\end{minipage}
+\end{table}

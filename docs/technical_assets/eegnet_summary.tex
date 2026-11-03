@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\centering
+\caption{Exploratory EEGNet-like representation comparison. Means average ten dependent repeats. Positive increments favor augmentation. Conditional percentile ranges resample participants with the fitted predictions held fixed; they omit training and selection uncertainty.}
+\label{tab:eegnet}
+\begin{tabular}{lrrrr}
+\toprule
+Measure & Baseline & EEGNet-like & Increment & Conditional range\\
+\midrule
+Log loss & $0.6244$ & $0.7250$ & $-0.1006$ & $[-0.2368, +0.0267]$\\
+AUROC & $0.7139$ & $0.6643$ & $-0.0496$ & ---\\
+Brier score & $0.2157$ & $0.2444$ & $-0.0287$ & $[-0.0745, +0.0168]$\\
+\bottomrule\end{tabular}
+\end{table}
