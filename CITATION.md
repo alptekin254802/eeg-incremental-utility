@@ -1,13 +1,22 @@
 # Citation
 
-For the current computational companion and exploratory extensions, cite:
+The latest archived release can be cited as:
 
-Cinbat, A., Şentürk, Ü., & Yücedağ, İ. *EEG incremental predictive utility:
-computational companion and exploratory extensions* (Version 1.2.1)
-[Software]. Zenodo. https://doi.org/10.5281/zenodo.23864656
+Cinbat, A., Şentürk, Ü., & Yücedağ, İ. (2026). *EEG incremental predictive utility:
+computational companion and exploratory extensions* (Version 1.2.2)
+[Software]. Zenodo. https://doi.org/10.5281/zenodo.23929744
 
-Include the commit used when citing a checkout. Machine-readable metadata is in
-[CITATION.cff](CITATION.cff).
+This checkout additionally includes the later age, bandwidth, and common prior-odds
+computational addendum in `targeted_controls/`. Those computational files are not
+in the v1.2.2 archive. Cite the exact GitHub commit when using this addition until
+a corresponding release is archived. Root [CITATION.cff](CITATION.cff) prepares
+version 1.2.3; no new DOI or publication date is asserted here.
+
+The [technical methods note](docs/TECHNICAL_METHODS.md) and its supporting assets
+were included in v1.2.2. Historical references within that frozen note and the
+addendum describe their status at preparation and do not supersede this citation
+guidance. [The targeted-control guide](docs/TARGETED_CONTROLS.md) documents the
+separate computational addition and current table numbering.
 
 The separately archived original release can be cited as:
 
@@ -16,10 +25,7 @@ Representations Beyond Behavioral and Object-Gaze Measures in Pediatric ADHD*
 (Version 1.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23199244
 
 The [Zenodo concept DOI](https://doi.org/10.5281/zenodo.23146468) identifies the
-version series, including versions 1.1.0 and 1.2.1. The later
-[technical methods note](docs/TECHNICAL_METHODS.md) is a documentation update outside
-the version 1.2.1 archive. Cite a specific GitHub commit when referring to that note.
-The separate later targeted-control addendum is also outside the version 1.2.1 archive.
+version series. Use a version DOI or commit for an exact computational record.
 
 Please cite the [BALLADEER dataset](https://doi.org/10.6084/m9.figshare.28676042)
 and the [adult source study](https://doi.org/10.1038/s41398-024-03217-y) when using

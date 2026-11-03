@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "spline_fixed_knots": [
+    6,
+    10,
+    14,
+    18
+  ],
+  "spline_continuity_and_linear_tails": true,
+  "prior_odds_algebra": true,
+  "filter_single_pass_gain": [
+    0.9999829829906687,
+    0.7071067811865476,
+    0.13330764906868542
+  ],
+  "note": "Zero-phase forward/backward filtering squares the single-pass magnitude."
+}

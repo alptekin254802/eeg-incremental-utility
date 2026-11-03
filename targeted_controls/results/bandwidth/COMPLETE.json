@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "outer_tasks": 50,
+  "fit_calls": 2600,
+  "convergence_retries": 0,
+  "heldout_training_invariance": true,
+  "seconds": 15.36141630000202
+}

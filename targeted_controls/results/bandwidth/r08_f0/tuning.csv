@@ -1,0 +1,11 @@
+model,C,inner_logloss,selected,repeat,outer_fold
+entropy_lowpass30,0.01,0.63357511516792353,False,8,0
+entropy_lowpass30,0.10000000000000001,0.59084758430962425,True,8,0
+entropy_lowpass30,1,0.63175370760654126,False,8,0
+entropy_lowpass30,10,0.72510523222537338,False,8,0
+entropy_lowpass30,100,0.78287849063741854,False,8,0
+entropy_lowpass30_DQ,0.01,0.63168313632529627,False,8,0
+entropy_lowpass30_DQ,0.10000000000000001,0.59965820055917829,True,8,0
+entropy_lowpass30_DQ,1,0.69407021002303748,False,8,0
+entropy_lowpass30_DQ,10,0.9068575911592428,False,8,0
+entropy_lowpass30_DQ,100,1.0752625736272332,False,8,0

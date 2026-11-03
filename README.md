@@ -27,7 +27,7 @@ diagnostic system.
 
 ## Current code and results
 
-The complete companion is in **[`companion/`](companion/README.md)**. It includes
+The original and earlier exploratory computations are in **[`companion/`](companion/README.md)**. This preserved bundle includes
 the preserved v1.1.0 analysis, subsequent exploratory extensions, all outcomes,
 and the display set archived with version 1.2.1 (12 figures and 22 table sources).
 
@@ -37,21 +37,28 @@ and the display set archived with version 1.2.1 (12 figures and 22 table sources
 | [`companion/extensions/`](companion/extensions/) | Device-transfer, learner, simulation, adult-data, and EEGNet-like analyses |
 | [`companion/article_assets/`](companion/article_assets/) | Figures and tables archived with version 1.2.1 |
 | [`companion/docs/`](companion/docs/) | Reproduction, data provenance, analysis status, and verification scope |
-| [`companion/FILE_MANIFEST.json`](companion/FILE_MANIFEST.json) | File identities for the complete companion |
+| [`companion/FILE_MANIFEST.json`](companion/FILE_MANIFEST.json) | File identities for the preserved companion |
+| [`targeted_controls/`](docs/TARGETED_CONTROLS.md) | Later age, 30 Hz bandwidth, and common prior-odds controls: complete code, derived inputs, predictions, and results |
 
 The [technical methods and complete numerical results](docs/TECHNICAL_METHODS.md)
 collect implementation details, all comparison families, and additional diagnostic
-figures relocated from the journal supplement. Its [file manifest](docs/TECHNICAL_METHODS_MANIFEST.json)
-identifies the note and display sources. This documentation was added after the
-[version 1.2.1 archive](https://doi.org/10.5281/zenodo.23864656); it does not change
-that archive or the underlying analysis results. Current journal numbering differs
-from the historical display set. The later age, bandwidth, and prior-odds controls
-are described in the note and supplied in a separate manuscript addendum; their
-computational files are not included in the version 1.2.1 archive or this
-documentation-only update.
+figures relocated from the journal supplement. The note and its supporting assets
+are included in [archived version 1.2.2](https://doi.org/10.5281/zenodo.23929744).
+Its [file manifest](docs/TECHNICAL_METHODS_MANIFEST.json) preserves those identities.
+Current journal numbering differs from the historical display set.
+
+The later age, bandwidth, and common prior-odds computational addendum is now
+included in [`targeted_controls/`](docs/TARGETED_CONTROLS.md). It preserves every
+original code, plan, prediction, result, and input-identity file from the separate
+addendum without alteration. Unadjusted entropy/Hjorth gains remained positive
+under the age and bandwidth sensitivities, but were smaller with device/quality
+adjustment. Common prior correction reversed three of four transfer increments.
+These exploratory controls do not identify a physiological mechanism.
+This addition is prepared for version 1.2.3; the v1.2.2 archive remains unchanged.
 
 The original files at the repository root remain available for compatibility.
-Use the companion directory for the current documented workflow. The exact archived
+Use the companion directory for the earlier analyses and the targeted-control
+guide below for the later controls. The exact archived
 layout remains available at the [v1.1.0 tag](https://github.com/alptekin254802/eeg-incremental-utility/tree/v1.1.0).
 
 ## Getting started
@@ -82,15 +89,32 @@ describes its separate PyTorch environment, raw-window preparation, and training
 The [verification record](companion/docs/VERIFICATION.md) states what was executed
 and what remains outside the checks.
 
+### Later targeted controls
+
+From the repository root, with the same pinned dependencies installed:
+
+```text
+python -B targeted_controls/code/run.py verify --release companion/reference_release --transfer companion/extensions/device_transfer --output ../eeg-targeted-check
+```
+
+Use a new output directory. This checks file identities, replays conditional
+resampling from saved predictions, verifies all comparisons and tuning selections,
+and regenerates both tables. It does not refit predictive models or read raw EEG.
+The [targeted-control guide](docs/TARGETED_CONTROLS.md) gives the complete refitting
+and raw-feature reconstruction commands and maps historical table numbers to the
+current article.
+
 ## Data and citation
 
-The computational companion is archived as [version 1.2.1](https://doi.org/10.5281/zenodo.23864656).
-It preserves the [original version 1.1.0](https://doi.org/10.5281/zenodo.23199244)
-and includes the earlier exploratory extensions. The later technical note is
-available in this GitHub checkout but is outside that archived snapshot. Cite the
-software version or commit actually used; [CITATION.md](CITATION.md) distinguishes
-archived releases from subsequent documentation updates. Machine-readable software
-metadata is in [CITATION.cff](CITATION.cff).
+The latest archived release is [version 1.2.2](https://doi.org/10.5281/zenodo.23929744),
+including the technical note and the preserved original and earlier exploratory
+computations. The separate [original version 1.1.0](https://doi.org/10.5281/zenodo.23199244)
+also remains available. The later targeted computational addendum is included in
+this checkout after v1.2.2; it must not be attributed to that older DOI.
+Cite the software version or commit actually used; [CITATION.md](CITATION.md)
+distinguishes the archived release from subsequent additions. Root package metadata
+in [CITATION.cff](CITATION.cff) prepares version 1.2.3 without assigning a new DOI
+or release date.
 
 Source data are available from [BALLADEER on Figshare](https://doi.org/10.6084/m9.figshare.28676042)
 and [the adult study on OSF](https://doi.org/10.17605/OSF.IO/EWKGV).

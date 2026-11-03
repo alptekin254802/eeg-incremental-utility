@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "predictive_refits": 0,
+  "comparisons": 4,
+  "source_prediction_sha256": "078e6bd60760f968e6d3e158c2c80fc96d8748683fa20b49e0e99118f2007642",
+  "target_label_oracle": true
+}

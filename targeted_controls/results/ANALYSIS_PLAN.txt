@@ -1,0 +1,95 @@
+Targeted exploratory sensitivity analyses - 3 November 2026
+
+Status and timing
+Written after the original and subsequent results were known, before computing
+the new transformations, fits, and outcomes below. This is a dated exploratory
+analysis plan, not part of the original preregistration. It responds to specific
+alternative explanations without selecting a successful new prediction model.
+
+Fixed sample and reference
+The same 96 BALLADEER participants, GROUP target (41/55), seven baseline inputs,
+original ten-by-five outer and five inner partitions, original learned
+transformations, L2 logistic solver, C grid [.01,.1,1,10,100], clipping rules and
+selection tie rules are retained. No new exclusions, labels or imputation.
+All archived numerical outputs and scientific code remain read-only.
+
+A. Oracle prior-odds diagnostic for device transfer (no predictive refitting)
+Question: how does the paired EEG increment change after a common prior-odds
+correction, and can a simple probability shift improve the baseline's loss?
+Use both saved transfer directions and the spectral/covariance selector and
+entropy/Hjorth comparisons (four principal comparisons). For each direction add
+logit(observed target GROUP fraction)-logit(observed source GROUP fraction) to
+each saved baseline AND augmented logit. This uses target labels intentionally
+as an oracle diagnostic. Retain original and corrected probabilities; report
+absolute log loss, AUROC, Brier, paired increments, group-specific losses,
+observed-composition and equal-class increments, and mean predicted probability.
+No optimized offset or additional recalibration. Paired stratified target
+resampling (5000 draws, seed 2026110301) holds class counts, prior offset and source
+fits fixed. Report descriptive conditional percentile ranges, not full-procedure
+confidence intervals. Corrections rely on a prior-shift interpretation that need
+not hold across devices. Neither improved loss nor attenuation identifies a
+device-mediated mechanism or an implementable target-label-free predictor.
+
+B. Nonlinear age sensitivity (new frozen-feature fits)
+Question: do the primary and entropy/Hjorth increments depend on a linear age
+term in the baseline? Replace age with a restricted cubic spline with fixed
+knots [6,10,14,18] years, giving age and two nonlinear columns (three degrees of
+freedom). Fixed knots use the stated pediatric age range, not outcome-guided
+choices. No age-by-sex interaction or alternate knot search.
+Retain sex and all task/gaze inputs. Add identical age columns to each paired
+baseline and EEG model. Evaluate exactly three comparisons: unadjusted primary
+spectral/covariance selector; unadjusted entropy/Hjorth; device-plus-quality
+adjusted entropy/Hjorth. The adjusted comparison retains all three original
+acquisition covariates. Scaling, PCA, covariance reference and C/representation
+selection remain within each training partition. Keep all candidate and inner
+scores, probabilities, selections and all repeats. The comparison tests a fixed
+alternative demographic model, not causal age adjustment or global optimality.
+
+C. One bandwidth sensitivity (raw-derived feature extraction and new fits)
+Question: does entropy/Hjorth augmentation persist after stronger attenuation of
+frequencies above 30 Hz? Reconstruct the original preprocessed continuous
+segments and accepted window IDs from the existing local raw files. First verify
+original QC and unfiltered E0/E4 features against the archived values. Apply one
+additional zero-phase fourth-order Butterworth low-pass at 30 Hz (SOS) to each
+already preprocessed 1-40 Hz continuous segment at 128 Hz, then reuse exactly
+the original accepted 256-sample windows. Filtering does not cross gaps. Do not
+perform another rejection pass, change interpolation or participant eligibility.
+Recompute the same nine entropy/Hjorth summaries (m=5, tau=1, original finite
+differences and median aggregation). Evaluate unadjusted and device-plus-quality
+adjusted comparisons, each against its unchanged matched baseline. No other
+cutoff, aperiodic fit, added spectral band or representation selector is tried.
+Retain all extracted features and both comparisons regardless of direction.
+This is sensitivity to an additional filter, including its transition and edge
+effects; it cannot identify muscle, device or physiological signal origin.
+
+Metrics, uncertainty and accounting for B/C
+Primary descriptive metric: participant-level held-out log loss, averaged within
+each repeat then across repeats; delta = baseline minus augmented loss. AUROC and
+Brier are secondary, oriented to favor EEG. Record all ten repeat estimates,
+median/IQR/range and positive-repeat count. Compare the new paired increments
+with their unchanged original reference increments. For the five planned paired
+comparisons and changes relative to references, resample the 96 participant mean
+loss differences with replacement 5000 times (seed 2026110302, common draws).
+Ranges are conditional descriptions with predictions and fitting fixed, not
+training/selection uncertainty or confirmatory inference. No p-values, repeat-
+independence assumption, result-dependent removal or stopping.
+
+Validation and retention
+Verify source identities and exact nested split membership, check training-only
+designs by held-out perturbations, and replay original baseline/E4 predictions
+to numerical tolerance 1e-7. Raw re-extraction must reproduce original features
+to 1e-8 and accepted-window counts. Test spline continuity/linear tails and
+prior-shift algebra on synthetic inputs. An implementation failure is logged;
+fixes are dated and justified before rerunning the affected operation. No change
+to hypotheses, model family or cutoff in response to predictive outcomes.
+All family results are saved in a separate addendum. Integrate by relevance,
+primarily in a supplementary section and a short main-text interpretation.
+
+External-data feasibility review
+Assess primary documentation for independent pediatric raw EEG with aligned
+behavior, gaze, age/sex and defensible ADHD/control ascertainment. Record actual
+release contents, task/channel compatibility, permissions and missing fields.
+Separate a frozen pediatric model's external validation from a new matched
+sensor-addition conceptual replication. No external test is claimed without
+obtained, permitted, compatible inputs. No bulk download or access application
+is part of this feasibility review.
