@@ -1,0 +1,2 @@
+comparison,participants,positive_labels,baseline_logloss,augmented_logloss,delta_ll,delta_auroc,delta_brier,positive_repeats,lower,upper
+observed,96,41,0.62437930418902021,0.61170099393416932,0.012678310254850899,0.003104212860310407,0.0035042446148773358,7,-0.020442323182829261,0.050107486999999375

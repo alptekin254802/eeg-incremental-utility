@@ -1,13 +1,18 @@
 \begin{table}[htbp]
-\centering
-\caption{Exploratory EEGNet-like representation comparison. Means average ten dependent repeats. Positive increments favor augmentation. Conditional percentile ranges resample participants with the fitted predictions held fixed; they omit training and selection uncertainty.}
+\centering\small
+\caption{Cross-fitted EEGNet-like heads and the originally planned embedding head. Each uses its own matched baseline. Positive increments favor EEG.}
 \label{tab:eegnet}
-\begin{tabular}{lrrrr}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrrr@{}}
 \toprule
-Measure & Baseline & EEGNet-like & Increment & Conditional range\\
-\midrule
-Log loss & $0.6244$ & $0.7250$ & $-0.1006$ & $[-0.2368, +0.0267]$\\
-AUROC & $0.7139$ & $0.6643$ & $-0.0496$ & ---\\
-Brier score & $0.2157$ & $0.2444$ & $-0.0287$ & $[-0.0745, +0.0168]$\\
-\bottomrule\end{tabular}
+Design & Baseline LL & EEG LL & $\Delta$LL & Conditional 95\% range\\\midrule
+Split ensemble & $0.6476$ & $0.6457$ & $+0.0019$ & $[-0.0092,+0.0130]$\\
+Pooled OOF, fixed $C=1$ & $0.6146$ & $0.6093$ & $+0.0053$ & $[-0.0151,+0.0250]$\\
+Original embeddings (reference) & $0.6244$ & $0.7250$ & $-0.1006$ & $[-0.2404,+0.0252]$\\
+\midrule Design & $\Delta$AUROC & $\Delta$Brier & \multicolumn{2}{r}{Positive LL repeats}\\\midrule
+Split ensemble & $+0.0047$ & $+0.0008$ & \multicolumn{2}{r}{8/10}\\
+Pooled OOF, fixed $C=1$ & $+0.0097$ & $+0.0026$ & \multicolumn{2}{r}{8/10}\\
+Original embeddings (reference) & $-0.0496$ & $-0.0287$ & \multicolumn{2}{r}{0/10}\\
+\bottomrule\end{tabularx}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize Means average ten dependent repeats; their signs describe partition sensitivity. Ranges use 10,000 class-stratified resamples of participant-mean paired losses with predictions fixed, omitting training and selection uncertainty. The original reference range is recomputed using the same saved-output resampling scheme as the cross-fitted comparisons.\end{minipage}
 \end{table}

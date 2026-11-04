@@ -1,18 +1,18 @@
 \begin{table}[htbp]\centering
-\caption{Independent adult test results ($n=36$). B and E are baseline and EEG-augmented log loss; bracketed values are conditional 95\% test-resampling percentiles. Task/eye uses 49 baseline predictors; broader uses all 58 non-EEG predictors. E adds 18 spectral EEG predictors. All six pairs share the same test participants.}\label{tab:adult-extension}
+\caption{Independent adult test results ($n=36$). B and E are baseline and EEG-augmented log loss; bracketed values are conditional 95\% test-resampling percentiles. Task + eye uses 49 baseline predictors; All non-EEG uses all 58 non-EEG predictors. E adds 18 spectral EEG predictors. All six pairs share the same test participants.}\label{tab:adult-extension}
 \begin{tabular}{llrrrr}\toprule
 Baseline & Learner & B LL & E LL & $\Delta$LL & Conditional range\\\midrule
-Task/eye & Logistic & $0.6058$ & $0.7164$ & $-0.1106$ & [$-0.3294$, $+0.0735$]\\
-Task/eye & SVM & $0.6404$ & $0.6521$ & $-0.0118$ & [$-0.1090$, $+0.0978$]\\
-Task/eye & Forest & $0.5361$ & $0.5353$ & $+0.0009$ & [$-0.0037$, $+0.0060$]\\
-Broader & Logistic & $0.5784$ & $0.5837$ & $-0.0053$ & [$-0.0241$, $+0.0136$]\\
-Broader & SVM & $0.5613$ & $0.5565$ & $+0.0048$ & [$-0.0223$, $+0.0349$]\\
-Broader & Forest & $0.4712$ & $0.4711$ & $+0.0001$ & [$-0.0068$, $+0.0074$]\\
+Task + eye & Logistic & $0.6058$ & $0.7164$ & $-0.1106$ & [$-0.3294$, $+0.0735$]\\
+Task + eye & SVM & $0.6404$ & $0.6521$ & $-0.0118$ & [$-0.1090$, $+0.0978$]\\
+Task + eye & Forest & $0.5361$ & $0.5353$ & $+0.0009$ & [$-0.0037$, $+0.0060$]\\
+All non-EEG & Logistic & $0.5784$ & $0.5837$ & $-0.0053$ & [$-0.0241$, $+0.0136$]\\
+All non-EEG & SVM & $0.5613$ & $0.5565$ & $+0.0048$ & [$-0.0223$, $+0.0349$]\\
+All non-EEG & Forest & $0.4712$ & $0.4711$ & $+0.0001$ & [$-0.0068$, $+0.0074$]\\
 \midrule Baseline & Learner & B AUROC & E AUROC & $\Delta$AUROC & $\Delta$Brier\\\midrule
-Task/eye & Logistic & $0.7654$ & $0.7438$ & $-0.0216$ & $-0.0185$\\
-Task/eye & SVM & $0.7500$ & $0.7006$ & $-0.0494$ & $-0.0102$\\
-Task/eye & Forest & $0.8179$ & $0.8210$ & $+0.0031$ & $0.0000$\\
-Broader & Logistic & $0.8333$ & $0.8333$ & $0.0000$ & $-0.0009$\\
-Broader & SVM & $0.8302$ & $0.8302$ & $0.0000$ & $+0.0032$\\
-Broader & Forest & $0.8704$ & $0.8735$ & $+0.0031$ & $+0.0003$\\
+Task + eye & Logistic & $0.7654$ & $0.7438$ & $-0.0216$ & $-0.0185$\\
+Task + eye & SVM & $0.7500$ & $0.7006$ & $-0.0494$ & $-0.0102$\\
+Task + eye & Forest & $0.8179$ & $0.8210$ & $+0.0031$ & $0.0000$\\
+All non-EEG & Logistic & $0.8333$ & $0.8333$ & $0.0000$ & $-0.0009$\\
+All non-EEG & SVM & $0.8302$ & $0.8302$ & $0.0000$ & $+0.0032$\\
+All non-EEG & Forest & $0.8704$ & $0.8735$ & $+0.0031$ & $+0.0003$\\
 \bottomrule\end{tabular}\end{table}

@@ -2,9 +2,9 @@
 
 Companion to *Incremental Predictive Utility of EEG Representations Beyond Behavioral and Object-Gaze Measures in Pediatric ADHD*.
 
-This note collects implementation details, complete comparison families, and diagnostic figures supporting the article. The journal supplement retains participant eligibility, the interpretation-critical methods and results, and the limits of inference. This reorganization changes no fitted model, recorded prediction, feature matrix, or numerical result. All tables and plots below derive from the existing analyses; no additional analyses were undertaken for this editorial revision.
+This note collects implementation details, complete comparison families, and diagnostic figures supporting the article. The journal supplement retains participant eligibility, the interpretation-critical methods and results, and the limits of inference. Version 1.2.6 adds four exploratory saved-result follow-ups: selection decomposition, diagnosis-status entropy/Hjorth, cross-fitted EEGNet-like heads, and phase-lag phase controls. Original fitted results and later follow-ups are identified separately.
 
-**Scope and archival status.** This documentation update is dated 4 November 2026 and accompanies companion version 1.2.5. The original and earlier exploratory computations were first archived in [version 1.2.1](https://doi.org/10.5281/zenodo.23864656), and the later age, bandwidth, and prior-odds controls in [version 1.2.3](https://doi.org/10.5281/zenodo.23930239). This update aligns method names and cross-references with the current article and supplement and receives implementation details moved from the supplement; it changes no fitted model, prediction, or numerical result. The original preregistration, subsequent pre-fit exploratory plans, archived software versions, and present documentation are separate records.
+**Scope and archival status.** Updated 5 November 2026 for companion version 1.2.6. Original and earlier exploratory computations remain preserved in `companion/`; version 1.2.5 was archived at [10.5281/zenodo.23959046](https://doi.org/10.5281/zenodo.23959046). The four new follow-ups were computed in round 1 under dated exploratory plans and are reported in Supplementary Sections S3, S4, and S9. These findings do not change the preregistered analysis or its saved predictions. The exact version archive is linked from the [v1.2.6 release](https://github.com/alptekin254802/eeg-incremental-utility/releases/tag/v1.2.6).
 
 The primary comparison predicts recorded study-group membership. Positive increments favor EEG: baseline minus augmented log loss or Brier score, and augmented minus baseline AUROC. Unless stated otherwise, repeated pediatric analyses concern the same 96 participants and ten dependent cross-validation repeats. Later analyses retain their exploratory status.
 
@@ -18,6 +18,10 @@ Technical tables and figures have their own **T** numbering. References to **S**
 - [Acquisition, components, and phase controls](#acquisition-components-and-selection-without-eeg)
 - [Model-family comparisons and learning curves](#model-family-sensitivity-and-learning-curves)
 - [File map and reproduction](#file-map-and-reproduction)
+- [Selection decomposition](#selection-decomposition-follow-up)
+- [Diagnosis-status entropyhjorth](#diagnosis-status-entropyhjorth-follow-up)
+- [Cross-fitted EEGNet-like heads](#cross-fitted-eegnet-like-heads)
+- [Phase-lag phase controls](#phase-lag-phase-control-follow-up)
 
 ## Measurement summaries and EEG preprocessing
 
@@ -1091,7 +1095,7 @@ Positive differences favor EEG. Overall log-loss means use the observed target c
 
 </div>
 
-The selector chose regional spectral features in both directions. Both principal EEG procedures produced positive overall mean log-loss increments, but in every comparison the majority group in the target set benefited and the minority group worsened on average. Equal-class weighting reduced all four means. Only the entropy and Hjorth model assessed on EPOC X had an overall log-loss conditional range entirely above zero; all four equal-class ranges included zero. Secondary metrics were not uniformly favorable: the selector’s AUROC decreased when assessed on EPOC+.
+The selector chose regional spectral features in both directions. Both principal EEG procedures produced positive overall mean log-loss increments, but in every comparison the larger study group in the target set benefited and the smaller study group worsened on average. Equal-class weighting reduced all four means. Only the entropy and Hjorth model assessed on EPOC X had an overall log-loss conditional range entirely above zero; all four equal-class ranges included zero. Secondary metrics were not uniformly favorable: the selector’s AUROC decreased when assessed on EPOC+.
 
 The comparison is plotted in main Figure 4.
 
@@ -1292,23 +1296,23 @@ Log-loss and Brier increments are baseline minus EEG; AUROC increments are EEG m
 
 | Baseline | Learner | B LL | E LL | $`\Delta`$LL | Conditional range |
 |:---|:---|---:|---:|---:|---:|
-| Task/eye | Logistic | $`0.6058`$ | $`0.7164`$ | $`-0.1106`$ | \[$`-0.3294`$, $`+0.0735`$\] |
-| Task/eye | SVM | $`0.6404`$ | $`0.6521`$ | $`-0.0118`$ | \[$`-0.1090`$, $`+0.0978`$\] |
-| Task/eye | Forest | $`0.5361`$ | $`0.5353`$ | $`+0.0009`$ | \[$`-0.0037`$, $`+0.0060`$\] |
-| Broader | Logistic | $`0.5784`$ | $`0.5837`$ | $`-0.0053`$ | \[$`-0.0241`$, $`+0.0136`$\] |
-| Broader | SVM | $`0.5613`$ | $`0.5565`$ | $`+0.0048`$ | \[$`-0.0223`$, $`+0.0349`$\] |
-| Broader | Forest | $`0.4712`$ | $`0.4711`$ | $`+0.0001`$ | \[$`-0.0068`$, $`+0.0074`$\] |
+| Task + eye | Logistic | $`0.6058`$ | $`0.7164`$ | $`-0.1106`$ | \[$`-0.3294`$, $`+0.0735`$\] |
+| Task + eye | SVM | $`0.6404`$ | $`0.6521`$ | $`-0.0118`$ | \[$`-0.1090`$, $`+0.0978`$\] |
+| Task + eye | Forest | $`0.5361`$ | $`0.5353`$ | $`+0.0009`$ | \[$`-0.0037`$, $`+0.0060`$\] |
+| All non-EEG | Logistic | $`0.5784`$ | $`0.5837`$ | $`-0.0053`$ | \[$`-0.0241`$, $`+0.0136`$\] |
+| All non-EEG | SVM | $`0.5613`$ | $`0.5565`$ | $`+0.0048`$ | \[$`-0.0223`$, $`+0.0349`$\] |
+| All non-EEG | Forest | $`0.4712`$ | $`0.4711`$ | $`+0.0001`$ | \[$`-0.0068`$, $`+0.0074`$\] |
 | Baseline | Learner | B AUROC | E AUROC | $`\Delta`$AUROC | $`\Delta`$Brier |
-| Task/eye | Logistic | $`0.7654`$ | $`0.7438`$ | $`-0.0216`$ | $`-0.0185`$ |
-| Task/eye | SVM | $`0.7500`$ | $`0.7006`$ | $`-0.0494`$ | $`-0.0102`$ |
-| Task/eye | Forest | $`0.8179`$ | $`0.8210`$ | $`+0.0031`$ | $`0.0000`$ |
-| Broader | Logistic | $`0.8333`$ | $`0.8333`$ | $`0.0000`$ | $`-0.0009`$ |
-| Broader | SVM | $`0.8302`$ | $`0.8302`$ | $`0.0000`$ | $`+0.0032`$ |
-| Broader | Forest | $`0.8704`$ | $`0.8735`$ | $`+0.0031`$ | $`+0.0003`$ |
+| Task + eye | Logistic | $`0.7654`$ | $`0.7438`$ | $`-0.0216`$ | $`-0.0185`$ |
+| Task + eye | SVM | $`0.7500`$ | $`0.7006`$ | $`-0.0494`$ | $`-0.0102`$ |
+| Task + eye | Forest | $`0.8179`$ | $`0.8210`$ | $`+0.0031`$ | $`0.0000`$ |
+| All non-EEG | Logistic | $`0.8333`$ | $`0.8333`$ | $`0.0000`$ | $`-0.0009`$ |
+| All non-EEG | SVM | $`0.8302`$ | $`0.8302`$ | $`0.0000`$ | $`+0.0032`$ |
+| All non-EEG | Forest | $`0.8704`$ | $`0.8735`$ | $`+0.0031`$ | $`+0.0003`$ |
 
-Independent adult test results ($`n=36`$). B and E are baseline and EEG-augmented log loss; bracketed values are conditional 95% test-resampling percentiles. Task/eye uses 49 baseline predictors; broader uses all 58 non-EEG predictors. E adds 18 spectral EEG predictors. All six pairs share the same test participants.
+Independent adult test results ($`n=36`$). B and E are baseline and EEG-augmented log loss; bracketed values are conditional 95% test-resampling percentiles. Task + eye uses 49 baseline predictors; All non-EEG uses all 58 non-EEG predictors. E adds 18 spectral EEG predictors. All six pairs share the same test participants.
 
-The task/eye comparison showed unfavorable mean loss increments with logistic regression and SVM and a near-zero forest increment. With the broader baseline, increments were near zero and differed in direction across learners. Every conditional interval covered zero. For task/eye logistic regression, 26 of 36 individual losses improved despite an unfavorable overall mean: a majority count does not summarize the magnitude of probability errors. Full participant-level differences are retained rather than treating these counts as evidence of subgroup benefit.
+The Task + eye comparison showed unfavorable mean loss increments with logistic regression and SVM and a near-zero forest increment. With the All non-EEG baseline, increments were near zero and differed in direction across learners. Every conditional interval covered zero. For Task + eye logistic regression, 26 of 36 individual losses improved despite an unfavorable overall mean: a majority count does not summarize the magnitude of probability errors. Full participant-level differences are retained rather than treating these counts as evidence of subgroup benefit.
 
 The comparison is plotted in main Figure 6.
 
@@ -1578,6 +1582,133 @@ Wiebe, Annika, Benjamin Selaskowski, Martha Paskin, et al. 2024. “Virtual Real
 </div>
 
 </div>
+
+## Selection decomposition follow-up
+
+This exploratory saved-prediction audit uses the group target and fits no model.
+Repeat means precede averaging across repeats. The fold-independent comparison
+is the expected loss from mixing fixed E0 and E2 losses with weights 22/50 and
+28/50, rather than mixing their probabilities. Its mean loss is 0.6310 versus
+0.6532 for the selector; the selection component is 0.0222 of the 0.0288 primary
+deficit (76.9%). The selector is worse than E0, E1, E2, and the mixture in
+10/10, 7/10, 8/10, and 9/10 dependent repeats. Outer-best representation agrees
+with the choice in 11/50 fits; the observed marginal frequencies imply 22.56
+agreements under independence. Minimum inner E2-minus-E0 loss and the matching
+outer difference have Spearman correlation -0.690948. These are complementary
+subsets of the same participants. Omitting the worst repeat gives selector,
+mixture, and baseline losses of 0.6435, 0.6247, and 0.6248.
+
+- [Dated plan](../exploratory_r2_2026-11-05/selection/PLAN_2026-11-05.md)
+- [Code](../exploratory_r2_2026-11-05/selection/audit_selection.py)
+- [Verification CSV](../exploratory_r2_2026-11-05/selection/outputs/VERIFICATION.csv),
+  [repeat losses](../exploratory_r2_2026-11-05/selection/outputs/REPEAT_LOGLOSSES.csv),
+  [fold comparisons](../exploratory_r2_2026-11-05/selection/outputs/FOLD_SELECTION_COMPARISON.csv)
+
+## Diagnosis-status entropy/Hjorth follow-up
+
+The 84 exact yes/no diagnosis-status records (54 yes, 30 no) retain both levels
+of `DIAGNOSED_FOLD_MANIFEST.csv`. Frozen nine-variable entropy/Hjorth features
+augment the seven-variable baseline. Each paired design is separately tuned
+using the original nested logistic procedure. Device and quality adjustment
+adds the same device indicator, clean-window fraction and interpolation count
+to both models. Both gains are positive in 7/10 repeats; neither conditional
+range excludes zero (Supplementary Section S3, Table S4).
+
+| Design | Baseline LL | EEG LL | Delta LL | Delta AUROC | Delta Brier | Positive LL repeats | Lower | Upper |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| diagnosis_entropy | 0.5971 | 0.5877 | +0.0094 | +0.0022 | +0.0018 | 7/10 | -0.0592 | +0.0778 |
+| diagnosis_entropy_DQ | 0.5822 | 0.5712 | +0.0110 | +0.0022 | +0.0041 | 7/10 | -0.0577 | +0.0744 |
+
+- [Dated plan](../exploratory_r2_2026-11-05/diagnosis/PLAN_2026-11-05.md)
+- [Code](../exploratory_r2_2026-11-05/diagnosis/run_diagnosis.py)
+- [Summary and all outputs](../exploratory_r2_2026-11-05/diagnosis/outputs/),
+  [predictions](../exploratory_r2_2026-11-05/diagnosis/outputs/OUTER_PREDICTIONS.csv),
+  [tuning](../exploratory_r2_2026-11-05/diagnosis/outputs/INNER_SELECTION.csv)
+
+## Cross-fitted EEGNet-like heads
+
+The originally planned embedding head above used the encoder's own training
+participants. The follow-up reuses 250 saved inner encoders without retraining,
+using each encoder's own logit because embedding spaces are not aligned.
+Every score used to train a head excludes that participant from encoder training.
+The split ensemble tunes one head on each encoder's 15-16 excluded participants
+and averages five test probabilities. Pooled OOF combines the 76-77 outer-training
+participants' excluded-encoder scores in one head with C=1 fixed in advance,
+then averages that head's predictions for the five test-score streams.
+Both have matched baselines. Rows against the recorded full-training baseline
+are additional diagnostics, not matched head-design contrasts.
+
+| Design | Baseline LL | EEG LL | Delta LL | Delta AUROC | Delta Brier | Positive LL repeats | Lower | Upper |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| split_ensemble | 0.6476 | 0.6457 | +0.0019 | +0.0047 | +0.0008 | 8/10 | -0.0092 | +0.0130 |
+| split_ensemble_vs_recorded_full_baseline | 0.6244 | 0.6457 | -0.0213 | -0.0462 | -0.0116 | 1/10 | -0.0650 | +0.0275 |
+| pooled_oof_fixed_C1 | 0.6146 | 0.6093 | +0.0053 | +0.0097 | +0.0026 | 8/10 | -0.0151 | +0.0250 |
+| pooled_oof_vs_recorded_full_baseline | 0.6244 | 0.6093 | +0.0151 | +0.0200 | +0.0069 | 8/10 | -0.0199 | +0.0469 |
+| original_embedding_reference | 0.6244 | 0.7250 | -0.1006 | -0.0496 | -0.0287 | 0/10 | -0.2404 | +0.0252 |
+
+Ranges in this follow-up use 10,000 class-stratified resamples of participant-mean
+paired losses (PCG64 seed 20261105), holding predictions fixed. The reference
+row recomputes the original predictions using this same scheme; its range differs
+from the originally recorded range above through the resampling specification.
+The new scores, head sizes, and ensemble design also differ from the original
+128-embedding procedure, so the change cannot be attributed entirely to head
+cross-fitting. Neither matched cross-fitted gain excludes zero (Supplementary
+Section S9, Table S10). No test participant entered any encoder or head training.
+
+- [Dated plan](../exploratory_r2_2026-11-05/eegnet_crossfit/PLAN_2026-11-05.md)
+- [Saved-encoder inference](../exploratory_r2_2026-11-05/eegnet_crossfit/infer_saved_encoders.py)
+- [Head evaluation](../exploratory_r2_2026-11-05/eegnet_crossfit/evaluate_heads.py)
+- [Inference identities](../exploratory_r2_2026-11-05/eegnet_crossfit/INFERENCE_COMPLETE.json)
+- [Summary and complete outputs](../exploratory_r2_2026-11-05/eegnet_crossfit/outputs/),
+  including predictions, head tuning, exclusion checks, repeats, and conditional draws
+
+## Phase-lag phase-control follow-up
+
+The same 20 recorded Fourier-phase controls are reconstructed from accepted
+float64 windows and their original recorded seeds. Their saved entropy/Hjorth
+features match exactly. Frozen 273-variable debiased squared weighted phase-lag
+features use three training-derived PCA components in each band and the original
+nested logistic evaluation. Observed EEG predictions replay to within 6.1e-12.
+The observed increment is +0.0127; the control mean is -0.0114, spanning -0.0314
+to +0.0217. Only one control exceeds the observed gain; three have positive
+means. Unlike entropy/Hjorth, the phase-lag gain depends on Fourier phase in
+this descriptive comparison (Supplementary Section S4). No selection among
+controls or new significance test is performed.
+
+| Design | Baseline LL | EEG LL | Delta LL | Delta AUROC | Delta Brier | Positive LL repeats | Lower | Upper |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| observed | 0.6244 | 0.6117 | +0.0127 | +0.0031 | +0.0035 | 7/10 | -0.0204 | +0.0501 |
+| phase_control_00 | 0.6244 | 0.6348 | -0.0104 | -0.0175 | -0.0036 | 4/10 | -0.0344 | +0.0153 |
+| phase_control_01 | 0.6244 | 0.6314 | -0.0071 | -0.0199 | -0.0033 | 2/10 | -0.0298 | +0.0155 |
+| phase_control_02 | 0.6244 | 0.6165 | +0.0079 | +0.0068 | +0.0031 | 7/10 | -0.0213 | +0.0390 |
+| phase_control_03 | 0.6244 | 0.6430 | -0.0186 | -0.0330 | -0.0088 | 1/10 | -0.0443 | +0.0081 |
+| phase_control_04 | 0.6244 | 0.6341 | -0.0097 | -0.0117 | -0.0042 | 3/10 | -0.0347 | +0.0169 |
+| phase_control_05 | 0.6244 | 0.6490 | -0.0246 | -0.0445 | -0.0111 | 1/10 | -0.0474 | +0.0011 |
+| phase_control_06 | 0.6244 | 0.6362 | -0.0118 | -0.0320 | -0.0073 | 3/10 | -0.0355 | +0.0135 |
+| phase_control_07 | 0.6244 | 0.6201 | +0.0043 | +0.0034 | +0.0017 | 6/10 | -0.0252 | +0.0351 |
+| phase_control_08 | 0.6244 | 0.6558 | -0.0314 | -0.0431 | -0.0151 | 0/10 | -0.0517 | -0.0094 |
+| phase_control_09 | 0.6244 | 0.6387 | -0.0144 | -0.0102 | -0.0050 | 2/10 | -0.0432 | +0.0143 |
+| phase_control_10 | 0.6244 | 0.6512 | -0.0268 | -0.0439 | -0.0126 | 0/10 | -0.0522 | -0.0007 |
+| phase_control_11 | 0.6244 | 0.6275 | -0.0031 | -0.0142 | -0.0026 | 4/10 | -0.0327 | +0.0281 |
+| phase_control_12 | 0.6244 | 0.6546 | -0.0302 | -0.0534 | -0.0159 | 2/10 | -0.0536 | -0.0043 |
+| phase_control_13 | 0.6244 | 0.6027 | +0.0217 | +0.0362 | +0.0109 | 8/10 | -0.0195 | +0.0639 |
+| phase_control_14 | 0.6244 | 0.6463 | -0.0220 | -0.0206 | -0.0076 | 1/10 | -0.0472 | +0.0044 |
+| phase_control_15 | 0.6244 | 0.6434 | -0.0190 | -0.0311 | -0.0090 | 2/10 | -0.0450 | +0.0081 |
+| phase_control_16 | 0.6244 | 0.6289 | -0.0045 | -0.0243 | -0.0030 | 3/10 | -0.0315 | +0.0256 |
+| phase_control_17 | 0.6244 | 0.6252 | -0.0009 | -0.0024 | +0.0006 | 5/10 | -0.0417 | +0.0386 |
+| phase_control_18 | 0.6244 | 0.6433 | -0.0189 | -0.0277 | -0.0072 | 2/10 | -0.0427 | +0.0070 |
+| phase_control_19 | 0.6244 | 0.6334 | -0.0091 | -0.0239 | -0.0055 | 2/10 | -0.0343 | +0.0174 |
+
+All conditional ranges use the same fixed-prediction, 10,000-draw class-stratified
+scheme as the other follow-ups and omit training and model-selection uncertainty.
+Controls share participants and windows. Phase randomization changes more than
+one signal property, so the difference does not identify a unique mechanism.
+
+- [Dated plan](../exploratory_r2_2026-11-05/phase_lag/PLAN_2026-11-05.md)
+- [Reconstruction and feature code](../exploratory_r2_2026-11-05/phase_lag/extract_phase_lag.py)
+- [Nested evaluation code](../exploratory_r2_2026-11-05/phase_lag/evaluate_phase_lag.py)
+- [Summary, features and reconstruction checks](../exploratory_r2_2026-11-05/phase_lag/outputs/)
+- [All 21 observed/control predictions and tuning outputs](../exploratory_r2_2026-11-05/phase_lag/evaluation/)
 
 ## File map and reproduction
 

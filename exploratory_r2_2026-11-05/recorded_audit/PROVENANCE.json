@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "analysis_status": "exploratory",
+  "completed_utc": "2026-11-04T22:14:08.785802+00:00",
+  "numpy": "2.3.4",
+  "pandas": "2.3.3",
+  "scipy": "1.16.3",
+  "sklearn": "1.8.0",
+  "input_sha256": {
+    "F:\\proje\\eeg_gain\\private_work\\cmpb_r2_2026-11-05\\repo\\exploratory_r2_2026-11-05\\recorded_manuscript_audit.py": "d6febafacad536bf5376bec26300d6ebb4e778d7d6d7e1da0112ce3c558a89e5",
+    "F:\\proje\\eeg_gain\\private_work\\cmpb_r2_2026-11-05\\repo\\expected\\posthoc\\results\\outer_predictions.csv": "9a540c031e4c4cc2354b2c8e7d36efd9be8d03d8eec69742d9c40120bf077ebd",
+    "F:\\proje\\eeg_gain\\private_work\\cmpb_r2_2026-11-05\\repo\\companion\\extensions\\utility\\reports\\EMPIRICAL_PREDICTIONS.csv": "00be092cec5058492237edd05c6eabcd0ba77f8d5b73c4314886898d73c877ed",
+    "F:\\proje\\eeg_gain\\private_work\\cmpb_r2_2026-11-05\\repo\\expected\\posthoc\\signal_controls\\surrogate_features.npz": "83badfccb29ee590dbcf517d4325de1642869211a7be67528b7bf8ff298c3445",
+    "F:\\proje\\eeg_gain\\private_work\\cmpb_r2_2026-11-05\\repo\\audit\\preregistered_analysis\\OUTCOME_LINKAGE_MANIFEST.csv": "fd5077b83c7a8679534455635e57447d548042eb4c3fa95427bc3799cf4509bb"
+  },
+  "common_code_sha256": "3365baf916f9cec54e5bd0b4c5d32a2d3de3bac82d65c22a8ee584ea717120cc",
+  "conditional_range": "10000 class-stratified participant resamples of mean paired LL; predictions fixed"
+}

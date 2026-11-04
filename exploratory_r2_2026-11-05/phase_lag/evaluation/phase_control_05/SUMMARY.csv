@@ -1,0 +1,2 @@
+comparison,participants,positive_labels,baseline_logloss,augmented_logloss,delta_ll,delta_auroc,delta_brier,positive_repeats,lower,upper
+phase_control_05,96,41,0.62437930418902021,0.64896311340243495,-0.024583809213414697,-0.044523281596452344,-0.011135300867210521,1,-0.047408686090956366,0.0010707084859905222

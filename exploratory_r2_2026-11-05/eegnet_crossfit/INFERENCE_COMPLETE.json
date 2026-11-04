@@ -1,0 +1,2266 @@
+{
+  "status": "complete",
+  "new_encoder_fits": 0,
+  "encoders_reused": 250,
+  "torch": "2.5.1+cpu",
+  "numpy": "1.26.4",
+  "device": "cpu",
+  "code_sha256": "c07c0746f68432cd6bf439cdafa6af52978e8d1d59294700968ceeaf707def07",
+  "model_code_sha256": "305f171f8a95d761d2478ed1d7e1ea56e0c9e1cf7084376eb46bb61399e43eb2",
+  "plan_sha256": "f122ec654df038f59bddeaa26cf1dd464a8ba936f35ec54bcd28e73e25e4e8a0",
+  "cache_manifest_sha256": "7920a06408ec1b1891f9e53abfab206a6ef29445a325918752ed279a12be2a40",
+  "input_sha256": {
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner0\\fit.json": "bc4b8a07f229a5b696ed3f99d6f8ea2da55a508a4189243d8d053e9cdd2c7617",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner0\\encoder.pt": "c25c9a2d430f480520f7e49c087d740fba136f6b0f8edd97d022ce119e629fa3",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner0\\embeddings.npz": "7832790980dc2c28c9fc1722e26bae1996039342246a5d4e5fe55e00e0d17249",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner1\\fit.json": "eec9c2050a26253340c6acb42148cfc36da95bc4ad0505a80df7f02f16e37461",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner1\\encoder.pt": "e67f73af12f82bd0b24840c3a940b166fbe67f8c615e19e95fba09b499385c30",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner1\\embeddings.npz": "393df7959cba2c1d0e4331d1680654dbfaa949f8074b3b37999830a294eac129",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner2\\fit.json": "9cb343a38c641699c9626d92bc5c3ebbd47ab3ba75425006322c7363e928b64d",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner2\\encoder.pt": "d2f933ae9ea0e5a793ea25eceb5bea4f70ac920219ac3b441695d95f22bfcc55",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner2\\embeddings.npz": "5106241775ce3e4c65278982ec5944c4b7578def9d3da754e8b14cf5d0e27e80",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner3\\fit.json": "baeac3ad3b43a430a3d9835f785cebf82eb5044ff1315b30f51e6eabff735a68",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner3\\encoder.pt": "674877ba2ce2fcfcdadf8a5ce1aa2ddacdf14fa8e3a82a3503473ddd99b6efe6",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner3\\embeddings.npz": "ab82ebc388e07d9003b69cff6f8a6c71903e80f3ac153dfdf0924328464c003b",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner4\\fit.json": "d5a27fae51432a912c0ee33ffee6d64130fb5c519f5890e2d258733b1a8dc587",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner4\\encoder.pt": "e729f3a3fb32679b96894f4c1fbacd63fea31cad14714a24d09a93a6c0f6d38c",
+    "companion\\extensions\\eegnet\\results\\r00_f00\\inner4\\embeddings.npz": "337a36f4bd5e46e559bf1eb4a6245ef0ea571548c91a7fef05c56e0477fdb702",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner0\\fit.json": "64ace1cc06e6cbbcca163bdb3820ea32886f87f9a4ea172cdc26d44eb2f3ac47",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner0\\encoder.pt": "22be132af6e4dacbf532c88b75124a76cb091b2bd63dd09dff2047de064f1314",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner0\\embeddings.npz": "61ccbd9714ea2cb4eecdc30fa46a37046ca35dbf1c545c6ff9be09ec0f314467",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner1\\fit.json": "7f087e5ec4f8e21ffb4cd0e91e4bb00703c23f2eec31e7b09858270ef2d9f4c5",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner1\\encoder.pt": "76dd884b347fe420dfde377724d65fbf1454ed86ae4ae9919b0583b01aaa4fb3",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner1\\embeddings.npz": "b8cf77434958d852c84469ebbf1afcbcd7310b23d63953ebe7438da1fd9ecc6e",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner2\\fit.json": "d595aec151fa6863530cfa33050e14b6b1b1e75d19dda04f90b8f683b8d2057b",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner2\\encoder.pt": "89f378d46f63fa0c4e23146f458f8c087af5b9d9618358ae26524b5e8040d74a",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner2\\embeddings.npz": "956ee0ed0ca7fa6ef9d460cd6da928fd4591b3f2224f0012ea64b095c3877e53",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner3\\fit.json": "eb065d7684f1d78a142fb7ca266a88bd915024e1fdb5402450c944f36c11ecc6",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner3\\encoder.pt": "7234e69d4f7e1a1617dad089d35808c1737aef4ffd89bf6ab38cce0aab722c76",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner3\\embeddings.npz": "b6d65942825f7ef386108f26f867c6f3a2f524e165ed5134e1aecb18db6fa397",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner4\\fit.json": "6e3737409933c0f470d737298399f879a94457afca8c8a019d6b6966b72e675e",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner4\\encoder.pt": "36031bd5cff1bd08c9fc4334df3a65855e801e6094244347c388758d4f0c07c5",
+    "companion\\extensions\\eegnet\\results\\r00_f01\\inner4\\embeddings.npz": "207289cf445376e67c295abbea3ba5241cd7b69de58ec617781888f3a49afe9b",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner0\\fit.json": "f85b915f0ce8fb90c6f30204d12b0da0ce6b543e0609c1752a8a7d1f0dd64d55",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner0\\encoder.pt": "e2b5b4062c3c01bab265b1c89f4aa8031318fb416efa663d1da023b43f0f1078",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner0\\embeddings.npz": "c6ad2d238ba1011efdb7a17a1fc33bf2a1059b3a6580a30ba356ce14417e35e8",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner1\\fit.json": "94eb87d445d1de9aceebeed66b88ffc741d218a2ab486f470dba7bfc131562c4",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner1\\encoder.pt": "96df41198447647aacf9f687fe10274932777310eeac8aec1496eb01c479aeb3",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner1\\embeddings.npz": "ce2471e524d4bc0826b24982cf35626be089e5babcd268e51aceeae614af0790",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner2\\fit.json": "85ee6efb6ce6b24ba4a66cc5f124a991021bd87e701e4c31e38a29d3ea1d927f",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner2\\encoder.pt": "420f3d31caed102294e0957b19407cd4fd88f0f7996f34c51af342d29f5ad559",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner2\\embeddings.npz": "bf4b4cc1aad411b3fa8c7c8c48a67ab111da653090a62e76b0f939bfa39f3f23",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner3\\fit.json": "f97579376b49381d024ad35d065b0b4c6a86342ed7a112e07cc6b6f62bb22e1b",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner3\\encoder.pt": "e5d89dc0824155745904ee94a59c3f33f26aded363df0b4d4d073fd975faf036",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner3\\embeddings.npz": "78331b8597a7c9996626a7064027716bc15590ae4332a6de750abfa3bc06d3df",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner4\\fit.json": "7f4a0795e93ee84e792d3885c87e9658a918ca1bae66985de396c23114fab411",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner4\\encoder.pt": "4039e528ffafe674f81b21fa1dedde7f43e4f295224d80b38fbecffeeae2a67b",
+    "companion\\extensions\\eegnet\\results\\r00_f02\\inner4\\embeddings.npz": "39c222f1de74db2d7a5f71b56b0b1039bddb9b287efdbf9b5291d7aac12efcf3",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner0\\fit.json": "9f7f8e75ef8a82c278cb2454c4347bc487a294ff94b6c7f7631fa63e90108b5e",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner0\\encoder.pt": "3d333645cda55ec018a6b1ac0ec877ce7b6ee36d56a6a218ec7b4978694338e5",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner0\\embeddings.npz": "946e224bea8bd1e39bdfc50f194775f83a48a2e43eb2a00e230d11870c63e82b",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner1\\fit.json": "7474c4aedb9662165ef201a64104d32b5d56c130bdc1118b50a7bfe7c977dd13",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner1\\encoder.pt": "8fabd6ddcf6581b68d4b81123e9c51ca6f7ab579a8661226f0b6cbf43f0db173",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner1\\embeddings.npz": "8a0fe441a17e2615bfdb37b39688c91158424cb68a275a64c488a70d353cfc40",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner2\\fit.json": "052bb576c5eaabc3a017ae90f79a32a05eb4585e368515cbef0df24addad7e55",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner2\\encoder.pt": "90e1efc7eccda982296b7d88838982aeab6747726e7ad400b86ab919e78f6a2c",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner2\\embeddings.npz": "ec93bb39095af2f135f59dc6e821263dce334abb968c44bc14306ad9940405a2",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner3\\fit.json": "dc7eb046f4d2c79aa2e31e1fd124df730cd34ff5e80ee1b0be40fb4320c5b1fd",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner3\\encoder.pt": "01374486fca26a0d34188e98ecc2a1d0d68c7e79d613f3c70b5b959d653131e3",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner3\\embeddings.npz": "e1a1769a8eb798e06952dc8b6fa89a97f536bf6994710c6713af29c4c16d3e02",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner4\\fit.json": "71a7dc01fed5e62977aabcbcc8ca6bdc313d102adc2ca2daecce91e0b2da901c",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner4\\encoder.pt": "09742c8105995cd9c9d347eb8d42c832be6df414791fda059b0ac49912d8cf47",
+    "companion\\extensions\\eegnet\\results\\r00_f03\\inner4\\embeddings.npz": "54db2b9a0cb02a90c2b8359bc672c960b7e56a4b669e1bcc05af96b74ed26e1b",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner0\\fit.json": "acc28ea2da8b1ff1d0916640d6c6a611319417090cef827abe5f313f350cecc4",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner0\\encoder.pt": "c97a3ea4db40aff00044856a3f46767a40602b6b81bf6ab2e94fa97fcdbb7473",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner0\\embeddings.npz": "dc08bc7054bd7888953303949276bf6b9cb2d80b2ae54874ff83e29ce50a0685",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner1\\fit.json": "105a3767e513b063d099b29833af660e991005ea4cc32384c556ba5761288a51",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner1\\encoder.pt": "25184676004d0b901cce432cf447e48df57bbc234e569541b2819d0620d184e0",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner1\\embeddings.npz": "e91d9abcf0402657e9896c5dd580ec4039816a3ba0876499a5058107a90affb6",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner2\\fit.json": "5f93428a3866d4c0b78b504cde76a8095a7d899c638794faf8f013114f8d0ed2",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner2\\encoder.pt": "614b3bdd920193c353b21204e62cf4e2c7a3c6ac48b2f71947428f907e6e0c54",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner2\\embeddings.npz": "882ad5a9fd71d3a25c433729124885cc76593d3bcfd569f4dd025358c27ec9fd",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner3\\fit.json": "a0e64f661cfd63e96b5b66a1ac40d452e9a0111cb31d13e144beaf15bc8d464e",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner3\\encoder.pt": "bb75b00783add099714cf35f436469ad5189c3b6b3cd313a0ad95b8a60fe08df",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner3\\embeddings.npz": "1ce2ca214b86e91094cf10981568c20efdeb7b1d9e5b030d5483f975116083f4",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner4\\fit.json": "ccafb938af628b5cc1c840f7f12186088dc42f608a934e72c10415b448d6d967",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner4\\encoder.pt": "43a207b1a2087aaf405ae4fe0c42e0918fa4f545132d6e0d8dbf10069f78bed7",
+    "companion\\extensions\\eegnet\\results\\r00_f04\\inner4\\embeddings.npz": "dba521872fe81f2052baadb5c4450097e3f151e3a724f57ed7b004c1fd5e674f",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner0\\fit.json": "b3e965e029e056c7b973c400abc916933b0e187a56d76ec6e786785da4806251",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner0\\encoder.pt": "e5100ef6d21c1221fbb38076f5fcc3176307c08968640f746e775b8328c8f93a",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner0\\embeddings.npz": "4323ffdb074aac5cca6e5111dd619eec33b902d9bfdc83317da49504067f0c2e",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner1\\fit.json": "4ce7f9e96313e0a116fe661f5bd9ea9b7ef71aa2fe7d84220443460dfd746e01",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner1\\encoder.pt": "148240d697ba0c05ad16f7f8f9def8cc5bd9e3f0e78f483526d47d52916767b7",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner1\\embeddings.npz": "8a36cfd98b94ebd2bb7bf20c58e1c12e98057ec3d39d72a2e476131bee04d430",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner2\\fit.json": "5313f53a5ee1783ed0f44986b2ea849c31bdf0e150f8a7778fb8660495277008",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner2\\encoder.pt": "f6d4128cb45592bb970e4ac150f6c0953e09c2505db5041f0a36f8b0a7c13cc3",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner2\\embeddings.npz": "d1b6907281c1c3385fc6148a519fc75aa869e3fa519deb3435eed40f8968a0db",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner3\\fit.json": "3d55ca596fa185e75bc295b721d2af2527bf8148f55ee5a46be686c6349b30b0",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner3\\encoder.pt": "ae1ce65ae2ccb69d722e83d1e74cdb6f436b900884b81832da5e7cf0b37e7567",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner3\\embeddings.npz": "fabddffc35495e35e35e674b1492adcf34e178544a72c711578f7f5776f92b7d",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner4\\fit.json": "ffd7fee185d8478a6aa8f76a4eb228f3c0b93a888642c5979d0c63ed498fe967",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner4\\encoder.pt": "f88ff8abfc3f738c975ec26f4d2359dc9d4d5c7ab7baa48e4deb3d0a5715127d",
+    "companion\\extensions\\eegnet\\results\\r01_f00\\inner4\\embeddings.npz": "fc4e6e3cb8e47643a4b9a9a1d46faafbbf98a63949c2a3341245d5031745e735",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner0\\fit.json": "290f9af9fa4d2b7a76ba85d1ed1449edaedda367723be3b0717824a272607c1c",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner0\\encoder.pt": "315adcea55100f622c9a087a976ad9294dcc132d19e1206420716487885004bb",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner0\\embeddings.npz": "216147687beec43b5aff8c1e322bdb93af696050159a1b3acdaa7b2dab221c8a",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner1\\fit.json": "a02d046a15097dd2640d53abbce0e2e3ff19db61e7a07ea127b31608165ba30b",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner1\\encoder.pt": "ef09eb5d2e4e12fcf716851a77e8ebc4d6bc03fdd9689d0b70a7410934408eb3",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner1\\embeddings.npz": "0ec0113e1e1051319532ece4e7b42ed0c541c641312331afdaf159320b6b1dee",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner2\\fit.json": "1b3c0fbf98d034e4450f91f8ac6bfd7b127ad47c798bbab5119f1145790c8b94",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner2\\encoder.pt": "c6bd432c612c52db165bca2a2451ba4771d5b2e330ab5ed54873e02aea49d720",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner2\\embeddings.npz": "a386dd1af44103f805ca30df7269b51d0df98a2d568642c40edb75e4456a0f5b",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner3\\fit.json": "9e17fdee7b4af58d299a0e695fced0dbb8c01b298fb40f0b8025ca4571f28c27",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner3\\encoder.pt": "6ab06c92e021e22254826476bc5372b5029f703d8180fed9ce929c60c1ba91f6",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner3\\embeddings.npz": "e9b18f783f9f4e60ce0388022b06a0d411a88a99522cd0d077cf02fc032d24d2",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner4\\fit.json": "960702719bf044026efaedbfb7626f7f4ef332fe144225b980740193ab6f7fa3",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner4\\encoder.pt": "46dc6526e8512cf7c0ad5c461bb3d1ddd4ab2e05531ed78c49327912c1f2ca58",
+    "companion\\extensions\\eegnet\\results\\r01_f01\\inner4\\embeddings.npz": "2b16adbe6fbc3828df561780d2f545f3363cb2b160a09245485296aa019a1cdf",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner0\\fit.json": "d3c87a7419f59bfd4e371580557644b3e6c847e0c8fcb147503d03a36e86115a",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner0\\encoder.pt": "317aa02cd6a6d085cadb062b3dc8d63ea01b2e7486c12f04835a317adafdb76b",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner0\\embeddings.npz": "aed6bd6b61edced1906c53a5a1c21ed487bea82bd10fda839ad4399fb4ff1632",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner1\\fit.json": "59bf222922617e9d302dbd679de6e67b6a78a27ea8f5fc4187acf923f96b975e",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner1\\encoder.pt": "d7b0201099667411ff378102a373c1b390e3656125875015a9f953aa87362718",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner1\\embeddings.npz": "78a11af706e53a47aac82ac5edc63e6039963f1c55054907a31d74e8c9b74ea3",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner2\\fit.json": "9e3149660499df06be6d719ac26e43273776ccfdc4425288b64db9f47cd707d6",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner2\\encoder.pt": "5f20559c44e435ea0e9ea5e03583da7d0766cae37356e7ea408f84c529a18e65",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner2\\embeddings.npz": "b538a4a279e1df51f30f170541d4dfbb78715fa2539bec9a218e9e2f7773e095",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner3\\fit.json": "dbf76ace0b93879aae11f6be497f3348e0110c36c356e66caa1f0b370131f2a0",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner3\\encoder.pt": "b4b7f09b47b212c9d8e68d664eaa2f73c8273bdb6cd6aa026381c39ac7d30fcc",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner3\\embeddings.npz": "d060a4bac2ee8137c25f31f476dd76de674d6bd2defffc656d874c632e14147b",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner4\\fit.json": "c2850930dab488598e9fe1a9069303dbb1054b32d0c1eb4928e01a28e9e18974",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner4\\encoder.pt": "2960bd312014f0770b8115267dc31305cfc67eb2a8ad1f8350276834ba508c94",
+    "companion\\extensions\\eegnet\\results\\r01_f02\\inner4\\embeddings.npz": "83ac850da1b3a36518fd253c2bd27e14d37d22be8bad7c42406acd2a9888af02",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner0\\fit.json": "a0668a776e9d714b4c5bb0ebe93757ed92d79b148988b722f3f41517147d7cc5",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner0\\encoder.pt": "a5d141a362abe0eed85b4211b782ed4093a6c52807b61e0422edf910a345ec7e",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner0\\embeddings.npz": "7417fe9aec5178d0eae86a81ac5a302007afbfd2f66fe945812f74f7db3608ea",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner1\\fit.json": "eff79a04ead3de9788c4028d8b2f859f95aebe41948a775317ea0517df8ef446",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner1\\encoder.pt": "7d60a33bac9f815a240dcd0886be40c708ec92e9e4921ce93a5d1699e43de822",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner1\\embeddings.npz": "5e34e3c984ba02a88014ad772d07b5bf8e1298c11fd195b2e3451b7686bdf6f9",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner2\\fit.json": "91d253bde5116f6a787b5828e5e50e73f7a4884c5fd2f73e403bff899a6d5a7e",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner2\\encoder.pt": "517fb606aa34be33113b66a84a42ce4d39f73b6310edc2bab8a6180666272582",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner2\\embeddings.npz": "ae33c5cc2a8281c76ee7171574f92c9ac6001502f6c961b328f2b91341c9a09a",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner3\\fit.json": "8c60d24c5039ffd4083fc950c4c084099dd7d922b2c8d046c176b047ba955310",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner3\\encoder.pt": "96e37ca35065559e77471bfeaf28b3e95c64f5698d44c6764d4d2f66231a2e1d",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner3\\embeddings.npz": "8f216286a23a0f68ba96c66f21093e601421c912c17b8e62a1cca3fec965f939",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner4\\fit.json": "efed265e831c83fce148b3ef1991afdfe1c3792e86790567b6def7e665ff19e8",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner4\\encoder.pt": "162a18fdd83aa32513357b46a42d973662ce1384bc1c0aaf7c2f19b4e27b42a9",
+    "companion\\extensions\\eegnet\\results\\r01_f03\\inner4\\embeddings.npz": "4a7a1ed58180751f75f9d992506cd5acdb46d40fbb339310ef42116322535229",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner0\\fit.json": "17f87bffafb8929347f79bce0c8b08526d60d5e565d893ea120714a92aaca602",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner0\\encoder.pt": "16a0a6fa4a5f7db204796133e5decfda90b18d1fac7244fdd1b1041b82ce7608",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner0\\embeddings.npz": "56943b0a66702c800c0b1958a568b0fb6388d43ee764a828b1739d9117c3a05a",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner1\\fit.json": "de0eb424a3f0333271620bb26b7b91e531cc1649f847e8a16a1c0ae832d3dae9",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner1\\encoder.pt": "cda5564ad7311ab991f822e1adaaa0f4f06d98786698fa070435fcae3bc5b93b",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner1\\embeddings.npz": "e1f6ef0ff520be3bf9696e915ed005eafdf8bd3a02d1d5df699d502a6d7d682a",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner2\\fit.json": "12912f273d259626ac62baadf84bd4cc881ef1fc3204702d052ad07bfb26bed4",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner2\\encoder.pt": "b5aef270ed62616b861fd5e0d619f7422b8c42d93fd198b7f877996d8317d985",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner2\\embeddings.npz": "5e4a8ecc81ec0364fbe509fffa261d24c5b9b46548357fbbfa0e0445f4ce4b9f",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner3\\fit.json": "9c7443d4225d0c400e33cc4bb0f7b9cdfebb5d30a983a2c05322c670279b9570",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner3\\encoder.pt": "b1daf9820d634813e50161430e20e0bcfde97ab04f161770edb4d311a14e8583",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner3\\embeddings.npz": "589c412e7cec5a909ad6fcb9a3e7bb21cefd4c416299dd1e206dd340547742ad",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner4\\fit.json": "3698b1e596bb93c375872ac0a508535c0b5a85288cb46fbd034f1e37c97e0307",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner4\\encoder.pt": "0102635a53ac40b117007039204cb56eb9b8410c4f13af6e2430efcda38cf533",
+    "companion\\extensions\\eegnet\\results\\r01_f04\\inner4\\embeddings.npz": "a3d067176aa2f00549605ba7fe09604314ea9833209c8c1bc24aa3cafbf35a70",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner0\\fit.json": "4524fb132f1fbc9aa0711c6c535956533a4e5d01e5b758e9dfdb451e3f11dcbe",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner0\\encoder.pt": "5f9bbaaacc33dcb2ca8678975eac0b2471fdb8a8bff984f329cf3af29d86c7bd",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner0\\embeddings.npz": "9c1424d07791fe0557925b0793c9a79a216ebaf84b50e5e5816cf11b51904fc3",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner1\\fit.json": "94b8445b2714c3b0336b5e68fcff4f862e4a37f48a6ac714ca864ef75e789734",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner1\\encoder.pt": "1f350b91e242a0281a9821c6eb370b511260b9f689bdf082ace5b2035cf02f30",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner1\\embeddings.npz": "8efd84c45335186e251587f2e1d5f0e696efc66404049212743808170303d181",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner2\\fit.json": "5609951eec16c7a1532f5bd94db62fe5a26375752b7b5f96bd706ff5bd8650a3",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner2\\encoder.pt": "d4858d9c10c7e924e6850d3479245920a8512c312f398fd8668bafc5d0efea47",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner2\\embeddings.npz": "5a5e1fb71ee4e38cb69f76c937b6bda35ba89ef115540bd24c152a9adb8d388c",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner3\\fit.json": "4f25f08e742098a4887fc06ad5b49a08a3dd0291a18d77c8e2d19e76db39d995",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner3\\encoder.pt": "ea9cb1e47ab6667be90823046f5ea935de8acff5a950d9cc4df466fc4e183574",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner3\\embeddings.npz": "84ff2f1cf93c2b9bf70f16eee5b49d7564426d54b4618b06b9e7f0ba60ed64ae",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner4\\fit.json": "e43a96201aefa3af2f8abb03dd2f8446fecc4df91387c3b27af2c487f300f605",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner4\\encoder.pt": "d26f5b91eab31d9248b37cd0a52be8353c058ecec8302d5e564ac304bbbd9ce6",
+    "companion\\extensions\\eegnet\\results\\r02_f00\\inner4\\embeddings.npz": "39a46c29fe69c26c46b886b8e97bbd0c6825636a6dd1305b4ab3f1f294abea5e",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner0\\fit.json": "e4ca70eeb6141350484ed00ec3c31d0ffd9ff2f99b56c1d4f1b6dbb1c2463dfa",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner0\\encoder.pt": "48035691e866d0fa42460d108a5fd46a711a71292590018b49b75376b4b67b76",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner0\\embeddings.npz": "7aff7faa346ea7244f41f3a3b39b35207b981b286e3d4e77afac24030d5aecec",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner1\\fit.json": "bfae31dad6a217c1457e0418e5c1560b81f9db29fdb12101ec35a0225a9a1e06",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner1\\encoder.pt": "716bf14ea6d395cf999c69fa86c09c513aa8e6ffcc1bc52cae0c52e5bec9f8b7",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner1\\embeddings.npz": "9ef0ab1ff2be2fb8a7ab4612037f1361deed9870345ebdb36a02581a71ff6832",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner2\\fit.json": "1204b607d1ff8cece87800d9e7456709cf0f9187cb9a680c57964c5d367f4bab",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner2\\encoder.pt": "6dfb1133e50e63801f7481279a1fcfdf29dbf2f020326b880e8fb6f7ef19fbf2",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner2\\embeddings.npz": "c9819d165e67588cf85d98422a0bcb0d18ec93bdd5ff75206ab2102a51cfa787",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner3\\fit.json": "b16ae43ececbdb382b2a4e5820787d090c56c96c11152f94218d50d0f0ac551f",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner3\\encoder.pt": "a77e47c009f612a67964c4bc64841a2ce5e487f3503a482c45e6459e5f4be31f",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner3\\embeddings.npz": "df764f01047e5048e5de5e27dee1323be22d6184726bb8d777b28d0b6eee1f5d",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner4\\fit.json": "99b9db0ca6e18fb18fe0cb2127538e375d59b69adc78c56736154c8e8a4b0d77",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner4\\encoder.pt": "7596640f80413810f81b09f31916cf68ec3e47fb0f140a58afa61727afef959e",
+    "companion\\extensions\\eegnet\\results\\r02_f01\\inner4\\embeddings.npz": "56515e5329659a240108fbcf41656248e91b7a5277cd6eaa86e486282d347fa0",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner0\\fit.json": "62d2ff1e902c7ed62fae6ceff89b2de01ee892fa9204416734261c9de63b475f",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner0\\encoder.pt": "0ae2937a1de7d786a698c5d9484fea85a370c2718280a6f72d01acfd084d8775",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner0\\embeddings.npz": "5e9a71661a7a0b79082cf6c370dc93eb3f3afc14efa04204a784f7ae83ded72b",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner1\\fit.json": "8601fc531c94c0620c46e532383c7032fe5974e9b7d965c08b46456f1ffa0f51",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner1\\encoder.pt": "ecc04851d5eeca2a5275181198c8b677a0290a5edcf977cea9b52794d48951e7",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner1\\embeddings.npz": "a715866036572b9ca98637fa0c1ae1248e22ef956d1c5811912e88e3ca6608f8",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner2\\fit.json": "f9a79328f978715c70757f015c88f22d4103346395a29b7b10e763381a472a79",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner2\\encoder.pt": "6c88c3bb9c2b9a287ac0d34d587ffa24e16b99f77defdcb8fb78de764fb459e6",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner2\\embeddings.npz": "da683346b61dc05a9d72f60e7edb09bd0ddb5b1dd6539516783c94db35fd23c0",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner3\\fit.json": "41389bcd0358420a231a1dae0982b9821e52b65e1c536d566bc2136b953fc03a",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner3\\encoder.pt": "48608a05bf845df8d00078df9bc69e787884c89c4ee0136bf4f0377047d91e86",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner3\\embeddings.npz": "5995787c42fd6f45a916bc89b5b38c5f242117d8a48bf5155328ce03d271f319",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner4\\fit.json": "cedc750cf727238b5633e9890b6921d7eebe3f9eb9bc701d1c90d930309de50f",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner4\\encoder.pt": "7283877846b7ea01406f4b46b2603c12a7400ce480a720deeb6cecf4c1daf89a",
+    "companion\\extensions\\eegnet\\results\\r02_f02\\inner4\\embeddings.npz": "0e0148d0c63497e2f4001e0f160e8427a72821030b8fdbe908fe50674a3d5b3b",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner0\\fit.json": "8efb18f2420ccfff382e9f2989609a33252b8df5ebca2f3d70166ca1d961381b",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner0\\encoder.pt": "e9fbd1200a3ebfdee13c8484ff670a5881372f262d24f5a70f3d4952f3be1fe1",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner0\\embeddings.npz": "9059bec0f0acccbf0052b9e3490e6db6e2e5048db91c6604734040f17b1dc78d",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner1\\fit.json": "d48d163db43106510d5d24c1cc9611a55f7753641d1dcf27025c7a3e54f1e129",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner1\\encoder.pt": "ed5ac974aa9db47875f4f65157681831dc597e2e9f80270782ba8d0749ca9040",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner1\\embeddings.npz": "d7515c0f4b929845dfcac280c495b7060340cfc1263e73b9b0a2de0fd0b572e9",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner2\\fit.json": "3aea67fa103a9f21c27c414b65b201df64cb6a6d76806e4e6749e1ad0a138fd7",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner2\\encoder.pt": "d9c151e390fd54354ecc7c75d70700cb76302bca67ab611f24392f87d220b8c5",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner2\\embeddings.npz": "811caa052e0e3583401b8ae4a092dae63c56c6df3b03cc42569dd5ae64a497ed",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner3\\fit.json": "191e8d17532e5bba9d5fe0c0535bac0e7b306e1923b14b9b204dd4d80f55bcc0",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner3\\encoder.pt": "d579a71638488755d0c88410c2faf6095f0186fca25fffc8faf655308ba1c61d",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner3\\embeddings.npz": "2bdd83a62a7b7cfff0b50d14d88e2d60e02ee3eb8d2691adf25fe0efe34411f3",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner4\\fit.json": "ddc1c2af1d9dbcba04648c640568e7de794c3204830349948bd76411774c0639",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner4\\encoder.pt": "1f67d763c34f5738ad4e9e9f02085d66596e1febfd8860489695d4425dcb7af9",
+    "companion\\extensions\\eegnet\\results\\r02_f03\\inner4\\embeddings.npz": "3b94257fa1a2e8ca8e1ce3bfc3863a48b3e3988c6186e9f8223a291e8c2d46bc",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner0\\fit.json": "1d93a61c64ef98f34b39ed0eec5923163c67650491ec6f2a8ca59eb8b35e7d54",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner0\\encoder.pt": "2a112d9dc7c03e3f91c36ccdcfcb26a7bf098f8bb5a7a0edba20d5f6338a4bed",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner0\\embeddings.npz": "8ee42282cb95469b5907bc499d83db110b615ce06a17ddd4b5620b0ca47b53a1",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner1\\fit.json": "d1eac7a2a60e22bab09f506a8aa39f73b88dc66e942d0ff03e549f6751bc8551",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner1\\encoder.pt": "3d53fd0589297e7ad6d29a41139061d005f628943fd8521833f7ffa51eb30ced",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner1\\embeddings.npz": "792fde2319aaba799db54516683cb34eca049afb2ee223200df51209f055a3d4",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner2\\fit.json": "66e25eb239540cbc99023375d3c3acd84f95c26143b020607ae3c2945b2ce4b7",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner2\\encoder.pt": "161527b60dd2928542feb19902e96ce6d9217c0c86053c9adaaf92148fe36c57",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner2\\embeddings.npz": "dbab51a52492f7bc92e54189ddcdf983e24b02d6b01ccbdbefbe5d221d4672b2",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner3\\fit.json": "ac2c328ab5b6c9a558192936cc6afdf89c82ff638c1e08bf86bbcc0c8e0bb898",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner3\\encoder.pt": "3737daf93e27e45d888507a447d4bf7194eede266cd2dc64d549d56f2a27e52f",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner3\\embeddings.npz": "d32901c299005d3651de75cc8a606375aa29c0308cfcd6b16738514f73525c62",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner4\\fit.json": "e4de5079560d99c349380a414cbb1463e54e922069e4752b10beeb2785dbc316",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner4\\encoder.pt": "00c29fc855b94e0ce5cd4d3b1138f154d5fe14aef55bed7b744938a04c04dfd8",
+    "companion\\extensions\\eegnet\\results\\r02_f04\\inner4\\embeddings.npz": "ba9b037729700444c5f106af3280c152d0b9f1fac1e8d9c91f9db8d7fe779d0d",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner0\\fit.json": "11e0cce231cd5398cee2e13824b2a731551a5dadd0348a3ac8fe4b1dd1412861",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner0\\encoder.pt": "e2af2c68f4502a38f786c32009a878ec6bfa142014320cc63950e504e2d2dd0b",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner0\\embeddings.npz": "6c37c7e3827beb0cdf10972b7330e3fcff75a27727cf37bfb09a9895174dfcb9",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner1\\fit.json": "29c2ae51e8ba5ac3f47d968003a3095aa4cdc39ca573db5028a20b94cd452097",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner1\\encoder.pt": "eb2c24f9cb07a2328b85878a9bdfff0ef24242766d044a3d53cba0dae9bd5a13",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner1\\embeddings.npz": "ba7787feb09a0382e122aa288e5a2191a83be4aaf2b710400d0eadf2c9e1b2d2",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner2\\fit.json": "6deccb9ae1d7ab1ffb6d2d151bd5bb6d66ce16397ae6261ba83b27be4d9ffa42",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner2\\encoder.pt": "61fc0a068111d792efbfcb0f918500f5b3ceb7b79fcc88fce44638384651d4da",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner2\\embeddings.npz": "6db2dbf2c21f99b6226176bc64488e27bda88ad6df3301aebb546a17ce4c9f2d",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner3\\fit.json": "c7676341c22f6343fadfe088a198225d3ac4aa2f15a7c29a65df37b3c6b7aefe",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner3\\encoder.pt": "dce999c69364b4ddbaed67ec394c58e311c42165bd1f707fb35b6dcf71cc8e07",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner3\\embeddings.npz": "bf3bb4dd48fe36cf89a1803bdec2a01c890bf1c49eabea59f0c882673dc9d2aa",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner4\\fit.json": "3ee88b5c2b076d880ca7c6f6087d6602d23dee1e6fe42e05c0e4e2d975b13a7d",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner4\\encoder.pt": "caaa0f473610e44f5c17dfc53124831c51431188e7a85b2b5f5560e8eb909f4b",
+    "companion\\extensions\\eegnet\\results\\r03_f00\\inner4\\embeddings.npz": "4efe79fd4e5e1eb12a6fad7c6e64f3739858c4eb856f89669b49c724e10760a5",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner0\\fit.json": "bc26e7d63d681002ddaa437f51193e3e811cc23fd548160b37ae1ae8cfb15b48",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner0\\encoder.pt": "bba91398e51e2f679e2467f026d9fe94b511660b36370471760bf842fc8dd7c1",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner0\\embeddings.npz": "1e7e89950e70e3b85318cb0c32763aaa3cc454763c3606754430bafd14f0c3cf",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner1\\fit.json": "3e027991f9f52a4dcc8ab61c0c7f0d26d12e24be1c1e8475d6d22deea23b6e63",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner1\\encoder.pt": "2e8e4a658003a2c17ffea3f67178dd74ae7c01bc8f1471c64ee7149c1f3c9c48",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner1\\embeddings.npz": "5b7d9d103d705ac31ca1c3322f7574881d3a8e41567ca26cc4265d51fd223f5a",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner2\\fit.json": "6f1f7be451ce9e6b9229ccbc019e958238779b4721577d4850afe4264a145d4a",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner2\\encoder.pt": "d90b1274f4289ae9b6b39fd39a197d8dc6c378bb5a162c26c9dc5cc829ee6c38",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner2\\embeddings.npz": "587c543c1b5a3bc9937bedf36415bc42e343f129c47707a6a47b3d86865538c4",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner3\\fit.json": "dcdf9d644ee63f8c3f021df1efe42c64740c187bbf1075967ef1cef18de9cf97",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner3\\encoder.pt": "4127fb88d1130b0398ce3ae5ed86d211d9d5a43771a63543becb9f0a8652e80d",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner3\\embeddings.npz": "90f91bda75f12d2a1eabfe4e99fa3af70c6d73637492c8c60ed8bb25acf1c682",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner4\\fit.json": "b4f43e3f0b802bbac399408f00d67fe9f461c9b8cac1dca7bb14c5074a741671",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner4\\encoder.pt": "4d61e35059c9d96481a03bd5f964c70910093d00d74cac527508b07b0d3de204",
+    "companion\\extensions\\eegnet\\results\\r03_f01\\inner4\\embeddings.npz": "e6cad3a560aa8eaafe2bda4cd0712adbafc147f22f0bf80e051f953169864f5e",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner0\\fit.json": "f9a5f2a3323c125f916852452a344e98d37ef0757dcd651185109ef888ac4a2d",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner0\\encoder.pt": "dfd8543561843cf94480223438aee1b87f453e3e7dc753e8a4560cbc316e7450",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner0\\embeddings.npz": "63faf7ff9a41c056981f904b86b4fb7e5c01cbf2ae27ffb8c9a812000f1530d2",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner1\\fit.json": "b8cd38dab4bcb86ce8988e7c8cd7af3e699cb2f5cb048a21fca9bbe2bf57b0ea",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner1\\encoder.pt": "5687bebc39f0c1953958b0701a1cf61ff6e657ef532797558d91e7fe95817220",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner1\\embeddings.npz": "b5af2b030ea420f1522c7afe65b13ccb247ccd2c505ded4b2701faa77059d74c",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner2\\fit.json": "cf0caf80865a83a3d803a465776944c444bd4c9d163793b8b2123d220a56876b",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner2\\encoder.pt": "904435e189bd16f008735871ca8322fa454c27b8ceda59f733121b564eec2235",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner2\\embeddings.npz": "50edb8da295edba2138f46a52292c6a0900e263bb016dad0907835ac1d7f0776",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner3\\fit.json": "8734048de3366556a1b843d1c19e5825dbf7d477529c034774ee994ea903d10b",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner3\\encoder.pt": "a08741a82af79f74b844e5115eb3c99881e0a46dd20d7a7ae5042a24b93eeda5",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner3\\embeddings.npz": "b5f1fcbf04bc653a33c9d5cc29fcc8763868c4eeed618d5e508cfae71a4b4cc6",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner4\\fit.json": "67ed7e2f0024bbf3b04b03ce3df8a02091207eab80c1aacd86443992b9a2881d",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner4\\encoder.pt": "0e2e093c77291f0d9b824a0170cc7b294afd13733df3284b6c358332fe777cf1",
+    "companion\\extensions\\eegnet\\results\\r03_f02\\inner4\\embeddings.npz": "5ec3fe6afe3ef36f872d78c171a7442145d70b17709e469daa7695fc3329cb24",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner0\\fit.json": "1ebade3498a5f3aec88b9bf0fff158dd4261d981a20d94631e9d0c8576303851",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner0\\encoder.pt": "e71c77311d87e1d07fb536ff3f1bd0b18433c3ae57d9642c2a7558f8965b6b4a",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner0\\embeddings.npz": "7cd1ff354ebea7c18bd745615241ec9a5626b60acdd03801171d909a2c6fc20c",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner1\\fit.json": "478e3178d9b1669fb4363c8cfa31635491108b334979af600a8a3e543fb20fb9",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner1\\encoder.pt": "a4234fa825adaf46bd86ec33c089371703903fe3a0adfc53f363af611a0a378e",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner1\\embeddings.npz": "1b92e807902dc7a12679f446f24184d471e9c69d583b4e9a7827afddfee6468d",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner2\\fit.json": "5cb78b340543b26e26cde2904363867c79979910609cabf4ee9508b47bfcf584",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner2\\encoder.pt": "754054d3a00d41dbed54381ca7db25c207b81ac4b4e4280d102518cb7ffba04b",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner2\\embeddings.npz": "a4728e5f0e764924e36ae1c0850d287a615996cd2d51a4831d467eab5e6d60d5",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner3\\fit.json": "0edc690011cc40aa8ac5e27abe33a67bed905fdbe91aad69234b92449731d7b4",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner3\\encoder.pt": "b05b076530d81b0553ddf4c24c7c600467da7724357dea6e8c196238a59ec755",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner3\\embeddings.npz": "ca16de2f504e4fc4786528ef4c2ead2cd02c74c7bc62899aec03a3ebceebe599",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner4\\fit.json": "a5efab377068fc9466bc0955043a21875b0ddb6413a9d7ee84db1aab5bb2bc54",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner4\\encoder.pt": "3d45b273332a97a71f59e1c2ee115ef7f4fdf88e3f41f93340d6fc6bbb30fbbe",
+    "companion\\extensions\\eegnet\\results\\r03_f03\\inner4\\embeddings.npz": "3702d744da50e54247f9c93767a65645a4a725fef38c62597041802cc3aca70e",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner0\\fit.json": "ccac7a362dae98c882281677d5b0b524b6fb93e4859710610eb07d4843110bb8",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner0\\encoder.pt": "153e7aec4ee8f1b2327455a1de8fc26c81b776917aac70955ea05dec08346752",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner0\\embeddings.npz": "330db327e8e3b6ceddf17eba226db189524904e5ec0bb06ffed69e8ab0c30ff1",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner1\\fit.json": "59dfad60e47a8f809db05433451c206528200fd6a09c8e7d54c0acbb4bb375df",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner1\\encoder.pt": "0e8b877b3674b821c48abb1644c9a9662c27a1d8a186924a3c43365666095901",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner1\\embeddings.npz": "6f4af13a565103ff21a66b265677a35c5e6cf12c0e84958c452da068ac9d20d7",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner2\\fit.json": "4e65de878313d799a7dfb0f16d7cb76e999cbb0eee2fcc8522abd8899aa8e017",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner2\\encoder.pt": "4a88ac0623b3472bde846d2044bdf9a32e4fdfcf67ccb8b38ba8ea729a8f11d1",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner2\\embeddings.npz": "923d472b798d4dd363eb677f5436734c00bd3e0cb68f35bc49fe57ce193a9497",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner3\\fit.json": "7d5fe977c80655ae3f05f9b23508513a7564e85a836b3c48e9d3a67c33206173",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner3\\encoder.pt": "45152f8c14f48bd25f4236a62bf69b70003f7acd9e990f37eca684b4383b4b6f",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner3\\embeddings.npz": "fbc72d3982d82d7fc65324f40774e7b15331b2729b447ce12ecd5b2749641c86",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner4\\fit.json": "f1fc37ee8ea21423281032cf0528283ff41697420aa4a549b2364e4853aeabd3",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner4\\encoder.pt": "db9f80b7e93ec5ebdb4c60803563d09a8c76e69a1bfa9308903357ad93d5d363",
+    "companion\\extensions\\eegnet\\results\\r03_f04\\inner4\\embeddings.npz": "417d4244ca2d9dc4d724e02aa8fa074b1178eb29f54def2f07aeff8f1faa04a2",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner0\\fit.json": "aa4df2065a843dc24d631f01fad5267a9558645e4e8341d8394eaa8d47aba2b3",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner0\\encoder.pt": "5c3bc1f0e3e25243e943cc79e77f1e7c775ed7c4fe63747abe00e7442a4ad4d0",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner0\\embeddings.npz": "66849f0b9435d62efbb2dd433549fdd3bda59dd1fddc3258952b394fe758e267",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner1\\fit.json": "7a210386d8671cd19deaf01a7d4d94b4981be29967aae331cb562f250cc5c7da",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner1\\encoder.pt": "2268ad69d7a87fd730490ae4de9956279a1d08183c3a37a41a5361c4b4007113",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner1\\embeddings.npz": "346f5c857f60571445936d5208e6cfd1f283d26ab4cbae0d4ea5d362ade0c786",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner2\\fit.json": "b16f3b20a46a30b006735052c5631bec62f0335e2bb3b09d221c9b5a97c75cc5",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner2\\encoder.pt": "c9ce3bafa823e7b3ad70a2da90afe1432662d4603bf5e7ec92e7565f8ed57dfa",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner2\\embeddings.npz": "99b82b77cc4874d0df1b3f06b3cb276f4fc6fe74403f0bd45a8151e53c0c8eef",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner3\\fit.json": "55a6992144c6c69271c514a5ef1043a392b4e00faf7eb981b345b02c7f9f6dd3",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner3\\encoder.pt": "90816f937f834ec302f2de0eb29ce1e8bbad3f2a8bce923dcabaed6ba429b0e9",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner3\\embeddings.npz": "b60adebf03a795fb88d8381320d71dd7d95054b91051eb7da08368e383b71d0a",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner4\\fit.json": "4a074d71fffd3bd90f22198842120c7998173439786b28afa45cefc8d356f0e7",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner4\\encoder.pt": "5a4c9985b6996c7a55a543396dcbfe056266145dd8de9a3d5d0cbafd0d9787cc",
+    "companion\\extensions\\eegnet\\results\\r04_f00\\inner4\\embeddings.npz": "a0ecdf69633ba0d00942bc9559299e0865d50f918d160639257bdc9184aa52ac",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner0\\fit.json": "32bb496e0ce8aabafc5d61a11699bb8c2c9813baac78f0929f8cb57abccc6490",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner0\\encoder.pt": "e1959da6ed89dfa26360441192e2febed37c06aab1ce82dc82dff279af1d34ea",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner0\\embeddings.npz": "fb3127a0d5bc4a7187cdc4745ff273d8e0f5566d95fed6173ab816987e07ecf7",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner1\\fit.json": "a08ad3fa9fec21b70700568b3b6ef85199474c556c618546b78673bb2f04aea1",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner1\\encoder.pt": "29423e080176af8296d8081dd6beb4db2f8f4ce29544e7d0137c53b31b6fe503",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner1\\embeddings.npz": "a05f9950e3efd41fcde3bbc3e53f55f30bad25dfa499b779b8587b9a25ed6a1f",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner2\\fit.json": "c5a62a81b86d75c7d8b47d597b7a5920d1c97d9d80481be37fd172b5e12d6831",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner2\\encoder.pt": "184d0e24822aad8f3ce7b703736faf186aa4db9b7728082b7c950e3468edf340",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner2\\embeddings.npz": "bc1afc1e094e033609baf72d2e9907aa83710e70ef9a1df85a0fc54e1c873a4f",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner3\\fit.json": "06213a5cd280b4d2884de7ff39236518f7f3d8c50fcb85c42bbd6c6bf29cd1fa",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner3\\encoder.pt": "be75986278ba0d8ef3acdb095257f4181a3cca44e2972cde092ac424688fe833",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner3\\embeddings.npz": "7d8bd5ca7334d88c8226aa35ea94e55efbcb53f9ecfa51cea0b8aaaf53bdf8f8",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner4\\fit.json": "206c72c604390c4d5efa40973539e3bac9db48aeb72c7ef017c853386bc0fc71",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner4\\encoder.pt": "2c49e3bc50b333c9ae5d981c506f615566e9c4e0c87faefa9772538a06653195",
+    "companion\\extensions\\eegnet\\results\\r04_f01\\inner4\\embeddings.npz": "bcc1075423bfb9a182672dc967a22538bbf683fe3b32061095b8641ffb06458f",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner0\\fit.json": "9e83ff869ba40c2692939d6bd2b3f7a43d75e6b1fd3427d99514b27972cb1010",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner0\\encoder.pt": "bbf952533f6fb51e0ad7c996d0a7ecef4a853276390adc54f06ef7b73533de7d",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner0\\embeddings.npz": "54b7b5835b8beb84eb3ab537cc654955fbca25c6b5100663813308b77c6d1373",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner1\\fit.json": "6bcab25eb7ca3a6481a966a16b324ca332b134410ceaab3e2b996d93dcfc8165",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner1\\encoder.pt": "3adb76daeef17bf86d27188836070268f24468037773d803b523c5de803fd21d",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner1\\embeddings.npz": "f102066c9813843c0e811bff95a1ae050f6dd0e5701a0f7344a1f9ac65b730e1",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner2\\fit.json": "df4e401321f6e2ef394b33186121be55e78d9865754b9b4b09c677c450a0b67d",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner2\\encoder.pt": "38e1d9c8868c8232f5b1dc3636880636e6d4555954003e7f9c55290bcf2524e3",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner2\\embeddings.npz": "ad7ebb4b38a7db6e7ed1acd45625deb94f5da0ef6a16e7e35f26dcf22d3904d9",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner3\\fit.json": "98e4bda2d75fd5ec2acd17d5b5da3bdeede3087777cd598c8a888b2dde822ea7",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner3\\encoder.pt": "13f6303efd95d84931ff4d5cadd33fa42b5a1924d937fd9118e3e3f341aed376",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner3\\embeddings.npz": "115eff52437fdab99483e9e7737325d8e6fb592bfda2f4f2eea0b89b1db54fb7",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner4\\fit.json": "bea82765b92db904fbe7cc787eb153b68cf08289a3d474b545b34b94f34dfaab",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner4\\encoder.pt": "39128eba54b9e9e1ffd5c374b6391e6163c4009c477d30eaadf7688a069db70b",
+    "companion\\extensions\\eegnet\\results\\r04_f02\\inner4\\embeddings.npz": "ea1c1a8d6e1c510441bd3da5eb1b8ab4abd196e7f0470346ef236173e3d80b1b",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner0\\fit.json": "e223b04a7561ef2428d023546a03757cc05e542ec1b23c507fa4877a9406932c",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner0\\encoder.pt": "abec1e6490924fcd109858e0fcddf436e3e95b0bf5d448fe53c68c3de5e0d921",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner0\\embeddings.npz": "231fad3726c6e5c6cd06c54dccb1898261109850a82a367891a59a9ae1756f04",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner1\\fit.json": "40c86c6dd3b1a667d5b564e31bc9a26ff9dc7461c3531388a8358527d2eb3fd5",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner1\\encoder.pt": "3828053a6a36ae159221d6f83a9e083c617e3a93a523f0fe1022207a9d0c46c1",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner1\\embeddings.npz": "ed98fc16da8ba26c893e63801cb96418374d6cb22d7f3bec5a829db549b35485",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner2\\fit.json": "b25d470a5feb35694fd9fb9cf52508021210b440e28f743ffb55ed29cad0f93d",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner2\\encoder.pt": "7a7c68d52b203c8925f4f9dd5384574a2f05ecf7922130e628315d0b06965f3f",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner2\\embeddings.npz": "e4d2abe74f2af15b7121063f6ef67f6e69e228cfb470e7c0b0db20e042bf3715",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner3\\fit.json": "5ed4fdd54ca9436ae90d4fac0cb70a8c7d4450d3e0c23511f5e9984b0b2f5681",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner3\\encoder.pt": "74c412c1d2567f91171f87c0893f8561b1196442e0c9bec40c655205ce320933",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner3\\embeddings.npz": "f5e658b196096f30f98cc88161f5a94548cda3fe2fbf119c43995a5b52d9263b",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner4\\fit.json": "3098e7a95f1380b2d5ebaf8703de631f0b0cda59fa6fabb0f324e9f7c8e1f995",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner4\\encoder.pt": "9aa8ffe5f37e821a70021b56149da133d838378fe2838ce645f5c3e9d67fb4cf",
+    "companion\\extensions\\eegnet\\results\\r04_f03\\inner4\\embeddings.npz": "55f7084d83514dfd220c4945620827902dd05224da96cf44696bee3a07be415a",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner0\\fit.json": "5fe3d6474f5618388390bce5782c63b5ae5aca296643330980b0ee9d9f143870",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner0\\encoder.pt": "52ba647237fbf9a06ce706eb0d84c00cddd63b0ee3b88da1bd0d5fae058f2fde",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner0\\embeddings.npz": "18e6bf5cdb0b279bed22c1f23c561bc2d2954fbc1f71a6061be8cf4fbc09dd34",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner1\\fit.json": "99801b533e213e6b59d9bb15b905354b4cf00977626e20ba78270d68fad7e6d0",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner1\\encoder.pt": "eabb604221d6d0d03d28edae86b014bc2d3275368585179642bd80348bf00c28",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner1\\embeddings.npz": "b53714f3aa6ba635b6abbdfe06d87931d92f490fddc6c06c8af63924d4294343",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner2\\fit.json": "33bbb7b1a32d7d51861cc6ec97046d3a22441b715d28bfa073706776ff938099",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner2\\encoder.pt": "28f9d4366f0814b27835981ea9038b3e104dace8208007363ca303c5f7384dbf",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner2\\embeddings.npz": "f87ca756ab8110442f7cdc3533063afb527758b7965135be9efe3a3b7f9c4c30",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner3\\fit.json": "d924a36496d5ac058b92690a421c42c7103506bcd1c85979d849928ef65eab9d",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner3\\encoder.pt": "81a72decc60f1120faa096cddb9f00b4b4930454481511a5a95352245b1e0caf",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner3\\embeddings.npz": "2bb96fe0210614bee195574b7ab0a74403f6db60ffe50817aee493f92055abe9",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner4\\fit.json": "c5a00d21435ba4770b340fe1d4ca2970cb85073074d60ed63def1d968f7441b6",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner4\\encoder.pt": "8d292be0d79ce18ce00d6ff40a99ee4735fcb100acc2f61027e1acbe3a983d8e",
+    "companion\\extensions\\eegnet\\results\\r04_f04\\inner4\\embeddings.npz": "5e630d47bfe311a0ff190783e7c3020bc7ce267c765269ff74d9f82ec6747e6f",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner0\\fit.json": "27405495d64373fde23fc1b45c27f641f607a384bfddf6c8de069948305d4704",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner0\\encoder.pt": "a6615836d031b93d94c67c0e2f208061f8a43619329282e1e4cea2f6b587e834",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner0\\embeddings.npz": "1d18efe55cd0afb7378b6d363d8798b4b37cf784612ff747a32d375e1a535695",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner1\\fit.json": "f932a49ba7719531ed2ecac232d467793007108952c790f9a0be591ec36f3292",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner1\\encoder.pt": "d048a59069fe7aaeb842620ad6884c3b524cb3adf403b106a4666c9ddc2791e5",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner1\\embeddings.npz": "a1a37979460168fa25be0f063f34cdf3ba4b64cd4f2c10462308787d3fc71717",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner2\\fit.json": "75acd96b7630482c6bde16f7efaddaca42f532f0548bd3f29638e6fc5ad25240",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner2\\encoder.pt": "6000e11a74e3380abe287119823f12955d5b16b60cbe593313f6633dabfa65bb",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner2\\embeddings.npz": "73b535ed2bea55b2b3856569612a4f5459f3e594079032234a2e4e2bf5382dde",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner3\\fit.json": "b303cab46c9445b0068379155c36f71e5b5de855607c3d52b9c6af22267d0657",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner3\\encoder.pt": "aa47476d311f3a11efb6cfdc25b20d1b6fd0d67ec8dcaef8ea4f79c091f42c94",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner3\\embeddings.npz": "023e8311f9e2d863a958067e9d3dc341b23bd5fbb9b0b4feacec17cf07e5e7c6",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner4\\fit.json": "365b2772fd17b9cfd1428eeaec68ddec93908e8c1277a043f7b8155742d74fe4",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner4\\encoder.pt": "96eac520e519214ae4a8c19198009f1ba194b7f30fc067a48b82d72970c2372c",
+    "companion\\extensions\\eegnet\\results\\r05_f00\\inner4\\embeddings.npz": "b487038428563567ff248818e6805c4c502ed6a50c1ac45b80424c96e19a13a2",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner0\\fit.json": "ff3e2db43a91773d671242aa5d72d6e96828f2d78518a9d764a39c1f4cdad80f",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner0\\encoder.pt": "fbb195830ec630cd59da0a061c1ccd7a85d3fec673535521b77f62910864f975",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner0\\embeddings.npz": "14cbb0096b40f880a81d4c940d8164c1d09d3200d2efe7e92a9c0e42ddbc1325",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner1\\fit.json": "2c9e46c99b791d96e7a1a5672ee5a0bd411b50d33bff130525cccf15d3bd81f2",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner1\\encoder.pt": "f6bb1aa12d955b5a0d1c35dae5d7f38397a2907d0c9d1edf2a8804e0b88f8079",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner1\\embeddings.npz": "6ad8e7a47d3318e4489b9061c3d7b507bc786d1026b66ee029e6e7f087768ba6",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner2\\fit.json": "f3ec4a5718aca0d3dba281b7f7476e7af1fcdc10234bd5802ad8044e374c1921",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner2\\encoder.pt": "9aa32d6fd46c964e8343d8f069bfe660b1e7f907d1898b62e64cedd95d21e6d5",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner2\\embeddings.npz": "19ee10e242205f8d079e0d69dcdff491d974f54c24e2c70d0ac026d9bec8d1f0",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner3\\fit.json": "5168207c30026c79a035bcfd75e0a61d44dedaf4781dc391e1b3ae1b72a07898",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner3\\encoder.pt": "c015ff4cee3a439520e1dad5bfea282e43f8191247441e0457d9b7b58882fb22",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner3\\embeddings.npz": "6183a0a2544425fcd9b8bf0ba9ccf5480d00a8031a816197b761eab5a3b93d6b",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner4\\fit.json": "ff0c48d994d72c9542f815f083a0e4af7a104b3a2593be40fa13ea2ed492a305",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner4\\encoder.pt": "251ac3c633a794971f0c6302a23178ea5be93b8bb160371000206ae69d8c09e6",
+    "companion\\extensions\\eegnet\\results\\r05_f01\\inner4\\embeddings.npz": "ea5e2d3e0bb86bacedf7012992ab025383a5b60bcf4a03bd5b0ddea363e2b14e",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner0\\fit.json": "ebe5f7ba978606a300969c2cb38753064c4c378319aeaef8d500616eacc21985",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner0\\encoder.pt": "f47114f50e51686b36c17a0bc399e0fa2aaa8f1dc32951ee1c4c7ae94b3d55ba",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner0\\embeddings.npz": "d2160b731a62e277b5b3a425c39dca99c789f6fef7d6d539174e19c7cd4b4cfc",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner1\\fit.json": "e9b49673222d4599e384636d8463f124c000d4a3bde06536f7551d9c7803ed8f",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner1\\encoder.pt": "48c5053da1a1db3296339080b6d1eb19bbbee8aeb7abb44df1dc326521ffc7b2",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner1\\embeddings.npz": "e53c72f7ca66e09738fed132ee49006dd593d0e80b7ccfa3fe81c2d7c5202a52",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner2\\fit.json": "1e1708dd1f3a14bde7053cc5737069d1f19c6e1b07439c4488870e236f93c4f6",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner2\\encoder.pt": "4c121a33c30982189ee84ec5007fd0d154f93ff477d3b1f686d47d956a93eef0",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner2\\embeddings.npz": "92542525910f58986ab021321ef27b6f97755ee16680056b49912ebe395a1cff",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner3\\fit.json": "e57c2f5f28c5610553996007f6dacb48a44925d816d699010a27ce7e9fff4cdf",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner3\\encoder.pt": "61f464694cd807f7010aa229f281e07d423c97a0d9ab9c8958d37e604249ce0e",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner3\\embeddings.npz": "57cb1f133330fdc1b302fb55650243194826ae022bb7d0f61b97126e49261f70",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner4\\fit.json": "58606c8f3fefddcabecbd5a70acb928543c9de710a8e6b71e9fbfa56dc5527e1",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner4\\encoder.pt": "8d4a9e8321acb5c4c069027e18e570fb4de6499bc148cf7719825458426420ee",
+    "companion\\extensions\\eegnet\\results\\r05_f02\\inner4\\embeddings.npz": "21590834981e57008fd199fcc39dc0000e0d02a3147e4197bfd6b529e0b1eba0",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner0\\fit.json": "4964e7b19cf56ae1da4de04d5b27ab201a724c7cdae32e4d2762540869508367",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner0\\encoder.pt": "ca66233745b8943086d5da14ecf8197f4c230557092c5838cbeef393b1b12172",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner0\\embeddings.npz": "391b0f94a823ef07b311736a9ddf8b9440c6f7ed6db9a89a1ccdbd0e96745e96",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner1\\fit.json": "32e35a55eb86788f360cb47b9f7dcd281746a72e6e8609c5e2fc065a400d2691",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner1\\encoder.pt": "14cfb1bec7b8bbf701fdf0958d4228440c082de57f0e3230e4396c31ade36092",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner1\\embeddings.npz": "8e84ac225425293f625c08409891ac72f709a4d69a4e7a835a5e806fcbb04289",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner2\\fit.json": "15387e2a4f5ffe79f862b96d4e76ce4b290c31defae1d741d57b6bf7b8bae53e",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner2\\encoder.pt": "a17389149a265ea1b3d250ec426077b476cadf6689cd004786623b5f86c37180",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner2\\embeddings.npz": "587b00fa4ec752a41b5546711a737406b5b23e11da7345aa408725d938b1a945",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner3\\fit.json": "f90a3c27ea26ef86312c5a712ac6f2d92774daa1e748c7b07bd7b1241449391a",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner3\\encoder.pt": "faa3e7a6156c3774eec87b76fc17b28a0be4d54ae5b2550bfc722341f29364bb",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner3\\embeddings.npz": "0fc392432a7628ea3dd2b86f5771f55dbbd22ea543e856feb71d626e8b32a211",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner4\\fit.json": "96ec0265bd82626ef59e7624b4b52f1064da9c0d127a30d98480c54af52d0d73",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner4\\encoder.pt": "846fd378bdd4f6478f2303cde58c000e52557f05446b9df582436bd68fc543e6",
+    "companion\\extensions\\eegnet\\results\\r05_f03\\inner4\\embeddings.npz": "ad91e2eecd6f731c1ba8e7651180665d841f315e16747115e6e81de8d4c0b00b",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner0\\fit.json": "5c10d22a9834b3757d576a7473c0ad6c9b143be35eb4b854d9595d33c62ccaaa",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner0\\encoder.pt": "3d6da0e967347d49da088ea250ccad428fd01dcb6ab67881c7648f304107f744",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner0\\embeddings.npz": "3d1407ac4e8b41668ff86227fd18e78cb0804c07292460da38305f100d3bdb01",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner1\\fit.json": "260c640f200a5f3a797f8ea980b1a6dd8342506b74a20bccc6cc0c1414b42f3d",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner1\\encoder.pt": "9179efcbad881648f89b195b0176f2ba04d90a87b80e1020b78cfc1d3de235e5",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner1\\embeddings.npz": "536ee1eaf6da55081900bec63c705f37afdc6853005bb9047cf804b6eb294527",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner2\\fit.json": "a33d8a4daef5914e6a7f2172ffe62d03a27f60261e328a0b4a46989f2906ad1a",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner2\\encoder.pt": "8221e732ef72fc758c787b78e3d616d1c0caa5b0aee353afb4f80b142135ea4a",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner2\\embeddings.npz": "7755b5f6572d5e0bc59b28d7c19c157b2983624aeef1382a6f228923ab086421",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner3\\fit.json": "2a70d1a70fd8eba88d86b0db92681de1a65503a47b69d3da7d5506a69066fa06",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner3\\encoder.pt": "68e0b085f22554b6b65ad12489574988566027b74ca06a96aa1d26f4aad24caa",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner3\\embeddings.npz": "b04e3a38033980c9214e29f30c07eb357c9630f3054c27189d3a223c6860522f",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner4\\fit.json": "5b382d07cc92f2ea2bccb5128dbcdbfc7372c2f543504e30bb1bd5d5b9588e06",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner4\\encoder.pt": "50c1aa370bfda5d342d330653ce81ca447b8148a5f41c0a6b2d8a4a8b18a6acc",
+    "companion\\extensions\\eegnet\\results\\r05_f04\\inner4\\embeddings.npz": "543ea86720d998e5223dff1351f0de11e6a0a2ac24d9461859dfedb9741c5284",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner0\\fit.json": "40fa684ccf0f2a3655a07a99d3ccf96b9b5c6ba89907ea040724f6e6c8a0e1df",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner0\\encoder.pt": "5ffbc08ca6992c84beb9b5060a12f21b776c667d060bc83baf69dfb4c016b7b5",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner0\\embeddings.npz": "a37e8a1d105960fd72e7717f8871050e9fcb15e3a9c39e25b0ca3e2eb388d4f3",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner1\\fit.json": "55d9f2e300cf3324122873aa57882c4e5e9d0098bdc11eeb37d5d5350ad47d45",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner1\\encoder.pt": "6327733826a15bd45de676330a6925a0902b26c9cf7224d2a89f0df18eaa7380",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner1\\embeddings.npz": "20b30b8b3987f417fd56dd400aa8b966f6ef3d211e3f5c3a4287b2f89e920e81",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner2\\fit.json": "8c82b26c799f66c94faaf700cf909443b4f93d6819fb698d78047cb1fb9cbf24",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner2\\encoder.pt": "2419a6e6fd48f988bec4f1cae5fe6f44159e5026e3e427e4566cb0e6576dac42",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner2\\embeddings.npz": "c8a843d494588db49ccc96c5e8da394f3251853ea672fc380d5f703c92ae48dc",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner3\\fit.json": "d9fa46703cf13cb634d6cc652dd4f96cdd4df1d41a3ba5014b48fd82cceab757",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner3\\encoder.pt": "3d51d672d6a62c998df7776e235a0a735a013262dc3c334bda57fe0a2c1e5c70",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner3\\embeddings.npz": "8e7c784618d4787350ead67359b7c4616e0bb13e0109791f07693c415edd57bf",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner4\\fit.json": "969d960c4f9d6ee6121fea1f411ee68a8c24835e2361bbcc18493b02aa289a3f",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner4\\encoder.pt": "4d277b462f3dd378a48f424abb6be98cf7e0b46f6e1d4fccca18573ccef002c8",
+    "companion\\extensions\\eegnet\\results\\r06_f00\\inner4\\embeddings.npz": "16366bf652b5417486e8ecf77353553972174c48956252b9b3c78fa0254b5f36",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner0\\fit.json": "fd2695fdc27b161c2f64e53eaaac95ec4816b58dcc6b790040057ac73b9bb525",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner0\\encoder.pt": "8b8cb271adb63d21c03c23059ddc7a895814500bde4a273bcd63950bc36e44cc",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner0\\embeddings.npz": "22e430ea6a72e8f581d10fc78eeaac5dee3b74140a61c2c48e49db1f75e545a9",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner1\\fit.json": "cd7a2c04fe771e075069b9d8de3548dba0b2788541ed42817e0d33c4af373821",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner1\\encoder.pt": "56b8e457d079ce176d0648fd3ffc5c7a659c241e84aa3b7e20da43e18705c7ea",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner1\\embeddings.npz": "49ec8e72300a290ca2911dd52f0202a9d84fd94304a7737c26f6346f78ed1503",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner2\\fit.json": "807ee87ff63375db4e201937a65d4a32d83679389222b717cdf45f191fcd3958",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner2\\encoder.pt": "c2aa2dcad3ba0972ffc0fd88ffdda08988ef65b399300a05c7a6b87e896260f9",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner2\\embeddings.npz": "79cfd8243ae07a34abc19c827958cd6fba6025b74da713296f1253f7af4c3f14",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner3\\fit.json": "5fbaf842d5e939547e8fa755cd27becf28e814df0fe810b2dd7c7b0b90a7990e",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner3\\encoder.pt": "67f779addc6eb0bfdb6405082308646c85b2efe21c3ef12e5b02c71386a35603",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner3\\embeddings.npz": "2be33cbcf7efc756f3867f264dc95a92e12b25579f4f98626e42823b831bb4f2",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner4\\fit.json": "df71cdabbfb7338578c5cd00e06096944f56ef2112c996fbdac9dbaeaae0cf94",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner4\\encoder.pt": "60d49ced9205aaa22bfcb95f6750ca5704538496aaa14e5c55415c984494ba64",
+    "companion\\extensions\\eegnet\\results\\r06_f01\\inner4\\embeddings.npz": "aed1f15a1c903fd056a876be377a2a3297f82455f068e196ed55ebbaa232d9b1",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner0\\fit.json": "bbe93a0a1ce0cb97efce13cbdb82a5e83b0707a070efeceae09ecb992fb316fd",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner0\\encoder.pt": "f7064403eacb30a0f1c6ef662d6c9a95ed70b8e6108d6c8a4d95f48e8661c6f9",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner0\\embeddings.npz": "93a2d1086d1fd6fa288f5ba006f2d676f76b8b2167b1c1769bc28625b49b0cf7",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner1\\fit.json": "ee5f39f2ca9ec6acac48776f13aeb9d2cd9c3fe847d46e719230828b2a0c71d3",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner1\\encoder.pt": "bd35030ab1262120573c353eaf7ff677db7dc8f738855acb15831c7dfb474366",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner1\\embeddings.npz": "4b37f0c0bdcbe3637c91945eac967693fb5790dad7f6ef537a51f7c30d0256d8",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner2\\fit.json": "1e56bbe5f8f3e9c335b1cde13a49ab81dac6b04e260971d4fc28bcb4e194fdb6",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner2\\encoder.pt": "759719075b6e882db382c5ea2ee481abc5cc40a999347142af7d76185aadd2f6",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner2\\embeddings.npz": "2115626b9c76cc7784ae049187b6f720860ffbacfdcadeb59dfe6e029ac934ae",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner3\\fit.json": "d243ffa6588ac544a82bdf5c0a2c080ff9c0092291a8185d51c02f39a44783ee",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner3\\encoder.pt": "95fa1ec703df6f4be7eff19b1f11660ac092e18d2054dc7d5827ad0a5d6ca3ee",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner3\\embeddings.npz": "d3be4016d8e40ba21059c2b09030545ebc6e9a9455b2754f76eeec3c620bd572",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner4\\fit.json": "cee4cd41d489cadacea95a3083be65aa05074c864c3c01135a132589f44cc52c",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner4\\encoder.pt": "434a9126445f962c4f5d129dbc7a48624dfcd15168fc2fe14ca103cb506b8914",
+    "companion\\extensions\\eegnet\\results\\r06_f02\\inner4\\embeddings.npz": "28de36067a94dd978a0aa517b2c561e065ac4196b3dd6b2d779fbea9cf23a9c3",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner0\\fit.json": "dc12736af002aa850f8c33fb6b57a29f373f5ff0352562cb631fc8d7662827ba",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner0\\encoder.pt": "d25bd4d72898bd4316575dbdaff09e3530ff11f5d4ea50f687f14f152353f092",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner0\\embeddings.npz": "da087ca8cea48734b736abc06d356dca48df65002fd7b4f0fe2609a883ca1723",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner1\\fit.json": "40e3983ce4b9f1dcc0eecb3dfece05fb6f3ab388c71b2d0fd1e3838970bd6d13",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner1\\encoder.pt": "54f659f75aba41b45b038e265c8abb59ac46aba35462d99113c8aa8e0267ad26",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner1\\embeddings.npz": "bb52e06c4a5d159b46922cb0085054066a6dc1fa653a2dfe70de630b1b2deb15",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner2\\fit.json": "610f674947fedabf4dfbe95741aa8c9ea4e9b0a10a0ca33f17868682840ccf3c",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner2\\encoder.pt": "74023c87bbe33c4af7ee05fb6f1b32f6545655ae29061bb64e3ce0ef4809d7e3",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner2\\embeddings.npz": "545bf0bb8e5a5cb7c432ae2fadc99ae3967f819756d4f5d194ac0c537f611b38",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner3\\fit.json": "7b6afee9ea3d275da680fa44eca89434d9576c7107ed97e5d6da6e718b6aaa57",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner3\\encoder.pt": "ad5dd1a6e42d00de11e0074759f60e189e1f48730a5d79a8a9b741e5b3e580dc",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner3\\embeddings.npz": "feab5a59962efab089e118f9b8d2febb699d1a0a294f1f5ce51cab21faffa7e4",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner4\\fit.json": "3ae4145718190b29e8f09e5cbc8cd4b04a4f323e92c9e2375f67447f417259d3",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner4\\encoder.pt": "84789ad183b40c141d3e50af78df3c6b359d03e3bc8060f4065e50308d336d3b",
+    "companion\\extensions\\eegnet\\results\\r06_f03\\inner4\\embeddings.npz": "1ffe328f3ede5cb98f427a9a8e5aa086d3c73e8c502efc037bec4f6b913f3b30",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner0\\fit.json": "a2eaffd8e9fb8b08c82e3377b01f38b54009a028a9bee6e7dccfa0444ac52880",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner0\\encoder.pt": "cad1664683310ca4d89520cecddc01bcaa3075a305252ea07bc418b5cf6a2457",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner0\\embeddings.npz": "a5c70c93599b480cfad06d6c6c1a6c9f319111da2e68ff7704533e113f4eac2e",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner1\\fit.json": "9ac7183633aecc40561f9af20cb582926b31180141661b971be1c73a94d76734",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner1\\encoder.pt": "3b63a21ee9576fc19c7ba45eafa6f720ccb73f0feda825bd4e85425d1bf80761",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner1\\embeddings.npz": "37b3b675cc4de2567b5053925fd4ccf8b157d91df1e5dd24672c6aec042651bd",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner2\\fit.json": "8a7f0379694db7b631b627bc48251da94ee68ad2ac58b1f69c3c54cd81fede2a",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner2\\encoder.pt": "61a11fba33ab985942df58a08684ffdd6cc05d35f78a153f6771873b822ea382",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner2\\embeddings.npz": "8e92ca0bfdc3675cb36f813e0ae67a546644ae735201610d3fa5dc7a335f9230",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner3\\fit.json": "37bede83e431a3217a4309e9ff200fbe14fcabec8f6de40eb1dc37a515fa3e43",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner3\\encoder.pt": "cf747190ecc18467e77c9c291390e3b953d53f2e1ec049d421dc5f12285235e8",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner3\\embeddings.npz": "369a24bd5ae024aa037ba632a4cf56db88edbe0326422e72c69bb747a5883477",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner4\\fit.json": "2490fd8e9bead6a99c00e80f572a5c7c78d60270dce11cce89343ff012b1013d",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner4\\encoder.pt": "6344ce1ae31d45b1e0b36061851a5b97a57b6ab805b253a483febd0ee170695b",
+    "companion\\extensions\\eegnet\\results\\r06_f04\\inner4\\embeddings.npz": "3b523aa9a49311a7593d612c98ce4a53de96fbccb28cc54f3706cff50ff5e79c",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner0\\fit.json": "8e9ebaca852933a8832cfabb66896d2a542a31eec551640d68fe6c73ea62d843",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner0\\encoder.pt": "832b405c2d9817ae3364e9957df94999af37107a63a3c6cfb19492645bcb9de0",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner0\\embeddings.npz": "4c00e463b0844231042ef109db7514b6bfe092373c534603f72f71ddfe951733",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner1\\fit.json": "1933e9f09221cc53beaced2250ad99190583c4f9eff8764ce63995d0ad658626",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner1\\encoder.pt": "3181c1a1d9e97f0e64dfc42e2448640b4c053a948f92ca82895869742f5a6593",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner1\\embeddings.npz": "2b0991f715e96a321a21fee0c6d272de7bb17d1a92d15e568783560370e8ef25",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner2\\fit.json": "1e02b3ca27377fbd3ecc8f038c299c1663f82b222856e388555e21a38dbb71c9",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner2\\encoder.pt": "c9d1e1832ca99d975f24651ecc477db3c370301e687298df871a3569fed038c6",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner2\\embeddings.npz": "6d3698e6ae93ba7d733b1b2f9c991117a8f9643c64a48f911329d2d03dde15ef",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner3\\fit.json": "e21e2bd281f1adc747ffac741db11768f9ac831771e8aa07f5ebc4dc1d7a0513",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner3\\encoder.pt": "d86b48a59cec8463dcb72ff028929ba123701151014e63851511bbd02d388dd5",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner3\\embeddings.npz": "32f9064bd14b875b3d4b05ddf4c749664779e109b3a8c9999cf337f957664f20",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner4\\fit.json": "b59b622a46814724cf8dc91357c1bd6c4daec1e66852a1cd7044c659c1c80673",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner4\\encoder.pt": "d60aa440799cecd8f02bc39d4802a39b5cbc4cd7d964e556402eef0b776b8fe9",
+    "companion\\extensions\\eegnet\\results\\r07_f00\\inner4\\embeddings.npz": "48319064fa3272383053affc05079442aa87eee9764aadb19e9314238d883d53",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner0\\fit.json": "a06578bb3a3db00da45b698bca05fe28b2368353bdb420f5c6e0c1c0dab4e60e",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner0\\encoder.pt": "b38954a8322673dcaf3af94113897a9794d33a1059ac5d30af868b635136bd63",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner0\\embeddings.npz": "ce2cf6659b42c3d177ffcb6eaaf9cbe58127231036ca4d617c3afc1fce56057f",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner1\\fit.json": "a4b36913c998fbaf5fe18bffbc5fd70c90aecc5bb47f2e0848264f6a444c7878",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner1\\encoder.pt": "83113dc65b332e1124113e22c375b1fe148e5525f20a4c4f51a6e2ef59cb87e7",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner1\\embeddings.npz": "1d1ab5cc4b3c079d921601972b269e83a6dc6150740143dae43037a4048b986e",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner2\\fit.json": "76a7aeeadfe103dddc89e7a3a22a87f64bc73db605da7feaeb8bdf8e2c8e7057",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner2\\encoder.pt": "ac17fd228a3d799702e016ee2ecb3f07c1c5af7681719fd2189ed730e6b3bfe8",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner2\\embeddings.npz": "bd244250828163b6d8eed97ef3211f9140300de28b6bec45956a35b2b3a1180a",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner3\\fit.json": "81adca9c7bb096d135f3db29ea94b15c9fc88518e32c37cef0006942bd21225d",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner3\\encoder.pt": "8947238f507745bc7de02aa188d28946a742aa1bbb1f1d8e5b2967984b1fd3b2",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner3\\embeddings.npz": "396b200ce7d2502e2e6b7570845b03c6731999624f76c829ccdab5dc48f55248",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner4\\fit.json": "0b597c51ee3dae63882b511a828ecdda5b8903ad819e2396104d646d974dd6ea",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner4\\encoder.pt": "9d4e5b02fbcce351388eb759938a13bbd814448dae6956aa2ce0999e1ae10d20",
+    "companion\\extensions\\eegnet\\results\\r07_f01\\inner4\\embeddings.npz": "79f38878d4f52447f8ebc012ca95de761d1b1f93b28cc00bee31ea8b61434b5d",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner0\\fit.json": "32394ce807aa6a2d946f8a724bc80756657b2e067269e147b02c32d24925cbe6",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner0\\encoder.pt": "2471b0a53adbd3b61f7bc70fee9c1fd79fb1d0343ac57bff578866dd0f29d0d0",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner0\\embeddings.npz": "558a206c20c676bea92995da5ed5f1c7aae24397ce8e8fd4dd59d32df6013864",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner1\\fit.json": "c930304149d962186f212a9fde5044d41e8c6391780dca268355db40a6c68a40",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner1\\encoder.pt": "4279302964e445c43d4e3670c60dd2d9f0665c8d5ffea6b9da1e9ed193372972",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner1\\embeddings.npz": "17898b914c5993e30aa046ea85e0d55af337154baf8fc3f288b24101843a1a10",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner2\\fit.json": "d7f6c61a756fd4fb29c4627066e9951976cf6e8039942f06d20714fb32e59356",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner2\\encoder.pt": "edc13228989861a48f98e50f9fb46d084468106550402b98f1d8d19ab6114f50",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner2\\embeddings.npz": "8c2058ae2507e09a5ae4e129c52a9b914499c76c33a5880600527682163f0a65",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner3\\fit.json": "cbf3829346a1a6212d7fef08311f3228fa1dbb28ec15014f5711072001aac9dd",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner3\\encoder.pt": "f4a967db3562a86ec816cf1faef6d88bee8093aae443a09d67919f07511ff82a",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner3\\embeddings.npz": "6397d6495a6c0339f5a58b520ac3029ff1997f1ed876bffd9a97c72c72a9877f",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner4\\fit.json": "966c2a2760fbc8e53daeeb6ed5c87f9481f0962a17b4c0778f5c9742430da02e",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner4\\encoder.pt": "11b7fd99224af44e879eb4d0fdfe7c3ba44680d6dcaf352a08c1fd1213f4058a",
+    "companion\\extensions\\eegnet\\results\\r07_f02\\inner4\\embeddings.npz": "0aad42e86917293f419129012518fe623ff5a2cdba238b8189ce7a4fb87a94ac",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner0\\fit.json": "5d8987c2a06cd4226aa490b50ffec21a287f98c14db87171596236c5f6674bc8",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner0\\encoder.pt": "7d8cdbef6c8d992b32f52414aed7b72ff8f056a40a5b06f1885b1ad761562169",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner0\\embeddings.npz": "651430386b18884a78dffe20e3a9532ff36782d7f7c9c2341f077fc9d2cd43c6",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner1\\fit.json": "96e37e7345c5aea856f4132813acc1410b11513eb0eeed53c3b83cf208fa2eea",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner1\\encoder.pt": "0ed601994c2612fb6462642a29b70a2701b336f4d3f4e80b81ac347ccace7b67",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner1\\embeddings.npz": "eff1eff98827acd9e63bd8fb2ec232f8277e1c447ed0e359090ae8ded0551ed0",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner2\\fit.json": "5b8f469df39495527189338ba56d7a2e1346a635a9a8f74f466aa2bee128dd04",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner2\\encoder.pt": "05815871ec032eba31ed400f3157280c6a236f74a1218a60a0d2ae4bc016e042",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner2\\embeddings.npz": "797f2f029347fdd4cef4a397ee03e524b25c970c6ea914df85d282c058630096",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner3\\fit.json": "5b2074b7546f31e242024d3b6d8cb4a346fb9218749fbecd5928033856932678",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner3\\encoder.pt": "2256ce4ff04e2c671d5ea79e74723bdf1ea5fcacc8e132fea4f06c6b8bbbb791",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner3\\embeddings.npz": "2b4fb0f9f0bf89e79bb7f18a620e3484d46927577905e232ce89450c1e4a67ea",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner4\\fit.json": "2dd9efb0cc8e4b8088e420af7d7c6f8f877b2da9c06fd67835e743620101cd6b",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner4\\encoder.pt": "f33f33d7fc7ac3e5117eca9b513880e3079418d075524801360d4c414124d40a",
+    "companion\\extensions\\eegnet\\results\\r07_f03\\inner4\\embeddings.npz": "cde78d076b0f404ca90294c92d4dd33f8605964be8a227f86d0c1050c30c2bed",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner0\\fit.json": "14cbca50b794094338feeb40ff9406222d4c8107f50013f4aa681890bac20e59",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner0\\encoder.pt": "a7284e786231fa7e25b2ca82012584de7403ae20d916049dee4fe75eb2fd1515",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner0\\embeddings.npz": "db67129d2b7179395823bc96ff1e2981e6735049deeb23bf465c2e480b14a56c",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner1\\fit.json": "522088cb8c75fc66206cf104e4baee8ab17f04671765953a05a86e9e9ab73155",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner1\\encoder.pt": "906586b2c35a9f053d460f734ef8356a9e5cb322cf34601f8a61a8ce718d70e1",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner1\\embeddings.npz": "83dca74f936bd7dca039562e5ed0aa4a42f68b3f09c0edd95293781ac67bb32f",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner2\\fit.json": "1f5e183913691210bca09448bfd7f251d9d3c579cc048c7fd7eb792e978daf9b",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner2\\encoder.pt": "d13fe6fb50405f030f3fbfb5d086c03e86e5411618e850f456c8c7e623af41ac",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner2\\embeddings.npz": "20b2a53cfb7d72ef4431f17caf6223e702c2a77be0425a71aff2bb116114061f",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner3\\fit.json": "2c0ee2269bdeddf8a5a746f5763892a183f7471262dfb7e0f97aafc8eb415a5b",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner3\\encoder.pt": "25ce7c8971a91242804e05db682ccca6b5d1728b4c3df0e4bd8a7525f7b92015",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner3\\embeddings.npz": "5356a5c6de86230f62495f2f28cfc88121feb57da842a59860683f33c0c5bc58",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner4\\fit.json": "cbe1e026cf3484b7029fb62ff6bdf157c1c0e369b638dbb8615a67648c74e15b",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner4\\encoder.pt": "2efbcd8c052ddf44b3c26f61d9bd2382b73ebfd8bbc2a6edc98cfe9fdb14f07c",
+    "companion\\extensions\\eegnet\\results\\r07_f04\\inner4\\embeddings.npz": "bb8698ac888acb8973758cd4e1cdc1f925772c3398965c79d54cf6566d7b05f9",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner0\\fit.json": "42582ca7c92009b8cb4afdb07af20f06a2429138ff7f0a7af4f6bcca18f59908",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner0\\encoder.pt": "66251b38a09178c5a0b2b40b61ee5ecd6d09af451f9e641ffb3c33a7af8f6d5a",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner0\\embeddings.npz": "64ae3ae1c3da203e1d816dc408341959c572f9f519997523844e000ba6e6b83c",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner1\\fit.json": "86c937e5f809bfffcbf87f9098853da9047b61dbe5592e299c69df2d84bfedb9",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner1\\encoder.pt": "f5a3a2a331ac710045304c389f22e3a16c0590e706ca7f97a4c5f69fe825e81e",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner1\\embeddings.npz": "d3af9e382b42c269b22c5d061834b3e90651d52055bdabe7c502542838722e03",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner2\\fit.json": "e322443cc093eba3aec8036b25b07bbdc65298c80a087ec6990ce8a235bd81f9",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner2\\encoder.pt": "3abdca5026b90d41335225d48ffafd285b03b7f52d786cb43260223556e3f994",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner2\\embeddings.npz": "539017bdcbcff2beb1c79a4910737fab57d99faa9a7d3ee07874475eaba72fc6",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner3\\fit.json": "0e8b4995eaa0cd23d601c98fb14fd5f3df1f1d18b7d11b390306a6487815c939",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner3\\encoder.pt": "bc22acc1b0a14b3115bc180ae86b4952a29770aa158907d02ba375a79f65c4ca",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner3\\embeddings.npz": "4df171e8aca02083f9b7a429d91d50b30d0f988c9ad5717968fec06269b8a122",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner4\\fit.json": "cf1b9bade945414c33ea375cbd425117236eb9af721b1337a70d284827601ebe",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner4\\encoder.pt": "73093441b029715a0a7bb692ea08a9018f0edddd27fda89201fd0865c65d5f04",
+    "companion\\extensions\\eegnet\\results\\r08_f00\\inner4\\embeddings.npz": "2355e7c458a84ad33f0b527ca9ebf420675d62377f927b772cc7354fc40ef7f4",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner0\\fit.json": "6562b7a33654e9370dda3bbcd63ebf3df058f42d508d4d04a90a780ae189328d",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner0\\encoder.pt": "eef4cfd3a23721b2980915eca3b0aeac19a6e4e49b9249a779c9e469fc1b5a4a",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner0\\embeddings.npz": "471a9eb36306ab8b171adfaa68ff28b40807ac1c20052b01f5eb0fb2de74e06a",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner1\\fit.json": "b62c16d2aea2d22469297d45e84bc5d5e4def68ea4f3df9b75ffe56c94d7369e",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner1\\encoder.pt": "e844a33ccde34f534c80bf09533b2e272d74ac3ec99a70101426771853444fba",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner1\\embeddings.npz": "ee742e9ee5df7eb647df620a36f2427ba36808d3e8b6ce424d42c65b02c96dc2",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner2\\fit.json": "88eeabb0f19583a3b0b62a0fd76a6eda81624a87d3b99c1457d1e952f1ec1645",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner2\\encoder.pt": "08945100c154a57c89004d7327f3071532211ea605c7ab2a239bf78e102409ff",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner2\\embeddings.npz": "08c51177f26007b92d092ec10c57bde7b2ac0d97c3838cb2560f8128732886b3",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner3\\fit.json": "6d257d0b576ad5e83f1d7f04dd1573b89e250962145975a814111e7c49a9aff8",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner3\\encoder.pt": "5a43e757d6020417c3501f944e1b8cb3f18e7a9947d6343d74bdd4b62bf4ecda",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner3\\embeddings.npz": "ca6fffe192074732901a7844e0ac7f6f0f51a2c123f921fb32f1a7e34b3b43a4",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner4\\fit.json": "bdab44639a876d8f025bd9ade041227325cced4d2defaf57df7f35a905f8317a",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner4\\encoder.pt": "18c2f96fafeca2635dcef804407380b53b1476b16607c0ae1ea6e9ed7cb91f67",
+    "companion\\extensions\\eegnet\\results\\r08_f01\\inner4\\embeddings.npz": "c3e8e9bd366c40a41a2450f59b690a0c03b55e768b1432b03fe5bc73c79cf13d",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner0\\fit.json": "14973103458abb304d6a62203f57d2bc50f4ce3ad8e6da63deef0d9d6545a84d",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner0\\encoder.pt": "f6940e3e268bb104e31e0146490d0d1feb18dcaf63b62d49a2d84f7ffb9de8ce",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner0\\embeddings.npz": "f986e075e30c1bb4345511e17c3ab1a8ae137caaeedf7b123008d0813fe89598",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner1\\fit.json": "228a435662f1b3bb693e2eea043b66998af48b55bbc8587f12518222d49301ce",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner1\\encoder.pt": "b53c058fb662aabc2765fb798afd83f01ed98d25b027668eefe809514a27b6fd",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner1\\embeddings.npz": "a61199ef7df485b11d51eba9188a2a23b412abc515ad92439a5a3285b418245f",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner2\\fit.json": "b28d9ff2889ca75549d1c8f143b4f49090e051f1fdcf4951c45cd59966f8b01b",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner2\\encoder.pt": "dbc4ee8dbfd60886b2fa19018f69f7f113ecf3beb02c735ab781298ea1613ca0",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner2\\embeddings.npz": "fcb1af2df7b9fc002c7bcd2f91012eae7df8a50dbc495d848e4c101ed6bb3dea",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner3\\fit.json": "962c862b1f465c62a7bbe959968e209060014bb525b828b7222a17da6b3ffa71",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner3\\encoder.pt": "1bfa3126154a42147e9d2ff4cafb49f72130d496171ba4a1e7f847a90ad42701",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner3\\embeddings.npz": "542b6fc2d1fa5c12870a8d7455bf79b8f1f6b776b7979cdb02f0da298edbf1f7",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner4\\fit.json": "d9b42e10d19cfb62485a714508f469e69864a15e641a1bc70f336dcba6962b1c",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner4\\encoder.pt": "7c5e35c46fb5545ba666a9250820d92988b03161bbce68b0cbe355b5bb627af1",
+    "companion\\extensions\\eegnet\\results\\r08_f02\\inner4\\embeddings.npz": "ac8b4af2ade57994edd9cb3b495e77e7ea37271d3498039d63181c25115562ed",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner0\\fit.json": "5e5665622f79055d36808a33f810493aef0f03e6ef66055a9d58ac3488aec22b",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner0\\encoder.pt": "c640e972f8442116e41778438129ee5ac5ed0dedeb0caea4abf509204dacd0dc",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner0\\embeddings.npz": "d80335fd6606ec8207057f30c7092cf5a0bca49b7e2872df1f829afad6b6bd90",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner1\\fit.json": "ba0c1f852715be448c3606f540ac3240635091b4c619eb4512efa7f650b29b58",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner1\\encoder.pt": "a1e036bbf80f22ec8adc01d0fbbebf1e090d55928b3b083932e96647fd04c321",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner1\\embeddings.npz": "35417ff16a63f9c95f9bc759a95443026dfed14ed4acb6b391d23418fa121e47",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner2\\fit.json": "ffcd2fd6bd3535f1e61e0398d84178e6d413bd5856800432bdc035ef950832d4",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner2\\encoder.pt": "af9853121155c65860472a21dade79d51a4303242247bfa60733b2a8328b80cc",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner2\\embeddings.npz": "9a4de931c985fa994b8013eb00372cb9e2a7f6b11debf01236593c5d8bce5a0f",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner3\\fit.json": "08d84b8ed312dfdacc333eea340675ca009ba9ce755a9d3d8f07b7962ac6fe9c",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner3\\encoder.pt": "91d965c78b5fe888c0a6e7ed7b9a0f9022a705d8e4299ca4b29c917e2eb1f78e",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner3\\embeddings.npz": "c07489dab58fc2de4f7c62ea1026c463536a8caf06175e5548fe9dafea4df052",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner4\\fit.json": "7bcf80ebce863ffabb4e3cf02aa5dd389fc8a4184f551f57ceca26d34c7f22b8",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner4\\encoder.pt": "85f194bdd09090b18a7bf3f1432a591850fc691d7263d6957b068804e817e40e",
+    "companion\\extensions\\eegnet\\results\\r08_f03\\inner4\\embeddings.npz": "c6408fea89d9c6bb6c29dbc676b0670fb6bd19d48175343e07176db41651d7e9",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner0\\fit.json": "e0c251decdeb00d6dcd5105d5a6520acd340ea428f9164ab1a66d323f3c49bf5",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner0\\encoder.pt": "3dc09f361aaed6ca4e9319555edcb1c934db34ab37486b2df197efce34450c56",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner0\\embeddings.npz": "9a3c2116c503b5ad44864337f33966e75fdda45a62bb16996d8b687f314cffe3",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner1\\fit.json": "803a2f19c5f2f8a6494cb20c8a5f096b4fad6cbeb5e713e2766a19712a525392",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner1\\encoder.pt": "e4b4b341e6abbe9e7050e91c92828fdb683dfdf80955d9a110c0d0db9378340a",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner1\\embeddings.npz": "b9f2aa5a2d57c05aa292007ae2100d0ec9834b0c5e1631af8821aba51c77ea1e",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner2\\fit.json": "dc24054e47e79fea3713015632b5e35368b55dc226f09dc52abee481eac660a4",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner2\\encoder.pt": "113f50c6c6db1105e90c3593a71b759277c245e8c3ecc3383f0ddaf3430dbb14",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner2\\embeddings.npz": "c1d2a4195858fe0c07df96bee6c47a2b52621591d1cc945de17d9392fad271fd",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner3\\fit.json": "83f4b312fb5f012eac2aa9315657605ae9a2daf188e9cfb136b27f3aa887f65e",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner3\\encoder.pt": "9a7f164471bc00e07b9dcefa53b4a6ae245f468663d7f8d66f17f3c60aa3af8d",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner3\\embeddings.npz": "ababe2018c138c12deee7615f7948066ec9d39e04028667b8becbbceab0d0176",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner4\\fit.json": "091b23f75c9bafe12f0a0aa905e411227a7435ddc2685c0cb171eb51914b937e",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner4\\encoder.pt": "b843aebc47ff0709dd27ee313cdad5dbbaf6e28932501b243f25959502eea3dd",
+    "companion\\extensions\\eegnet\\results\\r08_f04\\inner4\\embeddings.npz": "29282dafd4028aae2e9f523356f3d2bc1e634c57905ca27b1109f1ed9906afb1",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner0\\fit.json": "cf17fc96b9f859d712920adc2d9fa9fa142f2f9793b6a463cd3751808054dee7",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner0\\encoder.pt": "7eb6afa02a3f0a8da732e3d77ac4b06d4cbc6b726f481f1a5e800be86e595869",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner0\\embeddings.npz": "c2a4c20ae4e967376d80bb4e36124e7357629712e1de336ff0aae7b6f030a35c",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner1\\fit.json": "d701ec6bc725327194346454d8a153a74f8b24c76c85e792609ef86b2af6408f",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner1\\encoder.pt": "97b83b0662d6f265c2ae5c72b553b8dcdfa488108d2e089d2204a81ffcf90d50",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner1\\embeddings.npz": "0b056627d6f1755bfcc27b000242a712c58563fe4837abbc07b10c0f923edb5a",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner2\\fit.json": "89345751abafab7cdd9b665cf841533d0c071665bf7db79d3765717af3662515",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner2\\encoder.pt": "bfa571069794ad2be408d7dbb2a65186a581fd3ff0bec1519c1398aa358a2782",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner2\\embeddings.npz": "3dab6b0178548ebde5bf584856fcf3c2360e1a905087abfad76d5e53bb956863",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner3\\fit.json": "31f81d83fed81402639a324752ea70426290ef10df8a3907936b06774d404170",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner3\\encoder.pt": "58af2f572241ec3f4861ae5a9fa4c0720d5874459bf1487bcca123ca0101109e",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner3\\embeddings.npz": "68b4a52a346dc903fad27b4767e4e5454a62310f2723a4966be4c7778ec4cca5",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner4\\fit.json": "a509dcb2f32b4946477c854d590fb2c131e07980253962e54a3aca1149fd6f15",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner4\\encoder.pt": "b64745f2b3e8e85f741c0f236e65ef5df76c9ea9d6e6dbf0ff3d560d571d6505",
+    "companion\\extensions\\eegnet\\results\\r09_f00\\inner4\\embeddings.npz": "a273a7f3103f157e26c6a53d38f38c63da3dc7188230a9310ce6d6c2075cb4a7",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner0\\fit.json": "9ad7aafdfb55b607eb0d4826efa9aace3f9293ab219c64495b2fe2944c69bfcd",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner0\\encoder.pt": "e6943ca4eb28144c07eb728c24574c10a67008cf0fbf41f402839ce2f01888a6",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner0\\embeddings.npz": "dd1d994b54c177c550d2887048d746a3baa9b575fcc7081da860811ed8b1dcab",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner1\\fit.json": "7037864d8070ebd2bae7d0fb9217140afee23617af55337b915bb26942123dcb",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner1\\encoder.pt": "d386007516f775983b4e44896f70f93d0dd6e1480d151e94c5f4bcdda2a0315c",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner1\\embeddings.npz": "439079de5549f35830c4d8c0e51d5d31e02302d4bffdd08475d44352670d915d",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner2\\fit.json": "c9c68141715877e321ea8f37a69c6054a56ea2e82b43d7bad055a012ec99eac2",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner2\\encoder.pt": "cd45e3e8a71ae3a66f147b03e9ef450daf60d9e1c13503af91eacaea25456332",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner2\\embeddings.npz": "3398a3bd9e0ff688473b410ee17a6ca41b257543e4c741fe390565325d5a7fb3",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner3\\fit.json": "1fb3aafdae6a8097f91012d8581df9bcf24438327466cddad8586a311bbbcca2",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner3\\encoder.pt": "6cf6ed45997993ce321eedf884d80ecd33d3ae62c68296133f8f9eb3e1b19aa8",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner3\\embeddings.npz": "d3fffdd69257948da3786edd0966385b9d9407b155409e24e32172a9551ef29f",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner4\\fit.json": "10b2e90ae3ec1dee9bb5f69d1c06b69cd1e3d50d4d07e1ef9e930967f725a3e3",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner4\\encoder.pt": "efa74b53c789408e8cebc57bf049e1c11cbe0f171317168eb72b67fef2112d0a",
+    "companion\\extensions\\eegnet\\results\\r09_f01\\inner4\\embeddings.npz": "46f50fd70e45c205830be68d67f057f410eb64b09f88200c47ba47ce6803169c",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner0\\fit.json": "071228c614003713766bc3b8bcb0168c8839ff58feff1f906693da5845252a9c",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner0\\encoder.pt": "a4af61cce717bb617f04272fb215085e839dcc67c5cfb82d4b2027c16a6479da",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner0\\embeddings.npz": "70ef75710a216556fc0d889a996e66e4a1a9eaabaa2778df77e89a7d78018c0e",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner1\\fit.json": "cfbec71c3ec696abd85cb241953efbebfadc21557bb3641a005ada03f6ad1e20",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner1\\encoder.pt": "7c4463d3e910de1fc177d7e24ec6b7f8e67576f0c4b88a594245926e4fee262c",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner1\\embeddings.npz": "a8751a501da00db2ca2961d434f0b144977fbedfc6d24407c307fe2240779245",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner2\\fit.json": "fdb057c0c2a5074ffd1c7d333de823d474eab4f8da1ed8136c7e9e996cdc56ff",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner2\\encoder.pt": "fc349de85c074344395daa1a0a1d24106e718970d31340db99698614f193a3e9",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner2\\embeddings.npz": "2e04acf2053fbf3d297b211d9b78403cda64825e61c59b419676af57dca299e2",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner3\\fit.json": "6e0c7de711692f4cc3a8739505851818028236a53336ed077ea179e661b1f54f",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner3\\encoder.pt": "7ca1312ca9de7cb96da39d8075e5a2cd936d34c6ce079084256f5c0f5813d3e8",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner3\\embeddings.npz": "4b88cde8858eca2b7677d7a7f4a5d49391434dcba8b74c51a90d73d1ddb5b592",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner4\\fit.json": "02f858e90d8b6c7ca260fb697873324b33a2cb839b7ca08198b1dd6cbe6940ae",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner4\\encoder.pt": "19bffc46abc7fac86b42da53cf6c6ec659ab34a368ae9c46e72b80dde80c230a",
+    "companion\\extensions\\eegnet\\results\\r09_f02\\inner4\\embeddings.npz": "d45a1711de4105a669b2b977d664aea5c5744582a028137c76e62ee16f11114b",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner0\\fit.json": "1b40f7ad139773951acaf0c6dc4bf2482bd10beda2402f1ae8565dd86c2eeb9e",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner0\\encoder.pt": "3eb02d5ca1b65028444b5d64f7f94133b8d8b71003cb3cc67c752a1eaaeec6ce",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner0\\embeddings.npz": "7d284154a4c0f0e93cc81230531f897de3bd33cbdf348a545e41e83b1acb89e3",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner1\\fit.json": "5dfa69862af0d107c234192c0d4b62737202a37ab507201eda2bfd71ced0092e",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner1\\encoder.pt": "4581359a79b710ccfa16f0831f92b784197fc785d4a536cbc7f9b78b1af0a282",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner1\\embeddings.npz": "f3cdbf082aa87b2e3bfb433abacaeeaffc3658c9edbad656d814620361864ee5",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner2\\fit.json": "e8f6e0c09bd61841619c0d886f0148964fe131f83f7d7aaef0492a205cb4e055",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner2\\encoder.pt": "db1fa015e5a80fa438cdb25abc2694a5dd010a55ab30258b7ba5ecdda573e358",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner2\\embeddings.npz": "31984b16dd9b1bd4fed2a56bee43d9326343686a39baf05e6bf01cdc8a2fdd3a",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner3\\fit.json": "8113f4a71d469e82f49f25abd85001f04c138cfe48a9e132040c08b5343da069",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner3\\encoder.pt": "e48b02aef1b30d3338c581aef5f8d6b19b1e64723f40b661e65c6e3ff3d85cc2",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner3\\embeddings.npz": "1704c2f187f2d8817931a7084b5a163a8806c08eb4a9df3dc1b12990d91becbe",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner4\\fit.json": "cf3417ab8642117a3ae795761a4376f92a2615f91c172ede8e02124133b99ecc",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner4\\encoder.pt": "9e857835e012c2c77b0f7c205f4ea564bc3e06f6dd6a975635ff15b7b3995363",
+    "companion\\extensions\\eegnet\\results\\r09_f03\\inner4\\embeddings.npz": "d43631038bbe113650f24d269a8b554676fbb34fbdd15c15b4c353aad9c49890",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner0\\fit.json": "d727ee29fc792959a247d25a3c77952e391b39a313fddb6e74ff5ed6e35b9aec",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner0\\encoder.pt": "dbab93dacf0e436654e5db01bc99c0c7d3414e298a3a8c5b0299f8f4ee451ea6",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner0\\embeddings.npz": "97c167918549b5ffbf34c197f3c2989a6b9daab981ee1c0ede410a69984a88d9",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner1\\fit.json": "0ec2c4d65f2c518089d4d5c82322ca483bcf646d210a7c6569b2444b113433a4",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner1\\encoder.pt": "b8d360925ecb78850ddf1db5f45bee8e18dc925c7498c74a46e51f6cef922420",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner1\\embeddings.npz": "2bcc431cce79759c0a1d709876950ca60f39518acc98f79f11b541898dd1bdcd",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner2\\fit.json": "fc412e6a9769b21950f06d013ee2f3a8baaf40543a917292eab1aa4c99eb3340",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner2\\encoder.pt": "e80157fd738aaa6c96d71f477ac857b6aa601d759dcea4e93907ff32dd6c13a4",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner2\\embeddings.npz": "ac0993b46da617e5b210aa19d3c6521b2b0e726f1e914d8aa887e0218c63eb84",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner3\\fit.json": "56f0e88f2aac7e75b7e6e6cd4cf2c7884fd07a4cba4c0ef0018dd878dfe68822",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner3\\encoder.pt": "2f26ac4531bab9f2a4430179c37e331180247b001540a1f63bf36f938a7bc686",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner3\\embeddings.npz": "c237a891303dee73700e1baaa2d008c366ef78ca75ac1666460d0ab9da089609",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner4\\fit.json": "85c1c044c36b09cc9e3b7abcc1da2b2f10286817c2c2d7d5050d7baff5fb49a4",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner4\\encoder.pt": "ec5658a692946af3a69e1e8650b5a5531806dffe0aee7dd2faf7f19a5c4d74e9",
+    "companion\\extensions\\eegnet\\results\\r09_f04\\inner4\\embeddings.npz": "661a7c8de408668f6969c07296a27dbbad751e425fa493fc26786b4bdf2d0fc5"
+  },
+  "outputs": [
+    {
+      "file": "r00_f00_i0.npz",
+      "sha256": "046c7f08ff94057c5d8a169b6ec4f661fcab2ba48b345ab8825e07c1c06efa77",
+      "head_train_n": 16,
+      "replay_max_error": 1.0975246778066605e-07
+    },
+    {
+      "file": "r00_f00_i1.npz",
+      "sha256": "66217851df90c75493b5aee2a11d96f0bb9eebd6db4222dc8178703ac6c5341e",
+      "head_train_n": 15,
+      "replay_max_error": 1.054263599614691e-07
+    },
+    {
+      "file": "r00_f00_i2.npz",
+      "sha256": "ae6ff0ce8b8e09355c84ffcd1e06c858f62b9ead8ff713a3a92a6b9457c7c801",
+      "head_train_n": 15,
+      "replay_max_error": 1.1282182243999017e-07
+    },
+    {
+      "file": "r00_f00_i3.npz",
+      "sha256": "71a91f3ee881e1532307d88c254de818e3d0c02cb02ead279711123e9d9f4e00",
+      "head_train_n": 15,
+      "replay_max_error": 4.457515173639237e-08
+    },
+    {
+      "file": "r00_f00_i4.npz",
+      "sha256": "663b0a635182a8316163dcaa822012bc85ecb847f7aa69b32b2524b9b4d93856",
+      "head_train_n": 15,
+      "replay_max_error": 1.4614789761724367e-07
+    },
+    {
+      "file": "r00_f01_i0.npz",
+      "sha256": "7afaf9b7119189a38857cf20679eadda8d1930d27668f66719354acaef10ccab",
+      "head_train_n": 16,
+      "replay_max_error": 1.2818344152787375e-07
+    },
+    {
+      "file": "r00_f01_i1.npz",
+      "sha256": "f0b90fbf65d806fd3fcbec770a2fa108c0d3594d490afb180913cfd3e03847b0",
+      "head_train_n": 16,
+      "replay_max_error": 1.937930476370031e-07
+    },
+    {
+      "file": "r00_f01_i2.npz",
+      "sha256": "6b10673c6446476d7def9f0fa98666e7ffb8487e9fe1f0e2fa80f805f6132a63",
+      "head_train_n": 15,
+      "replay_max_error": 9.959879911092262e-08
+    },
+    {
+      "file": "r00_f01_i3.npz",
+      "sha256": "d3b9197f543ce620a9824588f553eab68cf8cac375714565c544a84742a7676b",
+      "head_train_n": 15,
+      "replay_max_error": 1.8361819587031647e-07
+    },
+    {
+      "file": "r00_f01_i4.npz",
+      "sha256": "4ae26fb86a89a2835902f24f7f07a5cef0d86535fcb7775419362f490a592f80",
+      "head_train_n": 15,
+      "replay_max_error": 2.1272528638593968e-07
+    },
+    {
+      "file": "r00_f02_i0.npz",
+      "sha256": "aac2b9bef53541dfe6fdfc74e64d08694d8604c9531fd07f1d220e8d4ee36bb0",
+      "head_train_n": 16,
+      "replay_max_error": 1.237253253183468e-07
+    },
+    {
+      "file": "r00_f02_i1.npz",
+      "sha256": "2214eb2ed34af878f8f4c5454ee5a25bb37e4450c77a64de43c133eee77ad088",
+      "head_train_n": 16,
+      "replay_max_error": 9.457596858442052e-08
+    },
+    {
+      "file": "r00_f02_i2.npz",
+      "sha256": "74caef19244ee8b37b45618033a80606dfda8e36f0c1df2f8083fbbaab45f9de",
+      "head_train_n": 15,
+      "replay_max_error": 8.636292207764296e-08
+    },
+    {
+      "file": "r00_f02_i3.npz",
+      "sha256": "4352d54b634388bb9ab9b7ca57e12cb7d46eda46686d06fffbadce2f1a8eca09",
+      "head_train_n": 15,
+      "replay_max_error": 1.454264721284515e-07
+    },
+    {
+      "file": "r00_f02_i4.npz",
+      "sha256": "bad5796f1bfe7fb04316873467006964de056ab090df8f180574301aae92efd9",
+      "head_train_n": 15,
+      "replay_max_error": 8.62968798087671e-08
+    },
+    {
+      "file": "r00_f03_i0.npz",
+      "sha256": "667c631d4d206ac16706c3c1592196cf858d116b4b6f144a0a48307e74ce4c3e",
+      "head_train_n": 16,
+      "replay_max_error": 2.3416941985487938e-07
+    },
+    {
+      "file": "r00_f03_i1.npz",
+      "sha256": "4b040f30f31a8cae2b5eac424187d006f5e35eca9dad0adfef74dfc4d5599ba5",
+      "head_train_n": 16,
+      "replay_max_error": 1.731969957591284e-07
+    },
+    {
+      "file": "r00_f03_i2.npz",
+      "sha256": "d0bee3de8a6c73d89555deed663695727e340883dda768a23c57dec7c491df84",
+      "head_train_n": 15,
+      "replay_max_error": 1.3917384822370593e-07
+    },
+    {
+      "file": "r00_f03_i3.npz",
+      "sha256": "e967b814d3fcf9b7c72c8065b2ccecd5a16fb2ec5b4171391a4c96e02635c503",
+      "head_train_n": 15,
+      "replay_max_error": 1.7686042844133887e-07
+    },
+    {
+      "file": "r00_f03_i4.npz",
+      "sha256": "851c45c19333a6363fab8832b47b44f5e4a5abf98d8087475f756a16580ff636",
+      "head_train_n": 15,
+      "replay_max_error": 1.543007175086597e-07
+    },
+    {
+      "file": "r00_f04_i0.npz",
+      "sha256": "78b5977fa4ac74d4ab04b6971e11e133601dbfb59cb8b3e9e776b56d1e003744",
+      "head_train_n": 16,
+      "replay_max_error": 5.275415222438795e-07
+    },
+    {
+      "file": "r00_f04_i1.npz",
+      "sha256": "baf4dac1b76176bcbf3c4b65d2da1ec28f212052ca80f6e0db13eedcb88708b0",
+      "head_train_n": 16,
+      "replay_max_error": 2.1390879467730883e-07
+    },
+    {
+      "file": "r00_f04_i2.npz",
+      "sha256": "a54c7c1f2ca963cb785a816da3259fb57c7bb792e6805b067966e45a77d90961",
+      "head_train_n": 15,
+      "replay_max_error": 3.329570966159601e-08
+    },
+    {
+      "file": "r00_f04_i3.npz",
+      "sha256": "3117d9c1076df00c6323ce4c56e8310a31d499c6e0feb455d5c8100b24ac3d8e",
+      "head_train_n": 15,
+      "replay_max_error": 7.779950775277378e-08
+    },
+    {
+      "file": "r00_f04_i4.npz",
+      "sha256": "df9880068e084a8d05d462bef300d55f6e61e39f99b747f0e7d90377e9dc1de2",
+      "head_train_n": 15,
+      "replay_max_error": 8.673506601830638e-08
+    },
+    {
+      "file": "r01_f00_i0.npz",
+      "sha256": "31fbe7c10254d34e80236028bf060b5d415b784a7e20829a9da7552d453c697e",
+      "head_train_n": 16,
+      "replay_max_error": 3.584976504544812e-08
+    },
+    {
+      "file": "r01_f00_i1.npz",
+      "sha256": "62a1ab97ad6de96dcc67e53ec8c14c1a2fff265774d47bc29f593051af92d64f",
+      "head_train_n": 15,
+      "replay_max_error": 1.4642029311229265e-07
+    },
+    {
+      "file": "r01_f00_i2.npz",
+      "sha256": "5cdd7152431a53a4057085dd24b57ea903890295b8beadbdfcc921294747b890",
+      "head_train_n": 15,
+      "replay_max_error": 1.6238344921482017e-07
+    },
+    {
+      "file": "r01_f00_i3.npz",
+      "sha256": "f53dce35da27c1cc1aeb894e6fe82194ceba0c27d2c446e3e55a7e5945e3eec7",
+      "head_train_n": 15,
+      "replay_max_error": 1.6515152256868504e-07
+    },
+    {
+      "file": "r01_f00_i4.npz",
+      "sha256": "31fdeb4e616030eec514a2975108ace8c649cc397f0a8fb25ecb9ae79a9e65b0",
+      "head_train_n": 15,
+      "replay_max_error": 9.204950031371784e-08
+    },
+    {
+      "file": "r01_f01_i0.npz",
+      "sha256": "6514655fbae049c8d7bc7fe039b2c5c967c1f53db8b9d3169ad1e6986c3e99b4",
+      "head_train_n": 16,
+      "replay_max_error": 1.1784972489548018e-07
+    },
+    {
+      "file": "r01_f01_i1.npz",
+      "sha256": "2374c074818c435768f5cf0780c0e7d4ac63f7e2a692ccdb316998966bd2aac9",
+      "head_train_n": 16,
+      "replay_max_error": 9.787973109798287e-08
+    },
+    {
+      "file": "r01_f01_i2.npz",
+      "sha256": "c6efac2c502e7c50e5fde95759b53ef5b2ac3fb53f0e31e6f9b83097550e49bd",
+      "head_train_n": 15,
+      "replay_max_error": 2.072968831035027e-07
+    },
+    {
+      "file": "r01_f01_i3.npz",
+      "sha256": "32839fe87039073efb4deb51d5abd68d460248676f660882951f20a0c6e16801",
+      "head_train_n": 15,
+      "replay_max_error": 1.5909801115432387e-07
+    },
+    {
+      "file": "r01_f01_i4.npz",
+      "sha256": "83e93ac802b8d3eb75beffbfe31bafa9ce12d0bfa81aa082b9f8149069782e24",
+      "head_train_n": 15,
+      "replay_max_error": 1.1828909829425527e-07
+    },
+    {
+      "file": "r01_f02_i0.npz",
+      "sha256": "020e207961831ef0bf1637a68ef8767c31dd8e8a23de0e3b59bc9c457d96c4fa",
+      "head_train_n": 16,
+      "replay_max_error": 3.086860050210971e-07
+    },
+    {
+      "file": "r01_f02_i1.npz",
+      "sha256": "b661fab7f149ed5d2e6d797ca322b4d2bab6f78a6b3d908abd4c9aaf2a682eb7",
+      "head_train_n": 16,
+      "replay_max_error": 2.714692515226602e-08
+    },
+    {
+      "file": "r01_f02_i2.npz",
+      "sha256": "bf8e04a15d69eb3f7808c2f1f44435d345736d3fb5428c54e67a21ab53bacb1e",
+      "head_train_n": 15,
+      "replay_max_error": 4.945445952753147e-08
+    },
+    {
+      "file": "r01_f02_i3.npz",
+      "sha256": "05c42cd3580aa20e5f5bbb6deb3935d2b665da423f9995e476781412892e9c79",
+      "head_train_n": 15,
+      "replay_max_error": 6.039663563717212e-08
+    },
+    {
+      "file": "r01_f02_i4.npz",
+      "sha256": "a335ea5567a32b8a7a021cd31807f639bd983bef3f364c7a6462ffac1337c919",
+      "head_train_n": 15,
+      "replay_max_error": 1.3305612334146844e-07
+    },
+    {
+      "file": "r01_f03_i0.npz",
+      "sha256": "d070ce7562261468c977294e3edacc1698d7639f01b2b1e63bf85dcfb8cbd348",
+      "head_train_n": 16,
+      "replay_max_error": 1.0479965972809424e-07
+    },
+    {
+      "file": "r01_f03_i1.npz",
+      "sha256": "c3bb530a84f84012875997b992d8d3bc7ad4e9068beae356a06bc9c5a79589fd",
+      "head_train_n": 16,
+      "replay_max_error": 1.16086619733613e-07
+    },
+    {
+      "file": "r01_f03_i2.npz",
+      "sha256": "1c84b1386639bea2027710e66daadeb76d72dc496607bf59a228a3fa6c7eb880",
+      "head_train_n": 15,
+      "replay_max_error": 1.1317840808988677e-07
+    },
+    {
+      "file": "r01_f03_i3.npz",
+      "sha256": "468bbccd2a1b1b6cd3fd6ed9d5173e850bbac354110a77906fbce9ef37d127f3",
+      "head_train_n": 15,
+      "replay_max_error": 1.4536837649240224e-07
+    },
+    {
+      "file": "r01_f03_i4.npz",
+      "sha256": "08b34653ee8df39f782a7a1e5461c4e0bbd7076290b96376b1bba52b15267503",
+      "head_train_n": 15,
+      "replay_max_error": 1.6300927890844363e-07
+    },
+    {
+      "file": "r01_f04_i0.npz",
+      "sha256": "6993bb82210eac023411718ba33f614c15bfe4ec51810dc5207e4a5c66ab1e83",
+      "head_train_n": 16,
+      "replay_max_error": 1.198074560671003e-07
+    },
+    {
+      "file": "r01_f04_i1.npz",
+      "sha256": "0709d0cd8735870d0e8678eccc653b58435bbe5fcaf19b73de8b7ac8f27c0e81",
+      "head_train_n": 16,
+      "replay_max_error": 1.4088450461802182e-07
+    },
+    {
+      "file": "r01_f04_i2.npz",
+      "sha256": "44793bb491926bdece9c42cbb718fc2e3fa0db0f47a03f3ec4a33929756757b4",
+      "head_train_n": 15,
+      "replay_max_error": 7.222744935475589e-08
+    },
+    {
+      "file": "r01_f04_i3.npz",
+      "sha256": "6d428019c022b0a73ec76f6bfd21762df6144e7fc48cced61073d387b36dc844",
+      "head_train_n": 15,
+      "replay_max_error": 5.001653527458849e-08
+    },
+    {
+      "file": "r01_f04_i4.npz",
+      "sha256": "4532ab8bf5b63f07c64548b0f53db5d61d9f64f6171b1d84b1437e8292431c2d",
+      "head_train_n": 15,
+      "replay_max_error": 9.962689902220934e-08
+    },
+    {
+      "file": "r02_f00_i0.npz",
+      "sha256": "2e68fdbd8b78be1d2ce4c8a27d959e126608abcd0b4eb77f52bd4db7e652e429",
+      "head_train_n": 16,
+      "replay_max_error": 8.728210497410682e-08
+    },
+    {
+      "file": "r02_f00_i1.npz",
+      "sha256": "cfc83f4e7a8d3619cd1003bbe3f8afdbfeefe1ede15fdd61eef75fe138822d9b",
+      "head_train_n": 15,
+      "replay_max_error": 2.830693461852718e-07
+    },
+    {
+      "file": "r02_f00_i2.npz",
+      "sha256": "515ca759e1b8248b1fb753025723e8648272b9af729f47e836a470053a34c1a2",
+      "head_train_n": 15,
+      "replay_max_error": 3.726521125013704e-08
+    },
+    {
+      "file": "r02_f00_i3.npz",
+      "sha256": "a12c53cc579452449d55915ee600183d4fac1afd18f885f7511c98e4528242e0",
+      "head_train_n": 15,
+      "replay_max_error": 1.0974299921584496e-07
+    },
+    {
+      "file": "r02_f00_i4.npz",
+      "sha256": "d6183031e483244047fc6e46a0ca2a0ca9187a416a3674c3e2ead9d8e50cc55d",
+      "head_train_n": 15,
+      "replay_max_error": 8.450048721853065e-08
+    },
+    {
+      "file": "r02_f01_i0.npz",
+      "sha256": "60ca39ae221667329ca30cdd58bbcc679fe815038e6e6857e4ec471cf333ce38",
+      "head_train_n": 16,
+      "replay_max_error": 1.668517564668015e-07
+    },
+    {
+      "file": "r02_f01_i1.npz",
+      "sha256": "2a35ef553db1a1c29a1c357c1fbe31f2729baff14c19a4b13b6053ebd68b0542",
+      "head_train_n": 16,
+      "replay_max_error": 1.6740523278713226e-07
+    },
+    {
+      "file": "r02_f01_i2.npz",
+      "sha256": "32712058fcd4b863cbd92d9e2aa4b1273b106c6984272624ae783de83c49ba76",
+      "head_train_n": 15,
+      "replay_max_error": 1.2361989265574636e-07
+    },
+    {
+      "file": "r02_f01_i3.npz",
+      "sha256": "76bc91784f7e78b7be58b7c9f622565cca02affe16b10da465de51869ad17309",
+      "head_train_n": 15,
+      "replay_max_error": 1.6900777005668388e-07
+    },
+    {
+      "file": "r02_f01_i4.npz",
+      "sha256": "57df473b688b415e9973384bb4b6f763fe63e09b6989ccdd1ebd7fc4f6fbac94",
+      "head_train_n": 15,
+      "replay_max_error": 9.935621808621065e-08
+    },
+    {
+      "file": "r02_f02_i0.npz",
+      "sha256": "be5f4c692316b4eae51e058dfccc6e6bc1de1a01c4fc2aa80715ff58ba0a6717",
+      "head_train_n": 16,
+      "replay_max_error": 9.342439402388464e-08
+    },
+    {
+      "file": "r02_f02_i1.npz",
+      "sha256": "517be10040b7e9c018ddde67f1650fb1d215cf282ca757f4d6ba8340288682fe",
+      "head_train_n": 16,
+      "replay_max_error": 6.562118196051792e-08
+    },
+    {
+      "file": "r02_f02_i2.npz",
+      "sha256": "6e3226683ebb8d9a4fb00c4851ad042bff21af9708db1f387cf8826d9e7abf96",
+      "head_train_n": 15,
+      "replay_max_error": 4.903303354453215e-07
+    },
+    {
+      "file": "r02_f02_i3.npz",
+      "sha256": "2fdac6c2992c1100ef17715aee965d4ee263b215fadd7cbb0b226b9a033976c7",
+      "head_train_n": 15,
+      "replay_max_error": 4.9905954979667655e-08
+    },
+    {
+      "file": "r02_f02_i4.npz",
+      "sha256": "c913bcfc9b664d19896337bce59847c03021a048a7c10a64dba23bf4dbbb12d2",
+      "head_train_n": 15,
+      "replay_max_error": 7.38050535478707e-08
+    },
+    {
+      "file": "r02_f03_i0.npz",
+      "sha256": "cbcca225397e958b6bfe185b8ea1666a30c6dd919fcdda1ecacb4caf6dcc58a6",
+      "head_train_n": 16,
+      "replay_max_error": 1.0008613271494937e-07
+    },
+    {
+      "file": "r02_f03_i1.npz",
+      "sha256": "12ff9fe156cc6ad33a1388098a3e47863b56d3066e7033ee5c95f0b4a3672322",
+      "head_train_n": 16,
+      "replay_max_error": 9.234453085538163e-08
+    },
+    {
+      "file": "r02_f03_i2.npz",
+      "sha256": "b3adfd58fd147a6d85af02ce1a85f25e80b2915a0582503924c9491b0becd7c6",
+      "head_train_n": 15,
+      "replay_max_error": 1.3776191670755722e-07
+    },
+    {
+      "file": "r02_f03_i3.npz",
+      "sha256": "e0272fc5886ce3230e8165f22abe52bf54951905e103699f3790f5cf401a1f89",
+      "head_train_n": 15,
+      "replay_max_error": 2.1968449831488712e-07
+    },
+    {
+      "file": "r02_f03_i4.npz",
+      "sha256": "d4a915f8f533b4a13acc1d24915841940916c7c61d7e8e102169ebfb186d731d",
+      "head_train_n": 15,
+      "replay_max_error": 1.1401734952704023e-07
+    },
+    {
+      "file": "r02_f04_i0.npz",
+      "sha256": "75c26d36b23e899509dc18a3d4939de8876c35c3dd4148dc679587af015a0854",
+      "head_train_n": 16,
+      "replay_max_error": 7.619770864275566e-08
+    },
+    {
+      "file": "r02_f04_i1.npz",
+      "sha256": "4ccd6c505844eff7a1ac59f45c4ef8bacac86e342138b291ac2219d6bd2c8ae4",
+      "head_train_n": 16,
+      "replay_max_error": 7.071187237139842e-08
+    },
+    {
+      "file": "r02_f04_i2.npz",
+      "sha256": "0e871959a036f9a12141c8dc341798abfb4091284a818e5ed737f865e30b3f2d",
+      "head_train_n": 15,
+      "replay_max_error": 7.675999325051919e-08
+    },
+    {
+      "file": "r02_f04_i3.npz",
+      "sha256": "72720dd76aa0f3312280d11e82a9ca358c5ad4681afd6e2b2b643ad7a9123803",
+      "head_train_n": 15,
+      "replay_max_error": 4.5896030809178257e-08
+    },
+    {
+      "file": "r02_f04_i4.npz",
+      "sha256": "9b968ff4bf3f65eec5b63ef59672bf20f0e8feb1d87871f4a37f44d47ac70bff",
+      "head_train_n": 15,
+      "replay_max_error": 1.4564419098528347e-07
+    },
+    {
+      "file": "r03_f00_i0.npz",
+      "sha256": "7db2a47da6002004d728ef4d6d9db52a828526532ae7a0d87f72e021bd79e783",
+      "head_train_n": 16,
+      "replay_max_error": 1.4072025400491128e-07
+    },
+    {
+      "file": "r03_f00_i1.npz",
+      "sha256": "20437ab6557a794ab17d194b35e00cd8d03ff9d13eb88d8a14f14fd792bbc29d",
+      "head_train_n": 15,
+      "replay_max_error": 1.1259979959543642e-07
+    },
+    {
+      "file": "r03_f00_i2.npz",
+      "sha256": "b05493a5e958c49eaac14755ff8590201a6999d132ee19550e19661d1dcb3cb2",
+      "head_train_n": 15,
+      "replay_max_error": 8.024139012963172e-08
+    },
+    {
+      "file": "r03_f00_i3.npz",
+      "sha256": "ce548e1f78c6dec342816bb8bac1e6b9e2ec707f777095ab29d9b503833facb6",
+      "head_train_n": 15,
+      "replay_max_error": 9.305432252526558e-08
+    },
+    {
+      "file": "r03_f00_i4.npz",
+      "sha256": "166cd7edf6d2e994aec3f03970ca83e099c13c7388402921132314027241b4d4",
+      "head_train_n": 15,
+      "replay_max_error": 7.030459752690663e-08
+    },
+    {
+      "file": "r03_f01_i0.npz",
+      "sha256": "993740b66050d013f923adee63e825765d3fb6b1b3fcfd57afdc1b148283b2de",
+      "head_train_n": 16,
+      "replay_max_error": 6.023646713891606e-08
+    },
+    {
+      "file": "r03_f01_i1.npz",
+      "sha256": "47ade73351d66b116a422233940d873d37d080d11f7008b864f62c1e60be3811",
+      "head_train_n": 16,
+      "replay_max_error": 6.641364758142032e-08
+    },
+    {
+      "file": "r03_f01_i2.npz",
+      "sha256": "54b76289f83d6a243524db9c4ab84788f20f9eedca34a9ed89dff0abc5731d47",
+      "head_train_n": 15,
+      "replay_max_error": 1.3018559130717478e-07
+    },
+    {
+      "file": "r03_f01_i3.npz",
+      "sha256": "d7a1aa92212ff424977077c9f19106c9b9fc871965bb88a983ce9f209a760364",
+      "head_train_n": 15,
+      "replay_max_error": 8.349516348454822e-08
+    },
+    {
+      "file": "r03_f01_i4.npz",
+      "sha256": "e46b4705166b8da27c73b48707ffa7664786cd32e6f9275cc9f870557079cfc9",
+      "head_train_n": 15,
+      "replay_max_error": 6.378045291910439e-08
+    },
+    {
+      "file": "r03_f02_i0.npz",
+      "sha256": "bb34a641f5f699865696323908a4c03b6db7acd0f35ebf51d24ffdd52a40a8ab",
+      "head_train_n": 16,
+      "replay_max_error": 2.1561842272754816e-07
+    },
+    {
+      "file": "r03_f02_i1.npz",
+      "sha256": "e1877513d9facdec575febbc452d01bbed8a6b814f74c1b07ff6422ab53b8014",
+      "head_train_n": 16,
+      "replay_max_error": 1.0194494864945725e-07
+    },
+    {
+      "file": "r03_f02_i2.npz",
+      "sha256": "5e1bec654620cdc737b6155b412f86cbc507e79894b6eaab527058cbe4b8f9d9",
+      "head_train_n": 15,
+      "replay_max_error": 7.910809169189847e-08
+    },
+    {
+      "file": "r03_f02_i3.npz",
+      "sha256": "7165cfc9b51bffc14765b0b44fb10660561e24c0fdabfd0feb0cdb84e8feff19",
+      "head_train_n": 15,
+      "replay_max_error": 2.1622937940168896e-07
+    },
+    {
+      "file": "r03_f02_i4.npz",
+      "sha256": "bb7042f782094ef1d73c89eff4d5c1530f788d0388d6fd3763ec7fecf3f1889a",
+      "head_train_n": 15,
+      "replay_max_error": 8.755817060279725e-08
+    },
+    {
+      "file": "r03_f03_i0.npz",
+      "sha256": "1a645e1596e42f595b5c7a44732b5de9198bb4339c59614aafa1516e58faa1cb",
+      "head_train_n": 16,
+      "replay_max_error": 8.026442199771111e-08
+    },
+    {
+      "file": "r03_f03_i1.npz",
+      "sha256": "7a21dd7457fa94126a0ae49afe6b576b0bd67173173899d382ee03cf84341859",
+      "head_train_n": 16,
+      "replay_max_error": 6.357193227390923e-08
+    },
+    {
+      "file": "r03_f03_i2.npz",
+      "sha256": "c514bc82cca917e5c75bec2b739be580bd0f22f29a17fcd0922898108f129ca6",
+      "head_train_n": 15,
+      "replay_max_error": 1.7400641272313777e-07
+    },
+    {
+      "file": "r03_f03_i3.npz",
+      "sha256": "a0b99ea37dbd7f7df8c01d2a249ee9feda0825c3c2ac0c6215ea3d198a155f15",
+      "head_train_n": 15,
+      "replay_max_error": 1.403949851930264e-07
+    },
+    {
+      "file": "r03_f03_i4.npz",
+      "sha256": "4ae1b2dd8e56df5d410a5654394ce02aeb4848093f6b54af4cbd86b0b6b2b070",
+      "head_train_n": 15,
+      "replay_max_error": 1.349143753937021e-07
+    },
+    {
+      "file": "r03_f04_i0.npz",
+      "sha256": "b3412049cf88eff366a20cf01983fc405c08217f06728551f5b89d0af4a14550",
+      "head_train_n": 16,
+      "replay_max_error": 1.6834086702388618e-07
+    },
+    {
+      "file": "r03_f04_i1.npz",
+      "sha256": "c883085422ea29b7c76a139f07e29bef2343f3c333cf2ddca4c58ec921e14aa3",
+      "head_train_n": 16,
+      "replay_max_error": 1.0639792535904746e-07
+    },
+    {
+      "file": "r03_f04_i2.npz",
+      "sha256": "31d7b02de89ac249766e0635c9c52f438999ca1fec28e509f24d01c2c9f0261b",
+      "head_train_n": 15,
+      "replay_max_error": 1.7999458735984408e-07
+    },
+    {
+      "file": "r03_f04_i3.npz",
+      "sha256": "dc6e8271a3a33a0b4962ad3e667da07be78b2fe8ce839456d64b4945176996d0",
+      "head_train_n": 15,
+      "replay_max_error": 6.887769904428964e-08
+    },
+    {
+      "file": "r03_f04_i4.npz",
+      "sha256": "c17eaad7cb384b6a247266ceeed382160c3a2cfa0aae00514c81555614b9932b",
+      "head_train_n": 15,
+      "replay_max_error": 1.1686428608159716e-07
+    },
+    {
+      "file": "r04_f00_i0.npz",
+      "sha256": "9563dc94296882744f982dee7d5512c764c154c831b6cdea501e35fff1850509",
+      "head_train_n": 16,
+      "replay_max_error": 1.1679958705768101e-07
+    },
+    {
+      "file": "r04_f00_i1.npz",
+      "sha256": "97ec3c4615a98a01a87ccc475eaeb079c28129495e6c42532da73132ddd39b51",
+      "head_train_n": 15,
+      "replay_max_error": 1.646717643633e-07
+    },
+    {
+      "file": "r04_f00_i2.npz",
+      "sha256": "1b17f17523c9abac6d2760f94db3a088cd5109588ceb2788e8abb688029ba3c3",
+      "head_train_n": 15,
+      "replay_max_error": 1.438052600888362e-07
+    },
+    {
+      "file": "r04_f00_i3.npz",
+      "sha256": "9614d158b59b4e43945a9109247ebc1960669cc7a8498e746da8f800c7b46754",
+      "head_train_n": 15,
+      "replay_max_error": 1.318680429990282e-07
+    },
+    {
+      "file": "r04_f00_i4.npz",
+      "sha256": "a4567ae013693cd83c9112605e31a4a57d0840f34eeb635de1ce9c25ceea7ed9",
+      "head_train_n": 15,
+      "replay_max_error": 1.1916005664136531e-07
+    },
+    {
+      "file": "r04_f01_i0.npz",
+      "sha256": "60619aed4e8f9636f45b4cef0fab379e91ef41dc151b129c06e957ac8dda27a1",
+      "head_train_n": 16,
+      "replay_max_error": 1.0897682586885615e-07
+    },
+    {
+      "file": "r04_f01_i1.npz",
+      "sha256": "6b098b5906e4135d5baf52db50bec86b602793863d693e8885f8232d4d382989",
+      "head_train_n": 16,
+      "replay_max_error": 1.2481236844053e-07
+    },
+    {
+      "file": "r04_f01_i2.npz",
+      "sha256": "6eea52bf81c2d51024ceebbe860830cd4fcc44ba59e3a1ed89e178c83eef9340",
+      "head_train_n": 15,
+      "replay_max_error": 4.127564212641488e-08
+    },
+    {
+      "file": "r04_f01_i3.npz",
+      "sha256": "a7bdba1566cc8650b47bee96d12f4a43ded5e5b2ae883428a143f2d81c5d96f2",
+      "head_train_n": 15,
+      "replay_max_error": 1.251874319208035e-07
+    },
+    {
+      "file": "r04_f01_i4.npz",
+      "sha256": "82565355969a8d463fff41c339b59dab3b6b1228bceb33dccf3d64728bcab2bb",
+      "head_train_n": 15,
+      "replay_max_error": 4.486905202938374e-08
+    },
+    {
+      "file": "r04_f02_i0.npz",
+      "sha256": "086a9a3d407d519eda99fbba4e59de44db5c7702dda120a003e9990de51da4f1",
+      "head_train_n": 16,
+      "replay_max_error": 8.347840910714888e-08
+    },
+    {
+      "file": "r04_f02_i1.npz",
+      "sha256": "b4edeb52199bef3eecc0b018ccca9c583c6cf0a773868404fbb39c6b84ddae1f",
+      "head_train_n": 16,
+      "replay_max_error": 1.8914634325462032e-07
+    },
+    {
+      "file": "r04_f02_i2.npz",
+      "sha256": "1580d2cd0733dd49ee66cfd6cd9f2ba15997dd2b2e1086e3fe90fd97c32ec99f",
+      "head_train_n": 15,
+      "replay_max_error": 1.418349497451371e-07
+    },
+    {
+      "file": "r04_f02_i3.npz",
+      "sha256": "6c603d57c9e059a1cd48abc756aad6b66c2eee2aaf72eb67cca14e379a34ad00",
+      "head_train_n": 15,
+      "replay_max_error": 7.309615612793863e-07
+    },
+    {
+      "file": "r04_f02_i4.npz",
+      "sha256": "e11cad5528e963d7843dc8158ad0dceefb9412b627a9d3c65f7939d707e244a5",
+      "head_train_n": 15,
+      "replay_max_error": 9.396641448278231e-08
+    },
+    {
+      "file": "r04_f03_i0.npz",
+      "sha256": "7a18ad36195b9b7d335cb4a5ed96051ec981a466c813106ee61b072496c904db",
+      "head_train_n": 16,
+      "replay_max_error": 1.0495636168506017e-07
+    },
+    {
+      "file": "r04_f03_i1.npz",
+      "sha256": "a4a7d73dca6634049963255057f56cff1407f307145595a02a2134b05853954d",
+      "head_train_n": 16,
+      "replay_max_error": 1.236538940338483e-07
+    },
+    {
+      "file": "r04_f03_i2.npz",
+      "sha256": "09d5e46776e01897cfb1e764e5bbc15850aaddba57eb38a3c1e5d304fb9ad5fb",
+      "head_train_n": 15,
+      "replay_max_error": 3.0385277605127214e-07
+    },
+    {
+      "file": "r04_f03_i3.npz",
+      "sha256": "2bba3c0bb51177c57de3aab0222cd2b61ffaca51b07609f7200a0dfe7972181d",
+      "head_train_n": 15,
+      "replay_max_error": 7.839500903994434e-08
+    },
+    {
+      "file": "r04_f03_i4.npz",
+      "sha256": "6a683d01a4b7e3bdeba9ebd6929ae099aca4c080013f500f0000618fe8a63f12",
+      "head_train_n": 15,
+      "replay_max_error": 1.2846450903047923e-07
+    },
+    {
+      "file": "r04_f04_i0.npz",
+      "sha256": "fe9b5cd50d263c453a2ed57979920b0feec7d4da6620a6ba16d593a7e5677f80",
+      "head_train_n": 16,
+      "replay_max_error": 1.1293611268392567e-07
+    },
+    {
+      "file": "r04_f04_i1.npz",
+      "sha256": "3bb702712951d1ddce60b02902a2281a93fd1f0428ad59841c3845629e82e973",
+      "head_train_n": 16,
+      "replay_max_error": 1.0519552062770998e-07
+    },
+    {
+      "file": "r04_f04_i2.npz",
+      "sha256": "e0f2e69d66077f5b8cf76885947b829565bb61fcb0e2c579f70d3bfcfbd3f880",
+      "head_train_n": 15,
+      "replay_max_error": 1.1581141734495759e-07
+    },
+    {
+      "file": "r04_f04_i3.npz",
+      "sha256": "ca9ccf0d678e7e5125b4192253a3cdf319445d1c1335007472b8e11246259d5a",
+      "head_train_n": 15,
+      "replay_max_error": 8.028345527266723e-08
+    },
+    {
+      "file": "r04_f04_i4.npz",
+      "sha256": "ce44241041d7d144239920049a5c27281de1df38a1d8b39f01e00f7d68029784",
+      "head_train_n": 15,
+      "replay_max_error": 1.4548325327767841e-07
+    },
+    {
+      "file": "r05_f00_i0.npz",
+      "sha256": "aad4f474aa7dbbf81ed4d7232727d07a56d2709c71fc1bdd6604e96dcbdd97b1",
+      "head_train_n": 16,
+      "replay_max_error": 1.3746709251472033e-07
+    },
+    {
+      "file": "r05_f00_i1.npz",
+      "sha256": "4d3a4cc5d1659df3df20f7bd00e3bdbc81434775b66b0c55fda4ce2d590096ea",
+      "head_train_n": 15,
+      "replay_max_error": 1.0073427259005285e-07
+    },
+    {
+      "file": "r05_f00_i2.npz",
+      "sha256": "9959eca54a81a7a8d9696c1cc6e6c4a9354e9a3dccda02dc54e1a4906f68fe89",
+      "head_train_n": 15,
+      "replay_max_error": 5.1274674089940575e-08
+    },
+    {
+      "file": "r05_f00_i3.npz",
+      "sha256": "fa70d2500ef38ad9bdffb20e9a777e003a26bc622fed2194682718f88863c1c5",
+      "head_train_n": 15,
+      "replay_max_error": 1.0914485550073127e-07
+    },
+    {
+      "file": "r05_f00_i4.npz",
+      "sha256": "5f4e1b1ab586a69c6e4167cdb86ae7c351ba6d025e308a25468d2e1478f7e9f9",
+      "head_train_n": 15,
+      "replay_max_error": 7.031485438346863e-08
+    },
+    {
+      "file": "r05_f01_i0.npz",
+      "sha256": "9b40340a5f277bd22820743f8c89f29ad53c1328b83ad99d6d5399f9cbd53987",
+      "head_train_n": 16,
+      "replay_max_error": 9.432859049418596e-08
+    },
+    {
+      "file": "r05_f01_i1.npz",
+      "sha256": "06904a27e51a3a9e73c774b49745dc2deb104e7a5a2efbe03367d441ec1fe12f",
+      "head_train_n": 16,
+      "replay_max_error": 4.938061017034645e-08
+    },
+    {
+      "file": "r05_f01_i2.npz",
+      "sha256": "798a43d973c9ba6e0ff6d6210760a20209b540298e911638e952b2aeb784e54c",
+      "head_train_n": 15,
+      "replay_max_error": 1.0831896568586075e-07
+    },
+    {
+      "file": "r05_f01_i3.npz",
+      "sha256": "1a285690a03a9d2e1d8b660e1016c464ce0c4fb28c251e4bb53d85f8f9060d65",
+      "head_train_n": 15,
+      "replay_max_error": 1.91196799281812e-07
+    },
+    {
+      "file": "r05_f01_i4.npz",
+      "sha256": "1fbd6e5e192e2b89a1b93e78bfc30a45f952562797b19d564c522b2f1ebcfd51",
+      "head_train_n": 15,
+      "replay_max_error": 1.7941972518809024e-07
+    },
+    {
+      "file": "r05_f02_i0.npz",
+      "sha256": "b901384b5ecf88beb5aa8c2397fe7aa742085eaa1628f81aa35222441b9370d4",
+      "head_train_n": 16,
+      "replay_max_error": 3.245966878062667e-07
+    },
+    {
+      "file": "r05_f02_i1.npz",
+      "sha256": "98e9b0a5a0b4d06dd891e158d8b7ea3191718a1ab6f66052431264844e18ab65",
+      "head_train_n": 16,
+      "replay_max_error": 1.7203924074227217e-07
+    },
+    {
+      "file": "r05_f02_i2.npz",
+      "sha256": "b04441ca15f88321aa62e5986b6153f11a080cdd61cf9de2717a77276f9d3e48",
+      "head_train_n": 15,
+      "replay_max_error": 6.177015904329508e-08
+    },
+    {
+      "file": "r05_f02_i3.npz",
+      "sha256": "797266c4a58820dae15a21b10cc27a62375fbbaa29e43051fb05445b807f515e",
+      "head_train_n": 15,
+      "replay_max_error": 1.697421625757034e-07
+    },
+    {
+      "file": "r05_f02_i4.npz",
+      "sha256": "849c6fc3a448e43f080840f849d151f6a2b79c3c4b665e1533b2d3e43b97aec6",
+      "head_train_n": 15,
+      "replay_max_error": 1.0276178144530412e-07
+    },
+    {
+      "file": "r05_f03_i0.npz",
+      "sha256": "52293d150400e674135b3dfe30e2336062113e2ec554cfdfea4031d3ebead829",
+      "head_train_n": 16,
+      "replay_max_error": 6.426536039438879e-08
+    },
+    {
+      "file": "r05_f03_i1.npz",
+      "sha256": "5d2c79d84759170c882b2f73fb1bf3fd63719906a71cb52d29c2d050e9b28525",
+      "head_train_n": 16,
+      "replay_max_error": 1.612815271334611e-07
+    },
+    {
+      "file": "r05_f03_i2.npz",
+      "sha256": "611d05315ab6c0b8f478dbcdd0eb2ee7af359aaa44670b2e165711a6b8d29ae0",
+      "head_train_n": 15,
+      "replay_max_error": 1.1289536250291832e-07
+    },
+    {
+      "file": "r05_f03_i3.npz",
+      "sha256": "13bd607672f1888d90f9c5cee6da6334fff645ca3e97bfc21c8cba5c98d17c8e",
+      "head_train_n": 15,
+      "replay_max_error": 9.088724001182769e-08
+    },
+    {
+      "file": "r05_f03_i4.npz",
+      "sha256": "313b55ef7afa93ffda6ff37201a1b6e8847d40a67d075c1a0a4af3ecd218aeb4",
+      "head_train_n": 15,
+      "replay_max_error": 7.802968571279933e-08
+    },
+    {
+      "file": "r05_f04_i0.npz",
+      "sha256": "e477755d46934aff9b4f80260e996e11c985862b35d23a026efe9200749bd00b",
+      "head_train_n": 16,
+      "replay_max_error": 1.0025946217684378e-07
+    },
+    {
+      "file": "r05_f04_i1.npz",
+      "sha256": "d5ccd914254fdfa7477e1c8997b6cd9cb4707791e83eaf2ad9e2d66dbbda2a1e",
+      "head_train_n": 16,
+      "replay_max_error": 1.5179653769376023e-07
+    },
+    {
+      "file": "r05_f04_i2.npz",
+      "sha256": "090d70e839f374dec099fb19ce37fa66d2419e3acbde19859eb2805e2ae9d642",
+      "head_train_n": 15,
+      "replay_max_error": 1.6438961014664244e-07
+    },
+    {
+      "file": "r05_f04_i3.npz",
+      "sha256": "c97691b2cd345dae401c4567df7f94a1c37ff573b5228ce7b34e8f6b2dd40130",
+      "head_train_n": 15,
+      "replay_max_error": 1.4325749253529807e-07
+    },
+    {
+      "file": "r05_f04_i4.npz",
+      "sha256": "fa4cf54d53a1be0914c0547ecc9d5befd3516b6cd8f2c004fc4ea79e597fd7da",
+      "head_train_n": 15,
+      "replay_max_error": 8.019722175234278e-08
+    },
+    {
+      "file": "r06_f00_i0.npz",
+      "sha256": "32e60896839dd939af0ccc30c612cf34670bf1e9f580cab0ae6427b65613e1c2",
+      "head_train_n": 16,
+      "replay_max_error": 8.949496616006414e-08
+    },
+    {
+      "file": "r06_f00_i1.npz",
+      "sha256": "a80b3d5b12bb637572fd83a9ab6d9bfed99ec8ceaae0764395a2d0c25ea3af24",
+      "head_train_n": 15,
+      "replay_max_error": 1.585328028852473e-07
+    },
+    {
+      "file": "r06_f00_i2.npz",
+      "sha256": "8d92edf56937ca802779a4790f891208d2799b6e2c88c977b25f10a6243b6f5b",
+      "head_train_n": 15,
+      "replay_max_error": 1.4761084221256993e-07
+    },
+    {
+      "file": "r06_f00_i3.npz",
+      "sha256": "2c6c34096fe74e2c9928b639e9f6004421f09ed8e84772b56ef5967f829338a7",
+      "head_train_n": 15,
+      "replay_max_error": 1.3812548582681217e-07
+    },
+    {
+      "file": "r06_f00_i4.npz",
+      "sha256": "a60c57279481b2f6abb60b18a42ceeb4970ee1471a065e51d246c51e7eef7ecd",
+      "head_train_n": 15,
+      "replay_max_error": 1.58386340154415e-07
+    },
+    {
+      "file": "r06_f01_i0.npz",
+      "sha256": "0c1b5c7281710a38c7991181761282fab6811ad62b43632928b9de497f3d14bb",
+      "head_train_n": 16,
+      "replay_max_error": 9.247730296813028e-08
+    },
+    {
+      "file": "r06_f01_i1.npz",
+      "sha256": "09166f0fd117a8d856ffb018c0aeb9268dedb256029abe158d7643d40b8c12b9",
+      "head_train_n": 16,
+      "replay_max_error": 1.0798185756666356e-07
+    },
+    {
+      "file": "r06_f01_i2.npz",
+      "sha256": "cf549a0e71b098bbb6d8d471845fd4c6ce14f3bc7b38d913e4df8484c21f89c2",
+      "head_train_n": 15,
+      "replay_max_error": 1.074858354682684e-07
+    },
+    {
+      "file": "r06_f01_i3.npz",
+      "sha256": "5cf85b49171d72190cd43a4cbd16791d855fd39081ea5a8579a5fba19aef48ba",
+      "head_train_n": 15,
+      "replay_max_error": 5.6960723471277674e-08
+    },
+    {
+      "file": "r06_f01_i4.npz",
+      "sha256": "964ca3ec9467a5b5ee71a9a63218744c42b6df408eb180910ad48d742d14427c",
+      "head_train_n": 15,
+      "replay_max_error": 9.314866844523095e-08
+    },
+    {
+      "file": "r06_f02_i0.npz",
+      "sha256": "c49d27920b19e19539dc40b2de591e94a979d62ceb5d5c4bc4d314174107c0b3",
+      "head_train_n": 16,
+      "replay_max_error": 1.662630447762936e-07
+    },
+    {
+      "file": "r06_f02_i1.npz",
+      "sha256": "be099d26adb4e5bf4d85732f651bb2f8ca629e69e9f7e3e829492fd104c6e7e5",
+      "head_train_n": 16,
+      "replay_max_error": 8.940696716308594e-08
+    },
+    {
+      "file": "r06_f02_i2.npz",
+      "sha256": "de70206432c6bf459c3d2e80f4039b460398dbf8e58110a729a855872d7e8bb9",
+      "head_train_n": 15,
+      "replay_max_error": 1.5887573161232904e-07
+    },
+    {
+      "file": "r06_f02_i3.npz",
+      "sha256": "57f262de7dbfe86a3bb600ad51a1cbdffabd9f4baf0202a3b0eb5ed297fdf4fe",
+      "head_train_n": 15,
+      "replay_max_error": 6.750975528602154e-08
+    },
+    {
+      "file": "r06_f02_i4.npz",
+      "sha256": "728ad1b8d05480922a1d6d7c984c3b678acac0267bf40ea5cfd4ca94724c73a6",
+      "head_train_n": 15,
+      "replay_max_error": 6.728172299297341e-07
+    },
+    {
+      "file": "r06_f03_i0.npz",
+      "sha256": "c06d60e41ebb4debb2c8067a08514a7167bb8332adba0a5c3b92621f568e84ac",
+      "head_train_n": 16,
+      "replay_max_error": 1.3442674895447482e-07
+    },
+    {
+      "file": "r06_f03_i1.npz",
+      "sha256": "804474c857568db51ec9d305ad3d1e134e8d88fdacb84299183e46c94e426556",
+      "head_train_n": 16,
+      "replay_max_error": 2.5327024089083494e-07
+    },
+    {
+      "file": "r06_f03_i2.npz",
+      "sha256": "f6f17a918cca88114aa8b3728ca2000818cf004f773722c7809ccfbed946c6ae",
+      "head_train_n": 15,
+      "replay_max_error": 7.894662457097468e-08
+    },
+    {
+      "file": "r06_f03_i3.npz",
+      "sha256": "65d87c2a5a2c54d94e9f6f510548c6e54fe6a066476679b86b314acc145e86b9",
+      "head_train_n": 15,
+      "replay_max_error": 1.0068130384954799e-07
+    },
+    {
+      "file": "r06_f03_i4.npz",
+      "sha256": "2a99312cd9ae5a251013eb36fd54f8b293eee046e389cf97450df28098c82bc0",
+      "head_train_n": 15,
+      "replay_max_error": 2.6006320558158436e-07
+    },
+    {
+      "file": "r06_f04_i0.npz",
+      "sha256": "a6a9695476bfac27093e829a27382e8e56854d6e47e5bc8ebca11245d1b48e88",
+      "head_train_n": 16,
+      "replay_max_error": 1.5962991473106314e-07
+    },
+    {
+      "file": "r06_f04_i1.npz",
+      "sha256": "88616f952cd3074a25bc344692313945a3bbe62a5b0b54e181b4027ff55762f5",
+      "head_train_n": 16,
+      "replay_max_error": 7.600912191318976e-08
+    },
+    {
+      "file": "r06_f04_i2.npz",
+      "sha256": "ec8ccf5daf97a6c701ac659fdaaf75ba5e820d5ce1c8b451e28106faa29ad1f7",
+      "head_train_n": 15,
+      "replay_max_error": 1.7919131034549451e-07
+    },
+    {
+      "file": "r06_f04_i3.npz",
+      "sha256": "7ebfd1bdb326834ab1c862f8fda03735536e4f26996f6849468b3cc191b1831a",
+      "head_train_n": 15,
+      "replay_max_error": 4.4825941236670275e-08
+    },
+    {
+      "file": "r06_f04_i4.npz",
+      "sha256": "98d7d3e1b9e15ce316c033205f50afab0a35c08bd7d782b12f10304e75720ebf",
+      "head_train_n": 15,
+      "replay_max_error": 4.533950875851289e-08
+    },
+    {
+      "file": "r07_f00_i0.npz",
+      "sha256": "f86a932aa793eb1ab17dca2f803336ab6d448c92d1b790e378a9aa06f9cf7689",
+      "head_train_n": 16,
+      "replay_max_error": 1.0785902757048937e-07
+    },
+    {
+      "file": "r07_f00_i1.npz",
+      "sha256": "06f79512f4d064b69ecb7e2efe54ec4ea000abdc1edfe2e3be7e3c4d2e36a4d7",
+      "head_train_n": 15,
+      "replay_max_error": 9.541213513708513e-08
+    },
+    {
+      "file": "r07_f00_i2.npz",
+      "sha256": "8d9f7c3b227c4ead5c7c8db28f5e76e2ba6836e1b146602fe0c03d96e9522129",
+      "head_train_n": 15,
+      "replay_max_error": 7.44906625271824e-08
+    },
+    {
+      "file": "r07_f00_i3.npz",
+      "sha256": "3a00b014c5236caadd5c89969d3b9bfe497268afa22e3c1c37925209432a704e",
+      "head_train_n": 15,
+      "replay_max_error": 9.795309913185335e-08
+    },
+    {
+      "file": "r07_f00_i4.npz",
+      "sha256": "a7073d2bd86e74b329e4d945dfe8a79749fb2e1a00855a40fcef43401bf8172f",
+      "head_train_n": 15,
+      "replay_max_error": 1.648880260107788e-07
+    },
+    {
+      "file": "r07_f01_i0.npz",
+      "sha256": "04aea961611df99cb28b281a5673ae2d44c26b0ae3c5cc1b55d19dba9d96fd0b",
+      "head_train_n": 16,
+      "replay_max_error": 1.0776083643471157e-07
+    },
+    {
+      "file": "r07_f01_i1.npz",
+      "sha256": "05a7ff3089d267bf4f6693f0dd9e729394eb68eb53c1197fe98287f8add3f362",
+      "head_train_n": 16,
+      "replay_max_error": 1.62574253337322e-07
+    },
+    {
+      "file": "r07_f01_i2.npz",
+      "sha256": "c1f83c51b358ea72d8062ff1dcb3c615d7a72062efa0b1f9a02f517786818eeb",
+      "head_train_n": 15,
+      "replay_max_error": 1.805138240690285e-07
+    },
+    {
+      "file": "r07_f01_i3.npz",
+      "sha256": "698bed2aaceece546aff16918aec2de95e586a14ec042a1f69a2adff44c17528",
+      "head_train_n": 15,
+      "replay_max_error": 9.140463674839339e-08
+    },
+    {
+      "file": "r07_f01_i4.npz",
+      "sha256": "5bf1ba2259dedc337452b63da9207221b8ecfbdaf075130373e5a9e07d6fb646",
+      "head_train_n": 15,
+      "replay_max_error": 7.957308076345093e-08
+    },
+    {
+      "file": "r07_f02_i0.npz",
+      "sha256": "681777bbf59822d2f0b79c6268852bc46764569d5fe60950bbe9586e8f936603",
+      "head_train_n": 16,
+      "replay_max_error": 1.494341564378665e-07
+    },
+    {
+      "file": "r07_f02_i1.npz",
+      "sha256": "88eec6d4b5a30525eaba401b7d981b6dbf9b02fcf82c5810e4923887157d75e9",
+      "head_train_n": 16,
+      "replay_max_error": 3.8915539429806856e-08
+    },
+    {
+      "file": "r07_f02_i2.npz",
+      "sha256": "31d5a07c11af2d65e499955b74616839aaa7c848eb2e78a46b6c237be697ebb4",
+      "head_train_n": 15,
+      "replay_max_error": 2.872483960726646e-07
+    },
+    {
+      "file": "r07_f02_i3.npz",
+      "sha256": "ab67b9a8ee4377fd14233b25cfefb6bd83bfb1f76b5db3de1a0598d0c946cd05",
+      "head_train_n": 15,
+      "replay_max_error": 8.278504368131046e-08
+    },
+    {
+      "file": "r07_f02_i4.npz",
+      "sha256": "78da136259eea4346539988c505dc926d6c30a543b4341bf82bd62a5ac7377bd",
+      "head_train_n": 15,
+      "replay_max_error": 1.0816970976573748e-07
+    },
+    {
+      "file": "r07_f03_i0.npz",
+      "sha256": "4809216fd729cfd518c1075bcd15a148c724f772a92838c0c4274605761be9f3",
+      "head_train_n": 16,
+      "replay_max_error": 6.964223252248214e-08
+    },
+    {
+      "file": "r07_f03_i1.npz",
+      "sha256": "a37f004799d25dfea5e7cbca4d688f9663632cc224a15c5526f71291038e7ffb",
+      "head_train_n": 16,
+      "replay_max_error": 4.602933496578032e-07
+    },
+    {
+      "file": "r07_f03_i2.npz",
+      "sha256": "b3c48fa6a604710c835c9cb0b13d19e9ddb1588c4763a17c811a7f83fa7d169b",
+      "head_train_n": 15,
+      "replay_max_error": 1.8555284386767568e-07
+    },
+    {
+      "file": "r07_f03_i3.npz",
+      "sha256": "826efdcb1d4977da5c0ffc78027265d594149915d21f1e5275ac1dbc8d9b9d9a",
+      "head_train_n": 15,
+      "replay_max_error": 4.97854248937557e-08
+    },
+    {
+      "file": "r07_f03_i4.npz",
+      "sha256": "d4362af1d803f0b78bdcf5602cbde4f0c12534c5a1f2d24644d0ac3d7777a66c",
+      "head_train_n": 15,
+      "replay_max_error": 9.220093488693237e-08
+    },
+    {
+      "file": "r07_f04_i0.npz",
+      "sha256": "100bf91ba7c52503d4acee4518c2366cd7dffeefbf6c8e23632005ba6af434aa",
+      "head_train_n": 16,
+      "replay_max_error": 7.512405043874626e-08
+    },
+    {
+      "file": "r07_f04_i1.npz",
+      "sha256": "4dbcdf1fcbff3bf5ed4c340b55ea1b729ad43891ebad8363f01a3071fa89fffd",
+      "head_train_n": 16,
+      "replay_max_error": 9.973937609153438e-08
+    },
+    {
+      "file": "r07_f04_i2.npz",
+      "sha256": "4c2b6cd1edb3d81c05e0a99d5733befbb53199f77a5c2759e23906c59370c6ab",
+      "head_train_n": 15,
+      "replay_max_error": 1.224575609803935e-07
+    },
+    {
+      "file": "r07_f04_i3.npz",
+      "sha256": "c136328ecc1d86992064362217bd40c66ba0ce0cfd14209d47642d89de387fc0",
+      "head_train_n": 15,
+      "replay_max_error": 7.581458086325377e-08
+    },
+    {
+      "file": "r07_f04_i4.npz",
+      "sha256": "5fee328972ea8e739d823a561b2304e37df481267bc6cf17f4b358fb30ab9684",
+      "head_train_n": 15,
+      "replay_max_error": 9.58483057367232e-08
+    },
+    {
+      "file": "r08_f00_i0.npz",
+      "sha256": "3ab40126ac1af8111235be976d7797f31b2ba3c87bddbde08236d9e24f283cd6",
+      "head_train_n": 16,
+      "replay_max_error": 7.781877064960696e-08
+    },
+    {
+      "file": "r08_f00_i1.npz",
+      "sha256": "c60651088ed62706bf0c0140dfe6448f49a9c2c7e0073ed6d7a0bb952872a3fc",
+      "head_train_n": 15,
+      "replay_max_error": 8.628575322300325e-08
+    },
+    {
+      "file": "r08_f00_i2.npz",
+      "sha256": "216fdcff735241efe5bcac767bc4d46e5d44f36cb89226b8a30c2daf320f2003",
+      "head_train_n": 15,
+      "replay_max_error": 1.7299316823482513e-07
+    },
+    {
+      "file": "r08_f00_i3.npz",
+      "sha256": "7e4977ba413e54be9652d7b9bfc7a32ceed36e53541b43a94841d777a5de45a0",
+      "head_train_n": 15,
+      "replay_max_error": 5.5814994785741145e-08
+    },
+    {
+      "file": "r08_f00_i4.npz",
+      "sha256": "edeec7ec57b45a14ae738a7a6d9b2df73eeb74b61f98054d026b0a8901bdfc12",
+      "head_train_n": 15,
+      "replay_max_error": 1.6293311200232807e-07
+    },
+    {
+      "file": "r08_f01_i0.npz",
+      "sha256": "83486d18d98218cf76eb4049ac0610a639f5d46a115dea84957d42640da0c054",
+      "head_train_n": 16,
+      "replay_max_error": 1.774740598647906e-07
+    },
+    {
+      "file": "r08_f01_i1.npz",
+      "sha256": "2fd4df24929c7eb549017eeb3d247f4e1738647ace6be9fa72865821ec6b884c",
+      "head_train_n": 16,
+      "replay_max_error": 1.1462437884968146e-07
+    },
+    {
+      "file": "r08_f01_i2.npz",
+      "sha256": "2239a6cf1d283bc5059458c665f191f8a6e933af2a81286c573d748e709454be",
+      "head_train_n": 15,
+      "replay_max_error": 1.0490043392263892e-07
+    },
+    {
+      "file": "r08_f01_i3.npz",
+      "sha256": "27ebdd37a847a6d71f1a3d64b54e4b5c661495e272aba5640a994c9be2fd6282",
+      "head_train_n": 15,
+      "replay_max_error": 1.1211079431819315e-07
+    },
+    {
+      "file": "r08_f01_i4.npz",
+      "sha256": "7716ebbfb56c912d624dc3a8ac9cc44c044d6b8129355c8d1d8fdf7f9286b479",
+      "head_train_n": 15,
+      "replay_max_error": 1.3729184861199784e-07
+    },
+    {
+      "file": "r08_f02_i0.npz",
+      "sha256": "862799947b389520c638806feaafe3c6ee2884aa1981e42ca6dcde7d16b5ed22",
+      "head_train_n": 16,
+      "replay_max_error": 2.522270862170828e-07
+    },
+    {
+      "file": "r08_f02_i1.npz",
+      "sha256": "36df3a9c133a954ea08609dbbea3d27f3e99cfa6395ef998ccf689051ac63ebd",
+      "head_train_n": 16,
+      "replay_max_error": 1.2328855814730533e-07
+    },
+    {
+      "file": "r08_f02_i2.npz",
+      "sha256": "300787fcd15061750e45e0cd5a52ddaf5fbd237d4698a5080d4abb572c9127ee",
+      "head_train_n": 15,
+      "replay_max_error": 1.417373496903629e-07
+    },
+    {
+      "file": "r08_f02_i3.npz",
+      "sha256": "9840aa5064514e49da17231c58cf14e1262f1914c00756f0129336d720a6ae95",
+      "head_train_n": 15,
+      "replay_max_error": 3.233241537836662e-07
+    },
+    {
+      "file": "r08_f02_i4.npz",
+      "sha256": "63916aeee7b81dbdea8d50cb0b6fcee8dc4e158a8c34df9149ac0fb7706c5250",
+      "head_train_n": 15,
+      "replay_max_error": 1.4300194550731504e-07
+    },
+    {
+      "file": "r08_f03_i0.npz",
+      "sha256": "8a7c618405683cf003e5c66255be284f63863c933493309433b7a4575e15117e",
+      "head_train_n": 16,
+      "replay_max_error": 1.1658162935024308e-07
+    },
+    {
+      "file": "r08_f03_i1.npz",
+      "sha256": "4e4a169a526e0694ea2c4253deb626b92db6dbbc500a751f950eccbc0107fa24",
+      "head_train_n": 16,
+      "replay_max_error": 6.25791331809733e-08
+    },
+    {
+      "file": "r08_f03_i2.npz",
+      "sha256": "ec5bf1896ab4a39385453bfaf30c6001494b60e7103bb4534216b998e0d1c488",
+      "head_train_n": 15,
+      "replay_max_error": 1.1213123798925473e-07
+    },
+    {
+      "file": "r08_f03_i3.npz",
+      "sha256": "e5f5398f6e2c88030cf85959da378e760fdf51125f232638e2791039135bbbf5",
+      "head_train_n": 15,
+      "replay_max_error": 6.087649498387471e-08
+    },
+    {
+      "file": "r08_f03_i4.npz",
+      "sha256": "b98e855dde428719d9cb8e9b86b86dd1f758ee635c6869a6733ca836210d2daa",
+      "head_train_n": 15,
+      "replay_max_error": 1.554187663010964e-07
+    },
+    {
+      "file": "r08_f04_i0.npz",
+      "sha256": "e90ec01c68e1f955d390b922d70abd451b6999b2ebcde10c115a2cf7aaebcfcd",
+      "head_train_n": 16,
+      "replay_max_error": 7.762629306018454e-08
+    },
+    {
+      "file": "r08_f04_i1.npz",
+      "sha256": "e6b196063d19c4ee095a24790ae47e652e8296b0a4adab400c784ff22540977d",
+      "head_train_n": 16,
+      "replay_max_error": 2.6114812157196354e-07
+    },
+    {
+      "file": "r08_f04_i2.npz",
+      "sha256": "8ff608ac8c2ac1205ee17c56ea9f865e09834a5672563c2dea37e4081f16bad2",
+      "head_train_n": 15,
+      "replay_max_error": 1.4873997618292112e-07
+    },
+    {
+      "file": "r08_f04_i3.npz",
+      "sha256": "6264c55b84472cb32f20cb021414172fb00de7ea11593da29a87c114a60575fb",
+      "head_train_n": 15,
+      "replay_max_error": 9.190942334980079e-08
+    },
+    {
+      "file": "r08_f04_i4.npz",
+      "sha256": "ece17357e8c4a0cacc56dc5f69c9b26f239e3b6918b8ced658cebc76f6e5cb0f",
+      "head_train_n": 15,
+      "replay_max_error": 9.366561400103723e-08
+    },
+    {
+      "file": "r09_f00_i0.npz",
+      "sha256": "e36ad65ba37d769fab8f9ac373e32cb7a8a5b028d25af5d735b5c8afbff8371c",
+      "head_train_n": 16,
+      "replay_max_error": 1.8510116735204196e-07
+    },
+    {
+      "file": "r09_f00_i1.npz",
+      "sha256": "f7e9a0acfc6fb66a6896e1a8e09e920c329de5581ca66b0f3d14202c98e16887",
+      "head_train_n": 15,
+      "replay_max_error": 2.8212045166675637e-07
+    },
+    {
+      "file": "r09_f00_i2.npz",
+      "sha256": "2279cae413f147cdc967aabd0e5de85ab9456b99e55158b4d75f7ea40aab4d14",
+      "head_train_n": 15,
+      "replay_max_error": 2.579838036531612e-07
+    },
+    {
+      "file": "r09_f00_i3.npz",
+      "sha256": "64b65c6c6ef78ae35ea077798698a94fca8160003d01acd99af9d352135e308b",
+      "head_train_n": 15,
+      "replay_max_error": 9.400491404742972e-08
+    },
+    {
+      "file": "r09_f00_i4.npz",
+      "sha256": "35de3191178a9dce256ee5a9c35ace50ccc0c1e7b0c441a5b28b5120009ba740",
+      "head_train_n": 15,
+      "replay_max_error": 1.2803428892094182e-07
+    },
+    {
+      "file": "r09_f01_i0.npz",
+      "sha256": "4cf5f8cfbc73b8ec4c001b6a8268a0294fb032dda9b603dbe404135c356572a5",
+      "head_train_n": 16,
+      "replay_max_error": 6.73050923882812e-08
+    },
+    {
+      "file": "r09_f01_i1.npz",
+      "sha256": "99a0c3563d94be749d97728c760088fb66c418d5706fbbc51c43a20708127079",
+      "head_train_n": 16,
+      "replay_max_error": 9.589909927276707e-08
+    },
+    {
+      "file": "r09_f01_i2.npz",
+      "sha256": "327d8a20fb041b8b178db3637b0fd67a78f44d6061af15a84b244a3670221655",
+      "head_train_n": 15,
+      "replay_max_error": 4.094304906221424e-08
+    },
+    {
+      "file": "r09_f01_i3.npz",
+      "sha256": "b1b88e626fd5758a42220e47cae56af798b4fd8cdde643089efa097688465acb",
+      "head_train_n": 15,
+      "replay_max_error": 1.3242826948922648e-07
+    },
+    {
+      "file": "r09_f01_i4.npz",
+      "sha256": "c4b39c1cc5ac84f32702ff860551246f953ca3db0e5ae1cd7bf2bb81c0398cc5",
+      "head_train_n": 15,
+      "replay_max_error": 1.0256238569539278e-07
+    },
+    {
+      "file": "r09_f02_i0.npz",
+      "sha256": "e84aa681348cb78087b54212c0ec8210a7f45193db4183b51d961234c469ffdd",
+      "head_train_n": 16,
+      "replay_max_error": 9.487757063331159e-08
+    },
+    {
+      "file": "r09_f02_i1.npz",
+      "sha256": "1db2e402e922d48f386cd8f5ef6531dbdd4ab5648f693d614d1b89f1db5e7063",
+      "head_train_n": 16,
+      "replay_max_error": 1.71880299305871e-07
+    },
+    {
+      "file": "r09_f02_i2.npz",
+      "sha256": "70d8855e8300d0281c0f2378d9a81a94563be714985433f5c5357ee83c1f7389",
+      "head_train_n": 15,
+      "replay_max_error": 2.9340614832173983e-07
+    },
+    {
+      "file": "r09_f02_i3.npz",
+      "sha256": "5cdc9868bb31650f35d66cedf3a2fa4fa9e518f407023a6199e69018e5e97a4d",
+      "head_train_n": 15,
+      "replay_max_error": 1.4204033121911763e-07
+    },
+    {
+      "file": "r09_f02_i4.npz",
+      "sha256": "a8b544b21a885cb9b0f45217df8f26456c058af3940e7601ba77f20ea7795aed",
+      "head_train_n": 15,
+      "replay_max_error": 7.724298572986399e-08
+    },
+    {
+      "file": "r09_f03_i0.npz",
+      "sha256": "6eb9695b9505b9dd049655e109731964ff99a759b263bbed5b0d2b519577def1",
+      "head_train_n": 16,
+      "replay_max_error": 4.868488757969747e-08
+    },
+    {
+      "file": "r09_f03_i1.npz",
+      "sha256": "4f39a072ed3835d0e9782a4f12fd7faf9fa3b0936c8c554602bb2efd0031eb1c",
+      "head_train_n": 16,
+      "replay_max_error": 1.1348956316381553e-07
+    },
+    {
+      "file": "r09_f03_i2.npz",
+      "sha256": "ae91e23e751fe1f7a2576a3d9e0c78b56f129a4954134e30144f557a1b3cd798",
+      "head_train_n": 15,
+      "replay_max_error": 1.1522178221604062e-07
+    },
+    {
+      "file": "r09_f03_i3.npz",
+      "sha256": "d4e4dd18c77e8768bdc136d7e0897fdcf673236a9177db2629a08cca4d140aa2",
+      "head_train_n": 15,
+      "replay_max_error": 9.674207890331132e-08
+    },
+    {
+      "file": "r09_f03_i4.npz",
+      "sha256": "ada7f915ac2e977868bf20ebe324b868176da5092f4f572c336e4946e8847f72",
+      "head_train_n": 15,
+      "replay_max_error": 1.0493054691806947e-07
+    },
+    {
+      "file": "r09_f04_i0.npz",
+      "sha256": "2a977925b9af222ae31f1423cdf34b6cfa7bb447f3a1b5ea3a7923e11cd1c342",
+      "head_train_n": 16,
+      "replay_max_error": 2.0150095224324982e-07
+    },
+    {
+      "file": "r09_f04_i1.npz",
+      "sha256": "098e38959f965c64a33f6617b38cabea84a7b14363b32d9f41045ecc654c2c2e",
+      "head_train_n": 16,
+      "replay_max_error": 9.163994138527976e-08
+    },
+    {
+      "file": "r09_f04_i2.npz",
+      "sha256": "60b87bf8dfc81fdb7f5802f8d5e843a7cd56f14a7ce9837bb7782fcf006f978e",
+      "head_train_n": 15,
+      "replay_max_error": 1.7624995785059383e-07
+    },
+    {
+      "file": "r09_f04_i3.npz",
+      "sha256": "71e83db4d156600ff499e16ad203f85200573d3903eee6927faa5198cb13d3b4",
+      "head_train_n": 15,
+      "replay_max_error": 9.684461271808331e-08
+    },
+    {
+      "file": "r09_f04_i4.npz",
+      "sha256": "f81b5925c911c1804eb27aa30b75706755353e7a7305a31e5f7f904f4b98b50e",
+      "head_train_n": 15,
+      "replay_max_error": 1.0534201949630173e-07
+    }
+  ]
+}

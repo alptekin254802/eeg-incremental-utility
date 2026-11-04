@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "model_fits": 0,
+  "source_generator_sha256": "8d6fcb17ac920c85281629461abaf546473a06a9d5ea2335f91dd228ba32e08b",
+  "input_hashes_unchanged": true,
+  "all_numeric_table_cells_unchanged": true,
+  "figures": {
+    "repeat_increments": {
+      "archived_plot_records_equal": true,
+      "before_after_plot_records_equal": true,
+      "old_pdf_sha256": "536104e9b6c4f85f878b7526a92be773112f25a87dd1f9016ff5c533ee645c3c",
+      "new_pdf_sha256": "1fe9468a8bccfd855ef4b434fc3dcf32c23569bbcff41c0cbb3099dbddc9047d",
+      "new_label": "Primary procedure"
+    },
+    "acquisition_phase_controls": {
+      "archived_plot_records_equal": true,
+      "before_after_plot_records_equal": true,
+      "old_pdf_sha256": "9597ce85f19b6860d87777bddf0bf49855638c43272d52a0d8fe01e6220d42ba",
+      "new_pdf_sha256": "a35c6aa8ec0a42360806f75fab37ad1f070298bc1fedce89197194d515d3d62e",
+      "new_label": "Primary procedure"
+    },
+    "participant_changes": {
+      "archived_plot_records_equal": true,
+      "before_after_plot_records_equal": true,
+      "old_pdf_sha256": "8bdd64a7023e52f04f1017bcca991cd974b03d1491474f784a8a5e1993379a17",
+      "new_pdf_sha256": "7caf60db88d98c6e796fb25601cfd3841f3898c6e8e4af61998fe1e72f011c53",
+      "new_label": "Primary procedure"
+    }
+  }
+}

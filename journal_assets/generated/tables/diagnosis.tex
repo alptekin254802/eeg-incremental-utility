@@ -1,6 +1,6 @@
 \begin{table}[!htbp]
 \centering\small
-\caption{Diagnosis-status sensitivity: mean results in the 84-participant subset.}
+\caption{Diagnosis-status sensitivity in 84 participants: original comparisons and exploratory entropy/Hjorth increments.}
 \label{tab:diagnosis}
 \setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.14}
 \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrr@{}}
@@ -9,7 +9,11 @@ Model or comparison & Log loss & AUROC & Brier\\\midrule
 Non-EEG baseline & 0.5971 & 0.7059 & 0.2037\\
 Primary procedure & 0.6125 & 0.6877 & 0.2051\\
 \midrule EEG increment & $-0.0155$ & $-0.0183$ & $-0.0015$\\
+\midrule\multicolumn{4}{l}{\textit{Exploratory entropy/Hjorth increments}}\\
+Adjustment & $\Delta$LL & $\Delta$AUROC & $\Delta$Brier\\\midrule
+None & $+0.0094$ & $+0.0022$ & $+0.0018$\\
+Device + quality & $+0.0110$ & $+0.0022$ & $+0.0041$\\
 \bottomrule\end{tabularx}
-\par\smallskip\begin{minipage}{\textwidth}\footnotesize The last row gives oriented differences, not absolute performance. The target is exact diagnosed yes/no, with new stratified folds; these results are not an independent replication.\end{minipage}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize Positive increments favor EEG; original rows above report absolute metrics except for the primary EEG increment. Both new comparisons use the recorded diagnosis-status partitions and add the same adjustment to both paired models. Each entropy/Hjorth gain was positive in 7/10 dependent repeats. Conditional 95\% log-loss ranges were $[-0.0592,+0.0778]$ without adjustment and $[-0.0577,+0.0744]$ with device and quality, from 10,000 class-stratified participant resamples with predictions fixed. Adjusted baseline log loss was 0.5822. These are exploratory comparisons, not independent replication.\end{minipage}
 \end{table}
 

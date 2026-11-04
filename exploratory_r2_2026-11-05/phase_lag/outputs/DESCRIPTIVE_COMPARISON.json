@@ -1,0 +1,9 @@
+{
+  "observed_delta_ll": 0.012678310254850899,
+  "control_mean_delta_ll": -0.011429154149681462,
+  "control_min_delta_ll": -0.031444614737382096,
+  "control_max_delta_ll": 0.02169467856614208,
+  "observed_minus_control_mean": 0.02410746440453236,
+  "controls_above_observed": 1,
+  "positive_control_means": 3
+}

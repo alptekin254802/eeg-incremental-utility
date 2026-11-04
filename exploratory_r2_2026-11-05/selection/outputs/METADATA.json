@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-05",
+  "analysis_status": "exploratory",
+  "model_fitting": false,
+  "source_sha256": {
+    "audit\\preregistered_analysis\\PRIMARY_OUTER_PREDICTIONS.csv": "df58c49de076a62d78e53faf9888fa42ff6950f40876a602c2757521da9ac13e",
+    "audit\\preregistered_analysis\\PRIMARY_INNER_SELECTION.csv": "2e5a1c36656ab0082ab9b5cbaa92b76b77ff043d6da6ac55e9f69f710598f874"
+  },
+  "participants": 96,
+  "positive_labels": 41,
+  "worst_repeat_zero_based": 4,
+  "selection_share_of_primary_deficit": 0.7688173726723365,
+  "independent_weights": {
+    "E0": 0.44,
+    "E1": 0.0,
+    "E2": 0.56
+  },
+  "repeat_worse_than_fixed": {
+    "E0": 10,
+    "E1": 7,
+    "E2": 8
+  },
+  "user_correction_2026_11_05": "9/10 refers to the fold-independent mixture. User confirmed E0=10/10, E1=7/10, E2=8/10, mixture=9/10. No unresolved discrepancy.",
+  "all_requested_numbers_verified": true
+}

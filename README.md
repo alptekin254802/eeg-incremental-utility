@@ -17,13 +17,15 @@ The exploratory permutation-entropy/Hjorth result was favorable (**+0.0267**),
 but weakened with acquisition adjustment and was similar in Fourier-phase controls
 (**+0.0271**). It does not establish a specific physiological mechanism.
 
-Further analyses examined nonlinear learners, device transfer, training size,
-controlled simulations, and an independent adult-data conceptual comparison.
-One fixed-budget EEGNet-like learned representation also worsened log loss
-(**ΔLL = −0.1006**). Its conditional participant-resampling range
-**[−0.2368, +0.0267]** includes zero and omits training and selection uncertainty.
-These results do not establish an upper bound on EEG utility or validate a clinical
-diagnostic system.
+Selection accounted for about three quarters of the primary deficit: the selector
+performed worse than each fixed representation. Exploratory diagnosis-status
+entropy/Hjorth gains were +0.0094 without adjustment and +0.0110 with device and
+quality adjustment. Two cross-fitted single-logit EEGNet-like heads gave small
+matched increments (+0.0019 and +0.0053); both conditional ranges include zero.
+Phase-lag's observed +0.0127 gain exceeded 19 of 20 phase controls (mean -0.0114),
+unlike entropy/Hjorth. These descriptive follow-ups are in
+[`exploratory_r2_2026-11-05/`](exploratory_r2_2026-11-05/README.md).
+They do not validate a clinical diagnostic system or establish an upper bound on EEG utility.
 
 ## Current code and results
 
@@ -43,9 +45,7 @@ and the display set archived with version 1.2.1 (12 figures and 22 table sources
 The [technical methods and complete numerical results](docs/TECHNICAL_METHODS.md)
 collect implementation details, all comparison families, and additional diagnostic
 figures relocated from the journal supplement. The note was first archived in
-[version 1.2.2](https://doi.org/10.5281/zenodo.23929744). Version 1.2.5 aligns its
-method names and cross-references with the current article and adds implementation
-details moved from the supplement, without changing any numerical result.
+[version 1.2.2](https://doi.org/10.5281/zenodo.23929744). Version 1.2.6 adds the four exploratory follow-ups and their plan/code/output links, while preserving the historical numerical tables and figures as reference.
 Its [file manifest](docs/TECHNICAL_METHODS_MANIFEST.json) records the current identities.
 Current journal numbering differs from the historical display set.
 
@@ -67,9 +67,9 @@ layout remains available at the [v1.1.0 tag](https://github.com/alptekin254802/e
 
 [`journal_assets/`](journal_assets/README.md) reproduces the current 16 tables
 and 8 figures, including the evaluation-workflow table and the compact
-device-transfer plot. It checks frozen input identities and preserves all numerical
-table cells while updating presentation. The scientific computations behind these
-displays are unchanged from version 1.2.3.
+device-transfer plot. It checks frozen input identities, validates the new cells against round-1 outputs,
+and reproduces every current table and figure byte-for-byte. Earlier computations
+remain unchanged; version 1.2.6 adds the four dated exploratory follow-ups.
 
 ```text
 python -B journal_assets/build.py --output ../eeg-journal-assets
@@ -120,15 +120,13 @@ current article.
 
 ## Data and citation
 
-This is version 1.2.5. It keeps the computations archived in
-[version 1.2.3](https://doi.org/10.5281/zenodo.23930239), including the original
-analyses, earlier extensions, and complete later targeted controls, and updates the
-journal displays and technical note to match the current article.
-[Version 1.2.4](https://doi.org/10.5281/zenodo.23931759) archived the previous
-display layer. The separately archived
-[original version 1.1.0](https://doi.org/10.5281/zenodo.23199244) remains available.
-Cite the software version or commit actually used; [CITATION.md](CITATION.md)
-distinguishes the archived computations from later display updates.
+This is version 1.2.6. Earlier analyses remain preserved, including
+[version 1.2.5](https://doi.org/10.5281/zenodo.23959046). The four new exploratory
+follow-ups retain their pre-fit plans, executed code, frozen inputs, predictions,
+tuning records, and complete outcomes. Use the exact version DOI linked from the
+[v1.2.6 release](https://github.com/alptekin254802/eeg-incremental-utility/releases/tag/v1.2.6)
+or its commit; the [concept DOI](https://doi.org/10.5281/zenodo.23146468) identifies
+the series. See [CITATION.md](CITATION.md).
 
 Source data are available from [BALLADEER on Figshare](https://doi.org/10.6084/m9.figshare.28676042)
 and [the adult study on OSF](https://doi.org/10.17605/OSF.IO/EWKGV).

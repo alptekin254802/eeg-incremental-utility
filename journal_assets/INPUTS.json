@@ -52,7 +52,37 @@
     "companion/article_assets/figures/learning_curves.pdf": "a123735ed7e599ff8e4e20abc9994945f0505e45d98e4440d588e1350f0fdcd1",
     "companion/article_assets/figures/controlled_simulations.pdf": "50ff73499bcae3642c28f2c33551cc33bdedca61235d91528da82113ba3fee42",
     "companion/extensions/device_transfer/analysis/results/PRINCIPAL_CONTRASTS.csv": "01eb9de35080b7b66b8948c54292ce69c9cdaebf9084340e3864c6b1fa1198eb",
-    "companion/extensions/device_transfer/analysis/results/GROUP_CONTRASTS.csv": "93ec9802f287f7848142a9b000a6b10aa44b40cf8eb7910995a6bbd6731b8f54"
+    "companion/extensions/device_transfer/analysis/results/GROUP_CONTRASTS.csv": "93ec9802f287f7848142a9b000a6b10aa44b40cf8eb7910995a6bbd6731b8f54",
+    "journal_assets/TABLE_EDITS.json": "25a7dc61fbcd859b0db8110f3e0bfd733213615b0a847d51145372dd4c2ac144",
+    "exploratory_r2_2026-11-05/figure_label_audit/after_generator.py": "035e2dccc020d9f715799ab6a34b8e2ee43ea5ca9a23492426f704b557b96da7",
+    "exploratory_r2_2026-11-05/selection/outputs/VERIFICATION.csv": "ee9ba82fea36ab335ba27b58aeea2e056d631d8f19bc40c23e079efebdc42ba3",
+    "exploratory_r2_2026-11-05/recorded_audit/TABLE4_BASELINES.csv": "44171a4af4a0b59dcadcb9b9cf749925dafb686adc7a2c941aafc34f87d3dfe2",
+    "exploratory_r2_2026-11-05/diagnosis/outputs/SUMMARY.csv": "9ed1005832cca513785f70918c93fb644adc6979a3d38cb7f0b373a2c4bff927",
+    "exploratory_r2_2026-11-05/eegnet_crossfit/outputs/SUMMARY.csv": "942b1495662529eb751cdd37105552c1dc530b41da5a5034817f9f6ff2826cdb",
+    "exploratory_r2_2026-11-05/phase_lag/outputs/SUMMARY.csv": "8954f119900066542e89d0a5ca1c5284c036731c15afb351b884b23968c38188",
+    "display_assets/figure_source/ASSET_VALUES.json": "d6c55913d3a019d944cf94c2c9ce5e1d112553372fcb60ba753a9731759540ec",
+    "audit/cohort_screen/robots_final_feasibility.csv": "fd7451a3b5d3e990d912efc02bebf68bc21dfbfeb11c929af068c59e77f916d0",
+    "audit/stage1_blind_feature_extraction/BLIND_COHORT_MANIFEST.csv": "7a3d2200444e50d1f2bb4c2401f2b70e1b41b4af8d0ccbb938230681b4e9fdc8",
+    "audit/stage1_blind_feature_extraction/EEG_PREPROCESSING_QC.csv": "b9772d630f622ad90879ee7bae4918da8ca0308bd332f82d64324ce3183dc5a8",
+    "audit/preregistered_analysis/OUTCOME_LINKAGE_MANIFEST.csv": "fd5077b83c7a8679534455635e57447d548042eb4c3fa95427bc3799cf4509bb",
+    "audit/preregistered_analysis/PRIMARY_REPEAT_SUMMARY.csv": "1232fde04246fea35a32d8e231a11a3d6dc07b3484e398488d048236a7f15411",
+    "audit/preregistered_analysis/PREREGISTERED_RESULTS_MASTER_TABLE.csv": "78b327f7e6f78968b4859b0931938e418c191da9135238e140ac263bedd2fa15",
+    "audit/exploratory_eeg_battery/REPEAT_LEVEL_RESULTS.csv": "52b93c7e029b3fb1a3bd4c258bc1b5fd4bf64dc1f963d2f223d700954ce14771",
+    "results/e5/REPEAT_RESULTS.csv": "f150b606abdc5bbd228dbe29430b5fd903385f8aa97030aa8dc13cabc1b4477a",
+    "expected/posthoc/results/comparison_summary.csv": "1e832f1d8a2087c2e88e5bc7f263f6f90df611e107d43ee2fb336efab4669bb7",
+    "expected/posthoc/results/repeat_results.csv": "90b4d97300085149e445db56a3a4449ea60d2f1bac24128f5801e871e8dd3da4",
+    "expected/posthoc/signal_controls/comparison_summary.csv": "de85f1419621cb8b0e713a024f3dcd1d2b17e7bfc6c983e3b27cd0da123e75e7",
+    "audit/preregistered_analysis/MODALITY_LADDER_CONSOLIDATION.csv": "70bec562df9ffe78e65857be17c98247241a0b82cebeef869d971cdc9ff97d7d",
+    "audit/preregistered_analysis/DIAGNOSED_SENSITIVITY.csv": "f9f58f72f1bad75f0bf49e27fe23e16147955b59506b4f9b5c7682b0455ebe40",
+    "audit/preregistered_analysis/CALIBRATION_RESULTS.csv": "6d30248e98d0b86fbfb605d981ad7c1ba300ec2eb6948f0c62d19fb4cf7f31f7",
+    "results/numerical_followups/CALIBRATION_NUMERICAL.csv": "e4bbb5006a9f49db4489547d3536668ab6eb780dbd1007824a1b862fe69a3181",
+    "audit/preregistered_analysis/E0_CORE_SENSITIVITY.csv": "1670ecb4156d0e8f3f2621a364c7a618f822ceff27fd3379dc787276d049ac3c",
+    "audit/preregistered_analysis/FIXED_E1_SECONDARY.csv": "0a44853fbb2b9df287a6814e6c5000239c107f7d8787c766453063e4ab545303",
+    "audit/preregistered_analysis/FIXED_E2_SECONDARY.csv": "5f4601306eab3656da3c949f68e1cd1ee2412b224cee143ed22660277b8e28c0",
+    "audit/preregistered_analysis/EXPLORATORY_MODALITY_LADDER.csv": "84f3cbc075bacf69b7b2d9dc79461c98857b98a4f1203b6004c24e50e682baa2",
+    "results/numerical_followups/FIXED_OOF_RANGES.csv": "89a2274b8b246348fcc0284afc9d8d168d4ed0413e1ab69d4202e712ebfc7e1c",
+    "expected/posthoc/results/participant_loss_diagnostics.csv": "731cf638a48b3007163b0f73e5c2a9d9b53e0f1ef098f9cd21e9482f8942e983",
+    "expected/posthoc/results/coefficient_summary.csv": "31dff8bb205a6a967cc01e7496cc9edf5169b0628805b33c443eb087759adacc"
   },
   "figure_numbering": {
     "Figure 1": "repeat_increments.pdf",
@@ -64,5 +94,19 @@
     "Figure S1": "participant_changes.pdf",
     "Figure S2": "controlled_simulations.pdf"
   },
-  "transfer_results": "companion/extensions/device_transfer/analysis/results"
+  "transfer_results": "companion/extensions/device_transfer/analysis/results",
+  "version": "1.2.6",
+  "numerically_updated_tables": [
+    "main_adjustment.tex",
+    "main_learner.tex",
+    "diagnosis.tex",
+    "eegnet_summary.tex"
+  ],
+  "regenerated_figures": [
+    "repeat_increments.pdf",
+    "acquisition_phase_controls.pdf",
+    "participant_changes.pdf"
+  ],
+  "figure_generator": "exploratory_r2_2026-11-05/figure_label_audit/after_generator.py",
+  "source_date_epoch": 1793836800
 }

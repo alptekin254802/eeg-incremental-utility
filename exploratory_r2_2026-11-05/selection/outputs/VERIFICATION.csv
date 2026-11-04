@@ -1,0 +1,26 @@
+quantity,recomputed,requested,decimals,matches_at_requested_precision,repeat_comparison,worse_repeats
+identical_predictions,960,960,0,True,,
+group_prediction_rows,960,960,0,True,,
+baseline_mean_logloss,0.62437930418901932,0.62439999999999996,4,True,,
+selector_mean_logloss,0.65320945527268437,0.6532,4,True,,
+E0_mean_logloss,0.61989357405194112,0.61990000000000001,4,True,,
+E1_mean_logloss,0.63658418480057644,0.63660000000000005,4,True,,
+E2_mean_logloss,0.63980564585703636,0.63980000000000004,4,True,,
+E0_selection_fits,22,22,0,True,,
+E2_selection_fits,28,28,0,True,,
+independent_mean_logloss,0.63104433426279449,0.63100000000000001,4,True,,
+selection_cost,0.022165121009889877,0.022200000000000001,4,True,,
+primary_deficit,0.028830151083665045,0.028799999999999999,4,True,,
+selector_worse_than_E0_repeats,10,10,0,True,Sabit E0,10/10
+selector_worse_than_E1_repeats,7,7,0,True,Sabit E1,7/10
+selector_worse_than_E2_repeats,8,8,0,True,Sabit E2,8/10
+selector_worse_than_independent_repeats,9,9,0,True,Katmandan bağımsız seçim karışımı,9/10
+selector_worse_than_baseline_repeats,9,,0,,,
+selector_worse_than_all_three_repeats,6,,0,,,
+omit_worst_selector,0.64348742677509074,0.64349999999999996,4,True,,
+omit_worst_independent,0.624678433208808,0.62470000000000003,4,True,,
+omit_worst_baseline,0.62478346046056599,0.62480000000000002,4,True,,
+selected_outer_best,11,11,0,True,,
+expected_outer_best_under_independence,22.560000000000002,22.600000000000001,1,True,,
+spearman_inner_outer_E2_minus_E0,-0.69094837935174069,-0.68999999999999995,2,True,,
+prevalence_logloss,0.6824754839401016,0.6825,4,True,,

@@ -1,70 +1,86 @@
 {
   "status": "PASS",
-  "scope": "File identities, numerical-cell preservation, and figure generation from saved results",
-  "input_count": 25,
+  "scope": "File identities, explicit round-1 numerical updates, and current displays from saved results",
+  "input_count": 55,
   "tables": {
     "adult_extension.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 54
     },
     "clean_duration.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 81
     },
     "cohort.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 11
     },
     "diagnosis.tex": {
-      "numeric_cells_unchanged": true,
-      "numeric_tokens": 9
+      "numeric_cells_unchanged": false,
+      "intentional_round1_update": true,
+      "numeric_tokens": 15
     },
     "eegnet_summary.tex": {
-      "numeric_cells_unchanged": true,
-      "numeric_tokens": 13
+      "numeric_cells_unchanged": false,
+      "intentional_round1_update": true,
+      "numeric_tokens": 32
     },
     "fixed_oof_ranges.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 6
     },
     "main_adjustment.tex": {
-      "numeric_cells_unchanged": true,
-      "numeric_tokens": 18
+      "numeric_cells_unchanged": false,
+      "intentional_round1_update": true,
+      "numeric_tokens": 24
     },
     "main_cohort.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 24
     },
     "main_learner.tex": {
-      "numeric_cells_unchanged": true,
-      "numeric_tokens": 28
+      "numeric_cells_unchanged": false,
+      "intentional_round1_update": true,
+      "numeric_tokens": 24
     },
     "main_performance.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 37
     },
     "main_workflow.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 0
     },
     "probability_tails.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 15
     },
     "retention_profile.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 27
     },
     "supp_offset.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 18
     },
     "supp_targeted.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 26
     },
     "supp_transfer.tex": {
       "numeric_cells_unchanged": true,
+      "intentional_round1_update": false,
       "numeric_tokens": 33
     }
   },
@@ -110,6 +126,20 @@
       2.55
     ]
   },
+  "round2_numerical_checks": {
+    "status": "PASS",
+    "baseline_adjustment_rows": 6,
+    "learner_rows": 6,
+    "diagnosis_new_rows": 2,
+    "crossfit_and_reference_rows": 3,
+    "source": "Frozen round-1 output CSVs; no fitting or new resampling"
+  },
+  "regenerated_plot_values_equal_archived": true,
+  "regenerated_figures": [
+    "repeat_increments.pdf",
+    "acquisition_phase_controls.pdf",
+    "participant_changes.pdf"
+  ],
   "figure_numbering": {
     "Figure 1": "repeat_increments.pdf",
     "Figure 2": "acquisition_phase_controls.pdf",

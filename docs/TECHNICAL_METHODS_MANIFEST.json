@@ -1,5 +1,5 @@
 {
-  "scope": "Technical note updated for version 1.2.5 (method names, cross-references, and implementation details moved from the supplement); numerical display sources unchanged",
+  "scope": "Version 1.2.6 Technical Methods, four exploratory follow-ups, preserved historical technical assets",
   "sha256": {
     "technical_assets/adult_extension.tex": "4ef5ddf2a5a50eed939bca6e64d3051f4fed8819215031921bd6ce971cf9d897",
     "technical_assets/all_comparisons.tex": "bd8a5df8a536ccfb68adcb46676f8962aa32cb1b2b5698894c57b75373a4780e",
@@ -34,6 +34,6 @@
     "technical_assets/supp_targeted.tex": "c950d416d60e0deac3aa751148a9ee207ce35215e9dc19abc73fb897bd4777d6",
     "technical_assets/supp_transfer.tex": "db2479cd4dfa9e69abb819e5d1c94da9fe4fee16c1c845993ecf3adc351d2df0",
     "technical_assets/transfer_probability.tex": "243be3085a94f00db1511e5613d9c194710ef9b3fa0f758fd00e75de62344f75",
-    "TECHNICAL_METHODS.md": "14a39158332da812126df0582a79b83a3376511ce4bd385c3afbae9962234b7a"
+    "TECHNICAL_METHODS.md": "7c9bdf5979ccea152ffb26d739838f179ab40d759c544c7138a99f397ba8273a"
   }
 }
