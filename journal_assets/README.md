@@ -1,7 +1,7 @@
 # Current journal figures and tables
 
-This presentation layer reproduces the article's five main figures, three
-supplementary figures, four main tables, and eleven supplementary tables.
+This presentation layer reproduces the article's six main figures, two
+supplementary figures, five main tables, and eleven supplementary tables.
 The computational results remain those archived in version 1.2.3
 (https://doi.org/10.5281/zenodo.23930239).
 
@@ -38,9 +38,9 @@ numerical table sources, whose values were compared against that regeneration.
 Its validation scope is file identity and numerical-cell preservation, not a
 complete raw-data or model-training reproduction.
 
-These display updates postdate the v1.2.3 archive. Cite the exact repository
-commit for the updated presentation; the v1.2.3 DOI identifies the underlying
-archived computations. No new release DOI is assigned by a Git push.
+Version 1.2.5 includes this display layer. The evaluation-workflow table
+(`sources/main_workflow.tex`) contains no numerical results. The v1.2.3 DOI
+identifies the underlying archived computations.
 
 Original Python code is MIT licensed. Original table/figure presentation and
 this documentation are CC BY 4.0 under the repository's license notices.

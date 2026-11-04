@@ -1,6 +1,6 @@
 \begin{table}[htbp]
 \centering
-\caption{Oracle prior-odds sensitivity of the saved device-transfer comparisons.}
+\caption{Oracle prior-odds sensitivity of the device-transfer comparisons.}
 \label{tab:offset}
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}Xrrrr@{}}
 \toprule
@@ -15,6 +15,6 @@ EPOC X $\to$ + & Entropy/Hjorth & $+0.0153$ & $-0.0270$ & $+0.0001$ & $-0.0406$ 
 \bottomrule
 \end{tabularx}
 \par\smallskip\begin{minipage}{\textwidth}
-Entries are baseline-minus-augmented log-loss differences. Offset adds the same source-to-target prior-log-odds change to both models. It uses target study-group labels and is an oracle diagnostic, not a deployable predictor. All offset conditional ranges, both observed-composition and equal-class, include zero. Complete probabilities, absolute losses, secondary metrics, group-specific differences, and conditional draws accompany the table.
+Entries are baseline-minus-augmented log-loss differences. Offset adds the same source-to-target prior-log-odds change to both models; because it uses target study-group labels, it is an oracle diagnostic, not a deployable correction. All conditional bootstrap ranges after the offset, both observed-composition and equal-class, include zero.
 \end{minipage}
 \end{table}

@@ -4,11 +4,11 @@ Companion to *Incremental Predictive Utility of EEG Representations Beyond Behav
 
 This note collects implementation details, complete comparison families, and diagnostic figures supporting the article. The journal supplement retains participant eligibility, the interpretation-critical methods and results, and the limits of inference. This reorganization changes no fitted model, recorded prediction, feature matrix, or numerical result. All tables and plots below derive from the existing analyses; no additional analyses were undertaken for this editorial revision.
 
-**Scope and archival status.** This documentation update is dated 3 November 2026. The original and earlier exploratory computations are archived in [computational companion 1.2.1](https://doi.org/10.5281/zenodo.23864656). The later age, bandwidth, and prior-odds controls are supplied in a separate `targeted_controls_addendum.zip`; they and this note are not included in that archived version. The original preregistration, subsequent pre-fit exploratory plans, archived software versions, and present documentation are separate records. This note does not assign a new software version or DOI.
+**Scope and archival status.** This documentation update is dated 4 November 2026 and accompanies companion version 1.2.5. The original and earlier exploratory computations were first archived in [version 1.2.1](https://doi.org/10.5281/zenodo.23864656), and the later age, bandwidth, and prior-odds controls in [version 1.2.3](https://doi.org/10.5281/zenodo.23930239). This update aligns method names and cross-references with the current article and supplement and receives implementation details moved from the supplement; it changes no fitted model, prediction, or numerical result. The original preregistration, subsequent pre-fit exploratory plans, archived software versions, and present documentation are separate records.
 
 The primary comparison predicts recorded study-group membership. Positive increments favor EEG: baseline minus augmented log loss or Brier score, and augmented minus baseline AUROC. Unless stated otherwise, repeated pediatric analyses concern the same 96 participants and ten dependent cross-validation repeats. Later analyses retain their exploratory status.
 
-Technical tables and figures have their own **T** numbering. References to **S** sections refer to the condensed journal supplement. Figures reproduced here retain their original plotted values. Exact table source files and figure PDFs accompany the readable tables and PNG previews in `technical_assets/`.
+Technical tables and figures have their own **T** numbering. References to **S** sections refer to the condensed journal supplement. Figures reproduced here retain their original plotted values. Exact historical table sources and figure PDFs accompany the readable tables and PNG previews in `technical_assets/`. Current journal table wording and the figure-number map are reproduced by [`journal_assets/`](../journal_assets/README.md); the historical assets are not overwritten by editorial updates.
 
 ## Navigation
 
@@ -33,11 +33,11 @@ The object-gaze file contains relative time, object weight, and the observed obj
 H_{\mathrm{gaze}}=-\frac{\sum_{r,c}p_{rc}\log p_{rc}}{\log(47\times14)}.
 
 ```
-For dispersion, grid coordinates are mapped to $`x=(c-1)/46`$ and $`y=(r-1)/13`$. The feature is the root mean squared Euclidean distance of these points from the participant’s observation centroid. Combining demographics, behavior, and object gaze gives seven baseline predictors.
+For dispersion, grid coordinates are mapped to $`x=(c-1)/46`$ and $`y=(r-1)/13`$. The feature is the root mean squared Euclidean distance of these points from the participant’s observation centroid. Combining demographics, behavior, and object gaze gives seven baseline predictors. The longest interval without a gaze observation was not used as an exclusion criterion.
 
 ### Acquisition and continuous preprocessing
 
-The 14 channels, in order, were AF3, F7, F3, FC5, T7, P7, O1, O2, P8, T8, FC6, F4, F8, and AF4. The final cohort included 54 Epoc X and 42 Epoc+ recordings. Ninety-four were sampled natively at 128 Hz; two sampled at 256 Hz were downsampled to 128 Hz by polyphase resampling with a Kaiser window (parameter 5.0) and constant padding.
+The 14 channels, in order, were AF3, F7, F3, FC5, T7, P7, O1, O2, P8, T8, FC6, F4, F8, and AF4. The final cohort included 54 EPOC X and 42 EPOC+ recordings. Ninety-four were sampled natively at 128 Hz; two sampled at 256 Hz were downsampled to 128 Hz by polyphase resampling with a Kaiser window (parameter 5.0) and constant padding.
 
 Nonfinite samples and device-interpolated intervals defined segment boundaries. Within otherwise valid runs, segments also ended at nonpositive timestamp differences or gaps exceeding $`\max(0.25,2.5/f_s)`$ seconds, where $`f_s`$ is the native sampling rate. Each valid segment received a zero-phase fourth-order Butterworth band-pass filter at 1–40 Hz, implemented in second-order sections. Filtering did not cross segment boundaries. No additional notch filter or independent component analysis was applied.
 
@@ -55,7 +55,7 @@ Spectral features used Welch estimates with a Hann window, 256 samples per segme
 
 ## EEG representations and identifier crosswalk
 
-Table T1 links the method names used in the article to identifiers retained in the data and code. The primary library was cumulative: expanded spectral features included regional spectral features, and the covariance-augmented representation included the expanded features. The later families were each evaluated separately after the primary result was known.
+Table T1 links the method names used in the article to identifiers retained in the data and code. The three spectral/covariance representations of the primary procedure were cumulative: expanded spectral features included regional spectral features, and the covariance-augmented representation included the expanded features. The later families were each evaluated separately after the primary result was known.
 
 #### Technical Table T1
 
@@ -64,7 +64,7 @@ Table T1 links the method names used in the article to identifiers retained in 
 | M0 | Demographics | 0 | 2 |
 | M1 | Demographics and task behavior | 0 | 5 |
 | M2 | Non-EEG baseline: M1 plus object gaze | 0 | 7 |
-| adaptive M3 | Primary EEG-augmented procedure; selects E0, E1, or E2 | varies | varies |
+| adaptive M3 | Primary procedure; selects E0, E1, or E2 | varies | varies |
 | E0 | Regional spectral features, added to M2 | 12 | 19 |
 | E1 | Expanded spectral features: E0 plus topography, variability, spectral entropy | 35 | 42 |
 | E2 | Expanded spectral and covariance features: E1 plus covariance components | 47 | 54 |
@@ -74,7 +74,7 @@ Table T1 links the method names used in the article to identifiers retained in 
 
 Method names, computational identifiers, and predictor dimensions.
 
-EEG counts are final dimensions after any training-only reduction. E0–E2 form the preregistered library; E3–E5 are separate post-hoc families. Raw dimensions and transformations are specified below.
+EEG counts are final dimensions after any training-only reduction. E0–E2 are the preregistered spectral/covariance representations; E3–E5 are separate post-hoc families. Raw dimensions and transformations are specified below.
 
 ### Regional and expanded spectral features
 
@@ -143,7 +143,7 @@ The variables were grouped by frequency band: theta, alpha, and beta each contri
 
 The original analyses used L2 logistic regression with an unpenalized intercept, no class weighting, and no outcome-guided feature screening. The solver was `lbfgs`, with tolerance $`10^{-6}`$ and at most 1,000 iterations; the identical retry allowed 10,000 iterations but was not needed for the reported predictive fits. The inverse regularization grid was $`C\in\{0.01,0.1,1,10,100\}`$. Ten repeats of stratified five-fold outer cross-validation each contained five-fold inner cross-validation. Participants stayed intact; every participant received one outer-test prediction per repeat. Paired models used identical partitions.
 
-The non-EEG baseline selected $`C`$ by participant-pooled inner-validation log loss. The primary EEG procedure jointly selected the representation and $`C`$ from 15 combinations. Inner scores were rounded to 12 decimal places before selection; ties favored regional spectral, then expanded spectral, then expanded spectral and covariance features, followed by smaller $`C`$. Omitting EEG was not an option in this primary library. The separate fixed-representation analyses tuned $`C`$ within each family. Later families were not selected against one another.
+The non-EEG baseline selected $`C`$ by participant-pooled inner-validation log loss. The primary procedure jointly selected the representation and $`C`$ from 15 combinations. Inner scores were rounded to 12 decimal places before selection; ties favored regional spectral, then expanded spectral, then expanded spectral and covariance features, followed by smaller $`C`$. Omitting EEG was not an option in the primary procedure. The separate fixed-representation analyses tuned $`C`$ within each family. Later families were not selected against one another.
 
 Every transformation learned across participants was fitted inside the relevant training partition. The selected complete procedure was refitted on the outer-training set and applied to held-out participants. All final inputs were finite, so no missing-value replacement was required. Implementation-level safeguards, solver settings, seeds, and environment versions belong to the accompanying reproducibility specification; they do not change the feature definitions given here.
 
@@ -156,13 +156,13 @@ d_{ir}=L(y_i,p^{\mathrm{baseline}}_{ir})-L(y_i,p^{\mathrm{EEG}}_{ir}),
 ```
 Binary log loss clipped probabilities to $`[10^{-8},1-10^{-8}]`$. Within each repeat, held-out predictions were pooled across participants to calculate log loss, AUROC, and Brier score. The ten repeat-level estimates were then averaged. Positive AUROC differences mean evaluated minus baseline AUROC; positive Brier differences mean baseline minus evaluated Brier score. All differences therefore favor the evaluated model in the same direction.
 
-The primary comparison and individual initial-library representations retain their preregistered roles, with the diagnosis-status analysis as a separate sensitivity. The non-EEG sequence is descriptive. Additional representations and all later explanatory analyses are post hoc. No primary $`p`$ value or confirmatory confidence interval was specified, and no later test treated repeats as independent samples. The repeated partitions characterize variation in the evaluation of this cohort.
+The primary comparison and individual fixed spectral/covariance representations retain their preregistered roles, with the diagnosis-status analysis as a separate sensitivity. The non-EEG sequence is descriptive. Additional representations and all later explanatory analyses are post hoc. No primary $`p`$ value or confirmatory confidence interval was specified, and no later test treated repeats as independent samples. The repeated partitions characterize variation in the evaluation of this cohort.
 
 ## Primary and supporting results
 
 ### Complete performance and non-EEG comparisons
 
-Table T2 gives absolute performance and matched differences. Task behavior accounted for most of the observed improvement from demographics to the non-EEG baseline. Object-gaze summaries added little further log-loss improvement, with unfavorable secondary-metric changes. The primary EEG procedure was unfavorable on average, as were the expanded spectral models. Regional spectral features had a small favorable log-loss difference without corresponding AUROC or Brier improvement.
+Table T2 gives absolute performance and matched differences. Task behavior accounted for most of the observed improvement from demographics to the non-EEG baseline. Object-gaze summaries added little further log-loss improvement, with unfavorable secondary-metric changes. The primary procedure was unfavorable on average, as were the expanded spectral models. Regional spectral features had a small favorable log-loss difference without corresponding AUROC or Brier improvement.
 
 The inner procedure selected regional spectral features in 22 of 50 outer fits and expanded spectral and covariance features in 28; expanded spectral features alone were never selected. The baseline selected $`C=0.1`$ in 36 fits and $`C=1`$ in 14. Every selected regional spectral model used $`C=0.1`$; covariance-augmented selections used $`C=0.01`$, $`0.1`$, and $`1`$ in 16, 11, and one fit, respectively. These frequencies describe correlated fits, rather than an independent ranking of representations. Full-precision repeat results are in the computational package (the file map below).
 
@@ -176,7 +176,7 @@ Across the ten repeats of the preregistered primary comparison (the non-EEG base
 | Demographics and task behavior | 0.6256 | – | 0.7161 | – | 0.2146 | – |
 | Non-EEG baseline | 0.6244 | – | 0.7139 | – | 0.2157 | – |
 |  |  |  |  |  |  |  |
-| Primary EEG-augmented procedure | 0.6532 | $`-0.0288`$ | 0.6662 | $`-0.0478`$ | 0.2289 | $`-0.0131`$ |
+| Primary procedure | 0.6532 | $`-0.0288`$ | 0.6662 | $`-0.0478`$ | 0.2289 | $`-0.0131`$ |
 |  |  |  |  |  |  |  |
 | Regional spectral features | 0.6199 | $`+0.0045`$ | 0.7026 | $`-0.0113`$ | 0.2167 | $`-0.0009`$ |
 | Expanded spectral features | 0.6366 | $`-0.0122`$ | 0.6867 | $`-0.0272`$ | 0.2237 | $`-0.0079`$ |
@@ -206,7 +206,7 @@ Changing the target and eligible subset did not reverse the mean direction of th
 | Model or comparison   |    Log loss |       AUROC |       Brier |
 |:----------------------|------------:|------------:|------------:|
 | Non-EEG baseline      |      0.5971 |      0.7059 |      0.2037 |
-| Primary EEG procedure |      0.6125 |      0.6877 |      0.2051 |
+| Primary procedure |      0.6125 |      0.6877 |      0.2051 |
 | EEG increment         | $`-0.0155`$ | $`-0.0183`$ | $`-0.0015`$ |
 
 Diagnosis-status sensitivity: mean results in the 84-participant subset.
@@ -233,7 +233,7 @@ Table T4 reports this post-hoc numerical follow-up and identifies the original 
 <tr>
 <th style="text-align: right;"></th>
 <th colspan="3" style="text-align: center;">Non-EEG baseline</th>
-<th colspan="3" style="text-align: center;">Primary EEG procedure</th>
+<th colspan="3" style="text-align: center;">Primary procedure</th>
 </tr>
 </thead>
 <tbody>
@@ -358,9 +358,9 @@ These analyses were specified after the primary and additional-representation re
 
 ### Device and quality adjustment
 
-Device adjustment appended an Epoc+ indicator (Epoc+ = 1, Epoc X = 0) to both members of each comparison. Device-plus-quality adjustment also appended clean-window fraction and interpolated-channel count. The quality measures require EEG acquisition: this baseline conditions on EEG-derived quality and is not available from non-EEG measurements alone. Baseline and augmented models were independently tuned using the same covariates and partitions.
+Device adjustment appended an EPOC+ indicator (EPOC+ = 1, EPOC X = 0) to both members of each comparison. Device-plus-quality adjustment also appended clean-window fraction and interpolated-channel count. The quality measures require EEG acquisition: this baseline conditions on EEG-derived quality and is not available from non-EEG measurements alone. Baseline and augmented models were independently tuned using the same covariates and partitions.
 
-The entropy and Hjorth increment decreased under device adjustment and decreased further when quality was included. Combined adjustment left a favorable mean log-loss difference but unfavorable AUROC and Brier differences. Both adjusted primary procedures, and all adjusted fixed representations from the primary library, were unfavorable on average. The result files include device-by-group loss and quality summaries; they summarize held-out predictions from models fitted across devices, rather than new models trained within subgroups. These adjustments do not constitute unseen-device validation or identify a causal artifact contribution.
+The entropy and Hjorth increment decreased under device adjustment and decreased further when quality was included. Combined adjustment left a favorable mean log-loss difference but unfavorable AUROC and Brier differences. Both adjusted primary procedures, and all adjusted fixed spectral/covariance representations, were unfavorable on average. The result files include device-by-group loss and quality summaries; they summarize held-out predictions from models fitted across devices, rather than new models trained within subgroups. These adjustments do not constitute unseen-device validation or identify a causal artifact contribution.
 
 ### Feature blocks and spectral controls
 
@@ -372,7 +372,7 @@ Two spectral controls matched the full model’s nine EEG dimensions. The direct
 
 The policy chose among the non-EEG baseline and the three initial EEG representations across the five regularization values. It reused the inner scores and outer predictions corresponding to each selected configuration. Ties favored the baseline, then regional spectral, expanded spectral, and covariance-augmented features, followed by smaller $`C`$. The additional representations were not candidates.
 
-The policy selected the baseline in 20 of 50 fits, regional spectral features in ten, and expanded spectral and covariance features in 20. Its mean log loss was 0.6686, worse than both the baseline and the primary EEG procedure. It still predicted every participant: omitting EEG is model selection, not withholding a prediction. Table T5 gives both contrasts.
+The policy selected the baseline in 20 of 50 fits, regional spectral features in ten, and expanded spectral and covariance features in 20. Its mean log loss was 0.6686, worse than both the baseline and the primary procedure. It still predicted every participant: omitting EEG is model selection, not withholding a prediction. Table T5 gives both contrasts.
 
 #### Technical Table T5
 
@@ -416,7 +416,7 @@ The policy selected the baseline in 20 of 50 fits, regional spectral features in
 <td style="text-align: right;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">* Primary EEG-augmented procedure</td>
+<td style="text-align: left;">* Primary procedure</td>
 <td style="text-align: right;"><span class="math inline">−0.0288</span></td>
 <td style="text-align: right;"><span class="math inline">−0.0478</span></td>
 <td style="text-align: right;"><span class="math inline">−0.0131</span></td>
@@ -507,7 +507,7 @@ The policy selected the baseline in 20 of 50 fits, regional spectral features in
 <td style="text-align: right;">9</td>
 </tr>
 <tr>
-<td style="text-align: left;">* Primary EEG-augmented procedure</td>
+<td style="text-align: left;">* Primary procedure</td>
 <td style="text-align: right;"><span class="math inline">−0.0208</span></td>
 <td style="text-align: right;"><span class="math inline">−0.0453</span></td>
 <td style="text-align: right;"><span class="math inline">−0.0123</span></td>
@@ -549,7 +549,7 @@ The policy selected the baseline in 20 of 50 fits, regional spectral features in
 <td style="text-align: right;">6</td>
 </tr>
 <tr>
-<td style="text-align: left;">* Primary EEG-augmented procedure</td>
+<td style="text-align: left;">* Primary procedure</td>
 <td style="text-align: right;"><span class="math inline">−0.0258</span></td>
 <td style="text-align: right;"><span class="math inline">−0.0507</span></td>
 <td style="text-align: right;"><span class="math inline">−0.0145</span></td>
@@ -718,9 +718,9 @@ Positive differences favor the evaluated model relative to the baseline named in
 
 </div>
 
-## Fourier-phase controls
+## Phase-randomized controls
 
-Fourier-phase randomization tests interpretation through a specified change to the signals (Schreiber and Schmitz 2000). We reconstructed the accepted 256-sample windows from the original recordings, retaining the same cohort and rejection decisions. Each channel-window was centered. If $`X_k`$ is its real-input discrete Fourier transform, the interior coefficients for control dataset $`s`$ were replaced by
+Phase randomization tests interpretation through a specified change to the signals (Schreiber and Schmitz 2000). We reconstructed the accepted 256-sample windows from the original recordings, retaining the same cohort and rejection decisions. Each channel-window was centered. If $`X_k`$ is its real-input discrete Fourier transform, the interior coefficients for control dataset $`s`$ were replaced by
 ``` math
 
 \widetilde X_{k,s}=|X_k|\exp(\mathrm{i}\phi_{k,s}),\qquad
@@ -733,12 +733,12 @@ The procedure preserves the rectangular-window periodogram of each centered chan
 
 The original median/MAD normalization, permutation-entropy settings, Hjorth formulas, and regional aggregation were applied to every control dataset. Each was evaluated separately using the same participant partitions and nested regularization selection. All datasets and both contrasts (against the non-EEG baseline and against the observed entropy and Hjorth model) are included in Table T6. No dataset was selected by predictive performance.
 
-Control log-loss increments relative to the baseline ranged from $`+0.0239`$ to $`+0.0298`$, with a mean of $`+0.0271`$. The observed model’s increment was $`0.0004`$ below that mean; 13 controls exceeded it. All controls had favorable log-loss differences in every repeat. These shared-data comparisons are descriptive, not a surrogate significance test. Observed feature values and participant-wise means across the 20 control datasets had Spearman correlations of 0.987–0.9997. Thus, the transformation changed participant feature rankings little, limiting its ability to distinguish explanations of the increment. The similar benefit constrains attribution to the phase organization disrupted here, without uniquely identifying the preserved property responsible for it or excluding nonlinear structure in the original EEG. The coarse band-power and PCA controls summarize only selected aspects of the spectrum, whereas the phase controls preserve the full window-wise Fourier magnitudes.
+Control log-loss increments relative to the baseline ranged from $`+0.0239`$ to $`+0.0298`$, with a mean of $`+0.0271`$. The observed model’s increment was $`0.0004`$ below that mean; 13 controls exceeded it. All controls had favorable log-loss differences in every repeat. These shared-data comparisons are descriptive, not a significance test. Observed feature values and participant-wise means across the 20 control datasets had Spearman correlations of 0.987–0.9997. Thus, the transformation changed participant feature rankings little, limiting its ability to distinguish explanations of the increment. The similar benefit constrains attribution to the phase organization disrupted here, without uniquely identifying the preserved property responsible for it or excluding nonlinear structure in the original EEG. The coarse band-power and PCA controls summarize only selected aspects of the spectrum, whereas the phase controls preserve the full window-wise Fourier magnitudes.
 
 #### Technical Table T6
 
 <table>
-<caption>All Fourier-phase control comparisons.</caption>
+<caption>All phase-randomized control comparisons.</caption>
 <thead>
 <tr>
 <th style="text-align: right;"></th>
@@ -981,10 +981,10 @@ We added a post-hoc descriptive resampling analysis using each participant’s p
 
 | Model                 | Mean $`\Delta_{\mathrm{LL}}`$ |       Lower |       Upper |
 |:----------------------|------------------------------:|------------:|------------:|
-| Primary EEG procedure |                   $`-0.0288`$ | $`-0.0897`$ | $`+0.0340`$ |
+| Primary procedure |                   $`-0.0288`$ | $`-0.0897`$ | $`+0.0340`$ |
 | Entropy and Hjorth    |                   $`+0.0267`$ | $`-0.0280`$ | $`+0.0808`$ |
 
-Conditional descriptive fixed-OOF resampling ranges.
+Conditional bootstrap ranges for the participant-mean log-loss differences.
 
 <div class="minipage">
 
@@ -1000,7 +1000,7 @@ This post-hoc stress test asks whether an EEG increment persists when training a
 
 The same 96 participants and study-group target were retained without new exclusions. One direction trained on 54 EPOC X participants (16 ADHD, 38 control) and assessed 42 EPOC+ participants (25 ADHD, 17 control); the reverse direction exchanged these sets. We fitted the non-EEG baseline, the spectral/covariance selection procedure, and the fixed entropy and Hjorth augmentation. All three fixed candidates underlying the selector were retained in the machine-readable results.
 
-Within each source device, five stratified inner folds selected regularization from the original grid using pooled validation log loss. The selector also chose its representation in this loop. All scaling, PCA, and covariance references used the relevant source-training subset. The selected models were refitted on the entire source set. No target adaptation, recalibration, class weighting, or device indicator was used in these original transfer fits. Supplementary Section S10 separately examines an oracle prior-odds offset applied to their saved probabilities. Inner-fold seeds were 20261101 for EPOC X and 20261102 for EPOC+. Within a representation, ties at 12 decimal places favored smaller $`C`$; across representations, ties favored the simpler representation. The computation comprised 250 inner fits and ten final fixed-model fits, with no convergence retries.
+Within each source device, five stratified inner folds selected regularization from the original grid using pooled validation log loss. The selector also chose its representation in this loop. All scaling, PCA, and covariance references used the relevant source-training subset. The selected models were refitted on the entire source set. No target adaptation, recalibration, class weighting, or device indicator was used in these original transfer fits. Supplementary Section S5 separately examines an oracle prior-odds offset applied to their saved probabilities. Inner-fold seeds were 20261101 for EPOC X and 20261102 for EPOC+. Within a representation, ties at 12 decimal places favored smaller $`C`$; across representations, ties favored the simpler representation. The computation comprised 250 inner fits and ten final fixed-model fits, with no convergence retries.
 
 For the four principal direction/procedure comparisons, 5,000 paired bootstrap samples resampled target participants within each study group (seed 20261103). The 2.5th and 97.5th percentiles are descriptive conditional ranges: they hold the fitted source models, tuning decisions, and target class counts fixed. They do not incorporate source-training uncertainty, model-selection variability, or variability across devices. The two directions were not pooled into an independent-device estimate.
 
@@ -1103,11 +1103,11 @@ These exploratory analyses were planned on 1 November 2026 after the original an
 
 ### Matched learning procedures
 
-We compared L2 logistic regression, an RBF support vector machine (SVM), and a random forest. Each learner had its own non-EEG baseline and five evaluated EEG procedures: the three fixed representations from the original spectral/covariance library, their inner-selected procedure, and the fixed permutation-entropy and Hjorth representation. The selector considered only the original three representations, not entropy and Hjorth features. All scaling, principal components, and covariance references were refitted within each relevant training partition, including for the forest. Consequently, the comparison changes the learner while preserving the feature-construction rules.
+We compared L2 logistic regression, an RBF support vector machine (SVM), and a random forest. Each learner had its own non-EEG baseline and five evaluated EEG procedures: the three fixed representations from the original spectral/covariance set, their inner-selected procedure, and the fixed permutation-entropy and Hjorth representation. The selector considered only the original three representations, not entropy and Hjorth features. All scaling, principal components, and covariance references were refitted within each relevant training partition, including for the forest. Consequently, the comparison changes the learner while preserving the feature-construction rules.
 
 Logistic regression retained the original regularization grid $`C\in\{0.01,0.1,1,10,100\}`$. The RBF SVM used $`C\in\{0.1,1,10\}`$ and $`\gamma\in\{0.1/d,1/d\}`$, where $`d`$ is the number of transformed predictors in the fitted design. Probabilities were obtained by the implementation’s internal five-fold sigmoid calibration, restricted to the training data supplied to that fit. Each forest contained 128 bootstrap trees, used all predictors as candidates at each split, and used Gini impurity without class weighting. Its three candidate settings were (maximum depth, minimum leaf size) = $`(3,5)`$, (unlimited, 5), and (unlimited, 10).
 
-Five-fold inner cross-validation selected settings by pooled participant-level log loss. Ties after rounding to 12 decimal places were resolved by the stated grid order; representation ties followed regional spectral, expanded spectral, and covariance order. Final models were refitted on the outer-training participants. Seeds and all candidate scores are retained in the accompanying addendum. A second, fixed comparison added device, clean-window fraction, and interpolated-channel count to both the baseline and augmented SVM/forest models. The earlier logistic-regression adjustment results are already reported in main Table 3 and are not new experiments.
+Five-fold inner cross-validation selected settings by pooled participant-level log loss. Ties after rounding to 12 decimal places were resolved by the stated grid order; representation ties followed regional spectral, expanded spectral, and covariance order. Final models were refitted on the outer-training participants. Seeds and all candidate scores are retained in the accompanying addendum. A second, fixed comparison added device, clean-window fraction, and interpolated-channel count to both the baseline and augmented SVM/forest models. The earlier logistic-regression adjustment results are already reported in main Table 4 and are not new experiments.
 
 #### Technical Table T9
 
@@ -1116,29 +1116,29 @@ Five-fold inner cross-validation selected settings by pooled participant-level l
 | Learner/design | EEG procedure | B LL | E LL | $`\Delta`$LL | $`\Delta`$AUC | $`\Delta`$Brier |
 | Logistic/U | Regional spectral | $`0.6244`$ | $`0.6199`$ | $`+0.0045`$ | $`-0.0113`$ | $`-0.0009`$ |
 | Logistic/U | Expanded spectral | $`0.6244`$ | $`0.6366`$ | $`-0.0122`$ | $`-0.0272`$ | $`-0.0079`$ |
-| Logistic/U | Covariance library | $`0.6244`$ | $`0.6398`$ | $`-0.0154`$ | $`-0.0248`$ | $`-0.0070`$ |
+| Logistic/U | Expanded spectral + covariance | $`0.6244`$ | $`0.6398`$ | $`-0.0154`$ | $`-0.0248`$ | $`-0.0070`$ |
 | Logistic/U | Entropy/Hjorth | $`0.6244`$ | $`0.5977`$ | $`+0.0267`$ | $`+0.0152`$ | $`+0.0077`$ |
-| Logistic/U | Library selector | $`0.6244`$ | $`0.6532`$ | $`-0.0288`$ | $`-0.0478`$ | $`-0.0131`$ |
+| Logistic/U | Primary procedure | $`0.6244`$ | $`0.6532`$ | $`-0.0288`$ | $`-0.0478`$ | $`-0.0131`$ |
 | SVM/U | Regional spectral | $`0.6560`$ | $`0.6626`$ | $`-0.0066`$ | $`-0.0298`$ | $`-0.0063`$ |
 | SVM/U | Expanded spectral | $`0.6560`$ | $`0.6711`$ | $`-0.0151`$ | $`-0.0456`$ | $`-0.0102`$ |
-| SVM/U | Covariance library | $`0.6560`$ | $`0.6716`$ | $`-0.0155`$ | $`-0.0465`$ | $`-0.0103`$ |
+| SVM/U | Expanded spectral + covariance | $`0.6560`$ | $`0.6716`$ | $`-0.0155`$ | $`-0.0465`$ | $`-0.0103`$ |
 | SVM/U | Entropy/Hjorth | $`0.6560`$ | $`0.6422`$ | $`+0.0139`$ | $`-0.0043`$ | $`+0.0022`$ |
-| SVM/U | Library selector | $`0.6560`$ | $`0.6703`$ | $`-0.0143`$ | $`-0.0389`$ | $`-0.0093`$ |
+| SVM/U | Spectral/covariance selector | $`0.6560`$ | $`0.6703`$ | $`-0.0143`$ | $`-0.0389`$ | $`-0.0093`$ |
 | Forest/U | Regional spectral | $`0.6561`$ | $`0.6622`$ | $`-0.0061`$ | $`-0.0290`$ | $`-0.0063`$ |
 | Forest/U | Expanded spectral | $`0.6561`$ | $`0.6806`$ | $`-0.0245`$ | $`-0.0643`$ | $`-0.0139`$ |
-| Forest/U | Covariance library | $`0.6561`$ | $`0.6888`$ | $`-0.0327`$ | $`-0.0803`$ | $`-0.0179`$ |
+| Forest/U | Expanded spectral + covariance | $`0.6561`$ | $`0.6888`$ | $`-0.0327`$ | $`-0.0803`$ | $`-0.0179`$ |
 | Forest/U | Entropy/Hjorth | $`0.6561`$ | $`0.6468`$ | $`+0.0093`$ | $`-0.0121`$ | $`+0.0010`$ |
-| Forest/U | Library selector | $`0.6561`$ | $`0.6856`$ | $`-0.0294`$ | $`-0.0640`$ | $`-0.0166`$ |
+| Forest/U | Spectral/covariance selector | $`0.6561`$ | $`0.6856`$ | $`-0.0294`$ | $`-0.0640`$ | $`-0.0166`$ |
 | SVM/DQ | Regional spectral | $`0.6268`$ | $`0.6600`$ | $`-0.0332`$ | $`-0.0662`$ | $`-0.0166`$ |
 | SVM/DQ | Expanded spectral | $`0.6268`$ | $`0.6640`$ | $`-0.0372`$ | $`-0.0731`$ | $`-0.0187`$ |
-| SVM/DQ | Covariance library | $`0.6268`$ | $`0.6653`$ | $`-0.0385`$ | $`-0.0721`$ | $`-0.0188`$ |
+| SVM/DQ | Expanded spectral + covariance | $`0.6268`$ | $`0.6653`$ | $`-0.0385`$ | $`-0.0721`$ | $`-0.0188`$ |
 | SVM/DQ | Entropy/Hjorth | $`0.6268`$ | $`0.6336`$ | $`-0.0068`$ | $`-0.0186`$ | $`-0.0049`$ |
-| SVM/DQ | Library selector | $`0.6268`$ | $`0.6628`$ | $`-0.0360`$ | $`-0.0586`$ | $`-0.0174`$ |
+| SVM/DQ | Spectral/covariance selector | $`0.6268`$ | $`0.6628`$ | $`-0.0360`$ | $`-0.0586`$ | $`-0.0174`$ |
 | Forest/DQ | Regional spectral | $`0.6533`$ | $`0.6629`$ | $`-0.0096`$ | $`-0.0277`$ | $`-0.0065`$ |
 | Forest/DQ | Expanded spectral | $`0.6533`$ | $`0.6770`$ | $`-0.0237`$ | $`-0.0607`$ | $`-0.0123`$ |
-| Forest/DQ | Covariance library | $`0.6533`$ | $`0.6818`$ | $`-0.0284`$ | $`-0.0662`$ | $`-0.0144`$ |
+| Forest/DQ | Expanded spectral + covariance | $`0.6533`$ | $`0.6818`$ | $`-0.0284`$ | $`-0.0662`$ | $`-0.0144`$ |
 | Forest/DQ | Entropy/Hjorth | $`0.6533`$ | $`0.6460`$ | $`+0.0073`$ | $`-0.0078`$ | $`+0.0005`$ |
-| Forest/DQ | Library selector | $`0.6533`$ | $`0.6811`$ | $`-0.0278`$ | $`-0.0544`$ | $`-0.0145`$ |
+| Forest/DQ | Spectral/covariance selector | $`0.6533`$ | $`0.6811`$ | $`-0.0278`$ | $`-0.0544`$ | $`-0.0145`$ |
 
 Complete model-family comparisons. B and E denote baseline and EEG-augmented log loss. Positive increments favor EEG. U: unadjusted; DQ: device and EEG quality added to both models. All values average ten dependent repeats; supplementary machine-readable files retain their full distributions.
 
@@ -1146,26 +1146,26 @@ Complete model-family comparisons. B and E denote baseline and EEG-augmented log
 
 <figure data-latex-placement="htbp">
 <img src="technical_assets/model_family_sensitivity.png" />
-<figcaption>Technical Figure T4. All model-family comparisons. Small points are the ten dependent repeat estimates; diamonds are their means. Each augmented model is compared with its own learner’s baseline in identical outer partitions. Adjustment adds device and EEG quality to both models. The logistic-regression adjustment is reported in main Table 3, rather than duplicated here. Spread across repeats is descriptive, not a confidence interval.</figcaption>
+<figcaption>Technical Figure T4. All model-family comparisons. Small points are the ten dependent repeat estimates; diamonds are their means. Each augmented model is compared with its own learner’s baseline in identical outer partitions. Adjustment adds device and EEG quality to both models. The logistic-regression adjustment is reported in main Table 4, rather than duplicated here. Spread across repeats is descriptive, not a confidence interval.</figcaption>
 </figure>
 
 ### Training-size analysis
 
-The learning-curve family was fixed to logistic regression and the RBF SVM before results were generated. Within each original outer-training fold, class-stratified nested subsets retained 50%, 75%, or 100% of training participants. The smaller subsets contained 38 and 57 participants; the full sets contained 76 or 77. Their outer-test participants remained identical. Class counts were rounded down separately and class-specific shuffled prefixes were nested, with seeds fixed by repeat and outer fold. Smaller subsets received new stratified five-fold inner partitions. Every transformation and tuning step was repeated using only that subset. The full-size endpoint reuses the model-family fits above.
+The learning-curve family was fixed to logistic regression and the RBF SVM before results were generated. Within each original outer-training fold, class-stratified nested subsets retained 50%, 75%, or 100% of training participants. The smaller subsets contained 38 and 57 participants; the full sets contained 76 or 77. Their outer-test participants remained identical. Class counts were rounded down separately and class-specific shuffled prefixes were nested, with seeds fixed by repeat and outer fold. Smaller subsets received new stratified five-fold inner partitions. Every transformation and tuning step was repeated using only that subset. The full-size endpoint reuses the model-family fits above. Main Figure 5 shows the selector and entropy/Hjorth curves.
 
 #### Technical Table T10
 
 | Learner | Procedure | Training $`n`$ | B LL | E LL | $`\Delta`$LL | Positive/10 |
 |:---|:---|---:|---:|---:|---:|---:|
-| Logistic | Library selector | 38 | $`0.6582`$ | $`0.7189`$ | $`-0.0607`$ | 4 |
-| Logistic | Library selector | 57 | $`0.6434`$ | $`0.6406`$ | $`+0.0028`$ | 4 |
-| Logistic | Library selector | 76–77 | $`0.6244`$ | $`0.6532`$ | $`-0.0288`$ | 1 |
+| Logistic | Spectral/covariance selector | 38 | $`0.6582`$ | $`0.7189`$ | $`-0.0607`$ | 4 |
+| Logistic | Spectral/covariance selector | 57 | $`0.6434`$ | $`0.6406`$ | $`+0.0028`$ | 4 |
+| Logistic | Spectral/covariance selector | 76–77 | $`0.6244`$ | $`0.6532`$ | $`-0.0288`$ | 1 |
 | Logistic | Entropy/Hjorth | 38 | $`0.6582`$ | $`0.7032`$ | $`-0.0450`$ | 6 |
 | Logistic | Entropy/Hjorth | 57 | $`0.6434`$ | $`0.6239`$ | $`+0.0195`$ | 6 |
 | Logistic | Entropy/Hjorth | 76–77 | $`0.6244`$ | $`0.5977`$ | $`+0.0267`$ | 10 |
-| SVM | Library selector | 38 | $`0.6921`$ | $`0.6955`$ | $`-0.0034`$ | 5 |
-| SVM | Library selector | 57 | $`0.6534`$ | $`0.6721`$ | $`-0.0186`$ | 2 |
-| SVM | Library selector | 76–77 | $`0.6560`$ | $`0.6703`$ | $`-0.0143`$ | 1 |
+| SVM | Spectral/covariance selector | 38 | $`0.6921`$ | $`0.6955`$ | $`-0.0034`$ | 5 |
+| SVM | Spectral/covariance selector | 57 | $`0.6534`$ | $`0.6721`$ | $`-0.0186`$ | 2 |
+| SVM | Spectral/covariance selector | 76–77 | $`0.6560`$ | $`0.6703`$ | $`-0.0143`$ | 1 |
 | SVM | Entropy/Hjorth | 38 | $`0.6921`$ | $`0.6926`$ | $`-0.0005`$ | 5 |
 | SVM | Entropy/Hjorth | 57 | $`0.6534`$ | $`0.6515`$ | $`+0.0019`$ | 5 |
 | SVM | Entropy/Hjorth | 76–77 | $`0.6560`$ | $`0.6422`$ | $`+0.0139`$ | 5 |
@@ -1310,7 +1310,7 @@ Independent adult test results ($`n=36`$). B and E are baseline and EEG-augmente
 
 The task/eye comparison showed unfavorable mean loss increments with logistic regression and SVM and a near-zero forest increment. With the broader baseline, increments were near zero and differed in direction across learners. Every conditional interval covered zero. For task/eye logistic regression, 26 of 36 individual losses improved despite an unfavorable overall mean: a majority count does not summarize the magnitude of probability errors. Full participant-level differences are retained rather than treating these counts as evidence of subgroup benefit.
 
-The comparison is plotted in main Figure 5.
+The comparison is plotted in main Figure 6.
 
 The released row numbers are the available identifiers. Cross-file exact predictor-row duplication was checked, but participant identities cannot be independently verified from these de-identified files. All input hashes, missingness counts, training-fold choices, candidate scores, probabilities, conditional draws, and deterministic checks are supplied in the extension addendum. Neither this adult analysis nor its uncertainty ranges establishes clinical readiness or validates the pediatric entropy/Hjorth representation.
 

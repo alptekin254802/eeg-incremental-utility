@@ -1,21 +1,22 @@
 # Citation
 
-The latest archived computational release can be cited as:
+The current software version is 1.2.5:
 
 Cinbat, A., Şentürk, Ü., & Yücedağ, İ. (2026). *EEG incremental predictive utility:
-computational companion and exploratory extensions* (Version 1.2.3)
-[Software]. Zenodo. https://doi.org/10.5281/zenodo.23930239
+computational companion and exploratory extensions* (Version 1.2.5) [Software].
+[Source repository](https://github.com/alptekin254802/eeg-incremental-utility).
 
-Version 1.2.3 includes the original analyses, exploratory extensions, technical
-methods note, and the later age, bandwidth, and common prior-odds computations.
-The [v1.2.3 tag](https://github.com/alptekin254802/eeg-incremental-utility/tree/v1.2.3)
-identifies the exact archived code.
+Cite the exact version or commit used. The latest completed Zenodo archive is
+[version 1.2.4](https://doi.org/10.5281/zenodo.23931759). Version 1.2.5 aligns
+journal displays and technical documentation with the current article; the
+underlying computations are unchanged. Its version DOI can be used once the
+corresponding release has been archived. The
+[concept DOI](https://doi.org/10.5281/zenodo.23146468) identifies the archive
+across versions, rather than the contents of an unarchived commit.
 
-Subsequent presentation updates in [journal_assets/](journal_assets/README.md)
-provide current table labels/layout and the compact transfer figure. Cite the
-exact repository commit alongside the archived computation DOI when using these
-displays. They are not retroactively part of the v1.2.3 archive, and no new release
-DOI is assigned here. Historical documents retain their original archive wording.
+The original analyses, exploratory extensions, and later age, bandwidth, and
+common prior-odds computations are preserved. Historical documents retain their
+original archive wording.
 
 The separately archived original release can be cited as:
 

@@ -43,6 +43,10 @@
       "numeric_cells_unchanged": true,
       "numeric_tokens": 37
     },
+    "main_workflow.tex": {
+      "numeric_cells_unchanged": true,
+      "numeric_tokens": 0
+    },
     "probability_tails.tex": {
       "numeric_cells_unchanged": true,
       "numeric_tokens": 15
@@ -111,10 +115,10 @@
     "Figure 2": "acquisition_phase_controls.pdf",
     "Figure 3": "component_increments.pdf",
     "Figure 4": "device_transfer.pdf",
-    "Figure 5": "independent_adult_increment.pdf",
+    "Figure 5": "learning_curves.pdf",
+    "Figure 6": "independent_adult_increment.pdf",
     "Figure S1": "participant_changes.pdf",
-    "Figure S2": "learning_curves.pdf",
-    "Figure S3": "controlled_simulations.pdf"
+    "Figure S2": "controlled_simulations.pdf"
   },
   "new_fits": 0,
   "resampling_runs": 0

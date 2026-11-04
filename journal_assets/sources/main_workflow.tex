@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering
+\begin{minipage}{0.88\textwidth}
+\caption{Evaluation steps, the questions they address, and their reported outputs.}
+\label{tab:workflow}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.03}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.27\linewidth}>{\raggedright\arraybackslash}p{0.33\linewidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Step & Question & Reported output \\
+\midrule
+Paired addition; training-only selection$^{*}$ & Does EEG improve prediction beyond the baseline? & Paired metric differences; repeat distribution \\
+\addlinespace[2pt]
+Device and signal-quality adjustment & Does the increment persist after adjustment? & Adjusted increments \\
+\addlinespace[2pt]
+Feature blocks and signal controls & How do feature or signal changes alter the increment? & Block, spectral, and phase-randomized control comparisons \\
+\addlinespace[2pt]
+Group decomposition & Which study group benefits? & Group-specific, observed-composition, and equal-class increments \\
+\addlinespace[2pt]
+Prior-odds offset & What changes under a prevalence offset? & Increments after the offset \\
+\addlinespace[2pt]
+Other learners and samples & Does the increment vary across models or samples? & Alternative learners, learned features, training sizes, adult data \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+$^{*}$Preregistered primary comparison. All other steps are exploratory (Section~\ref{sec:participants}).
+\end{minipage}
+\end{table*}

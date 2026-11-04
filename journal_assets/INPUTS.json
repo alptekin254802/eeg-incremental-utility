@@ -10,6 +10,7 @@
     "main_cohort.tex": "companion/article_assets/tables/main_cohort.tex",
     "main_learner.tex": "companion/article_assets/tables/main_learner.tex",
     "main_performance.tex": "companion/article_assets/tables/main_performance.tex",
+    "main_workflow.tex": "journal_assets/sources/main_workflow.tex",
     "probability_tails.tex": "companion/article_assets/tables/probability_tails.tex",
     "retention_profile.tex": "companion/article_assets/tables/retention_profile.tex",
     "supp_offset.tex": "targeted_controls/tables/supp_offset.tex",
@@ -58,10 +59,10 @@
     "Figure 2": "acquisition_phase_controls.pdf",
     "Figure 3": "component_increments.pdf",
     "Figure 4": "device_transfer.pdf",
-    "Figure 5": "independent_adult_increment.pdf",
+    "Figure 5": "learning_curves.pdf",
+    "Figure 6": "independent_adult_increment.pdf",
     "Figure S1": "participant_changes.pdf",
-    "Figure S2": "learning_curves.pdf",
-    "Figure S3": "controlled_simulations.pdf"
+    "Figure S2": "controlled_simulations.pdf"
   },
   "transfer_results": "companion/extensions/device_transfer/analysis/results"
 }

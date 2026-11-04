@@ -42,9 +42,11 @@ and the display set archived with version 1.2.1 (12 figures and 22 table sources
 
 The [technical methods and complete numerical results](docs/TECHNICAL_METHODS.md)
 collect implementation details, all comparison families, and additional diagnostic
-figures relocated from the journal supplement. The note and its supporting assets
-are included in [archived version 1.2.2](https://doi.org/10.5281/zenodo.23929744).
-Its [file manifest](docs/TECHNICAL_METHODS_MANIFEST.json) preserves those identities.
+figures relocated from the journal supplement. The note was first archived in
+[version 1.2.2](https://doi.org/10.5281/zenodo.23929744). Version 1.2.5 aligns its
+method names and cross-references with the current article and adds implementation
+details moved from the supplement, without changing any numerical result.
+Its [file manifest](docs/TECHNICAL_METHODS_MANIFEST.json) records the current identities.
 Current journal numbering differs from the historical display set.
 
 The later age, bandwidth, and common prior-odds computational addendum is now
@@ -63,11 +65,11 @@ layout remains available at the [v1.1.0 tag](https://github.com/alptekin254802/e
 
 ## Current journal displays
 
-[`journal_assets/`](journal_assets/README.md) reproduces the current 15 tables
-and 8 figures, including the compact device-transfer plot. It checks frozen input
-identities and preserves all numerical table cells while updating presentation.
-These changes postdate v1.2.3; cite the exact repository commit for this display
-layer. The archived scientific computations and technical note remain unchanged.
+[`journal_assets/`](journal_assets/README.md) reproduces the current 16 tables
+and 8 figures, including the evaluation-workflow table and the compact
+device-transfer plot. It checks frozen input identities and preserves all numerical
+table cells while updating presentation. The scientific computations behind these
+displays are unchanged from version 1.2.3.
 
 ```text
 python -B journal_assets/build.py --output ../eeg-journal-assets
@@ -118,9 +120,12 @@ current article.
 
 ## Data and citation
 
-The latest archived release is [version 1.2.3](https://doi.org/10.5281/zenodo.23930239),
-including the original computations, earlier extensions, technical note, and
-complete later targeted controls. The separately archived
+This is version 1.2.5. It keeps the computations archived in
+[version 1.2.3](https://doi.org/10.5281/zenodo.23930239), including the original
+analyses, earlier extensions, and complete later targeted controls, and updates the
+journal displays and technical note to match the current article.
+[Version 1.2.4](https://doi.org/10.5281/zenodo.23931759) archived the previous
+display layer. The separately archived
 [original version 1.1.0](https://doi.org/10.5281/zenodo.23199244) remains available.
 Cite the software version or commit actually used; [CITATION.md](CITATION.md)
 distinguishes the archived computations from later display updates.
