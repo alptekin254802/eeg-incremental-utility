@@ -86,10 +86,10 @@ Expanded spectral features retained these predictors and added three blocks. A t
 
 The covariance representation retained all expanded spectral features. After broadband preprocessing and common-average reference, continuous segments were separately filtered in theta, alpha, and beta using zero-phase fourth-order Butterworth filters. The same accepted window indices were reused without another rejection step. Each band-filtered window was centered by its channel means and projected to a fixed 13-dimensional orthonormal Helmert contrast basis.
 
-The covariance regularization used the shrinkage-coefficient form implemented by scikit-learn for oracle-approximating shrinkage (Chen et al. 2010). For sample covariance $`S`$ with denominator $`n-1`$, $`n`$ window samples, and $`p=13`$ coordinates, let $`\mu=\operatorname{tr}(S)/p`$ and $`a=p^{-2}\sum_{ij}S_{ij}^{2}`$. The shrinkage weight and regularized covariance were
+The covariance regularization used the shrinkage-coefficient form implemented by scikit-learn for oracle-approximating shrinkage (Chen et al. 2010). For sample covariance $`S`$ with denominator $`n-1`$, $`n`$ window samples, and $`p=13`$ coordinates, let $`\mu=\mathrm{tr}(S)/p`$ and $`a=p^{-2}\sum_{ij}S_{ij}^{2}`$. The shrinkage weight and regularized covariance were
 ``` math
 
-\lambda=\operatorname{clip}_{[0,1]}\left\{\frac{a+\mu^2}{(n+1)(a-\mu^2/p)}\right\},
+\lambda=\mathrm{clip}_{[0,1]}\left\{\frac{a+\mu^2}{(n+1)(a-\mu^2/p)}\right\},
 \qquad S_{\lambda}=(1-\lambda)S+\lambda\mu I.
 
 ```
@@ -99,7 +99,7 @@ For each band, the training participants’ covariance matrices $`C_i`$ defined 
 ``` math
 
 A=\exp\!\left(\frac{1}{n_{\mathrm{tr}}}\sum_{i\in\mathrm{train}}\log C_i\right),
-\qquad G=A/\operatorname{tr}(A).
+\qquad G=A/\mathrm{tr}(A).
 
 ```
 A participant covariance $`C`$ was mapped to $`T=\log(G^{-1/2}CG^{-1/2})`$. The lower triangle gave 91 coordinates, with off-diagonal entries multiplied by $`\sqrt{2}`$. PCA centered these coordinates without coordinate-wise variance scaling and retained four components per band. The 12 covariance components increased the EEG dimension to 47. The complete regression design was subsequently standardized. References and PCA were fitted only in the applicable training partition.
@@ -109,7 +109,7 @@ A participant covariance $`C`$ was mapped to $`T=\log(G^{-1/2}CG^{-1/2})`$. The 
 Each accepted window was multiplied by four discrete prolate spheroidal sequence tapers, with time-bandwidth product 2.5, periodic convention, and $`L_2`$ normalization. Fourier coefficients at 128 Hz gave 0.5-Hz bins. For one channel pair at a fixed frequency, $`I_j`$ denotes the imaginary cross-spectrum, with $`j`$ indexing all accepted-window–taper combinations. Debiased squared weighted phase-lag index was computed as (Vinck et al. 2011)
 ``` math
 
-\operatorname{dwPLI}^{2}=\frac{(\sum_j I_j)^2-\sum_j I_j^2}{(\sum_j |I_j|)^2-\sum_j I_j^2}.
+\mathrm{dwPLI}^{2}=\frac{(\sum_j I_j)^2-\sum_j I_j^2}{(\sum_j |I_j|)^2-\sum_j I_j^2}.
 
 ```
 Negative estimates were retained. For each of the 91 unordered channel pairs, the median of frequency-specific estimates was taken within theta, alpha, and beta, giving 273 raw variables. Training-only standardization and PCA retained three components per band. These nine predictors describe sensor-level phase dependence, not source-localized anatomical connectivity.
@@ -125,7 +125,7 @@ H_{\mathrm{perm}}=-\frac{\sum_k p_k\log p_k}{\log(120)}.
 For normalized signal $`x`$, our implementation used finite-difference versions of the variance-based Hjorth descriptors (Hjorth 1970), with mobility and complexity defined as
 ``` math
 
-M(x)=\sqrt{\frac{\operatorname{var}(\Delta x)}{\operatorname{var}(x)}},
+M(x)=\sqrt{\frac{\mathrm{var}(\Delta x)}{\mathrm{var}(x)}},
 \qquad C(x)=\frac{M(\Delta x)}{M(x)}.
 
 ```
@@ -135,7 +135,7 @@ Variances in the Hjorth formulas used denominator $`n`$ for the signal and the r
 
 Within continuous accepted segments, 128-sample frames (1 s) advanced by 32 samples (0.25 s), with each frame lying wholly within accepted 2-s windows. A one-sided Hann-window periodogram used constant detrending, density scaling, and 128 Fourier points. Relative theta, alpha, and beta energy, divided by 1–40-Hz energy, was log-transformed and median-aggregated across channels within each region.
 
-For each region-band trajectory $`v_t`$, robust within-participant normalization gave $`z_t=[v_t-\operatorname{median}(v)]/[1.4826\,\operatorname{MAD}(v)]`$. A high state had $`z_t>1`$. Features were high-state occupancy, median high-state duration, and switching rate. A run of $`q`$ frames lasted $`1+0.25(q-1)`$ s; no high run gave duration zero. Switching rate counted high/low transitions per valid adjacency time, multiplied by 60. Runs and adjacencies did not cross segment or invalid-frame gaps. The 27 variables were standardized within training data and reduced by band-specific PCA to three components per band.
+For each region-band trajectory $`v_t`$, robust within-participant normalization gave $`z_t=[v_t-\mathrm{median}(v)]/[1.4826\,\mathrm{MAD}(v)]`$. A high state had $`z_t>1`$. Features were high-state occupancy, median high-state duration, and switching rate. A run of $`q`$ frames lasted $`1+0.25(q-1)`$ s; no high run gave duration zero. Switching rate counted high/low transitions per valid adjacency time, multiplied by 60. Runs and adjacencies did not cross segment or invalid-frame gaps. The 27 variables were standardized within training data and reduced by band-specific PCA to three components per band.
 
 The variables were grouped by frequency band: theta, alpha, and beta each contributed nine variables, comprising three summaries in each of three regions. The resulting nine principal components were added to the non-EEG baseline in this post-hoc comparison.
 
@@ -151,7 +151,7 @@ For participant $`i`$ and repeat $`r`$, the primary paired difference was
 ``` math
 
 d_{ir}=L(y_i,p^{\mathrm{baseline}}_{ir})-L(y_i,p^{\mathrm{EEG}}_{ir}),
-\qquad \Delta_{\mathrm{LL}}=\operatorname{mean}_{i,r}(d_{ir}).
+\qquad \Delta_{\mathrm{LL}}=\mathrm{mean}_{i,r}(d_{ir}).
 
 ```
 Binary log loss clipped probabilities to $`[10^{-8},1-10^{-8}]`$. Within each repeat, held-out predictions were pooled across participants to calculate log loss, AUROC, and Brier score. The ten repeat-level estimates were then averaged. Positive AUROC differences mean evaluated minus baseline AUROC; positive Brier differences mean baseline minus evaluated Brier score. All differences therefore favor the evaluated model in the same direction.
@@ -724,7 +724,7 @@ Phase randomization tests interpretation through a specified change to the signa
 ``` math
 
 \widetilde X_{k,s}=|X_k|\exp(\mathrm{i}\phi_{k,s}),\qquad
-\phi_{k,s}\sim\operatorname{Uniform}(-\pi,\pi),\quad k=1,\ldots,127.
+\phi_{k,s}\sim\mathrm{Uniform}(-\pi,\pi),\quad k=1,\ldots,127.
 
 ```
 DC and Nyquist coefficients were retained. Inverse real Fourier transformation produced each 256-sample control window. Phases were independent across interior bins, channels, and windows. Twenty datasets used a deterministic participant-by-dataset seed schedule, with no second quality rejection after randomization.
@@ -1437,8 +1437,8 @@ These are sensitivities to one demographic specification and one additional filt
 The device-transfer predictions in Supplementary Section S5 were retained without predictive refitting. For each direction, let $`\pi_s`$ and $`\pi_t`$ be the observed source and target ADHD study-group fractions. We applied the same offset to baseline and augmented probabilities:
 ``` math
 
-\delta=\operatorname{logit}(\pi_t)-\operatorname{logit}(\pi_s),\qquad
-p^{*}=\operatorname{logit}^{-1}\!\left\{\operatorname{logit}(p)+\delta\right\}.
+\delta=\mathrm{logit}(\pi_t)-\mathrm{logit}(\pi_s),\qquad
+p^{*}=\mathrm{logit}^{-1}\!\left\{\mathrm{logit}(p)+\delta\right\}.
 
 ```
 The fractions were $`16/54`$ for EPOC X and $`25/42`$ for EPOC+, giving offsets $`+1.2507`$ for X-to-Plus and $`-1.2507`$ for Plus-to-X. This prior-odds formula follows from Bayes’ rule if class-conditional predictor distributions are unchanged and source probabilities are calibrated; those assumptions need not hold across these device-associated groups. The calculation deliberately uses target labels. It is an oracle diagnostic, not a target-label-free adaptation method, and no offset was optimized.
